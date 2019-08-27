@@ -1,0 +1,4 @@
+// InstDG
+digraph {
+	start -> "0x15e0" [label="0x40048038:0"]
+}

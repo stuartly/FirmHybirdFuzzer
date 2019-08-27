@@ -1,0 +1,38 @@
+
+Depends on the complexity of the firmware.
+Too complicate -- Heuristic cannot handle the path exploration.
+
+
+Fail:
+1. Interrupt
+   - Qemu only supports 16 exceptions and 64 interrupts.
+   - Do not know the exact time to rise an interrupt.
+2. Short exploration path results in unsound peripheral values, which leads Qemu to a dead loop. Long exploration path results in dead states.
+3. Hardware Logics
+   - MPU: Memory region permission violation to trigger bus fault
+   - CRC: Generate a CRC value for a memory region.
+   - RNGA: No random number generated.
+   - FlexCan: No transfer through FlexCan.
+   - etc.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

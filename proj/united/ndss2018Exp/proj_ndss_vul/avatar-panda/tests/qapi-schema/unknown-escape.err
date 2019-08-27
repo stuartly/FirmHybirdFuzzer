@@ -1,0 +1,1 @@
+tests/qapi-schema/unknown-escape.json:7:21: Unknown escape \x

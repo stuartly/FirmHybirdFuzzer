@@ -1,0 +1,6 @@
+// InstDG
+digraph {
+	start -> "0x8002b9a" [label="0x40021000:0"]
+	"0x8002b9a" -> "0x8002ba8" [label="0x40021000:2"]
+	"0x8002ba8" -> "0x8002bb4" [label="0x40021000:2"]
+}

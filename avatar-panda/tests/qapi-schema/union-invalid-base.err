@@ -1,0 +1,1 @@
+tests/qapi-schema/union-invalid-base.json:18: 'base' for union 'TestUnion' cannot use built-in type 'int'

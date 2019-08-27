@@ -1,0 +1,4988 @@
+SHM: /SHM.0.0x40000
+SHM: /SHM.1.0x200000
+----------------
+INST: 
+0x0000020c:  b538       push     {r3, r4, r5, lr}
+0x0000020e:  b672       cpsid    i
+
+Tracking exected BB id: 0x020c
+----------------
+INST: 
+0x00000210:  f000 fec6  bl       #0xfa0
+
+Tracking exected BB id: 0x0210
+----------------
+INST: 
+0x00000fa0:  4a0a       ldr      r2, [pc, #0x28]
+0x00000fa2:  b508       push     {r3, lr}
+0x00000fa4:  f8d2 3088  ldr.w    r3, [r2, #0x88]
+0x00000fa8:  f443 0370  orr      r3, r3, #0xf00000
+0x00000fac:  f8c2 3088  str.w    r3, [r2, #0x88]
+0x00000fb0:  4b07       ldr      r3, [pc, #0x1c]
+0x00000fb2:  f24c 5220  movw     r2, #0xc520
+0x00000fb6:  81da       strh     r2, [r3, #0xe]
+0x00000fb8:  f64d 1228  movw     r2, #0xd928
+0x00000fbc:  81da       strh     r2, [r3, #0xe]
+0x00000fbe:  f44f 72e9  mov.w    r2, #0x1d2
+0x00000fc2:  801a       strh     r2, [r3]
+0x00000fc4:  f001 fdc5  bl       #0x2b52
+
+Tracking exected BB id: 0x0fa0
+write to avatar 0x4005200e: 0x0. pc 0xfb6 xpsr 0x41000000
+write to avatar 0x4005200e: 0x0. pc 0xfbc xpsr 0x41000000
+write to avatar 0x40052000: 0x0. pc 0xfc2 xpsr 0x41000000
+----------------
+INST: 
+0x00002b52:  4770       bx       lr
+
+Tracking exected BB id: 0x2b52
+----------------
+INST: 
+0x00000fc8:  bd08       pop      {r3, pc}
+
+Tracking exected BB id: 0x0fc8
+----------------
+INST: 
+0x00000214:  4c0c       ldr      r4, [pc, #0x30]
+0x00000216:  4d0d       ldr      r5, [pc, #0x34]
+0x00000218:  42ac       cmp      r4, r5
+0x0000021a:  d306       blo      #0x22a
+
+Tracking exected BB id: 0x0214
+----------------
+INST: 
+0x0000022a:  e9d4 0100  ldrd     r0, r1, [r4]
+0x0000022e:  340c       adds     r4, #0xc
+0x00000230:  f854 2c04  ldr      r2, [r4, #-0x4]
+0x00000234:  f000 f818  bl       #0x268
+
+Tracking exected BB id: 0x022a
+----------------
+INST: 
+0x00000268:  b510       push     {r4, lr}
+0x0000026a:  2300       movs     r3, #0
+0x0000026c:  4293       cmp      r3, r2
+0x0000026e:  d300       blo      #0x272
+
+Tracking exected BB id: 0x0268
+----------------
+INST: 
+0x00000272:  581c       ldr      r4, [r3, r0]
+0x00000274:  505c       str      r4, [r3, r1]
+0x00000276:  3304       adds     r3, #4
+0x00000278:  e7f8       b        #0x26c
+
+Tracking exected BB id: 0x0272
+----------------
+INST: 
+0x0000026c:  4293       cmp      r3, r2
+0x0000026e:  d300       blo      #0x272
+
+Tracking exected BB id: 0x026c
+Tracking exected BB id: 0x0272
+----------------
+INST: 
+0x00000270:  bd10       pop      {r4, pc}
+
+Tracking exected BB id: 0x0270
+----------------
+INST: 
+0x00000238:  e7ee       b        #0x218
+
+Tracking exected BB id: 0x0238
+----------------
+INST: 
+0x00000218:  42ac       cmp      r4, r5
+0x0000021a:  d306       blo      #0x22a
+
+Tracking exected BB id: 0x0218
+Tracking exected BB id: 0x022a
+Tracking exected BB id: 0x0270
+----------------
+INST: 
+0x0000021c:  4d0c       ldr      r5, [pc, #0x30]
+0x0000021e:  42ac       cmp      r4, r5
+0x00000220:  d30b       blo      #0x23a
+
+Tracking exected BB id: 0x021c
+----------------
+INST: 
+0x0000023a:  f854 0b08  ldr      r0, [r4], #8
+0x0000023e:  f854 1c04  ldr      r1, [r4, #-0x4]
+0x00000242:  f000 f81a  bl       #0x27a
+
+Tracking exected BB id: 0x023a
+----------------
+INST: 
+0x0000027a:  2300       movs     r3, #0
+0x0000027c:  461a       mov      r2, r3
+0x0000027e:  428b       cmp      r3, r1
+0x00000280:  d300       blo      #0x284
+
+Tracking exected BB id: 0x027a
+----------------
+INST: 
+0x00000284:  501a       str      r2, [r3, r0]
+0x00000286:  3304       adds     r3, #4
+0x00000288:  e7f9       b        #0x27e
+
+Tracking exected BB id: 0x0284
+----------------
+INST: 
+0x0000027e:  428b       cmp      r3, r1
+0x00000280:  d300       blo      #0x284
+
+Tracking exected BB id: 0x027e
+Tracking exected BB id: 0x0284
+----------------
+INST: 
+0x00000282:  4770       bx       lr
+
+Tracking exected BB id: 0x0282
+----------------
+INST: 
+0x00000246:  e7ea       b        #0x21e
+
+Tracking exected BB id: 0x0246
+----------------
+INST: 
+0x0000021e:  42ac       cmp      r4, r5
+0x00000220:  d30b       blo      #0x23a
+
+Tracking exected BB id: 0x021e
+Tracking exected BB id: 0x023a
+Tracking exected BB id: 0x0282
+----------------
+INST: 
+0x00000222:  b662       cpsie    i
+
+Tracking exected BB id: 0x0222
+----------------
+INST: 
+0x00000224:  f002 fe9a  bl       #0x2f5c
+
+Tracking exected BB id: 0x0224
+----------------
+INST: 
+0x00002f5c:  b508       push     {r3, lr}
+0x00002f5e:  f7ff fab7  bl       #0x24d0
+
+Tracking exected BB id: 0x2f5c
+----------------
+INST: 
+0x000024d0:  b510       push     {r4, lr}
+0x000024d2:  4a17       ldr      r2, [pc, #0x5c]
+0x000024d4:  4917       ldr      r1, [pc, #0x5c]
+0x000024d6:  2000       movs     r0, #0
+0x000024d8:  f000 fd88  bl       #0x2fec
+
+Tracking exected BB id: 0x24d0
+----------------
+INST: 
+0x00002fec:  b570       push     {r4, r5, r6, lr}
+0x00002fee:  460d       mov      r5, r1
+0x00002ff0:  4606       mov      r6, r0
+0x00002ff2:  4610       mov      r0, r2
+0x00002ff4:  4614       mov      r4, r2
+0x00002ff6:  f000 f82d  bl       #0x3054
+
+Tracking exected BB id: 0x2fec
+----------------
+INST: 
+0x00003054:  b5f0       push     {r4, r5, r6, r7, lr}
+0x00003056:  68c4       ldr      r4, [r0, #0xc]
+0x00003058:  07a1       lsls     r1, r4, #0x1e
+0x0000305a:  b089       sub      sp, #0x24
+0x0000305c:  4605       mov      r5, r0
+0x0000305e:  d022       beq      #0x30a6
+
+Tracking exected BB id: 0x3054
+----------------
+INST: 
+0x000030a6:  f04f 30ff  mov.w    r0, #-1
+0x000030aa:  e7fa       b        #0x30a2
+
+Tracking exected BB id: 0x30a6
+----------------
+INST: 
+0x000030a2:  b009       add      sp, #0x24
+0x000030a4:  bdf0       pop      {r4, r5, r6, r7, pc}
+
+Tracking exected BB id: 0x30a2
+----------------
+INST: 
+0x00002ffa:  782b       ldrb     r3, [r5]
+0x00002ffc:  2b72       cmp      r3, #0x72
+0x00002ffe:  d01a       beq      #0x3036
+
+Tracking exected BB id: 0x2ffa
+----------------
+INST: 
+0x00003036:  2300       movs     r3, #0
+0x00003038:  2201       movs     r2, #1
+0x0000303a:  e7eb       b        #0x3014
+
+Tracking exected BB id: 0x3036
+----------------
+INST: 
+0x00003014:  f815 1f01  ldrb     r1, [r5, #1]!
+0x00003018:  292b       cmp      r1, #0x2b
+0x0000301a:  d00f       beq      #0x303c
+
+Tracking exected BB id: 0x3014
+----------------
+INST: 
+0x0000301c:  2962       cmp      r1, #0x62
+0x0000301e:  d012       beq      #0x3046
+
+Tracking exected BB id: 0x301c
+----------------
+INST: 
+0x00003020:  071b       lsls     r3, r3, #0x1c
+0x00003022:  60e2       str      r2, [r4, #0xc]
+0x00003024:  6166       str      r6, [r4, #0x14]
+0x00003026:  d504       bpl      #0x3032
+
+Tracking exected BB id: 0x3020
+----------------
+INST: 
+0x00003032:  4620       mov      r0, r4
+0x00003034:  bd70       pop      {r4, r5, r6, pc}
+
+Tracking exected BB id: 0x3032
+----------------
+INST: 
+0x000024dc:  f44f 7380  mov.w    r3, #0x100
+0x000024e0:  f44f 6280  mov.w    r2, #0x400
+0x000024e4:  2100       movs     r1, #0
+0x000024e6:  4812       ldr      r0, [pc, #0x48]
+0x000024e8:  f000 f82e  bl       #0x2548
+
+Tracking exected BB id: 0x24dc
+----------------
+INST: 
+0x00002548:  b570       push     {r4, r5, r6, lr}
+0x0000254a:  68c4       ldr      r4, [r0, #0xc]
+0x0000254c:  07a5       lsls     r5, r4, #0x1e
+0x0000254e:  d00c       beq      #0x256a
+
+Tracking exected BB id: 0x2548
+----------------
+INST: 
+0x00002550:  f5b2 7f00  cmp.w    r2, #0x200
+0x00002554:  d005       beq      #0x2562
+
+Tracking exected BB id: 0x2550
+----------------
+INST: 
+0x00002556:  f5b2 6f80  cmp.w    r2, #0x400
+0x0000255a:  d008       beq      #0x256e
+
+Tracking exected BB id: 0x2556
+----------------
+INST: 
+0x0000256e:  f100 0124  add.w    r1, r0, #0x24
+0x00002572:  2301       movs     r3, #1
+0x00002574:  4314       orrs     r4, r2
+0x00002576:  6101       str      r1, [r0, #0x10]
+0x00002578:  6001       str      r1, [r0]
+0x0000257a:  61c3       str      r3, [r0, #0x1c]
+0x0000257c:  60c4       str      r4, [r0, #0xc]
+0x0000257e:  2000       movs     r0, #0
+0x00002580:  bd70       pop      {r4, r5, r6, pc}
+
+Tracking exected BB id: 0x256e
+----------------
+INST: 
+0x000024ec:  4a12       ldr      r2, [pc, #0x48]
+0x000024ee:  4913       ldr      r1, [pc, #0x4c]
+0x000024f0:  2001       movs     r0, #1
+0x000024f2:  f000 fd7b  bl       #0x2fec
+
+Tracking exected BB id: 0x24ec
+----------------
+INST: 
+0x00003000:  2b77       cmp      r3, #0x77
+0x00003002:  d005       beq      #0x3010
+
+Tracking exected BB id: 0x3000
+----------------
+INST: 
+0x00003010:  2304       movs     r3, #4
+0x00003012:  2202       movs     r2, #2
+0x00003014:  f815 1f01  ldrb     r1, [r5, #1]!
+0x00003018:  292b       cmp      r1, #0x2b
+0x0000301a:  d00f       beq      #0x303c
+
+Tracking exected BB id: 0x3010
+Tracking exected BB id: 0x301c
+----------------
+INST: 
+0x000024f6:  f44f 7380  mov.w    r3, #0x100
+0x000024fa:  f44f 6280  mov.w    r2, #0x400
+0x000024fe:  2100       movs     r1, #0
+0x00002500:  480d       ldr      r0, [pc, #0x34]
+0x00002502:  f000 f821  bl       #0x2548
+
+Tracking exected BB id: 0x24f6
+Tracking exected BB id: 0x2548
+----------------
+INST: 
+0x00002506:  4b0e       ldr      r3, [pc, #0x38]
+0x00002508:  681b       ldr      r3, [r3]
+0x0000250a:  2b02       cmp      r3, #2
+0x0000250c:  dd0e       ble      #0x252c
+
+Tracking exected BB id: 0x2506
+----------------
+INST: 
+0x0000250e:  4a0d       ldr      r2, [pc, #0x34]
+0x00002510:  490a       ldr      r1, [pc, #0x28]
+0x00002512:  2002       movs     r0, #2
+0x00002514:  f000 fd6a  bl       #0x2fec
+
+Tracking exected BB id: 0x250e
+----------------
+INST: 
+0x00002518:  f44f 7380  mov.w    r3, #0x100
+0x0000251c:  f44f 6280  mov.w    r2, #0x400
+0x00002520:  2100       movs     r1, #0
+0x00002522:  4808       ldr      r0, [pc, #0x20]
+0x00002524:  e8bd 4010  pop.w    {r4, lr}
+0x00002528:  f000 b80e  b.w      #0x2548
+
+Tracking exected BB id: 0x2518
+Tracking exected BB id: 0x2548
+----------------
+INST: 
+0x00002f62:  e8bd 4008  pop.w    {r3, lr}
+0x00002f66:  f7fd bc39  b.w      #0x7dc
+
+Tracking exected BB id: 0x2f62
+----------------
+INST: 
+0x000007dc:  b513       push     {r0, r1, r4, lr}
+0x000007de:  f000 fc77  bl       #0x10d0
+
+Tracking exected BB id: 0x07dc
+----------------
+INST: 
+0x000010d0:  4a0c       ldr      r2, [pc, #0x30]
+0x000010d2:  490d       ldr      r1, [pc, #0x34]
+0x000010d4:  6813       ldr      r3, [r2]
+0x000010d6:  f443 6380  orr      r3, r3, #0x400
+0x000010da:  6013       str      r3, [r2]
+0x000010dc:  4a0b       ldr      r2, [pc, #0x2c]
+0x000010de:  6c13       ldr      r3, [r2, #0x40]
+0x000010e0:  f423 63e0  bic      r3, r3, #0x700
+0x000010e4:  f443 7340  orr      r3, r3, #0x300
+0x000010e8:  6413       str      r3, [r2, #0x40]
+0x000010ea:  6c53       ldr      r3, [r2, #0x44]
+0x000010ec:  f423 63e0  bic      r3, r3, #0x700
+0x000010f0:  f443 7340  orr      r3, r3, #0x300
+0x000010f4:  6453       str      r3, [r2, #0x44]
+0x000010f6:  f241 0210  movw     r2, #0x1010
+0x000010fa:  588b       ldr      r3, [r1, r2]
+0x000010fc:  f023 0303  bic      r3, r3, #3
+0x00001100:  508b       str      r3, [r1, r2]
+0x00001102:  4770       bx       lr
+
+Tracking exected BB id: 0x10d0
+read data from avatar 0x40048038: 0x2. pc 0x10d4 xpsr 0x61000000
+write to avatar 0x40048038: 0x0. pc 0x10da xpsr 0x61000000
+read data from avatar 0x4004a040: 0x2. pc 0x10de xpsr 0x61000000
+write to avatar 0x4004a040: 0x0. pc 0x10e8 xpsr 0x61000000
+read data from avatar 0x4004a044: 0x2. pc 0x10ea xpsr 0x61000000
+write to avatar 0x4004a044: 0x0. pc 0x10f4 xpsr 0x61000000
+read data from avatar 0x40048010: 0x2. pc 0x10fa xpsr 0x61000000
+write to avatar 0x40048010: 0x0. pc 0x1100 xpsr 0x61000000
+----------------
+INST: 
+0x000007e2:  f000 fc3f  bl       #0x1064
+
+Tracking exected BB id: 0x07e2
+----------------
+INST: 
+0x00001064:  b508       push     {r3, lr}
+0x00001066:  4a10       ldr      r2, [pc, #0x40]
+0x00001068:  4910       ldr      r1, [pc, #0x40]
+0x0000106a:  4811       ldr      r0, [pc, #0x44]
+0x0000106c:  f241 0344  movw     r3, #0x1044
+0x00001070:  50d1       str      r1, [r2, r3]
+0x00001072:  f7ff fd2b  bl       #0xacc
+
+Tracking exected BB id: 0x1064
+write to avatar 0x40048044: 0x0. pc 0x1070 xpsr 0x61000000
+----------------
+INST: 
+0x00000acc:  6803       ldr      r3, [r0]
+0x00000ace:  f649 0297  movw     r2, #0x9897
+0x00000ad2:  4293       cmp      r3, r2
+0x00000ad4:  b510       push     {r4, lr}
+0x00000ad6:  d926       bls      #0xb26
+
+Tracking exected BB id: 0x0acc
+----------------
+INST: 
+0x00000ad8:  4c14       ldr      r4, [pc, #0x50]
+0x00000ada:  42a3       cmp      r3, r4
+0x00000adc:  bf94       ite      ls
+0x00000ade:  2401       movls    r4, #1
+0x00000ae0:  2402       movhi    r4, #2
+0x00000ae2:  4a13       ldr      r2, [pc, #0x4c]
+0x00000ae4:  7901       ldrb     r1, [r0, #4]
+0x00000ae6:  7813       ldrb     r3, [r2]
+0x00000ae8:  f003 03f0  and      r3, r3, #0xf0
+0x00000aec:  430b       orrs     r3, r1
+0x00000aee:  7013       strb     r3, [r2]
+0x00000af0:  7813       ldrb     r3, [r2]
+0x00000af2:  7981       ldrb     r1, [r0, #6]
+0x00000af4:  f003 035f  and      r3, r3, #0x5f
+0x00000af8:  430b       orrs     r3, r1
+0x00000afa:  7013       strb     r3, [r2]
+0x00000afc:  79c3       ldrb     r3, [r0, #7]
+0x00000afe:  490d       ldr      r1, [pc, #0x34]
+0x00000b00:  019b       lsls     r3, r3, #6
+0x00000b02:  b2db       uxtb     r3, r3
+0x00000b04:  7093       strb     r3, [r2, #2]
+0x00000b06:  784b       ldrb     r3, [r1, #1]
+0x00000b08:  7940       ldrb     r0, [r0, #5]
+0x00000b0a:  f003 03c3  and      r3, r3, #0xc3
+0x00000b0e:  4303       orrs     r3, r0
+0x00000b10:  ea43 1304  orr.w    r3, r3, r4, lsl #4
+0x00000b14:  704b       strb     r3, [r1, #1]
+0x00000b16:  b128       cbz      r0, #0xb24
+
+Tracking exected BB id: 0x0ad8
+read data from avatar 0x40065000: 0x2. pc 0xae6 xpsr 0x21000000
+write to avatar 0x40065000: 0x0. pc 0xaee xpsr 0x61000000
+read data from avatar 0x40065000: 0x2. pc 0xaf0 xpsr 0x61000000
+write to avatar 0x40065000: 0x0. pc 0xafa xpsr 0x21000000
+write to avatar 0x40065002: 0x0. pc 0xb04 xpsr 0x41000000
+read data from avatar 0x40064001: 0x2. pc 0xb06 xpsr 0x41000000
+write to avatar 0x40064001: 0x0. pc 0xb14 xpsr 0x1000000
+----------------
+INST: 
+0x00000b18:  7813       ldrb     r3, [r2]
+0x00000b1a:  061a       lsls     r2, r3, #0x18
+0x00000b1c:  d502       bpl      #0xb24
+
+Tracking exected BB id: 0x0b18
+read data from avatar 0x40065000: 0x1. pc 0xb18 xpsr 0x1000000
+----------------
+INST: 
+0x00000b24:  bd10       pop      {r4, pc}
+
+Tracking exected BB id: 0x0b24
+----------------
+INST: 
+0x00001076:  4b0f       ldr      r3, [pc, #0x3c]
+0x00001078:  4a0f       ldr      r2, [pc, #0x3c]
+0x0000107a:  601a       str      r2, [r3]
+0x0000107c:  2200       movs     r2, #0
+0x0000107e:  4611       mov      r1, r2
+0x00001080:  2002       movs     r0, #2
+0x00001082:  f7ff fccb  bl       #0xa1c
+
+Tracking exected BB id: 0x1076
+----------------
+INST: 
+0x00000a1c:  b570       push     {r4, r5, r6, lr}
+0x00000a1e:  4b1d       ldr      r3, [pc, #0x74]
+0x00000a20:  799c       ldrb     r4, [r3, #6]
+0x00000a22:  799d       ldrb     r5, [r3, #6]
+0x00000a24:  7a1e       ldrb     r6, [r3, #8]
+0x00000a26:  f3c6 0642  ubfx     r6, r6, #1, #3
+0x00000a2a:  4296       cmp      r6, r2
+0x00000a2c:  f3c4 0481  ubfx     r4, r4, #2, #2
+0x00000a30:  b2ed       uxtb     r5, r5
+0x00000a32:  d017       beq      #0xa64
+
+Tracking exected BB id: 0x0a1c
+read data from avatar 0x40064006: 0x2. pc 0xa20 xpsr 0x1000000
+read data from avatar 0x40064006: 0x2. pc 0xa22 xpsr 0x1000000
+read data from avatar 0x40064008: 0x1. pc 0xa24 xpsr 0x1000000
+----------------
+INST: 
+0x00000a64:  4b0b       ldr      r3, [pc, #0x2c]
+0x00000a66:  785a       ldrb     r2, [r3, #1]
+0x00000a68:  f001 0501  and      r5, r1, #1
+0x00000a6c:  f002 02fe  and      r2, r2, #0xfe
+0x00000a70:  432a       orrs     r2, r5
+0x00000a72:  705a       strb     r2, [r3, #1]
+0x00000a74:  781a       ldrb     r2, [r3]
+0x00000a76:  f002 02fc  and      r2, r2, #0xfc
+0x00000a7a:  4302       orrs     r2, r0
+0x00000a7c:  2c01       cmp      r4, #1
+0x00000a7e:  701a       strb     r2, [r3]
+0x00000a80:  d001       beq      #0xa86
+
+Tracking exected BB id: 0x0a64
+read data from avatar 0x40064001: 0x2. pc 0xa66 xpsr 0x61000000
+write to avatar 0x40064001: 0x0. pc 0xa72 xpsr 0x21000000
+read data from avatar 0x40064000: 0x2. pc 0xa74 xpsr 0x21000000
+write to avatar 0x40064000: 0x0. pc 0xa7e xpsr 0x81000000
+----------------
+INST: 
+0x00000a82:  0782       lsls     r2, r0, #0x1e
+0x00000a84:  d504       bpl      #0xa90
+
+Tracking exected BB id: 0x0a82
+----------------
+INST: 
+0x00000a86:  799a       ldrb     r2, [r3, #6]
+0x00000a88:  f002 0201  and      r2, r2, #1
+0x00000a8c:  428a       cmp      r2, r1
+0x00000a8e:  d1fa       bne      #0xa86
+
+Tracking exected BB id: 0x0a86
+read data from avatar 0x40064006: 0x2. pc 0xa86 xpsr 0x81000000
+----------------
+INST: 
+0x00000a90:  2000       movs     r0, #0
+0x00000a92:  bd70       pop      {r4, r5, r6, pc}
+
+Tracking exected BB id: 0x0a90
+----------------
+INST: 
+0x00001086:  4a0d       ldr      r2, [pc, #0x34]
+0x00001088:  7813       ldrb     r3, [r2]
+0x0000108a:  2100       movs     r1, #0
+0x0000108c:  f003 03c7  and      r3, r3, #0xc7
+0x00001090:  7013       strb     r3, [r2]
+0x00001092:  4608       mov      r0, r1
+0x00001094:  4a0a       ldr      r2, [pc, #0x28]
+0x00001096:  f7ff fd89  bl       #0xbac
+
+Tracking exected BB id: 0x1086
+read data from avatar 0x40064000: 0x2. pc 0x1088 xpsr 0x61000000
+write to avatar 0x40064000: 0x0. pc 0x1090 xpsr 0x61000000
+----------------
+INST: 
+0x00000bac:  b538       push     {r3, r4, r5, lr}
+0x00000bae:  4615       mov      r5, r2
+0x00000bb0:  460c       mov      r4, r1
+0x00000bb2:  f7ff ff19  bl       #0x9e8
+
+Tracking exected BB id: 0x0bac
+----------------
+INST: 
+0x000009e8:  b510       push     {r4, lr}
+0x000009ea:  490b       ldr      r1, [pc, #0x2c]
+0x000009ec:  7b0a       ldrb     r2, [r1, #0xc]
+0x000009ee:  7b0b       ldrb     r3, [r1, #0xc]
+0x000009f0:  f000 0403  and      r4, r0, #3
+0x000009f4:  f003 03fc  and      r3, r3, #0xfc
+0x000009f8:  4323       orrs     r3, r4
+0x000009fa:  730b       strb     r3, [r1, #0xc]
+0x000009fc:  f002 0303  and      r3, r2, #3
+0x00000a00:  4283       cmp      r3, r0
+0x00000a02:  d105       bne      #0xa10
+
+Tracking exected BB id: 0x09e8
+read data from avatar 0x4006400c: 0x1. pc 0x9ec xpsr 0x61000000
+read data from avatar 0x4006400c: 0x2. pc 0x9ee xpsr 0x61000000
+write to avatar 0x4006400c: 0x0. pc 0x9fa xpsr 0x61000000
+----------------
+INST: 
+0x00000a10:  f240 53dd  movw     r3, #0x5dd
+0x00000a14:  e7f9       b        #0xa0a
+
+Tracking exected BB id: 0x0a10
+----------------
+INST: 
+0x00000a0a:  3b01       subs     r3, #1
+0x00000a0c:  d1fc       bne      #0xa08
+
+Tracking exected BB id: 0x0a0a
+----------------
+INST: 
+0x00000a08:  bf00       nop      
+0x00000a0a:  3b01       subs     r3, #1
+0x00000a0c:  d1fc       bne      #0xa08
+
+Tracking exected BB id: 0x0a08
+Tracking exected BB id: 0x0a08
+----------------
+INST: 
+0x00000a0e:  e7f9       b        #0xa04
+
+Tracking exected BB id: 0x0a0e
+----------------
+INST: 
+0x00000a04:  2000       movs     r0, #0
+0x00000a06:  bd10       pop      {r4, pc}
+
+Tracking exected BB id: 0x0a04
+----------------
+INST: 
+0x00000bb6:  4629       mov      r1, r5
+0x00000bb8:  4620       mov      r0, r4
+0x00000bba:  f7ff ffbd  bl       #0xb38
+
+Tracking exected BB id: 0x0bb6
+----------------
+INST: 
+0x00000b38:  b538       push     {r3, r4, r5, lr}
+0x00000b3a:  4b1b       ldr      r3, [pc, #0x6c]
+0x00000b3c:  785a       ldrb     r2, [r3, #1]
+0x00000b3e:  f002 02fd  and      r2, r2, #0xfd
+0x00000b42:  705a       strb     r2, [r3, #1]
+0x00000b44:  781a       ldrb     r2, [r3]
+0x00000b46:  f002 023b  and      r2, r2, #0x3b
+0x00000b4a:  f042 0280  orr      r2, r2, #0x80
+0x00000b4e:  4605       mov      r5, r0
+0x00000b50:  701a       strb     r2, [r3]
+0x00000b52:  799a       ldrb     r2, [r3, #6]
+0x00000b54:  f002 021c  and      r2, r2, #0x1c
+0x00000b58:  2a08       cmp      r2, #8
+0x00000b5a:  d1fa       bne      #0xb52
+
+Tracking exected BB id: 0x0b38
+read data from avatar 0x40064001: 0x2. pc 0xb3c xpsr 0x61000000
+write to avatar 0x40064001: 0x0. pc 0xb42 xpsr 0x61000000
+read data from avatar 0x40064000: 0x2. pc 0xb44 xpsr 0x61000000
+write to avatar 0x40064000: 0x0. pc 0xb50 xpsr 0x61000000
+read data from avatar 0x40064006: 0x8. pc 0xb52 xpsr 0x61000000
+----------------
+INST: 
+0x00000b5c:  795a       ldrb     r2, [r3, #5]
+0x00000b5e:  f002 02bf  and      r2, r2, #0xbf
+0x00000b62:  715a       strb     r2, [r3, #5]
+0x00000b64:  4b10       ldr      r3, [pc, #0x40]
+0x00000b66:  461c       mov      r4, r3
+0x00000b68:  799a       ldrb     r2, [r3, #6]
+0x00000b6a:  0692       lsls     r2, r2, #0x1a
+0x00000b6c:  d4fc       bmi      #0xb68
+
+Tracking exected BB id: 0x0b5c
+read data from avatar 0x40064005: 0x2. pc 0xb5c xpsr 0x61000000
+write to avatar 0x40064005: 0x0. pc 0xb62 xpsr 0x61000000
+read data from avatar 0x40064006: 0x1. pc 0xb68 xpsr 0x61000000
+----------------
+INST: 
+0x00000b6e:  b915       cbnz     r5, #0xb76
+
+Tracking exected BB id: 0x0b6e
+----------------
+INST: 
+0x00000b70:  4608       mov      r0, r1
+0x00000b72:  f7ff ff91  bl       #0xa98
+
+Tracking exected BB id: 0x0b70
+----------------
+INST: 
+0x00000a98:  7842       ldrb     r2, [r0, #1]
+0x00000a9a:  4b0b       ldr      r3, [pc, #0x2c]
+0x00000a9c:  f002 0207  and      r2, r2, #7
+0x00000aa0:  711a       strb     r2, [r3, #4]
+0x00000aa2:  7959       ldrb     r1, [r3, #5]
+0x00000aa4:  7882       ldrb     r2, [r0, #2]
+0x00000aa6:  f001 01e0  and      r1, r1, #0xe0
+0x00000aaa:  f002 021f  and      r2, r2, #0x1f
+0x00000aae:  430a       orrs     r2, r1
+0x00000ab0:  715a       strb     r2, [r3, #5]
+0x00000ab2:  791a       ldrb     r2, [r3, #4]
+0x00000ab4:  f042 0140  orr      r1, r2, #0x40
+0x00000ab8:  7802       ldrb     r2, [r0]
+0x00000aba:  430a       orrs     r2, r1
+0x00000abc:  711a       strb     r2, [r3, #4]
+0x00000abe:  799a       ldrb     r2, [r3, #6]
+0x00000ac0:  0652       lsls     r2, r2, #0x19
+0x00000ac2:  d5fc       bpl      #0xabe
+
+Tracking exected BB id: 0x0a98
+write to avatar 0x40064004: 0x0. pc 0xaa0 xpsr 0x1000000
+read data from avatar 0x40064005: 0x2. pc 0xaa2 xpsr 0x1000000
+write to avatar 0x40064005: 0x0. pc 0xab0 xpsr 0x1000000
+read data from avatar 0x40064004: 0x2. pc 0xab2 xpsr 0x1000000
+write to avatar 0x40064004: 0x0. pc 0xabc xpsr 0x1000000
+read data from avatar 0x40064006: 0x40. pc 0xabe xpsr 0x1000000
+----------------
+INST: 
+0x00000ac4:  4770       bx       lr
+
+Tracking exected BB id: 0x0ac4
+----------------
+INST: 
+0x00000b76:  7963       ldrb     r3, [r4, #5]
+0x00000b78:  f043 0340  orr      r3, r3, #0x40
+0x00000b7c:  7163       strb     r3, [r4, #5]
+0x00000b7e:  7c22       ldrb     r2, [r4, #0x10]
+0x00000b80:  012b       lsls     r3, r5, #4
+0x00000b82:  f002 02ef  and      r2, r2, #0xef
+0x00000b86:  f003 0310  and      r3, r3, #0x10
+0x00000b8a:  4313       orrs     r3, r2
+0x00000b8c:  4a06       ldr      r2, [pc, #0x18]
+0x00000b8e:  7423       strb     r3, [r4, #0x10]
+0x00000b90:  4611       mov      r1, r2
+0x00000b92:  7c93       ldrb     r3, [r2, #0x12]
+0x00000b94:  f3c3 1300  ubfx     r3, r3, #4, #1
+0x00000b98:  429d       cmp      r5, r3
+0x00000b9a:  d1fa       bne      #0xb92
+
+Tracking exected BB id: 0x0b76
+read data from avatar 0x40064005: 0x2. pc 0xb76 xpsr 0x81000000
+write to avatar 0x40064005: 0x0. pc 0xb7c xpsr 0x81000000
+read data from avatar 0x40064010: 0x2. pc 0xb7e xpsr 0x81000000
+write to avatar 0x40064010: 0x0. pc 0xb8e xpsr 0x1000000
+read data from avatar 0x40064012: 0x1. pc 0xb92 xpsr 0x1000000
+----------------
+INST: 
+0x00000b9c:  798b       ldrb     r3, [r1, #6]
+0x00000b9e:  069b       lsls     r3, r3, #0x1a
+0x00000ba0:  d5fc       bpl      #0xb9c
+
+Tracking exected BB id: 0x0b9c
+read data from avatar 0x40064006: 0x20. pc 0xb9c xpsr 0x61000000
+----------------
+INST: 
+0x00000ba2:  2000       movs     r0, #0
+0x00000ba4:  bd38       pop      {r3, r4, r5, pc}
+
+Tracking exected BB id: 0x0ba2
+----------------
+INST: 
+0x00000bbe:  4b06       ldr      r3, [pc, #0x18]
+0x00000bc0:  781a       ldrb     r2, [r3]
+0x00000bc2:  f002 023f  and      r2, r2, #0x3f
+0x00000bc6:  701a       strb     r2, [r3]
+0x00000bc8:  799a       ldrb     r2, [r3, #6]
+0x00000bca:  f3c2 0281  ubfx     r2, r2, #2, #2
+0x00000bce:  2a03       cmp      r2, #3
+0x00000bd0:  d1fa       bne      #0xbc8
+
+Tracking exected BB id: 0x0bbe
+read data from avatar 0x40064000: 0x2. pc 0xbc0 xpsr 0x41000000
+write to avatar 0x40064000: 0x0. pc 0xbc6 xpsr 0x41000000
+read data from avatar 0x40064006: 0xc. pc 0xbc8 xpsr 0x41000000
+----------------
+INST: 
+0x00000bd2:  2000       movs     r0, #0
+0x00000bd4:  bd38       pop      {r3, r4, r5, pc}
+
+Tracking exected BB id: 0x0bd2
+----------------
+INST: 
+0x0000109a:  480a       ldr      r0, [pc, #0x28]
+0x0000109c:  f7ff fc10  bl       #0x8c0
+
+Tracking exected BB id: 0x109a
+----------------
+INST: 
+0x000008c0:  4912       ldr      r1, [pc, #0x48]
+0x000008c2:  6842       ldr      r2, [r0, #4]
+0x000008c4:  f241 0344  movw     r3, #0x1044
+0x000008c8:  b570       push     {r4, r5, r6, lr}
+0x000008ca:  50ca       str      r2, [r1, r3]
+0x000008cc:  f241 0604  movw     r6, #0x1004
+0x000008d0:  7802       ldrb     r2, [r0]
+0x000008d2:  598d       ldr      r5, [r1, r6]
+0x000008d4:  7843       ldrb     r3, [r0, #1]
+0x000008d6:  7884       ldrb     r4, [r0, #2]
+0x000008d8:  0412       lsls     r2, r2, #0x10
+0x000008da:  f402 3240  and      r2, r2, #0x30000
+0x000008de:  f425 3540  bic      r5, r5, #0x30000
+0x000008e2:  432a       orrs     r2, r5
+0x000008e4:  005b       lsls     r3, r3, #1
+0x000008e6:  518a       str      r2, [r1, r6]
+0x000008e8:  f003 030e  and      r3, r3, #0xe
+0x000008ec:  f004 0201  and      r2, r4, #1
+0x000008f0:  4313       orrs     r3, r2
+0x000008f2:  f241 0264  movw     r2, #0x1064
+0x000008f6:  508b       str      r3, [r1, r2]
+0x000008f8:  78c3       ldrb     r3, [r0, #3]
+0x000008fa:  680a       ldr      r2, [r1]
+0x000008fc:  049b       lsls     r3, r3, #0x12
+0x000008fe:  f403 2340  and      r3, r3, #0xc0000
+0x00000902:  f422 2240  bic      r2, r2, #0xc0000
+0x00000906:  4313       orrs     r3, r2
+0x00000908:  600b       str      r3, [r1]
+0x0000090a:  bd70       pop      {r4, r5, r6, pc}
+
+Tracking exected BB id: 0x08c0
+write to avatar 0x40048044: 0x0. pc 0x8ca xpsr 0x61000000
+read data from avatar 0x40048004: 0x2. pc 0x8d2 xpsr 0x61000000
+write to avatar 0x40048004: 0x0. pc 0x8e6 xpsr 0x41000000
+write to avatar 0x40048064: 0x0. pc 0x8f6 xpsr 0x41000000
+read data from avatar 0x40047000: 0x2. pc 0x8fa xpsr 0x41000000
+write to avatar 0x40047000: 0x0. pc 0x908 xpsr 0x1000000
+----------------
+INST: 
+0x000010a0:  4b09       ldr      r3, [pc, #0x24]
+0x000010a2:  4a0a       ldr      r2, [pc, #0x28]
+0x000010a4:  601a       str      r2, [r3]
+0x000010a6:  bd08       pop      {r3, pc}
+
+Tracking exected BB id: 0x10a0
+----------------
+INST: 
+0x000007e6:  f002 fa14  bl       #0x2c12
+
+Tracking exected BB id: 0x07e6
+----------------
+INST: 
+0x00002c12:  b510       push     {r4, lr}
+0x00002c14:  f7fd feda  bl       #0x9cc
+
+Tracking exected BB id: 0x2c12
+----------------
+INST: 
+0x000009cc:  b508       push     {r3, lr}
+0x000009ce:  f7ff ffdf  bl       #0x990
+
+Tracking exected BB id: 0x09cc
+----------------
+INST: 
+0x00000990:  4a0c       ldr      r2, [pc, #0x30]
+0x00000992:  7993       ldrb     r3, [r2, #6]
+0x00000994:  7c92       ldrb     r2, [r2, #0x12]
+0x00000996:  f3c3 0381  ubfx     r3, r3, #2, #2
+0x0000099a:  2b02       cmp      r3, #2
+0x0000099c:  b2d2       uxtb     r2, r2
+0x0000099e:  d00b       beq      #0x9b8
+
+Tracking exected BB id: 0x0990
+read data from avatar 0x40064006: 0x8. pc 0x992 xpsr 0x1000000
+read data from avatar 0x40064012: 0x2. pc 0x994 xpsr 0x1000000
+----------------
+INST: 
+0x000009b8:  f7ff bf32  b.w      #0x820
+
+Tracking exected BB id: 0x09b8
+----------------
+INST: 
+0x00000820:  4b08       ldr      r3, [pc, #0x20]
+0x00000822:  7b1b       ldrb     r3, [r3, #0xc]
+0x00000824:  f003 0303  and      r3, r3, #3
+0x00000828:  2b01       cmp      r3, #1
+0x0000082a:  d008       beq      #0x83e
+
+Tracking exected BB id: 0x0820
+read data from avatar 0x4006400c: 0x1. pc 0x822 xpsr 0x61000000
+----------------
+INST: 
+0x0000083e:  4b04       ldr      r3, [pc, #0x10]
+0x00000840:  e7fb       b        #0x83a
+
+Tracking exected BB id: 0x083e
+----------------
+INST: 
+0x0000083a:  6818       ldr      r0, [r3]
+0x0000083c:  4770       bx       lr
+
+Tracking exected BB id: 0x083a
+----------------
+INST: 
+0x000009d2:  4a04       ldr      r2, [pc, #0x10]
+0x000009d4:  f241 0344  movw     r3, #0x1044
+0x000009d8:  58d3       ldr      r3, [r2, r3]
+0x000009da:  0f1b       lsrs     r3, r3, #0x1c
+0x000009dc:  3301       adds     r3, #1
+0x000009de:  fbb0 f0f3  udiv     r0, r0, r3
+0x000009e2:  bd08       pop      {r3, pc}
+
+Tracking exected BB id: 0x09d2
+read data from avatar 0x40048044: 0x2. pc 0x9d8 xpsr 0x61000000
+----------------
+INST: 
+0x00002c18:  2201       movs     r2, #1
+0x00002c1a:  4603       mov      r3, r0
+0x00002c1c:  f44f 31e1  mov.w    r1, #0x1c200
+0x00002c20:  2000       movs     r0, #0
+0x00002c22:  e8bd 4010  pop.w    {r4, lr}
+0x00002c26:  f7fd bc4d  b.w      #0x4c4
+
+Tracking exected BB id: 0x2c18
+----------------
+INST: 
+0x000004c4:  b530       push     {r4, r5, lr}
+0x000004c6:  b089       sub      sp, #0x24
+0x000004c8:  e9cd 3104  strd     r3, r1, [sp, #0x10]
+0x000004cc:  2301       movs     r3, #1
+0x000004ce:  2500       movs     r5, #0
+0x000004d0:  429a       cmp      r2, r3
+0x000004d2:  f88d 5018  strb.w   r5, [sp, #0x18]
+0x000004d6:  f88d 5019  strb.w   r5, [sp, #0x19]
+0x000004da:  f88d 001a  strb.w   r0, [sp, #0x1a]
+0x000004de:  f88d 301b  strb.w   r3, [sp, #0x1b]
+0x000004e2:  f88d 301c  strb.w   r3, [sp, #0x1c]
+0x000004e6:  f88d 2008  strb.w   r2, [sp, #8]
+0x000004ea:  d11b       bne      #0x524
+
+Tracking exected BB id: 0x04c4
+----------------
+INST: 
+0x000004ec:  4c0f       ldr      r4, [pc, #0x3c]
+0x000004ee:  221c       movs     r2, #0x1c
+0x000004f0:  ab04       add      r3, sp, #0x10
+0x000004f2:  4629       mov      r1, r5
+0x000004f4:  4620       mov      r0, r4
+0x000004f6:  9303       str      r3, [sp, #0xc]
+0x000004f8:  f002 fd39  bl       #0x2f6e
+
+Tracking exected BB id: 0x04ec
+----------------
+INST: 
+0x00002f6e:  f000 b92a  b.w      #0x31c6
+
+Tracking exected BB id: 0x2f6e
+----------------
+INST: 
+0x000031c6:  4603       mov      r3, r0
+0x000031c8:  f013 0f03  tst.w    r3, #3
+0x000031cc:  d10e       bne      #0x31ec
+
+Tracking exected BB id: 0x31c6
+----------------
+INST: 
+0x000031ce:  f001 01ff  and      r1, r1, #0xff
+0x000031d2:  ea41 2101  orr.w    r1, r1, r1, lsl #8
+0x000031d6:  ea41 4101  orr.w    r1, r1, r1, lsl #16
+0x000031da:  3a04       subs     r2, #4
+0x000031dc:  bf24       itt      hs
+0x000031de:  f843 1b04  strhs    r1, [r3], #4
+0x000031e2:  f1b2 0204  subshs.w r2, r2, #4
+0x000031e6:  d2f9       bhs      #0x31dc
+
+Tracking exected BB id: 0x31ce
+----------------
+INST: 
+0x000031dc:  bf24       itt      hs
+0x000031de:  f843 1b04  strhs    r1, [r3], #4
+0x000031e2:  f1b2 0204  subshs.w r2, r2, #4
+0x000031e6:  d2f9       bhs      #0x31dc
+
+Tracking exected BB id: 0x31dc
+Tracking exected BB id: 0x31dc
+----------------
+INST: 
+0x000031e8:  f102 0204  add.w    r2, r2, #4
+0x000031ec:  3a01       subs     r2, #1
+0x000031ee:  bf24       itt      hs
+0x000031f0:  f803 1b01  strbhs   r1, [r3], #1
+0x000031f4:  e7fa       bhs      #0x31ec
+
+Tracking exected BB id: 0x31e8
+----------------
+INST: 
+0x000031f6:  4770       bx       lr
+
+Tracking exected BB id: 0x31f6
+----------------
+INST: 
+0x000004fc:  4b0c       ldr      r3, [pc, #0x30]
+0x000004fe:  6124       str      r4, [r4, #0x10]
+0x00000500:  4669       mov      r1, sp
+0x00000502:  4620       mov      r0, r4
+0x00000504:  601c       str      r4, [r3]
+0x00000506:  f002 fb25  bl       #0x2b54
+
+Tracking exected BB id: 0x04fc
+----------------
+INST: 
+0x00002b54:  b538       push     {r3, r4, r5, lr}
+0x00002b56:  460d       mov      r5, r1
+0x00002b58:  2210       movs     r2, #0x10
+0x00002b5a:  2100       movs     r1, #0
+0x00002b5c:  4604       mov      r4, r0
+0x00002b5e:  f000 fa06  bl       #0x2f6e
+
+Tracking exected BB id: 0x2b54
+----------------
+INST: 
+0x00002b62:  7a2b       ldrb     r3, [r5, #8]
+0x00002b64:  7323       strb     r3, [r4, #0xc]
+0x00002b66:  2b01       cmp      r3, #1
+0x00002b68:  d106       bne      #0x2b78
+
+Tracking exected BB id: 0x2b62
+----------------
+INST: 
+0x00002b6a:  68e9       ldr      r1, [r5, #0xc]
+0x00002b6c:  f104 0008  add.w    r0, r4, #8
+0x00002b70:  e8bd 4038  pop.w    {r3, r4, r5, lr}
+0x00002b74:  f000 b82c  b.w      #0x2bd0
+
+Tracking exected BB id: 0x2b6a
+----------------
+INST: 
+0x00002bd0:  b51f       push     {r0, r1, r2, r3, r4, lr}
+0x00002bd2:  684b       ldr      r3, [r1, #4]
+0x00002bd4:  9301       str      r3, [sp, #4]
+0x00002bd6:  7a0b       ldrb     r3, [r1, #8]
+0x00002bd8:  f88d 3008  strb.w   r3, [sp, #8]
+0x00002bdc:  7a4b       ldrb     r3, [r1, #9]
+0x00002bde:  f88d 3009  strb.w   r3, [sp, #9]
+0x00002be2:  7acb       ldrb     r3, [r1, #0xb]
+0x00002be4:  f88d 300a  strb.w   r3, [sp, #0xa]
+0x00002be8:  7b0b       ldrb     r3, [r1, #0xc]
+0x00002bea:  f88d 300b  strb.w   r3, [sp, #0xb]
+0x00002bee:  680b       ldr      r3, [r1]
+0x00002bf0:  9300       str      r3, [sp]
+0x00002bf2:  7a8b       ldrb     r3, [r1, #0xa]
+0x00002bf4:  f88d 300c  strb.w   r3, [sp, #0xc]
+0x00002bf8:  4669       mov      r1, sp
+0x00002bfa:  f7fe f9eb  bl       #0xfd4
+
+Tracking exected BB id: 0x2bd0
+----------------
+INST: 
+0x00000fd4:  b530       push     {r4, r5, lr}
+0x00000fd6:  460c       mov      r4, r1
+0x00000fd8:  b085       sub      sp, #0x14
+0x00000fda:  4605       mov      r5, r0
+0x00000fdc:  4668       mov      r0, sp
+0x00000fde:  f001 fd7a  bl       #0x2ad6
+
+Tracking exected BB id: 0x0fd4
+----------------
+INST: 
+0x00002ad6:  b510       push     {r4, lr}
+0x00002ad8:  2210       movs     r2, #0x10
+0x00002ada:  4604       mov      r4, r0
+0x00002adc:  2100       movs     r1, #0
+0x00002ade:  f000 fa46  bl       #0x2f6e
+
+Tracking exected BB id: 0x2ad6
+----------------
+INST: 
+0x00002ae2:  f44f 33e1  mov.w    r3, #0x1c200
+0x00002ae6:  6023       str      r3, [r4]
+0x00002ae8:  f44f 7280  mov.w    r2, #0x100
+0x00002aec:  2300       movs     r3, #0
+0x00002aee:  7123       strb     r3, [r4, #4]
+0x00002af0:  7163       strb     r3, [r4, #5]
+0x00002af2:  80e2       strh     r2, [r4, #6]
+0x00002af4:  7223       strb     r3, [r4, #8]
+0x00002af6:  7263       strb     r3, [r4, #9]
+0x00002af8:  72a3       strb     r3, [r4, #0xa]
+0x00002afa:  72e3       strb     r3, [r4, #0xb]
+0x00002afc:  7323       strb     r3, [r4, #0xc]
+0x00002afe:  bd10       pop      {r4, pc}
+
+Tracking exected BB id: 0x2ae2
+----------------
+INST: 
+0x00000fe2:  6863       ldr      r3, [r4, #4]
+0x00000fe4:  9300       str      r3, [sp]
+0x00000fe6:  7a23       ldrb     r3, [r4, #8]
+0x00000fe8:  2b01       cmp      r3, #1
+0x00000fea:  d125       bne      #0x1038
+
+Tracking exected BB id: 0x0fe2
+----------------
+INST: 
+0x00001038:  2b02       cmp      r3, #2
+0x0000103a:  bf0c       ite      eq
+0x0000103c:  2303       moveq    r3, #3
+0x0000103e:  2300       movne    r3, #0
+0x00001040:  e7d5       b        #0xfee
+
+Tracking exected BB id: 0x1038
+----------------
+INST: 
+0x00000fee:  f88d 3004  strb.w   r3, [sp, #4]
+0x00000ff2:  7a63       ldrb     r3, [r4, #9]
+0x00000ff4:  7b20       ldrb     r0, [r4, #0xc]
+0x00000ff6:  6822       ldr      r2, [r4]
+0x00000ff8:  2b01       cmp      r3, #1
+0x00000ffa:  bf18       it       ne
+0x00000ffc:  2300       movne    r3, #0
+
+Tracking exected BB id: 0x0fee
+----------------
+INST: 
+0x00000ffe:  f88d 3005  strb.w   r3, [sp, #5]
+
+Tracking exected BB id: 0x0ffe
+----------------
+INST: 
+0x00001002:  7aa3       ldrb     r3, [r4, #0xa]
+0x00001004:  3300       adds     r3, #0
+0x00001006:  bf18       it       ne
+0x00001008:  2301       movne    r3, #1
+0x0000100a:  f88d 300c  strb.w   r3, [sp, #0xc]
+0x0000100e:  7ae3       ldrb     r3, [r4, #0xb]
+0x00001010:  3300       adds     r3, #0
+0x00001012:  bf18       it       ne
+0x00001014:  2301       movne    r3, #1
+0x00001016:  f88d 300b  strb.w   r3, [sp, #0xb]
+0x0000101a:  f44f 7380  mov.w    r3, #0x100
+0x0000101e:  f8ad 3006  strh.w   r3, [sp, #6]
+0x00001022:  4b09       ldr      r3, [pc, #0x24]
+0x00001024:  4669       mov      r1, sp
+0x00001026:  f853 0020  ldr.w    r0, [r3, r0, lsl #2]
+0x0000102a:  f7ff fe07  bl       #0xc3c
+
+Tracking exected BB id: 0x1002
+----------------
+INST: 
+0x00000c3c:  b5f8       push     {r3, r4, r5, r6, r7, lr}
+0x00000c3e:  680b       ldr      r3, [r1]
+0x00000c40:  011d       lsls     r5, r3, #4
+0x00000c42:  fbb2 f5f5  udiv     r5, r2, r5
+0x00000c46:  b2ad       uxth     r5, r5
+0x00000c48:  2d00       cmp      r5, #0
+0x00000c4a:  bf08       it       eq
+0x00000c4c:  2501       moveq    r5, #1
+0x00000c4e:  4604       mov      r4, r0
+0x00000c50:  0168       lsls     r0, r5, #5
+0x00000c52:  0052       lsls     r2, r2, #1
+0x00000c54:  fbb2 f6f3  udiv     r6, r2, r3
+0x00000c58:  1a36       subs     r6, r6, r0
+0x00000c5a:  b2b6       uxth     r6, r6
+0x00000c5c:  4430       add      r0, r6
+0x00000c5e:  fbb2 f2f0  udiv     r2, r2, r0
+0x00000c62:  4293       cmp      r3, r2
+0x00000c64:  bf34       ite      lo
+0x00000c66:  1ad2       sublo    r2, r2, r3
+0x00000c68:  1a9a       subhs    r2, r3, r2
+0x00000c6a:  2064       movs     r0, #0x64
+0x00000c6c:  fbb3 f3f0  udiv     r3, r3, r0
+0x00000c70:  eb03 0343  add.w    r3, r3, r3, lsl #1
+0x00000c74:  4293       cmp      r3, r2
+0x00000c76:  d360       blo      #0xd3a
+
+Tracking exected BB id: 0x0c3c
+----------------
+INST: 
+0x00000d3a:  f240 30f5  movw     r0, #0x3f5
+0x00000d3e:  e7fb       b        #0xd38
+
+Tracking exected BB id: 0x0d3a
+----------------
+INST: 
+0x00000d38:  bdf8       pop      {r3, r4, r5, r6, r7, pc}
+
+Tracking exected BB id: 0x0d38
+----------------
+INST: 
+0x0000102e:  b940       cbnz     r0, #0x1042
+
+Tracking exected BB id: 0x102e
+----------------
+INST: 
+0x00001042:  f642 70af  movw     r0, #0x2faf
+0x00001046:  e7f5       b        #0x1034
+
+Tracking exected BB id: 0x1042
+----------------
+INST: 
+0x00001034:  b005       add      sp, #0x14
+0x00001036:  bd30       pop      {r4, r5, pc}
+
+Tracking exected BB id: 0x1034
+----------------
+INST: 
+0x00002bfe:  2800       cmp      r0, #0
+
+Tracking exected BB id: 0x2bfe
+----------------
+INST: 
+0x00002c00:  f243 5021  movw     r0, #0x3521
+0x00002c04:  bf08       it       eq
+0x00002c06:  2000       moveq    r0, #0
+0x00002c08:  b005       add      sp, #0x14
+0x00002c0a:  f85d fb04  ldr      pc, [sp], #4
+
+Tracking exected BB id: 0x2c00
+----------------
+INST: 
+0x0000050a:  f104 0114  add.w    r1, r4, #0x14
+0x0000050e:  6920       ldr      r0, [r4, #0x10]
+0x00000510:  f002 fb35  bl       #0x2b7e
+
+Tracking exected BB id: 0x050a
+----------------
+INST: 
+0x00002b7e:  b538       push     {r3, r4, r5, lr}
+0x00002b80:  4604       mov      r4, r0
+0x00002b82:  460d       mov      r5, r1
+0x00002b84:  2204       movs     r2, #4
+0x00002b86:  2100       movs     r1, #0
+0x00002b88:  4628       mov      r0, r5
+0x00002b8a:  f000 f9f0  bl       #0x2f6e
+
+Tracking exected BB id: 0x2b7e
+Tracking exected BB id: 0x31e8
+----------------
+INST: 
+0x00002b8e:  6863       ldr      r3, [r4, #4]
+0x00002b90:  3301       adds     r3, #1
+0x00002b92:  6063       str      r3, [r4, #4]
+0x00002b94:  2000       movs     r0, #0
+0x00002b96:  602c       str      r4, [r5]
+0x00002b98:  bd38       pop      {r3, r4, r5, pc}
+
+Tracking exected BB id: 0x2b8e
+----------------
+INST: 
+0x00000514:  f104 0118  add.w    r1, r4, #0x18
+0x00000518:  6920       ldr      r0, [r4, #0x10]
+0x0000051a:  f002 fb3e  bl       #0x2b9a
+
+Tracking exected BB id: 0x0514
+----------------
+INST: 
+0x00002b9a:  b570       push     {r4, r5, r6, lr}
+0x00002b9c:  6804       ldr      r4, [r0]
+0x00002b9e:  4606       mov      r6, r0
+0x00002ba0:  460d       mov      r5, r1
+0x00002ba2:  b944       cbnz     r4, #0x2bb6
+
+Tracking exected BB id: 0x2b9a
+----------------
+INST: 
+0x00002ba4:  2204       movs     r2, #4
+0x00002ba6:  4621       mov      r1, r4
+0x00002ba8:  4628       mov      r0, r5
+0x00002baa:  f000 f9e0  bl       #0x2f6e
+
+Tracking exected BB id: 0x2ba4
+----------------
+INST: 
+0x00002bae:  6035       str      r5, [r6]
+0x00002bb0:  4620       mov      r0, r4
+0x00002bb2:  602e       str      r6, [r5]
+0x00002bb4:  bd70       pop      {r4, r5, r6, pc}
+
+Tracking exected BB id: 0x2bae
+----------------
+INST: 
+0x0000051e:  4628       mov      r0, r5
+0x00000520:  b009       add      sp, #0x24
+0x00000522:  bd30       pop      {r4, r5, pc}
+
+Tracking exected BB id: 0x051e
+----------------
+INST: 
+0x000007ea:  f000 fafb  bl       #0xde4
+
+Tracking exected BB id: 0x07ea
+----------------
+INST: 
+0x00000de4:  4a66       ldr      r2, [pc, #0x198]
+0x00000de6:  7813       ldrb     r3, [r2]
+0x00000de8:  f013 0fc0  tst.w    r3, #0xc0
+0x00000dec:  f040 80a2  bne.w    #0xf34
+
+Tracking exected BB id: 0x0de4
+read data from avatar 0x40064000: 0x40. pc 0xde6 xpsr 0x81000000
+----------------
+INST: 
+0x00000f34:  7813       ldrb     r3, [r2]
+0x00000f36:  f003 03c0  and      r3, r3, #0xc0
+0x00000f3a:  2b40       cmp      r3, #0x40
+0x00000f3c:  d10b       bne      #0xf56
+
+Tracking exected BB id: 0x0f34
+read data from avatar 0x40064000: 0x4. pc 0xf34 xpsr 0x1000000
+----------------
+INST: 
+0x00000f56:  7813       ldrb     r3, [r2]
+0x00000f58:  f003 03c0  and      r3, r3, #0xc0
+0x00000f5c:  2b80       cmp      r3, #0x80
+0x00000f5e:  d19f       bne      #0xea0
+
+Tracking exected BB id: 0x0f56
+read data from avatar 0x40064000: 0x80. pc 0xf56 xpsr 0x81000000
+----------------
+INST: 
+0x00000f60:  7b13       ldrb     r3, [r2, #0xc]
+0x00000f62:  f013 0303  ands     r3, r3, #3
+0x00000f66:  d008       beq      #0xf7a
+
+Tracking exected BB id: 0x0f60
+read data from avatar 0x4006400c: 0x4. pc 0xf60 xpsr 0x61000000
+----------------
+INST: 
+0x00000f7a:  4b03       ldr      r3, [pc, #0xc]
+0x00000f7c:  e786       b        #0xe8c
+
+Tracking exected BB id: 0x0f7a
+----------------
+INST: 
+0x00000e8c:  493f       ldr      r1, [pc, #0xfc]
+0x00000e8e:  f241 0244  movw     r2, #0x1044
+0x00000e92:  588a       ldr      r2, [r1, r2]
+0x00000e94:  0f12       lsrs     r2, r2, #0x1c
+0x00000e96:  3201       adds     r2, #1
+0x00000e98:  fbb3 f3f2  udiv     r3, r3, r2
+0x00000e9c:  4a3c       ldr      r2, [pc, #0xf0]
+0x00000e9e:  6013       str      r3, [r2]
+0x00000ea0:  4770       bx       lr
+
+Tracking exected BB id: 0x0e8c
+read data from avatar 0x40048044: 0x2. pc 0xe92 xpsr 0x61000000
+----------------
+INST: 
+0x000007ee:  4b0a       ldr      r3, [pc, #0x28]
+0x000007f0:  9300       str      r3, [sp]
+0x000007f2:  2201       movs     r2, #1
+0x000007f4:  2300       movs     r3, #0
+0x000007f6:  21c8       movs     r1, #0xc8
+0x000007f8:  4808       ldr      r0, [pc, #0x20]
+0x000007fa:  f002 fb8b  bl       #0x2f14
+
+Tracking exected BB id: 0x07ee
+----------------
+INST: 
+0x00002f14:  e92d 41f0  push.w   {r4, r5, r6, r7, r8, lr}
+0x00002f18:  4680       mov      r8, r0
+0x00002f1a:  202c       movs     r0, #0x2c
+0x00002f1c:  460d       mov      r5, r1
+0x00002f1e:  4617       mov      r7, r2
+0x00002f20:  461e       mov      r6, r3
+0x00002f22:  f7fe f931  bl       #0x1188
+
+Tracking exected BB id: 0x2f14
+----------------
+INST: 
+0x00001188:  e92d 41f0  push.w   {r4, r5, r6, r7, r8, lr}
+0x0000118c:  4604       mov      r4, r0
+0x0000118e:  f000 fd75  bl       #0x1c7c
+
+Tracking exected BB id: 0x1188
+----------------
+INST: 
+0x00001c7c:  4a02       ldr      r2, [pc, #8]
+0x00001c7e:  6813       ldr      r3, [r2]
+0x00001c80:  3301       adds     r3, #1
+0x00001c82:  6013       str      r3, [r2]
+0x00001c84:  4770       bx       lr
+
+Tracking exected BB id: 0x1c7c
+----------------
+INST: 
+0x00001192:  493d       ldr      r1, [pc, #0xf4]
+0x00001194:  4d3d       ldr      r5, [pc, #0xf4]
+0x00001196:  680b       ldr      r3, [r1]
+0x00001198:  b9fb       cbnz     r3, #0x11da
+
+Tracking exected BB id: 0x1192
+----------------
+INST: 
+0x0000119a:  4a3d       ldr      r2, [pc, #0xf4]
+0x0000119c:  0756       lsls     r6, r2, #0x1d
+0x0000119e:  f502 5320  add.w    r3, r2, #0x2800
+0x000011a2:  bf1d       ittte    ne
+0x000011a4:  3207       addne    r2, #7
+0x000011a6:  f022 0207  bicne    r2, r2, #7
+0x000011aa:  1a9b       subne    r3, r3, r2
+0x000011ac:  f44f 5320  moveq.w  r3, #0x2800
+0x000011b0:  4413       add      r3, r2
+0x000011b2:  4e38       ldr      r6, [pc, #0xe0]
+0x000011b4:  3b08       subs     r3, #8
+0x000011b6:  f023 0307  bic      r3, r3, #7
+0x000011ba:  2000       movs     r0, #0
+0x000011bc:  6070       str      r0, [r6, #4]
+0x000011be:  6032       str      r2, [r6]
+0x000011c0:  e9c3 0000  strd     r0, r0, [r3]
+0x000011c4:  1a98       subs     r0, r3, r2
+0x000011c6:  600b       str      r3, [r1]
+0x000011c8:  e9c2 3000  strd     r3, r0, [r2]
+0x000011cc:  4b32       ldr      r3, [pc, #0xc8]
+0x000011ce:  6018       str      r0, [r3]
+0x000011d0:  4b32       ldr      r3, [pc, #0xc8]
+0x000011d2:  6018       str      r0, [r3]
+0x000011d4:  f04f 4300  mov.w    r3, #-0x80000000
+0x000011d8:  602b       str      r3, [r5]
+0x000011da:  682f       ldr      r7, [r5]
+0x000011dc:  4227       tst      r7, r4
+0x000011de:  d14e       bne      #0x127e
+
+Tracking exected BB id: 0x119a
+----------------
+INST: 
+0x000011e0:  2c00       cmp      r4, #0
+0x000011e2:  d03f       beq      #0x1264
+
+Tracking exected BB id: 0x11e0
+----------------
+INST: 
+0x000011e4:  f104 0308  add.w    r3, r4, #8
+0x000011e8:  0758       lsls     r0, r3, #0x1d
+0x000011ea:  bf1c       itt      ne
+0x000011ec:  f023 0307  bicne    r3, r3, #7
+0x000011f0:  3308       addne    r3, #8
+0x000011f2:  2b00       cmp      r3, #0
+0x000011f4:  d043       beq      #0x127e
+
+Tracking exected BB id: 0x11e4
+----------------
+INST: 
+0x000011f6:  4a29       ldr      r2, [pc, #0xa4]
+0x000011f8:  6816       ldr      r6, [r2]
+0x000011fa:  429e       cmp      r6, r3
+0x000011fc:  4690       mov      r8, r2
+0x000011fe:  d33e       blo      #0x127e
+
+Tracking exected BB id: 0x11f6
+----------------
+INST: 
+0x00001200:  4a24       ldr      r2, [pc, #0x90]
+0x00001202:  6815       ldr      r5, [r2]
+0x00001204:  6868       ldr      r0, [r5, #4]
+0x00001206:  4298       cmp      r0, r3
+0x00001208:  d201       bhs      #0x120e
+
+Tracking exected BB id: 0x1200
+----------------
+INST: 
+0x0000120e:  6809       ldr      r1, [r1]
+0x00001210:  42a9       cmp      r1, r5
+0x00001212:  d034       beq      #0x127e
+
+Tracking exected BB id: 0x120e
+----------------
+INST: 
+0x00001214:  6829       ldr      r1, [r5]
+0x00001216:  6814       ldr      r4, [r2]
+0x00001218:  6011       str      r1, [r2]
+0x0000121a:  1ac2       subs     r2, r0, r3
+0x0000121c:  2a10       cmp      r2, #0x10
+0x0000121e:  d912       bls      #0x1246
+
+Tracking exected BB id: 0x1214
+----------------
+INST: 
+0x00001220:  18e8       adds     r0, r5, r3
+0x00001222:  0741       lsls     r1, r0, #0x1d
+0x00001224:  d00b       beq      #0x123e
+
+Tracking exected BB id: 0x1220
+----------------
+INST: 
+0x0000123e:  6042       str      r2, [r0, #4]
+0x00001240:  606b       str      r3, [r5, #4]
+0x00001242:  f7ff ff7d  bl       #0x1140
+
+Tracking exected BB id: 0x123e
+----------------
+INST: 
+0x00001140:  b510       push     {r4, lr}
+0x00001142:  4b0f       ldr      r3, [pc, #0x3c]
+0x00001144:  681a       ldr      r2, [r3]
+0x00001146:  4282       cmp      r2, r0
+0x00001148:  d318       blo      #0x117c
+
+Tracking exected BB id: 0x1140
+----------------
+INST: 
+0x0000114a:  685c       ldr      r4, [r3, #4]
+0x0000114c:  1919       adds     r1, r3, r4
+0x0000114e:  4288       cmp      r0, r1
+0x00001150:  bf01       itttt    eq
+0x00001152:  6841       ldreq    r1, [r0, #4]
+0x00001154:  4618       moveq    r0, r3
+0x00001156:  1909       addeq    r1, r1, r4
+0x00001158:  6059       streq    r1, [r3, #4]
+0x0000115a:  6844       ldr      r4, [r0, #4]
+0x0000115c:  1901       adds     r1, r0, r4
+0x0000115e:  428a       cmp      r2, r1
+0x00001160:  d107       bne      #0x1172
+
+Tracking exected BB id: 0x114a
+----------------
+INST: 
+0x00001162:  4908       ldr      r1, [pc, #0x20]
+0x00001164:  6809       ldr      r1, [r1]
+0x00001166:  428a       cmp      r2, r1
+0x00001168:  bf1f       itttt    ne
+0x0000116a:  6851       ldrne    r1, [r2, #4]
+0x0000116c:  6812       ldrne    r2, [r2]
+0x0000116e:  1909       addne    r1, r1, r4
+0x00001170:  6041       strne    r1, [r0, #4]
+0x00001172:  4298       cmp      r0, r3
+0x00001174:  6002       str      r2, [r0]
+0x00001176:  bf18       it       ne
+0x00001178:  6018       strne    r0, [r3]
+0x0000117a:  bd10       pop      {r4, pc}
+
+Tracking exected BB id: 0x1162
+----------------
+INST: 
+0x00001246:  4914       ldr      r1, [pc, #0x50]
+0x00001248:  686b       ldr      r3, [r5, #4]
+0x0000124a:  6808       ldr      r0, [r1]
+0x0000124c:  1af6       subs     r6, r6, r3
+0x0000124e:  431f       orrs     r7, r3
+0x00001250:  4286       cmp      r6, r0
+0x00001252:  f04f 0300  mov.w    r3, #0
+0x00001256:  f8c8 6000  str.w    r6, [r8]
+0x0000125a:  bf38       it       lo
+0x0000125c:  600e       strlo    r6, [r1]
+0x0000125e:  3408       adds     r4, #8
+0x00001260:  606f       str      r7, [r5, #4]
+0x00001262:  602b       str      r3, [r5]
+0x00001264:  f000 fd9c  bl       #0x1da0
+
+Tracking exected BB id: 0x1246
+----------------
+INST: 
+0x00001da0:  e92d 43f8  push.w   {r3, r4, r5, r6, r7, r8, sb, lr}
+0x00001da4:  4c30       ldr      r4, [pc, #0xc0]
+0x00001da6:  6823       ldr      r3, [r4]
+0x00001da8:  b943       cbnz     r3, #0x1dbc
+
+Tracking exected BB id: 0x1da0
+----------------
+INST: 
+0x00001dbc:  f7ff fb82  bl       #0x14c4
+
+Tracking exected BB id: 0x1dbc
+----------------
+INST: 
+0x000014c4:  f04f 0320  mov.w    r3, #0x20
+0x000014c8:  f383 8811  msr      basepri, r3
+
+Tracking exected BB id: 0x14c4
+----------------
+INST: 
+0x000014cc:  f3bf 8f6f  isb      sy
+
+Tracking exected BB id: 0x14cc
+----------------
+INST: 
+0x000014d0:  f3bf 8f4f  dsb      sy
+0x000014d4:  4a0a       ldr      r2, [pc, #0x28]
+0x000014d6:  6813       ldr      r3, [r2]
+0x000014d8:  3301       adds     r3, #1
+0x000014da:  2b01       cmp      r3, #1
+0x000014dc:  6013       str      r3, [r2]
+0x000014de:  d10d       bne      #0x14fc
+
+Tracking exected BB id: 0x14d0
+----------------
+INST: 
+0x000014fc:  4770       bx       lr
+
+Tracking exected BB id: 0x14fc
+----------------
+INST: 
+0x00001dc0:  6823       ldr      r3, [r4]
+0x00001dc2:  3b01       subs     r3, #1
+0x00001dc4:  6023       str      r3, [r4]
+0x00001dc6:  6824       ldr      r4, [r4]
+0x00001dc8:  b12c       cbz      r4, #0x1dd6
+
+Tracking exected BB id: 0x1dc0
+----------------
+INST: 
+0x00001dd6:  4b25       ldr      r3, [pc, #0x94]
+0x00001dd8:  681b       ldr      r3, [r3]
+0x00001dda:  2b00       cmp      r3, #0
+0x00001ddc:  d0f5       beq      #0x1dca
+
+Tracking exected BB id: 0x1dd6
+----------------
+INST: 
+0x00001dca:  2400       movs     r4, #0
+0x00001dcc:  f7ff fb9c  bl       #0x1508
+
+Tracking exected BB id: 0x1dca
+----------------
+INST: 
+0x00001508:  4a08       ldr      r2, [pc, #0x20]
+0x0000150a:  6813       ldr      r3, [r2]
+0x0000150c:  b943       cbnz     r3, #0x1520
+
+Tracking exected BB id: 0x1508
+----------------
+INST: 
+0x00001520:  3b01       subs     r3, #1
+0x00001522:  6013       str      r3, [r2]
+0x00001524:  b90b       cbnz     r3, #0x152a
+
+Tracking exected BB id: 0x1520
+----------------
+INST: 
+0x0000152a:  4770       bx       lr
+
+Tracking exected BB id: 0x152a
+----------------
+INST: 
+0x00001dd0:  4620       mov      r0, r4
+0x00001dd2:  e8bd 83f8  pop.w    {r3, r4, r5, r6, r7, r8, sb, pc}
+
+Tracking exected BB id: 0x1dd0
+----------------
+INST: 
+0x00001268:  0763       lsls     r3, r4, #0x1d
+0x0000126a:  d00a       beq      #0x1282
+
+Tracking exected BB id: 0x1268
+----------------
+INST: 
+0x00001282:  4620       mov      r0, r4
+0x00001284:  e8bd 81f0  pop.w    {r4, r5, r6, r7, r8, pc}
+
+Tracking exected BB id: 0x1282
+----------------
+INST: 
+0x00002f26:  4604       mov      r4, r0
+0x00002f28:  b1a8       cbz      r0, #0x2f56
+
+Tracking exected BB id: 0x2f26
+----------------
+INST: 
+0x00002f2a:  b945       cbnz     r5, #0x2f3e
+
+Tracking exected BB id: 0x2f2a
+----------------
+INST: 
+0x00002f3e:  f7ff f907  bl       #0x2150
+
+Tracking exected BB id: 0x2f3e
+----------------
+INST: 
+0x00002150:  b5f8       push     {r3, r4, r5, r6, r7, lr}
+0x00002152:  4c0f       ldr      r4, [pc, #0x3c]
+0x00002154:  f7ff f9b6  bl       #0x14c4
+
+Tracking exected BB id: 0x2150
+Tracking exected BB id: 0x14cc
+----------------
+INST: 
+0x00002158:  6825       ldr      r5, [r4]
+0x0000215a:  b9ad       cbnz     r5, #0x2188
+
+Tracking exected BB id: 0x2158
+----------------
+INST: 
+0x0000215c:  4f0d       ldr      r7, [pc, #0x34]
+0x0000215e:  4e0e       ldr      r6, [pc, #0x38]
+0x00002160:  4638       mov      r0, r7
+0x00002162:  f000 fd62  bl       #0x2c2a
+
+Tracking exected BB id: 0x215c
+----------------
+INST: 
+0x00002c2a:  f100 0308  add.w    r3, r0, #8
+0x00002c2e:  f04f 32ff  mov.w    r2, #-1
+0x00002c32:  6043       str      r3, [r0, #4]
+0x00002c34:  e9c0 2302  strd     r2, r3, [r0, #8]
+0x00002c38:  6103       str      r3, [r0, #0x10]
+0x00002c3a:  2300       movs     r3, #0
+0x00002c3c:  6003       str      r3, [r0]
+0x00002c3e:  4770       bx       lr
+
+Tracking exected BB id: 0x2c2a
+----------------
+INST: 
+0x00002166:  4630       mov      r0, r6
+0x00002168:  f000 fd5f  bl       #0x2c2a
+
+Tracking exected BB id: 0x2166
+----------------
+INST: 
+0x0000216c:  4b0b       ldr      r3, [pc, #0x2c]
+0x0000216e:  601f       str      r7, [r3]
+0x00002170:  4b0b       ldr      r3, [pc, #0x2c]
+0x00002172:  462a       mov      r2, r5
+0x00002174:  2110       movs     r1, #0x10
+0x00002176:  200a       movs     r0, #0xa
+0x00002178:  601e       str      r6, [r3]
+0x0000217a:  f000 fe23  bl       #0x2dc4
+
+Tracking exected BB id: 0x216c
+----------------
+INST: 
+0x00002dc4:  b5f8       push     {r3, r4, r5, r6, r7, lr}
+0x00002dc6:  460d       mov      r5, r1
+0x00002dc8:  4617       mov      r7, r2
+0x00002dca:  4606       mov      r6, r0
+0x00002dcc:  b940       cbnz     r0, #0x2de0
+
+Tracking exected BB id: 0x2dc4
+----------------
+INST: 
+0x00002de0:  4348       muls     r0, r1, r0
+0x00002de2:  3050       adds     r0, #0x50
+0x00002de4:  f7fe f9d0  bl       #0x1188
+
+Tracking exected BB id: 0x2de0
+----------------
+INST: 
+0x000011da:  682f       ldr      r7, [r5]
+0x000011dc:  4227       tst      r7, r4
+0x000011de:  d14e       bne      #0x127e
+
+Tracking exected BB id: 0x11da
+Tracking exected BB id: 0x11e0
+Tracking exected BB id: 0x14cc
+----------------
+INST: 
+0x00002de8:  4604       mov      r4, r0
+0x00002dea:  b148       cbz      r0, #0x2e00
+
+Tracking exected BB id: 0x2de8
+----------------
+INST: 
+0x00002dec:  b955       cbnz     r5, #0x2e04
+
+Tracking exected BB id: 0x2dec
+----------------
+INST: 
+0x00002e04:  f100 0350  add.w    r3, r0, #0x50
+0x00002e08:  6003       str      r3, [r0]
+0x00002e0a:  e7f1       b        #0x2df0
+
+Tracking exected BB id: 0x2e04
+----------------
+INST: 
+0x00002df0:  e9c4 650f  strd     r6, r5, [r4, #0x3c]
+0x00002df4:  2101       movs     r1, #1
+0x00002df6:  4620       mov      r0, r4
+0x00002df8:  f7fe fbde  bl       #0x15b8
+
+Tracking exected BB id: 0x2df0
+----------------
+INST: 
+0x000015b8:  b538       push     {r3, r4, r5, lr}
+0x000015ba:  460d       mov      r5, r1
+0x000015bc:  4604       mov      r4, r0
+0x000015be:  b940       cbnz     r0, #0x15d2
+
+Tracking exected BB id: 0x15b8
+----------------
+INST: 
+0x000015d2:  f7ff ff77  bl       #0x14c4
+
+Tracking exected BB id: 0x15d2
+Tracking exected BB id: 0x14c4
+Tracking exected BB id: 0x14cc
+----------------
+INST: 
+0x000015d6:  e9d4 300f  ldrd     r3, r0, [r4, #0x3c]
+0x000015da:  6822       ldr      r2, [r4]
+0x000015dc:  60a2       str      r2, [r4, #8]
+0x000015de:  4343       muls     r3, r0, r3
+0x000015e0:  18d1       adds     r1, r2, r3
+0x000015e2:  1a1b       subs     r3, r3, r0
+0x000015e4:  4413       add      r3, r2
+0x000015e6:  6061       str      r1, [r4, #4]
+0x000015e8:  60e3       str      r3, [r4, #0xc]
+0x000015ea:  2100       movs     r1, #0
+0x000015ec:  23ff       movs     r3, #0xff
+0x000015ee:  63a1       str      r1, [r4, #0x38]
+0x000015f0:  f884 3044  strb.w   r3, [r4, #0x44]
+0x000015f4:  f884 3045  strb.w   r3, [r4, #0x45]
+0x000015f8:  b995       cbnz     r5, #0x1620
+
+Tracking exected BB id: 0x15d6
+----------------
+INST: 
+0x00001620:  f104 0010  add.w    r0, r4, #0x10
+0x00001624:  f001 fb01  bl       #0x2c2a
+
+Tracking exected BB id: 0x1620
+----------------
+INST: 
+0x00001628:  f104 0024  add.w    r0, r4, #0x24
+0x0000162c:  f001 fafd  bl       #0x2c2a
+
+Tracking exected BB id: 0x1628
+----------------
+INST: 
+0x00001630:  e7f2       b        #0x1618
+
+Tracking exected BB id: 0x1630
+----------------
+INST: 
+0x00001618:  f7ff ff76  bl       #0x1508
+
+Tracking exected BB id: 0x1618
+Tracking exected BB id: 0x1508
+----------------
+INST: 
+0x0000161c:  2001       movs     r0, #1
+0x0000161e:  bd38       pop      {r3, r4, r5, pc}
+
+Tracking exected BB id: 0x161c
+----------------
+INST: 
+0x00002dfc:  f884 704c  strb.w   r7, [r4, #0x4c]
+0x00002e00:  4620       mov      r0, r4
+0x00002e02:  bdf8       pop      {r3, r4, r5, r6, r7, pc}
+
+Tracking exected BB id: 0x2dfc
+----------------
+INST: 
+0x0000217e:  6020       str      r0, [r4]
+0x00002180:  b110       cbz      r0, #0x2188
+
+Tracking exected BB id: 0x217e
+----------------
+INST: 
+0x00002182:  4908       ldr      r1, [pc, #0x20]
+0x00002184:  f7ff fbaa  bl       #0x18dc
+
+Tracking exected BB id: 0x2182
+----------------
+INST: 
+0x000018dc:  b530       push     {r4, r5, lr}
+0x000018de:  4a07       ldr      r2, [pc, #0x1c]
+0x000018e0:  2300       movs     r3, #0
+0x000018e2:  f852 5033  ldr.w    r5, [r2, r3, lsl #3]
+0x000018e6:  00dc       lsls     r4, r3, #3
+0x000018e8:  b925       cbnz     r5, #0x18f4
+
+Tracking exected BB id: 0x18dc
+----------------
+INST: 
+0x000018ea:  f842 1033  str.w    r1, [r2, r3, lsl #3]
+0x000018ee:  4422       add      r2, r4
+0x000018f0:  6050       str      r0, [r2, #4]
+0x000018f2:  bd30       pop      {r4, r5, pc}
+
+Tracking exected BB id: 0x18ea
+----------------
+INST: 
+0x00002188:  e8bd 40f8  pop.w    {r3, r4, r5, r6, r7, lr}
+0x0000218c:  f7ff b9bc  b.w      #0x1508
+
+Tracking exected BB id: 0x2188
+----------------
+INST: 
+0x00002f42:  9b06       ldr      r3, [sp, #0x18]
+0x00002f44:  f8c4 8000  str.w    r8, [r4]
+0x00002f48:  e9c4 5706  strd     r5, r7, [r4, #0x18]
+0x00002f4c:  6226       str      r6, [r4, #0x20]
+0x00002f4e:  6263       str      r3, [r4, #0x24]
+0x00002f50:  1d20       adds     r0, r4, #4
+0x00002f52:  f7ff fe75  bl       #0x2c40
+
+Tracking exected BB id: 0x2f42
+----------------
+INST: 
+0x00002c40:  2300       movs     r3, #0
+0x00002c42:  6103       str      r3, [r0, #0x10]
+0x00002c44:  4770       bx       lr
+
+Tracking exected BB id: 0x2c40
+----------------
+INST: 
+0x00002f56:  4620       mov      r0, r4
+0x00002f58:  e8bd 81f0  pop.w    {r4, r5, r6, r7, r8, pc}
+
+Tracking exected BB id: 0x2f56
+----------------
+INST: 
+0x000007fe:  4604       mov      r4, r0
+
+Tracking exected BB id: 0x07fe
+----------------
+INST: 
+0x00000800:  f001 fa44  bl       #0x1c8c
+
+Tracking exected BB id: 0x0800
+----------------
+INST: 
+0x00001c8c:  4b01       ldr      r3, [pc, #4]
+0x00001c8e:  6818       ldr      r0, [r3]
+0x00001c90:  4770       bx       lr
+
+Tracking exected BB id: 0x1c8c
+----------------
+INST: 
+0x00000804:  2300       movs     r3, #0
+0x00000806:  4602       mov      r2, r0
+0x00000808:  9300       str      r3, [sp]
+0x0000080a:  2101       movs     r1, #1
+0x0000080c:  4620       mov      r0, r4
+0x0000080e:  f001 fd11  bl       #0x2234
+
+Tracking exected BB id: 0x0804
+----------------
+INST: 
+0x00002234:  b530       push     {r4, r5, lr}
+0x00002236:  4615       mov      r5, r2
+0x00002238:  b085       sub      sp, #0x14
+0x0000223a:  461a       mov      r2, r3
+0x0000223c:  4603       mov      r3, r0
+0x0000223e:  b940       cbnz     r0, #0x2252
+
+Tracking exected BB id: 0x2234
+----------------
+INST: 
+0x00002252:  4c0d       ldr      r4, [pc, #0x34]
+0x00002254:  6820       ldr      r0, [r4]
+0x00002256:  b180       cbz      r0, #0x227a
+
+Tracking exected BB id: 0x2252
+----------------
+INST: 
+0x00002258:  2905       cmp      r1, #5
+0x0000225a:  e9cd 1500  strd     r1, r5, [sp]
+0x0000225e:  9302       str      r3, [sp, #8]
+0x00002260:  dc0d       bgt      #0x227e
+
+Tracking exected BB id: 0x2258
+----------------
+INST: 
+0x00002262:  f7ff ff15  bl       #0x2090
+
+Tracking exected BB id: 0x2262
+----------------
+INST: 
+0x00002090:  4b05       ldr      r3, [pc, #0x14]
+0x00002092:  681b       ldr      r3, [r3]
+0x00002094:  b133       cbz      r3, #0x20a4
+
+Tracking exected BB id: 0x2090
+----------------
+INST: 
+0x000020a4:  2001       movs     r0, #1
+0x000020a6:  4770       bx       lr
+
+Tracking exected BB id: 0x20a4
+----------------
+INST: 
+0x00002266:  2300       movs     r3, #0
+0x00002268:  2802       cmp      r0, #2
+0x0000226a:  bf08       it       eq
+0x0000226c:  9a08       ldreq    r2, [sp, #0x20]
+0x0000226e:  6820       ldr      r0, [r4]
+0x00002270:  bf18       it       ne
+0x00002272:  461a       movne    r2, r3
+0x00002274:  4669       mov      r1, sp
+0x00002276:  f7ff f9df  bl       #0x1638
+
+Tracking exected BB id: 0x2266
+----------------
+INST: 
+0x00001638:  e92d 47ff  push.w   {r0, r1, r2, r3, r4, r5, r6, r7, r8, sb, sl, lr}
+0x0000163c:  4688       mov      r8, r1
+0x0000163e:  9201       str      r2, [sp, #4]
+0x00001640:  461f       mov      r7, r3
+0x00001642:  4604       mov      r4, r0
+0x00001644:  b940       cbnz     r0, #0x1658
+
+Tracking exected BB id: 0x1638
+----------------
+INST: 
+0x00001658:  b951       cbnz     r1, #0x1670
+
+Tracking exected BB id: 0x1658
+----------------
+INST: 
+0x00001670:  2f02       cmp      r7, #2
+0x00001672:  d10b       bne      #0x168c
+
+Tracking exected BB id: 0x1670
+----------------
+INST: 
+0x0000168c:  f000 fd00  bl       #0x2090
+
+Tracking exected BB id: 0x168c
+----------------
+INST: 
+0x00001690:  b950       cbnz     r0, #0x16a8
+
+Tracking exected BB id: 0x1690
+----------------
+INST: 
+0x000016a8:  2600       movs     r6, #0
+0x000016aa:  f04f 0900  mov.w    sb, #0
+0x000016ae:  f8df a0e8  ldr.w    sl, [pc, #0xe8]
+0x000016b2:  e037       b        #0x1724
+
+Tracking exected BB id: 0x16a8
+----------------
+INST: 
+0x00001724:  f7ff fece  bl       #0x14c4
+
+Tracking exected BB id: 0x1724
+Tracking exected BB id: 0x14c4
+Tracking exected BB id: 0x14cc
+----------------
+INST: 
+0x00001728:  6ba2       ldr      r2, [r4, #0x38]
+0x0000172a:  6be3       ldr      r3, [r4, #0x3c]
+0x0000172c:  429a       cmp      r2, r3
+0x0000172e:  d301       blo      #0x1734
+
+Tracking exected BB id: 0x1728
+----------------
+INST: 
+0x00001734:  463a       mov      r2, r7
+0x00001736:  4641       mov      r1, r8
+0x00001738:  4620       mov      r0, r4
+0x0000173a:  f001 fac3  bl       #0x2cc4
+
+Tracking exected BB id: 0x1734
+----------------
+INST: 
+0x00002cc4:  b570       push     {r4, r5, r6, lr}
+0x00002cc6:  4615       mov      r5, r2
+0x00002cc8:  6c02       ldr      r2, [r0, #0x40]
+0x00002cca:  6b86       ldr      r6, [r0, #0x38]
+0x00002ccc:  4604       mov      r4, r0
+0x00002cce:  b942       cbnz     r2, #0x2ce2
+
+Tracking exected BB id: 0x2cc4
+----------------
+INST: 
+0x00002ce2:  b96d       cbnz     r5, #0x2d00
+
+Tracking exected BB id: 0x2ce2
+----------------
+INST: 
+0x00002ce4:  6880       ldr      r0, [r0, #8]
+0x00002ce6:  f000 f940  bl       #0x2f6a
+
+Tracking exected BB id: 0x2ce4
+----------------
+INST: 
+0x00002f6a:  f000 b912  b.w      #0x3192
+
+Tracking exected BB id: 0x2f6a
+----------------
+INST: 
+0x00003192:  ea40 0301  orr.w    r3, r0, r1
+0x00003196:  07db       lsls     r3, r3, #0x1f
+0x00003198:  4603       mov      r3, r0
+0x0000319a:  d40c       bmi      #0x31b6
+
+Tracking exected BB id: 0x3192
+----------------
+INST: 
+0x0000319c:  4603       mov      r3, r0
+0x0000319e:  3a04       subs     r2, #4
+0x000031a0:  bf22       ittt     hs
+0x000031a2:  f851 cb04  ldrhs    ip, [r1], #4
+0x000031a6:  f843 cb04  strhs    ip, [r3], #4
+0x000031aa:  f1b2 0204  subshs.w r2, r2, #4
+0x000031ae:  d2f7       bhs      #0x31a0
+
+Tracking exected BB id: 0x319c
+----------------
+INST: 
+0x000031a0:  bf22       ittt     hs
+0x000031a2:  f851 cb04  ldrhs    ip, [r1], #4
+0x000031a6:  f843 cb04  strhs    ip, [r3], #4
+0x000031aa:  f1b2 0204  subshs.w r2, r2, #4
+0x000031ae:  d2f7       bhs      #0x31a0
+
+Tracking exected BB id: 0x31a0
+Tracking exected BB id: 0x31a0
+----------------
+INST: 
+0x000031b0:  3204       adds     r2, #4
+0x000031b2:  bf08       it       eq
+0x000031b4:  4770       bxeq     lr
+
+Tracking exected BB id: 0x31b0
+----------------
+INST: 
+0x00002cea:  68a3       ldr      r3, [r4, #8]
+0x00002cec:  6c22       ldr      r2, [r4, #0x40]
+0x00002cee:  4413       add      r3, r2
+0x00002cf0:  6862       ldr      r2, [r4, #4]
+0x00002cf2:  60a3       str      r3, [r4, #8]
+0x00002cf4:  4293       cmp      r3, r2
+0x00002cf6:  d301       blo      #0x2cfc
+
+Tracking exected BB id: 0x2cea
+----------------
+INST: 
+0x00002cfc:  2000       movs     r0, #0
+0x00002cfe:  e7ed       b        #0x2cdc
+
+Tracking exected BB id: 0x2cfc
+----------------
+INST: 
+0x00002cdc:  3601       adds     r6, #1
+0x00002cde:  63a6       str      r6, [r4, #0x38]
+0x00002ce0:  bd70       pop      {r4, r5, r6, pc}
+
+Tracking exected BB id: 0x2cdc
+----------------
+INST: 
+0x0000173e:  6a63       ldr      r3, [r4, #0x24]
+0x00001740:  b11b       cbz      r3, #0x174a
+
+Tracking exected BB id: 0x173e
+----------------
+INST: 
+0x0000174a:  b138       cbz      r0, #0x175c
+
+Tracking exected BB id: 0x174a
+----------------
+INST: 
+0x0000175c:  f7ff fed4  bl       #0x1508
+
+Tracking exected BB id: 0x175c
+Tracking exected BB id: 0x1508
+----------------
+INST: 
+0x00001760:  2001       movs     r0, #1
+0x00001762:  b004       add      sp, #0x10
+0x00001764:  e8bd 87f0  pop.w    {r4, r5, r6, r7, r8, sb, sl, pc}
+
+Tracking exected BB id: 0x1760
+----------------
+INST: 
+0x0000227a:  b005       add      sp, #0x14
+0x0000227c:  bd30       pop      {r4, r5, pc}
+
+Tracking exected BB id: 0x227a
+----------------
+INST: 
+0x00000812:  f001 f9f3  bl       #0x1bfc
+
+Tracking exected BB id: 0x0812
+----------------
+INST: 
+0x00001bfc:  b513       push     {r0, r1, r4, lr}
+0x00001bfe:  4b19       ldr      r3, [pc, #0x64]
+
+Tracking exected BB id: 0x1bfc
+----------------
+INST: 
+0x00001c00:  9301       str      r3, [sp, #4]
+0x00001c02:  2400       movs     r4, #0
+0x00001c04:  9400       str      r4, [sp]
+0x00001c06:  4623       mov      r3, r4
+0x00001c08:  22c8       movs     r2, #0xc8
+0x00001c0a:  4917       ldr      r1, [pc, #0x5c]
+0x00001c0c:  4817       ldr      r0, [pc, #0x5c]
+0x00001c0e:  f7ff ff05  bl       #0x1a1c
+
+Tracking exected BB id: 0x1c00
+----------------
+INST: 
+0x00001a1c:  e92d 4ff8  push.w   {r3, r4, r5, r6, r7, r8, sb, sl, fp, lr}
+0x00001a20:  ea4f 0b82  lsl.w    fp, r2, #2
+0x00001a24:  4681       mov      sb, r0
+0x00001a26:  4658       mov      r0, fp
+0x00001a28:  460d       mov      r5, r1
+0x00001a2a:  469a       mov      sl, r3
+0x00001a2c:  f8dd 802c  ldr.w    r8, [sp, #0x2c]
+0x00001a30:  f7ff fbaa  bl       #0x1188
+
+Tracking exected BB id: 0x1a1c
+Tracking exected BB id: 0x14cc
+----------------
+INST: 
+0x00001a34:  4606       mov      r6, r0
+0x00001a36:  2800       cmp      r0, #0
+0x00001a38:  f000 80ae  beq.w    #0x1b98
+
+Tracking exected BB id: 0x1a34
+----------------
+INST: 
+0x00001a3c:  2078       movs     r0, #0x78
+0x00001a3e:  f7ff fba3  bl       #0x1188
+
+Tracking exected BB id: 0x1a3c
+Tracking exected BB id: 0x14cc
+----------------
+INST: 
+0x00001a42:  4604       mov      r4, r0
+0x00001a44:  2800       cmp      r0, #0
+0x00001a46:  f000 80a4  beq.w    #0x1b92
+
+Tracking exected BB id: 0x1a42
+----------------
+INST: 
+0x00001a4a:  465a       mov      r2, fp
+0x00001a4c:  6306       str      r6, [r0, #0x30]
+0x00001a4e:  21a5       movs     r1, #0xa5
+0x00001a50:  4630       mov      r0, r6
+0x00001a52:  f001 fa8c  bl       #0x2f6e
+
+Tracking exected BB id: 0x1a4a
+----------------
+INST: 
+0x00001a56:  6b23       ldr      r3, [r4, #0x30]
+0x00001a58:  f1ab 0b04  sub.w    fp, fp, #4
+0x00001a5c:  449b       add      fp, r3
+0x00001a5e:  f02b 0b07  bic      fp, fp, #7
+0x00001a62:  1e6b       subs     r3, r5, #1
+0x00001a64:  f8c4 b048  str.w    fp, [r4, #0x48]
+0x00001a68:  f104 0234  add.w    r2, r4, #0x34
+0x00001a6c:  3513       adds     r5, #0x13
+0x00001a6e:  f813 1f01  ldrb     r1, [r3, #1]!
+0x00001a72:  f802 1b01  strb     r1, [r2], #1
+0x00001a76:  7819       ldrb     r1, [r3]
+0x00001a78:  b109       cbz      r1, #0x1a7e
+
+Tracking exected BB id: 0x1a56
+----------------
+INST: 
+0x00001a7a:  42ab       cmp      r3, r5
+0x00001a7c:  d1f7       bne      #0x1a6e
+
+Tracking exected BB id: 0x1a7a
+----------------
+INST: 
+0x00001a6e:  f813 1f01  ldrb     r1, [r3, #1]!
+0x00001a72:  f802 1b01  strb     r1, [r2], #1
+0x00001a76:  7819       ldrb     r1, [r3]
+0x00001a78:  b109       cbz      r1, #0x1a7e
+
+Tracking exected BB id: 0x1a6e
+Tracking exected BB id: 0x1a7a
+----------------
+INST: 
+0x00001a7e:  9e0a       ldr      r6, [sp, #0x28]
+0x00001a80:  2e04       cmp      r6, #4
+0x00001a82:  f04f 0500  mov.w    r5, #0
+0x00001a86:  bf28       it       hs
+0x00001a88:  2604       movhs    r6, #4
+0x00001a8a:  1d27       adds     r7, r4, #4
+0x00001a8c:  62e6       str      r6, [r4, #0x2c]
+0x00001a8e:  e9c4 6515  strd     r6, r5, [r4, #0x54]
+0x00001a92:  4638       mov      r0, r7
+0x00001a94:  f884 5047  strb.w   r5, [r4, #0x47]
+0x00001a98:  f001 f8d2  bl       #0x2c40
+
+Tracking exected BB id: 0x1a7e
+----------------
+INST: 
+0x00001a9c:  f1c6 0605  rsb.w    r6, r6, #5
+0x00001aa0:  f104 0018  add.w    r0, r4, #0x18
+0x00001aa4:  f001 f8cc  bl       #0x2c40
+
+Tracking exected BB id: 0x1a9c
+----------------
+INST: 
+0x00001aa8:  6725       str      r5, [r4, #0x70]
+0x00001aaa:  6124       str      r4, [r4, #0x10]
+0x00001aac:  61a6       str      r6, [r4, #0x18]
+0x00001aae:  6264       str      r4, [r4, #0x24]
+0x00001ab0:  e9c4 5517  strd     r5, r5, [r4, #0x5c]
+0x00001ab4:  e9c4 5519  strd     r5, r5, [r4, #0x64]
+0x00001ab8:  66e5       str      r5, [r4, #0x6c]
+0x00001aba:  f884 5074  strb.w   r5, [r4, #0x74]
+0x00001abe:  4652       mov      r2, sl
+0x00001ac0:  4649       mov      r1, sb
+0x00001ac2:  4658       mov      r0, fp
+0x00001ac4:  f7ff fc62  bl       #0x138c
+
+Tracking exected BB id: 0x1aa8
+----------------
+INST: 
+0x0000138c:  f04f 7380  mov.w    r3, #0x1000000
+0x00001390:  f840 3c04  str      r3, [r0, #-0x4]
+0x00001394:  4b07       ldr      r3, [pc, #0x1c]
+0x00001396:  f840 3c0c  str      r3, [r0, #-0xc]
+0x0000139a:  f021 0101  bic      r1, r1, #1
+0x0000139e:  f06f 0302  mvn      r3, #2
+0x000013a2:  f840 1c08  str      r1, [r0, #-0x8]
+0x000013a6:  f840 2c20  str      r2, [r0, #-0x20]
+0x000013aa:  f840 3c24  str      r3, [r0, #-0x24]
+0x000013ae:  3844       subs     r0, #0x44
+0x000013b0:  4770       bx       lr
+
+Tracking exected BB id: 0x138c
+----------------
+INST: 
+0x00001ac8:  6020       str      r0, [r4]
+0x00001aca:  f1b8 0f00  cmp.w    r8, #0
+0x00001ace:  d001       beq      #0x1ad4
+
+Tracking exected BB id: 0x1ac8
+----------------
+INST: 
+0x00001ad0:  f8c8 4000  str.w    r4, [r8]
+0x00001ad4:  f7ff fcf6  bl       #0x14c4
+
+Tracking exected BB id: 0x1ad0
+Tracking exected BB id: 0x14cc
+----------------
+INST: 
+0x00001ad8:  4b36       ldr      r3, [pc, #0xd8]
+0x00001ada:  4e37       ldr      r6, [pc, #0xdc]
+0x00001adc:  681a       ldr      r2, [r3]
+0x00001ade:  f8df 8114  ldr.w    r8, [pc, #0x114]
+0x00001ae2:  3201       adds     r2, #1
+0x00001ae4:  601a       str      r2, [r3]
+0x00001ae6:  6832       ldr      r2, [r6]
+0x00001ae8:  2a00       cmp      r2, #0
+0x00001aea:  d158       bne      #0x1b9e
+
+Tracking exected BB id: 0x1ad8
+----------------
+INST: 
+0x00001aec:  6034       str      r4, [r6]
+0x00001aee:  681b       ldr      r3, [r3]
+0x00001af0:  2b01       cmp      r3, #1
+0x00001af2:  d125       bne      #0x1b40
+
+Tracking exected BB id: 0x1aec
+----------------
+INST: 
+0x00001af4:  4831       ldr      r0, [pc, #0xc4]
+0x00001af6:  f8df 9100  ldr.w    sb, [pc, #0x100]
+0x00001afa:  4d31       ldr      r5, [pc, #0xc4]
+0x00001afc:  f001 f895  bl       #0x2c2a
+
+Tracking exected BB id: 0x1af4
+----------------
+INST: 
+0x00001b00:  4830       ldr      r0, [pc, #0xc0]
+0x00001b02:  f001 f892  bl       #0x2c2a
+
+Tracking exected BB id: 0x1b00
+----------------
+INST: 
+0x00001b06:  4830       ldr      r0, [pc, #0xc0]
+0x00001b08:  f001 f88f  bl       #0x2c2a
+
+Tracking exected BB id: 0x1b06
+----------------
+INST: 
+0x00001b0c:  482f       ldr      r0, [pc, #0xbc]
+0x00001b0e:  f001 f88c  bl       #0x2c2a
+
+Tracking exected BB id: 0x1b0c
+----------------
+INST: 
+0x00001b12:  482f       ldr      r0, [pc, #0xbc]
+0x00001b14:  f001 f889  bl       #0x2c2a
+
+Tracking exected BB id: 0x1b12
+----------------
+INST: 
+0x00001b18:  4648       mov      r0, sb
+0x00001b1a:  f001 f886  bl       #0x2c2a
+
+Tracking exected BB id: 0x1b18
+----------------
+INST: 
+0x00001b1e:  4628       mov      r0, r5
+0x00001b20:  f001 f883  bl       #0x2c2a
+
+Tracking exected BB id: 0x1b1e
+----------------
+INST: 
+0x00001b24:  482b       ldr      r0, [pc, #0xac]
+0x00001b26:  f001 f880  bl       #0x2c2a
+
+Tracking exected BB id: 0x1b24
+----------------
+INST: 
+0x00001b2a:  482b       ldr      r0, [pc, #0xac]
+0x00001b2c:  f001 f87d  bl       #0x2c2a
+
+Tracking exected BB id: 0x1b2a
+----------------
+INST: 
+0x00001b30:  482a       ldr      r0, [pc, #0xa8]
+0x00001b32:  f001 f87a  bl       #0x2c2a
+
+Tracking exected BB id: 0x1b30
+----------------
+INST: 
+0x00001b36:  4b2a       ldr      r3, [pc, #0xa8]
+0x00001b38:  f8c3 9000  str.w    sb, [r3]
+0x00001b3c:  4b29       ldr      r3, [pc, #0xa4]
+0x00001b3e:  601d       str      r5, [r3]
+0x00001b40:  4a29       ldr      r2, [pc, #0xa4]
+0x00001b42:  492a       ldr      r1, [pc, #0xa8]
+0x00001b44:  6813       ldr      r3, [r2]
+0x00001b46:  6808       ldr      r0, [r1]
+0x00001b48:  3301       adds     r3, #1
+0x00001b4a:  6013       str      r3, [r2]
+0x00001b4c:  6ae2       ldr      r2, [r4, #0x2c]
+0x00001b4e:  64e3       str      r3, [r4, #0x4c]
+0x00001b50:  2501       movs     r5, #1
+0x00001b52:  fa05 f302  lsl.w    r3, r5, r2
+0x00001b56:  4303       orrs     r3, r0
+0x00001b58:  600b       str      r3, [r1]
+0x00001b5a:  4b18       ldr      r3, [pc, #0x60]
+0x00001b5c:  2014       movs     r0, #0x14
+0x00001b5e:  fb00 3002  mla      r0, r0, r2, r3
+0x00001b62:  4639       mov      r1, r7
+0x00001b64:  f001 f86f  bl       #0x2c46
+
+Tracking exected BB id: 0x1b36
+----------------
+INST: 
+0x00002c46:  6843       ldr      r3, [r0, #4]
+0x00002c48:  604b       str      r3, [r1, #4]
+0x00002c4a:  689a       ldr      r2, [r3, #8]
+0x00002c4c:  608a       str      r2, [r1, #8]
+0x00002c4e:  689a       ldr      r2, [r3, #8]
+0x00002c50:  6051       str      r1, [r2, #4]
+0x00002c52:  6099       str      r1, [r3, #8]
+0x00002c54:  6803       ldr      r3, [r0]
+0x00002c56:  6108       str      r0, [r1, #0x10]
+0x00002c58:  3301       adds     r3, #1
+0x00002c5a:  6003       str      r3, [r0]
+0x00002c5c:  4770       bx       lr
+
+Tracking exected BB id: 0x2c46
+----------------
+INST: 
+0x00001b68:  f7ff fcce  bl       #0x1508
+
+Tracking exected BB id: 0x1b68
+----------------
+INST: 
+0x00001b6c:  f8d8 3000  ldr.w    r3, [r8]
+0x00001b70:  b163       cbz      r3, #0x1b8c
+
+Tracking exected BB id: 0x1b6c
+----------------
+INST: 
+0x00001b8c:  4628       mov      r0, r5
+0x00001b8e:  e8bd 8ff8  pop.w    {r3, r4, r5, r6, r7, r8, sb, sl, fp, pc}
+
+Tracking exected BB id: 0x1b8c
+----------------
+INST: 
+0x00001c12:  2801       cmp      r0, #1
+0x00001c14:  d118       bne      #0x1c48
+
+Tracking exected BB id: 0x1c12
+----------------
+INST: 
+0x00001c16:  f000 fae5  bl       #0x21e4
+
+Tracking exected BB id: 0x1c16
+----------------
+INST: 
+0x000021e4:  b507       push     {r0, r1, r2, lr}
+0x000021e6:  f7ff ffb3  bl       #0x2150
+
+Tracking exected BB id: 0x21e4
+Tracking exected BB id: 0x2150
+Tracking exected BB id: 0x14cc
+Tracking exected BB id: 0x2188
+----------------
+INST: 
+0x000021ea:  4b0e       ldr      r3, [pc, #0x38]
+0x000021ec:  681b       ldr      r3, [r3]
+0x000021ee:  b943       cbnz     r3, #0x2202
+
+Tracking exected BB id: 0x21ea
+----------------
+INST: 
+0x00002202:  4b09       ldr      r3, [pc, #0x24]
+0x00002204:  9301       str      r3, [sp, #4]
+0x00002206:  2304       movs     r3, #4
+0x00002208:  9300       str      r3, [sp]
+0x0000220a:  f44f 72c8  mov.w    r2, #0x190
+0x0000220e:  2300       movs     r3, #0
+0x00002210:  4906       ldr      r1, [pc, #0x18]
+0x00002212:  4807       ldr      r0, [pc, #0x1c]
+0x00002214:  f7ff fc02  bl       #0x1a1c
+
+Tracking exected BB id: 0x2202
+Tracking exected BB id: 0x14cc
+----------------
+INST: 
+0x00001dde:  4d24       ldr      r5, [pc, #0x90]
+0x00001de0:  4e24       ldr      r6, [pc, #0x90]
+0x00001de2:  f8df 80a4  ldr.w    r8, [pc, #0xa4]
+0x00001de6:  e01f       b        #0x1e28
+
+Tracking exected BB id: 0x1dde
+----------------
+INST: 
+0x00001e28:  682b       ldr      r3, [r5]
+0x00001e2a:  2b00       cmp      r3, #0
+0x00001e2c:  d1dc       bne      #0x1de8
+
+Tracking exected BB id: 0x1e28
+----------------
+INST: 
+0x00001e2e:  b10c       cbz      r4, #0x1e34
+
+Tracking exected BB id: 0x1e2e
+----------------
+INST: 
+0x00001e34:  4d12       ldr      r5, [pc, #0x48]
+0x00001e36:  682c       ldr      r4, [r5]
+0x00001e38:  b144       cbz      r4, #0x1e4c
+
+Tracking exected BB id: 0x1e34
+----------------
+INST: 
+0x00001e4c:  4b0b       ldr      r3, [pc, #0x2c]
+0x00001e4e:  681b       ldr      r3, [r3]
+0x00001e50:  2b00       cmp      r3, #0
+0x00001e52:  d0ba       beq      #0x1dca
+
+Tracking exected BB id: 0x1e4c
+Tracking exected BB id: 0x1dca
+Tracking exected BB id: 0x14cc
+Tracking exected BB id: 0x14cc
+----------------
+INST: 
+0x00001b9e:  f8d8 3000  ldr.w    r3, [r8]
+0x00001ba2:  2b00       cmp      r3, #0
+0x00001ba4:  d1cc       bne      #0x1b40
+
+Tracking exected BB id: 0x1b9e
+----------------
+INST: 
+0x00001ba6:  6833       ldr      r3, [r6]
+0x00001ba8:  6ae2       ldr      r2, [r4, #0x2c]
+0x00001baa:  6adb       ldr      r3, [r3, #0x2c]
+0x00001bac:  429a       cmp      r2, r3
+0x00001bae:  bf28       it       hs
+0x00001bb0:  6034       strhs    r4, [r6]
+0x00001bb2:  e7c5       b        #0x1b40
+
+Tracking exected BB id: 0x1ba6
+----------------
+INST: 
+0x00001b40:  4a29       ldr      r2, [pc, #0xa4]
+0x00001b42:  492a       ldr      r1, [pc, #0xa8]
+0x00001b44:  6813       ldr      r3, [r2]
+0x00001b46:  6808       ldr      r0, [r1]
+0x00001b48:  3301       adds     r3, #1
+0x00001b4a:  6013       str      r3, [r2]
+0x00001b4c:  6ae2       ldr      r2, [r4, #0x2c]
+0x00001b4e:  64e3       str      r3, [r4, #0x4c]
+0x00001b50:  2501       movs     r5, #1
+0x00001b52:  fa05 f302  lsl.w    r3, r5, r2
+0x00001b56:  4303       orrs     r3, r0
+0x00001b58:  600b       str      r3, [r1]
+0x00001b5a:  4b18       ldr      r3, [pc, #0x60]
+0x00001b5c:  2014       movs     r0, #0x14
+0x00001b5e:  fb00 3002  mla      r0, r0, r2, r3
+0x00001b62:  4639       mov      r1, r7
+0x00001b64:  f001 f86f  bl       #0x2c46
+
+Tracking exected BB id: 0x1b40
+----------------
+INST: 
+0x00002218:  2800       cmp      r0, #0
+0x0000221a:  d0e9       beq      #0x21f0
+
+Tracking exected BB id: 0x2218
+----------------
+INST: 
+0x0000221c:  b003       add      sp, #0xc
+0x0000221e:  f85d fb04  ldr      pc, [sp], #4
+
+Tracking exected BB id: 0x221c
+----------------
+INST: 
+0x00001c1a:  2801       cmp      r0, #1
+0x00001c1c:  d114       bne      #0x1c48
+
+Tracking exected BB id: 0x1c1a
+----------------
+INST: 
+0x00001c1e:  f04f 0320  mov.w    r3, #0x20
+0x00001c22:  f383 8811  msr      basepri, r3
+
+Tracking exected BB id: 0x1c1e
+----------------
+INST: 
+0x00001c26:  f3bf 8f6f  isb      sy
+
+Tracking exected BB id: 0x1c26
+----------------
+INST: 
+0x00001c2a:  f3bf 8f4f  dsb      sy
+0x00001c2e:  4b10       ldr      r3, [pc, #0x40]
+0x00001c30:  f04f 32ff  mov.w    r2, #-1
+0x00001c34:  601a       str      r2, [r3]
+0x00001c36:  4b0f       ldr      r3, [pc, #0x3c]
+0x00001c38:  6018       str      r0, [r3]
+0x00001c3a:  4b0f       ldr      r3, [pc, #0x3c]
+0x00001c3c:  601c       str      r4, [r3]
+0x00001c3e:  b002       add      sp, #8
+0x00001c40:  e8bd 4010  pop.w    {r4, lr}
+0x00001c44:  f7ff bbb8  b.w      #0x13b8
+
+Tracking exected BB id: 0x1c2a
+----------------
+INST: 
+0x000013b8:  4b39       ldr      r3, [pc, #0xe4]
+0x000013ba:  4a3a       ldr      r2, [pc, #0xe8]
+0x000013bc:  b513       push     {r0, r1, r4, lr}
+0x000013be:  6819       ldr      r1, [r3]
+0x000013c0:  4291       cmp      r1, r2
+0x000013c2:  d108       bne      #0x13d6
+
+Tracking exected BB id: 0x13b8
+----------------
+INST: 
+0x000013d6:  681a       ldr      r2, [r3]
+0x000013d8:  4b33       ldr      r3, [pc, #0xcc]
+0x000013da:  429a       cmp      r2, r3
+0x000013dc:  d108       bne      #0x13f0
+
+Tracking exected BB id: 0x13d6
+----------------
+INST: 
+0x000013f0:  4b2e       ldr      r3, [pc, #0xb8]
+0x000013f2:  781a       ldrb     r2, [r3]
+0x000013f4:  b2d2       uxtb     r2, r2
+0x000013f6:  9201       str      r2, [sp, #4]
+0x000013f8:  22ff       movs     r2, #0xff
+0x000013fa:  701a       strb     r2, [r3]
+0x000013fc:  781b       ldrb     r3, [r3]
+0x000013fe:  4a2c       ldr      r2, [pc, #0xb0]
+
+Tracking exected BB id: 0x13f0
+----------------
+INST: 
+0x00001400:  b2db       uxtb     r3, r3
+0x00001402:  f88d 3003  strb.w   r3, [sp, #3]
+0x00001406:  f89d 3003  ldrb.w   r3, [sp, #3]
+0x0000140a:  f003 0320  and      r3, r3, #0x20
+0x0000140e:  7013       strb     r3, [r2]
+0x00001410:  4b28       ldr      r3, [pc, #0xa0]
+0x00001412:  2207       movs     r2, #7
+0x00001414:  601a       str      r2, [r3]
+0x00001416:  2100       movs     r1, #0
+0x00001418:  f89d 0003  ldrb.w   r0, [sp, #3]
+0x0000141c:  0600       lsls     r0, r0, #0x18
+0x0000141e:  f102 34ff  add.w    r4, r2, #-1
+0x00001422:  d40d       bmi      #0x1440
+
+Tracking exected BB id: 0x1400
+----------------
+INST: 
+0x00001440:  f89d 2003  ldrb.w   r2, [sp, #3]
+0x00001444:  0052       lsls     r2, r2, #1
+0x00001446:  b2d2       uxtb     r2, r2
+0x00001448:  f88d 2003  strb.w   r2, [sp, #3]
+0x0000144c:  2101       movs     r1, #1
+0x0000144e:  4622       mov      r2, r4
+0x00001450:  e7e2       b        #0x1418
+
+Tracking exected BB id: 0x1440
+----------------
+INST: 
+0x00001418:  f89d 0003  ldrb.w   r0, [sp, #3]
+0x0000141c:  0600       lsls     r0, r0, #0x18
+0x0000141e:  f102 34ff  add.w    r4, r2, #-1
+0x00001422:  d40d       bmi      #0x1440
+
+Tracking exected BB id: 0x1418
+Tracking exected BB id: 0x1440
+----------------
+INST: 
+0x00001424:  b101       cbz      r1, #0x1428
+
+Tracking exected BB id: 0x1424
+----------------
+INST: 
+0x00001426:  601a       str      r2, [r3]
+0x00001428:  681a       ldr      r2, [r3]
+0x0000142a:  2a03       cmp      r2, #3
+0x0000142c:  d011       beq      #0x1452
+
+Tracking exected BB id: 0x1426
+----------------
+INST: 
+0x00001452:  0212       lsls     r2, r2, #8
+0x00001454:  f402 62e0  and      r2, r2, #0x700
+0x00001458:  601a       str      r2, [r3]
+0x0000145a:  9b01       ldr      r3, [sp, #4]
+0x0000145c:  4a13       ldr      r2, [pc, #0x4c]
+0x0000145e:  b2db       uxtb     r3, r3
+0x00001460:  7013       strb     r3, [r2]
+0x00001462:  4b15       ldr      r3, [pc, #0x54]
+0x00001464:  681a       ldr      r2, [r3]
+0x00001466:  f442 0270  orr      r2, r2, #0xf00000
+0x0000146a:  601a       str      r2, [r3]
+0x0000146c:  681a       ldr      r2, [r3]
+0x0000146e:  f042 4270  orr      r2, r2, #0xf0000000
+0x00001472:  601a       str      r2, [r3]
+0x00001474:  f7ff fe4c  bl       #0x1110
+
+Tracking exected BB id: 0x1452
+----------------
+INST: 
+0x00001110:  4a07       ldr      r2, [pc, #0x1c]
+0x00001112:  4908       ldr      r1, [pc, #0x20]
+0x00001114:  2300       movs     r3, #0
+0x00001116:  6013       str      r3, [r2]
+0x00001118:  600b       str      r3, [r1]
+0x0000111a:  4b07       ldr      r3, [pc, #0x1c]
+0x0000111c:  21c8       movs     r1, #0xc8
+0x0000111e:  681b       ldr      r3, [r3]
+0x00001120:  fbb3 f3f1  udiv     r3, r3, r1
+0x00001124:  4905       ldr      r1, [pc, #0x14]
+0x00001126:  3b01       subs     r3, #1
+0x00001128:  600b       str      r3, [r1]
+0x0000112a:  2307       movs     r3, #7
+0x0000112c:  6013       str      r3, [r2]
+0x0000112e:  4770       bx       lr
+
+Tracking exected BB id: 0x1110
+----------------
+INST: 
+0x00001478:  4b10       ldr      r3, [pc, #0x40]
+0x0000147a:  2400       movs     r4, #0
+0x0000147c:  601c       str      r4, [r3]
+0x0000147e:  f7ff ff7b  bl       #0x1378
+
+Tracking exected BB id: 0x1478
+----------------
+INST: 
+0x00001378:  f8df 000c  ldr.w    r0, [pc, #0xc]
+0x0000137c:  6801       ldr      r1, [r0]
+0x0000137e:  f441 0170  orr      r1, r1, #0xf00000
+0x00001382:  6001       str      r1, [r0]
+0x00001384:  4770       bx       lr
+
+Tracking exected BB id: 0x1378
+----------------
+INST: 
+0x00001482:  4a0f       ldr      r2, [pc, #0x3c]
+0x00001484:  6813       ldr      r3, [r2]
+0x00001486:  f043 4340  orr      r3, r3, #0xc0000000
+0x0000148a:  6013       str      r3, [r2]
+0x0000148c:  f7ff ff60  bl       #0x1350
+
+Tracking exected BB id: 0x1482
+----------------
+INST: 
+0x00001350:  4808       ldr      r0, [pc, #0x20]
+0x00001352:  6800       ldr      r0, [r0]
+0x00001354:  6800       ldr      r0, [r0]
+0x00001356:  f380 8808  msr      msp, r0
+
+Tracking exected BB id: 0x1350
+----------------
+INST: 
+0x0000135a:  f04f 0000  mov.w    r0, #0
+0x0000135e:  f380 8814  msr      control, r0
+
+Tracking exected BB id: 0x135a
+----------------
+INST: 
+0x00001362:  b662       cpsie    i
+
+Tracking exected BB id: 0x1362
+----------------
+INST: 
+0x00001364:  b661       cpsie    f
+
+Tracking exected BB id: 0x1364
+----------------
+INST: 
+0x00001366:  f3bf 8f4f  dsb      sy
+0x0000136a:  f3bf 8f6f  isb      sy
+
+Tracking exected BB id: 0x1366
+----------------
+INST: 
+0x0000136e:  df00       svc      #0
+
+Tracking exected BB id: 0x136e
+----------------
+INST: 
+0x00000410:  4b07       ldr      r3, [pc, #0x1c]
+0x00000412:  6819       ldr      r1, [r3]
+0x00000414:  6808       ldr      r0, [r1]
+0x00000416:  e8b0 4ff0  ldm.w    r0!, {r4, r5, r6, r7, r8, sb, sl, fp, lr}
+0x0000041a:  f380 8809  msr      psp, r0
+
+Tracking exected BB id: 0x0410
+----------------
+INST: 
+0x0000041e:  f3bf 8f6f  isb      sy
+
+Tracking exected BB id: 0x041e
+----------------
+INST: 
+0x00000422:  f04f 0000  mov.w    r0, #0
+0x00000426:  f380 8811  msr      basepri, r0
+
+Tracking exected BB id: 0x0422
+----------------
+INST: 
+0x0000042a:  4770       bx       lr
+
+Tracking exected BB id: 0x042a
+----------------
+INST: 
+0x00001530:  b508       push     {r3, lr}
+0x00001532:  f04f 0320  mov.w    r3, #0x20
+0x00001536:  f383 8811  msr      basepri, r3
+
+Tracking exected BB id: 0x1530
+----------------
+INST: 
+0x0000153a:  f3bf 8f6f  isb      sy
+
+Tracking exected BB id: 0x153a
+----------------
+INST: 
+0x0000153e:  f3bf 8f4f  dsb      sy
+0x00001542:  f000 fba9  bl       #0x1c98
+
+Tracking exected BB id: 0x153e
+----------------
+INST: 
+0x00001c98:  e92d 4ff8  push.w   {r3, r4, r5, r6, r7, r8, sb, sl, fp, lr}
+0x00001c9c:  4b35       ldr      r3, [pc, #0xd4]
+0x00001c9e:  681b       ldr      r3, [r3]
+0x00001ca0:  2b00       cmp      r3, #0
+0x00001ca2:  d160       bne      #0x1d66
+
+Tracking exected BB id: 0x1c98
+----------------
+INST: 
+0x00001ca4:  4b34       ldr      r3, [pc, #0xd0]
+0x00001ca6:  681d       ldr      r5, [r3]
+0x00001ca8:  3501       adds     r5, #1
+0x00001caa:  601d       str      r5, [r3]
+0x00001cac:  b9bd       cbnz     r5, #0x1cde
+
+Tracking exected BB id: 0x1ca4
+----------------
+INST: 
+0x00001cde:  4f2a       ldr      r7, [pc, #0xa8]
+0x00001ce0:  683b       ldr      r3, [r7]
+0x00001ce2:  42ab       cmp      r3, r5
+0x00001ce4:  f04f 0600  mov.w    r6, #0
+0x00001ce8:  d907       bls      #0x1cfa
+
+Tracking exected BB id: 0x1cde
+----------------
+INST: 
+0x00001cea:  4b28       ldr      r3, [pc, #0xa0]
+0x00001cec:  681b       ldr      r3, [r3]
+0x00001cee:  2b00       cmp      r3, #0
+0x00001cf0:  bf0c       ite      eq
+0x00001cf2:  4630       moveq    r0, r6
+0x00001cf4:  2001       movne    r0, #1
+0x00001cf6:  e8bd 8ff8  pop.w    {r3, r4, r5, r6, r7, r8, sb, sl, fp, pc}
+
+Tracking exected BB id: 0x1cea
+----------------
+INST: 
+0x00001546:  b118       cbz      r0, #0x1550
+
+Tracking exected BB id: 0x1546
+----------------
+INST: 
+0x00001550:  2300       movs     r3, #0
+0x00001552:  f383 8811  msr      basepri, r3
+
+Tracking exected BB id: 0x1550
+----------------
+INST: 
+0x00001556:  bd08       pop      {r3, pc}
+
+Tracking exected BB id: 0x1556
+----------------
+INST: 
+0x00002308:  e92d 4ff0  push.w   {r4, r5, r6, r7, r8, sb, sl, fp, lr}
+0x0000230c:  4d6b       ldr      r5, [pc, #0x1ac]
+0x0000230e:  f8df 81bc  ldr.w    r8, [pc, #0x1bc]
+0x00002312:  b087       sub      sp, #0x1c
+0x00002314:  462f       mov      r7, r5
+0x00002316:  682b       ldr      r3, [r5]
+0x00002318:  f8d3 b000  ldr.w    fp, [r3]
+0x0000231c:  f1bb 0f00  cmp.w    fp, #0
+0x00002320:  d047       beq      #0x23b2
+
+Tracking exected BB id: 0x2308
+----------------
+INST: 
+0x000023b2:  46da       mov      sl, fp
+0x000023b4:  e7b8       b        #0x2328
+
+Tracking exected BB id: 0x23b2
+----------------
+INST: 
+0x00002328:  4c65       ldr      r4, [pc, #0x194]
+0x0000232a:  f7ff fca7  bl       #0x1c7c
+
+Tracking exected BB id: 0x2328
+----------------
+INST: 
+0x0000232e:  f7ff fcad  bl       #0x1c8c
+
+Tracking exected BB id: 0x232e
+----------------
+INST: 
+0x00002332:  6823       ldr      r3, [r4]
+0x00002334:  4298       cmp      r0, r3
+0x00002336:  4681       mov      sb, r0
+0x00002338:  4626       mov      r6, r4
+0x0000233a:  d23c       bhs      #0x23b6
+
+Tracking exected BB id: 0x2332
+----------------
+INST: 
+0x000023b6:  6020       str      r0, [r4]
+0x000023b8:  f1bb 0f00  cmp.w    fp, #0
+0x000023bc:  d029       beq      #0x2412
+
+Tracking exected BB id: 0x23b6
+----------------
+INST: 
+0x00002412:  4b2c       ldr      r3, [pc, #0xb0]
+0x00002414:  681b       ldr      r3, [r3]
+0x00002416:  681a       ldr      r2, [r3]
+0x00002418:  fab2 f282  clz      r2, r2
+0x0000241c:  0952       lsrs     r2, r2, #5
+0x0000241e:  4b2a       ldr      r3, [pc, #0xa8]
+0x00002420:  ebaa 0109  sub.w    r1, sl, sb
+0x00002424:  6818       ldr      r0, [r3]
+0x00002426:  f000 fd52  bl       #0x2ece
+
+Tracking exected BB id: 0x2412
+----------------
+INST: 
+0x00002ece:  b570       push     {r4, r5, r6, lr}
+0x00002ed0:  4604       mov      r4, r0
+0x00002ed2:  460d       mov      r5, r1
+0x00002ed4:  4616       mov      r6, r2
+0x00002ed6:  f7fe faf5  bl       #0x14c4
+
+Tracking exected BB id: 0x2ece
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+----------------
+INST: 
+0x00001d66:  4a0b       ldr      r2, [pc, #0x2c]
+0x00001d68:  6813       ldr      r3, [r2]
+0x00001d6a:  3301       adds     r3, #1
+0x00001d6c:  6013       str      r3, [r2]
+0x00001d6e:  2600       movs     r6, #0
+0x00001d70:  e7bb       b        #0x1cea
+
+Tracking exected BB id: 0x1d66
+Tracking exected BB id: 0x1cea
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x2ece
+Tracking exected BB id: 0x14cc
+----------------
+INST: 
+0x000014e0:  4b08       ldr      r3, [pc, #0x20]
+0x000014e2:  681b       ldr      r3, [r3]
+0x000014e4:  f013 0fff  tst.w    r3, #0xff
+0x000014e8:  d008       beq      #0x14fc
+
+Tracking exected BB id: 0x14e0
+Tracking exected BB id: 0x14fc
+----------------
+INST: 
+0x00002eda:  f894 3044  ldrb.w   r3, [r4, #0x44]
+0x00002ede:  2bff       cmp      r3, #0xff
+0x00002ee0:  bf04       itt      eq
+0x00002ee2:  2300       moveq    r3, #0
+0x00002ee4:  f884 3044  strbeq.w r3, [r4, #0x44]
+0x00002ee8:  f894 3045  ldrb.w   r3, [r4, #0x45]
+0x00002eec:  2bff       cmp      r3, #0xff
+0x00002eee:  bf04       itt      eq
+0x00002ef0:  2300       moveq    r3, #0
+0x00002ef2:  f884 3045  strbeq.w r3, [r4, #0x45]
+0x00002ef6:  f7fe fb07  bl       #0x1508
+
+Tracking exected BB id: 0x2eda
+----------------
+INST: 
+0x00001526:  f383 8811  msr      basepri, r3
+
+Tracking exected BB id: 0x1526
+Tracking exected BB id: 0x152a
+----------------
+INST: 
+0x00002efa:  6ba3       ldr      r3, [r4, #0x38]
+0x00002efc:  b92b       cbnz     r3, #0x2f0a
+
+Tracking exected BB id: 0x2efa
+----------------
+INST: 
+0x00002f0a:  4620       mov      r0, r4
+0x00002f0c:  e8bd 4070  pop.w    {r4, r5, r6, lr}
+0x00002f10:  f7ff bf20  b.w      #0x2d54
+
+Tracking exected BB id: 0x2f0a
+----------------
+INST: 
+0x00002d54:  b570       push     {r4, r5, r6, lr}
+0x00002d56:  4604       mov      r4, r0
+0x00002d58:  f7fe fbb4  bl       #0x14c4
+
+Tracking exected BB id: 0x2d54
+Tracking exected BB id: 0x14cc
+Tracking exected BB id: 0x14fc
+----------------
+INST: 
+0x00002d5c:  f894 5045  ldrb.w   r5, [r4, #0x45]
+0x00002d60:  f104 0624  add.w    r6, r4, #0x24
+0x00002d64:  b26d       sxtb     r5, r5
+0x00002d66:  2d00       cmp      r5, #0
+0x00002d68:  dc14       bgt      #0x2d94
+
+Tracking exected BB id: 0x2d5c
+----------------
+INST: 
+0x00002d6a:  23ff       movs     r3, #0xff
+0x00002d6c:  f884 3045  strb.w   r3, [r4, #0x45]
+0x00002d70:  f7fe fbca  bl       #0x1508
+
+Tracking exected BB id: 0x2d6a
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x152a
+----------------
+INST: 
+0x00002d74:  f7fe fba6  bl       #0x14c4
+
+Tracking exected BB id: 0x2d74
+Tracking exected BB id: 0x14cc
+Tracking exected BB id: 0x14fc
+----------------
+INST: 
+0x00002d78:  f894 5044  ldrb.w   r5, [r4, #0x44]
+0x00002d7c:  f104 0610  add.w    r6, r4, #0x10
+0x00002d80:  b26d       sxtb     r5, r5
+0x00002d82:  2d00       cmp      r5, #0
+0x00002d84:  dc12       bgt      #0x2dac
+
+Tracking exected BB id: 0x2d78
+----------------
+INST: 
+0x00002d86:  23ff       movs     r3, #0xff
+0x00002d88:  f884 3044  strb.w   r3, [r4, #0x44]
+0x00002d8c:  e8bd 4070  pop.w    {r4, r5, r6, lr}
+0x00002d90:  f7fe bbba  b.w      #0x1508
+
+Tracking exected BB id: 0x2d86
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x152a
+----------------
+INST: 
+0x0000242a:  f7ff fcb9  bl       #0x1da0
+
+Tracking exected BB id: 0x242a
+Tracking exected BB id: 0x14cc
+Tracking exected BB id: 0x14fc
+----------------
+INST: 
+0x00001e3a:  4e10       ldr      r6, [pc, #0x40]
+0x00001e3c:  2701       movs     r7, #1
+0x00001e3e:  f7ff ff2b  bl       #0x1c98
+
+Tracking exected BB id: 0x1e3a
+----------------
+INST: 
+0x00001c98:  e92d 4ff8  push.w   {r3, r4, r5, r6, r7, r8, sb, sl, fp, lr}
+0x00001c9c:  4b35       ldr      r3, [pc, #0xd4]
+0x00001c9e:  681b       ldr      r3, [r3]
+0x00001ca0:  2b00       cmp      r3, #0
+0x00001ca2:  d160       bne      #0x1d66
+
+Tracking exected BB id: 0x1c98
+----------------
+INST: 
+0x00001ca4:  4b34       ldr      r3, [pc, #0xd0]
+0x00001ca6:  681d       ldr      r5, [r3]
+0x00001ca8:  3501       adds     r5, #1
+0x00001caa:  601d       str      r5, [r3]
+0x00001cac:  b9bd       cbnz     r5, #0x1cde
+
+Tracking exected BB id: 0x1ca4
+----------------
+INST: 
+0x00001cde:  4f2a       ldr      r7, [pc, #0xa8]
+0x00001ce0:  683b       ldr      r3, [r7]
+0x00001ce2:  42ab       cmp      r3, r5
+0x00001ce4:  f04f 0600  mov.w    r6, #0
+0x00001ce8:  d907       bls      #0x1cfa
+
+Tracking exected BB id: 0x1cde
+----------------
+INST: 
+0x00001cea:  4b28       ldr      r3, [pc, #0xa0]
+0x00001cec:  681b       ldr      r3, [r3]
+0x00001cee:  2b00       cmp      r3, #0
+0x00001cf0:  bf0c       ite      eq
+0x00001cf2:  4630       moveq    r0, r6
+0x00001cf4:  2001       movne    r0, #1
+0x00001cf6:  e8bd 8ff8  pop.w    {r3, r4, r5, r6, r7, r8, sb, sl, fp, pc}
+
+Tracking exected BB id: 0x1cea
+----------------
+INST: 
+0x00001e42:  b100       cbz      r0, #0x1e46
+
+Tracking exected BB id: 0x1e42
+----------------
+INST: 
+0x00001e46:  3c01       subs     r4, #1
+0x00001e48:  d1f9       bne      #0x1e3e
+
+Tracking exected BB id: 0x1e46
+----------------
+INST: 
+0x00001e3e:  f7ff ff2b  bl       #0x1c98
+
+Tracking exected BB id: 0x1e3e
+Tracking exected BB id: 0x1c98
+----------------
+INST: 
+0x00001e4a:  602c       str      r4, [r5]
+0x00001e4c:  4b0b       ldr      r3, [pc, #0x2c]
+0x00001e4e:  681b       ldr      r3, [r3]
+0x00001e50:  2b00       cmp      r3, #0
+0x00001e52:  d0ba       beq      #0x1dca
+
+Tracking exected BB id: 0x1e4a
+Tracking exected BB id: 0x1dca
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x152a
+----------------
+INST: 
+0x0000242e:  2800       cmp      r0, #0
+0x00002430:  d18a       bne      #0x2348
+
+Tracking exected BB id: 0x242e
+----------------
+INST: 
+0x00002432:  f04f 5380  mov.w    r3, #0x10000000
+0x00002436:  f8c8 3000  str.w    r3, [r8]
+0x0000243a:  f3bf 8f4f  dsb      sy
+0x0000243e:  f3bf 8f6f  isb      sy
+
+Tracking exected BB id: 0x2432
+----------------
+INST: 
+0x00000440:  f3ef 8009  mrs      r0, psp
+0x00000444:  f3bf 8f6f  isb      sy
+
+Tracking exected BB id: 0x0440
+----------------
+INST: 
+0x00000448:  4b15       ldr      r3, [pc, #0x54]
+0x0000044a:  681a       ldr      r2, [r3]
+0x0000044c:  f01e 0f10  tst.w    lr, #0x10
+0x00000450:  bf08       it       eq
+0x00000452:  ed20 8a10  vstmdbeq r0!, {s16, s17, s18, s19, s20, s21, s22, s23, s24, s25, s26, s27, s28, s29, s30, s31}
+
+Tracking exected BB id: 0x0448
+----------------
+INST: 
+0x00000456:  e920 4ff0  stmdb    r0!, {r4, r5, r6, r7, r8, sb, sl, fp, lr}
+0x0000045a:  6010       str      r0, [r2]
+0x0000045c:  e92d 0009  push.w   {r0, r3}
+0x00000460:  f04f 0020  mov.w    r0, #0x20
+0x00000464:  f380 8811  msr      basepri, r0
+
+Tracking exected BB id: 0x0456
+----------------
+INST: 
+0x00000468:  f3bf 8f4f  dsb      sy
+0x0000046c:  f3bf 8f6f  isb      sy
+
+Tracking exected BB id: 0x0468
+----------------
+INST: 
+0x00000470:  f001 fd0c  bl       #0x1e8c
+
+Tracking exected BB id: 0x0470
+----------------
+INST: 
+0x00001e8c:  4b17       ldr      r3, [pc, #0x5c]
+0x00001e8e:  681a       ldr      r2, [r3]
+0x00001e90:  4b17       ldr      r3, [pc, #0x5c]
+0x00001e92:  b510       push     {r4, lr}
+0x00001e94:  b112       cbz      r2, #0x1e9c
+
+Tracking exected BB id: 0x1e8c
+----------------
+INST: 
+0x00001e9c:  601a       str      r2, [r3]
+0x00001e9e:  4b15       ldr      r3, [pc, #0x54]
+0x00001ea0:  681b       ldr      r3, [r3]
+0x00001ea2:  fab3 f383  clz      r3, r3
+0x00001ea6:  b2db       uxtb     r3, r3
+0x00001ea8:  f1c3 031f  rsb.w    r3, r3, #0x1f
+0x00001eac:  2214       movs     r2, #0x14
+0x00001eae:  4912       ldr      r1, [pc, #0x48]
+0x00001eb0:  435a       muls     r2, r3, r2
+0x00001eb2:  1888       adds     r0, r1, r2
+0x00001eb4:  588c       ldr      r4, [r1, r2]
+0x00001eb6:  b944       cbnz     r4, #0x1eca
+
+Tracking exected BB id: 0x1e9c
+----------------
+INST: 
+0x00001eca:  6844       ldr      r4, [r0, #4]
+0x00001ecc:  3208       adds     r2, #8
+0x00001ece:  6864       ldr      r4, [r4, #4]
+0x00001ed0:  6044       str      r4, [r0, #4]
+0x00001ed2:  440a       add      r2, r1
+0x00001ed4:  4294       cmp      r4, r2
+0x00001ed6:  bf04       itt      eq
+0x00001ed8:  6862       ldreq    r2, [r4, #4]
+0x00001eda:  6042       streq    r2, [r0, #4]
+0x00001edc:  2214       movs     r2, #0x14
+0x00001ede:  fb02 1303  mla      r3, r2, r3, r1
+0x00001ee2:  685b       ldr      r3, [r3, #4]
+0x00001ee4:  68da       ldr      r2, [r3, #0xc]
+0x00001ee6:  4b05       ldr      r3, [pc, #0x14]
+0x00001ee8:  e7d6       b        #0x1e98
+
+Tracking exected BB id: 0x1eca
+----------------
+INST: 
+0x00001e98:  601a       str      r2, [r3]
+0x00001e9a:  bd10       pop      {r4, pc}
+
+Tracking exected BB id: 0x1e98
+----------------
+INST: 
+0x00000474:  f04f 0000  mov.w    r0, #0
+0x00000478:  f380 8811  msr      basepri, r0
+
+Tracking exected BB id: 0x0474
+----------------
+INST: 
+0x0000047c:  bc09       pop      {r0, r3}
+0x0000047e:  6819       ldr      r1, [r3]
+0x00000480:  6808       ldr      r0, [r1]
+0x00000482:  e8b0 4ff0  ldm.w    r0!, {r4, r5, r6, r7, r8, sb, sl, fp, lr}
+0x00000486:  f01e 0f10  tst.w    lr, #0x10
+0x0000048a:  bf08       it       eq
+0x0000048c:  ecb0 8a10  vldmiaeq r0!, {s16, s17, s18, s19, s20, s21, s22, s23, s24, s25, s26, s27, s28, s29, s30, s31}
+
+Tracking exected BB id: 0x047c
+----------------
+INST: 
+0x00000490:  f380 8809  msr      psp, r0
+
+Tracking exected BB id: 0x0490
+----------------
+INST: 
+0x00000494:  f3bf 8f6f  isb      sy
+
+Tracking exected BB id: 0x0494
+----------------
+INST: 
+0x00000498:  4770       bx       lr
+
+Tracking exected BB id: 0x0498
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+----------------
+INST: 
+0x00002442:  e781       b        #0x2348
+
+Tracking exected BB id: 0x2442
+----------------
+INST: 
+0x00002348:  f8df 917c  ldr.w    sb, [pc, #0x17c]
+0x0000234c:  f8d9 0000  ldr.w    r0, [sb]
+0x00002350:  2200       movs     r2, #0
+0x00002352:  a902       add      r1, sp, #8
+0x00002354:  f7ff fa22  bl       #0x179c
+
+Tracking exected BB id: 0x2348
+----------------
+INST: 
+0x0000179c:  e92d 43f0  push.w   {r4, r5, r6, r7, r8, sb, lr}
+0x000017a0:  b085       sub      sp, #0x14
+0x000017a2:  460f       mov      r7, r1
+0x000017a4:  9201       str      r2, [sp, #4]
+0x000017a6:  4604       mov      r4, r0
+0x000017a8:  b940       cbnz     r0, #0x17bc
+
+Tracking exected BB id: 0x179c
+----------------
+INST: 
+0x000017bc:  b951       cbnz     r1, #0x17d4
+
+Tracking exected BB id: 0x17bc
+----------------
+INST: 
+0x000017d4:  f000 fc5c  bl       #0x2090
+
+Tracking exected BB id: 0x17d4
+----------------
+INST: 
+0x00002096:  4b05       ldr      r3, [pc, #0x14]
+0x00002098:  681b       ldr      r3, [r3]
+0x0000209a:  2b00       cmp      r3, #0
+0x0000209c:  bf0c       ite      eq
+0x0000209e:  2002       moveq    r0, #2
+0x000020a0:  2000       movne    r0, #0
+0x000020a2:  4770       bx       lr
+
+Tracking exected BB id: 0x2096
+----------------
+INST: 
+0x000017d8:  b950       cbnz     r0, #0x17f0
+
+Tracking exected BB id: 0x17d8
+----------------
+INST: 
+0x000017f0:  2600       movs     r6, #0
+0x000017f2:  f04f 0800  mov.w    r8, #0
+0x000017f6:  f8df 90e0  ldr.w    sb, [pc, #0xe0]
+0x000017fa:  e03b       b        #0x1874
+
+Tracking exected BB id: 0x17f0
+----------------
+INST: 
+0x00001874:  f7ff fe26  bl       #0x14c4
+
+Tracking exected BB id: 0x1874
+Tracking exected BB id: 0x14cc
+Tracking exected BB id: 0x14fc
+----------------
+INST: 
+0x00001878:  6ba5       ldr      r5, [r4, #0x38]
+0x0000187a:  2d00       cmp      r5, #0
+0x0000187c:  d0be       beq      #0x17fc
+
+Tracking exected BB id: 0x1878
+----------------
+INST: 
+0x0000187e:  4639       mov      r1, r7
+0x00001880:  4620       mov      r0, r4
+0x00001882:  3d01       subs     r5, #1
+0x00001884:  f001 fa51  bl       #0x2d2a
+
+Tracking exected BB id: 0x187e
+----------------
+INST: 
+0x00002d2a:  4603       mov      r3, r0
+0x00002d2c:  b410       push     {r4}
+0x00002d2e:  6c1a       ldr      r2, [r3, #0x40]
+0x00002d30:  4608       mov      r0, r1
+0x00002d32:  b162       cbz      r2, #0x2d4e
+
+Tracking exected BB id: 0x2d2a
+----------------
+INST: 
+0x00002d34:  68d9       ldr      r1, [r3, #0xc]
+0x00002d36:  685c       ldr      r4, [r3, #4]
+0x00002d38:  4411       add      r1, r2
+0x00002d3a:  42a1       cmp      r1, r4
+0x00002d3c:  60d9       str      r1, [r3, #0xc]
+0x00002d3e:  bf24       itt      hs
+0x00002d40:  6819       ldrhs    r1, [r3]
+0x00002d42:  60d9       strhs    r1, [r3, #0xc]
+0x00002d44:  68d9       ldr      r1, [r3, #0xc]
+0x00002d46:  f85d 4b04  ldr      r4, [sp], #4
+0x00002d4a:  f000 b90e  b.w      #0x2f6a
+
+Tracking exected BB id: 0x2d34
+Tracking exected BB id: 0x2f6a
+----------------
+INST: 
+0x00001888:  63a5       str      r5, [r4, #0x38]
+0x0000188a:  6923       ldr      r3, [r4, #0x10]
+0x0000188c:  b163       cbz      r3, #0x18a8
+
+Tracking exected BB id: 0x1888
+----------------
+INST: 
+0x000018a8:  f7ff fe2e  bl       #0x1508
+
+Tracking exected BB id: 0x18a8
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x152a
+----------------
+INST: 
+0x000018ac:  2001       movs     r0, #1
+0x000018ae:  b005       add      sp, #0x14
+0x000018b0:  e8bd 83f0  pop.w    {r4, r5, r6, r7, r8, sb, pc}
+
+Tracking exected BB id: 0x18ac
+----------------
+INST: 
+0x00002358:  2800       cmp      r0, #0
+0x0000235a:  d0dc       beq      #0x2316
+
+Tracking exected BB id: 0x2358
+----------------
+INST: 
+0x0000235c:  9b02       ldr      r3, [sp, #8]
+0x0000235e:  2b00       cmp      r3, #0
+0x00002360:  da03       bge      #0x236a
+
+Tracking exected BB id: 0x235c
+----------------
+INST: 
+0x0000236a:  9b02       ldr      r3, [sp, #8]
+0x0000236c:  2b00       cmp      r3, #0
+0x0000236e:  dbed       blt      #0x234c
+
+Tracking exected BB id: 0x236a
+----------------
+INST: 
+0x00002370:  9c04       ldr      r4, [sp, #0x10]
+0x00002372:  6963       ldr      r3, [r4, #0x14]
+0x00002374:  b113       cbz      r3, #0x237c
+
+Tracking exected BB id: 0x2370
+----------------
+INST: 
+0x0000237c:  f7ff fc86  bl       #0x1c8c
+
+Tracking exected BB id: 0x237c
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x1c8c
+----------------
+INST: 
+0x00002380:  6833       ldr      r3, [r6]
+0x00002382:  4298       cmp      r0, r3
+0x00002384:  4683       mov      fp, r0
+0x00002386:  d201       bhs      #0x238c
+
+Tracking exected BB id: 0x2380
+----------------
+INST: 
+0x0000238c:  9a02       ldr      r2, [sp, #8]
+0x0000238e:  f8c6 b000  str.w    fp, [r6]
+0x00002392:  2a09       cmp      r2, #9
+0x00002394:  d8da       bhi      #0x234c
+
+Tracking exected BB id: 0x238c
+----------------
+INST: 
+0x00002396:  2301       movs     r3, #1
+0x00002398:  4093       lsls     r3, r2
+0x0000239a:  f413 7a04  ands     sl, r3, #0x210
+0x0000239e:  d17a       bne      #0x2496
+
+Tracking exected BB id: 0x2396
+----------------
+INST: 
+0x000023a0:  f013 0fc7  tst.w    r3, #0xc7
+0x000023a4:  d150       bne      #0x2448
+
+Tracking exected BB id: 0x23a0
+----------------
+INST: 
+0x00002448:  69a1       ldr      r1, [r4, #0x18]
+0x0000244a:  9b03       ldr      r3, [sp, #0xc]
+0x0000244c:  465a       mov      r2, fp
+0x0000244e:  4419       add      r1, r3
+0x00002450:  4620       mov      r0, r4
+0x00002452:  f7ff fea9  bl       #0x21a8
+
+Tracking exected BB id: 0x2448
+----------------
+INST: 
+0x000021a8:  4291       cmp      r1, r2
+0x000021aa:  b508       push     {r3, lr}
+0x000021ac:  6041       str      r1, [r0, #4]
+0x000021ae:  6100       str      r0, [r0, #0x10]
+0x000021b0:  d80a       bhi      #0x21c8
+
+Tracking exected BB id: 0x21a8
+----------------
+INST: 
+0x000021c8:  429a       cmp      r2, r3
+0x000021ca:  d201       bhs      #0x21d0
+
+Tracking exected BB id: 0x21c8
+----------------
+INST: 
+0x000021d0:  1d01       adds     r1, r0, #4
+0x000021d2:  4b03       ldr      r3, [pc, #0xc]
+0x000021d4:  e7f3       b        #0x21be
+
+Tracking exected BB id: 0x21d0
+----------------
+INST: 
+0x000021be:  6818       ldr      r0, [r3]
+0x000021c0:  f000 fd4d  bl       #0x2c5e
+
+Tracking exected BB id: 0x21be
+----------------
+INST: 
+0x00002c5e:  680a       ldr      r2, [r1]
+0x00002c60:  1c53       adds     r3, r2, #1
+0x00002c62:  b530       push     {r4, r5, lr}
+0x00002c64:  d10a       bne      #0x2c7c
+
+Tracking exected BB id: 0x2c5e
+----------------
+INST: 
+0x00002c7c:  f100 0308  add.w    r3, r0, #8
+0x00002c80:  685c       ldr      r4, [r3, #4]
+0x00002c82:  6825       ldr      r5, [r4]
+0x00002c84:  4295       cmp      r5, r2
+0x00002c86:  d8ef       bhi      #0x2c68
+
+Tracking exected BB id: 0x2c7c
+----------------
+INST: 
+0x00002c68:  685a       ldr      r2, [r3, #4]
+0x00002c6a:  604a       str      r2, [r1, #4]
+0x00002c6c:  6091       str      r1, [r2, #8]
+0x00002c6e:  608b       str      r3, [r1, #8]
+0x00002c70:  6059       str      r1, [r3, #4]
+0x00002c72:  6803       ldr      r3, [r0]
+0x00002c74:  6108       str      r0, [r1, #0x10]
+0x00002c76:  3301       adds     r3, #1
+0x00002c78:  6003       str      r3, [r0]
+0x00002c7a:  bd30       pop      {r4, r5, pc}
+
+Tracking exected BB id: 0x2c68
+----------------
+INST: 
+0x000021c4:  2000       movs     r0, #0
+0x000021c6:  bd08       pop      {r3, pc}
+
+Tracking exected BB id: 0x21c4
+----------------
+INST: 
+0x00002456:  2800       cmp      r0, #0
+0x00002458:  f43f af78  beq.w    #0x234c
+
+Tracking exected BB id: 0x2456
+----------------
+INST: 
+0x0000234c:  f8d9 0000  ldr.w    r0, [sb]
+0x00002350:  2200       movs     r2, #0
+0x00002352:  a902       add      r1, sp, #8
+0x00002354:  f7ff fa22  bl       #0x179c
+
+Tracking exected BB id: 0x234c
+Tracking exected BB id: 0x14cc
+Tracking exected BB id: 0x14fc
+----------------
+INST: 
+0x000017fc:  9d01       ldr      r5, [sp, #4]
+0x000017fe:  b91d       cbnz     r5, #0x1808
+
+Tracking exected BB id: 0x17fc
+----------------
+INST: 
+0x00001800:  f7ff fe82  bl       #0x1508
+
+Tracking exected BB id: 0x1800
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x152a
+----------------
+INST: 
+0x00001804:  2000       movs     r0, #0
+0x00001806:  e052       b        #0x18ae
+
+Tracking exected BB id: 0x1804
+----------------
+INST: 
+0x000018ae:  b005       add      sp, #0x14
+0x000018b0:  e8bd 83f0  pop.w    {r4, r5, r6, r7, r8, sb, pc}
+
+Tracking exected BB id: 0x18ae
+----------------
+INST: 
+0x00002316:  682b       ldr      r3, [r5]
+0x00002318:  f8d3 b000  ldr.w    fp, [r3]
+0x0000231c:  f1bb 0f00  cmp.w    fp, #0
+0x00002320:  d047       beq      #0x23b2
+
+Tracking exected BB id: 0x2316
+----------------
+INST: 
+0x00002322:  68db       ldr      r3, [r3, #0xc]
+0x00002324:  f8d3 a000  ldr.w    sl, [r3]
+0x00002328:  4c65       ldr      r4, [pc, #0x194]
+0x0000232a:  f7ff fca7  bl       #0x1c7c
+
+Tracking exected BB id: 0x2322
+----------------
+INST: 
+0x000023be:  4582       cmp      sl, r0
+0x000023c0:  d840       bhi      #0x2444
+
+Tracking exected BB id: 0x23be
+----------------
+INST: 
+0x00002444:  2200       movs     r2, #0
+0x00002446:  e7ea       b        #0x241e
+
+Tracking exected BB id: 0x2444
+----------------
+INST: 
+0x0000241e:  4b2a       ldr      r3, [pc, #0xa8]
+0x00002420:  ebaa 0109  sub.w    r1, sl, sb
+0x00002424:  6818       ldr      r0, [r3]
+0x00002426:  f000 fd52  bl       #0x2ece
+
+Tracking exected BB id: 0x241e
+Tracking exected BB id: 0x14cc
+Tracking exected BB id: 0x152a
+----------------
+INST: 
+0x00002efe:  4632       mov      r2, r6
+0x00002f00:  4629       mov      r1, r5
+0x00002f02:  f104 0024  add.w    r0, r4, #0x24
+0x00002f06:  f7ff f815  bl       #0x1f34
+
+Tracking exected BB id: 0x2efe
+----------------
+INST: 
+0x00001f34:  b538       push     {r3, r4, r5, lr}
+0x00001f36:  460d       mov      r5, r1
+0x00001f38:  4614       mov      r4, r2
+0x00001f3a:  b940       cbnz     r0, #0x1f4e
+
+Tracking exected BB id: 0x1f34
+----------------
+INST: 
+0x00001f4e:  4b07       ldr      r3, [pc, #0x1c]
+0x00001f50:  6819       ldr      r1, [r3]
+0x00001f52:  3118       adds     r1, #0x18
+0x00001f54:  f000 fe77  bl       #0x2c46
+
+Tracking exected BB id: 0x1f4e
+----------------
+INST: 
+0x00001f58:  2c00       cmp      r4, #0
+0x00001f5a:  4621       mov      r1, r4
+0x00001f5c:  bf0c       ite      eq
+0x00001f5e:  4628       moveq    r0, r5
+0x00001f60:  f04f 30ff  movne.w  r0, #-1
+0x00001f64:  e8bd 4038  pop.w    {r3, r4, r5, lr}
+0x00001f68:  f7ff bcdc  b.w      #0x1924
+
+Tracking exected BB id: 0x1f58
+----------------
+INST: 
+0x00001924:  b5f8       push     {r3, r4, r5, r6, r7, lr}
+0x00001926:  4b1b       ldr      r3, [pc, #0x6c]
+0x00001928:  4e1b       ldr      r6, [pc, #0x6c]
+0x0000192a:  681c       ldr      r4, [r3]
+0x0000192c:  4605       mov      r5, r0
+0x0000192e:  6830       ldr      r0, [r6]
+0x00001930:  3004       adds     r0, #4
+0x00001932:  460f       mov      r7, r1
+0x00001934:  f001 f9aa  bl       #0x2c8c
+
+Tracking exected BB id: 0x1924
+----------------
+INST: 
+0x00002c8c:  e9d0 1201  ldrd     r1, r2, [r0, #4]
+0x00002c90:  6903       ldr      r3, [r0, #0x10]
+0x00002c92:  608a       str      r2, [r1, #8]
+0x00002c94:  6882       ldr      r2, [r0, #8]
+0x00002c96:  6051       str      r1, [r2, #4]
+0x00002c98:  6859       ldr      r1, [r3, #4]
+0x00002c9a:  4281       cmp      r1, r0
+0x00002c9c:  bf08       it       eq
+0x00002c9e:  605a       streq    r2, [r3, #4]
+0x00002ca0:  2200       movs     r2, #0
+0x00002ca2:  6102       str      r2, [r0, #0x10]
+0x00002ca4:  681a       ldr      r2, [r3]
+0x00002ca6:  3a01       subs     r2, #1
+0x00002ca8:  601a       str      r2, [r3]
+0x00002caa:  6818       ldr      r0, [r3]
+0x00002cac:  4770       bx       lr
+
+Tracking exected BB id: 0x2c8c
+----------------
+INST: 
+0x00001938:  4633       mov      r3, r6
+0x0000193a:  b940       cbnz     r0, #0x194e
+
+Tracking exected BB id: 0x1938
+----------------
+INST: 
+0x0000193c:  6831       ldr      r1, [r6]
+0x0000193e:  4e17       ldr      r6, [pc, #0x5c]
+0x00001940:  6ac9       ldr      r1, [r1, #0x2c]
+0x00001942:  6832       ldr      r2, [r6]
+0x00001944:  2001       movs     r0, #1
+0x00001946:  4088       lsls     r0, r1
+0x00001948:  ea22 0200  bic.w    r2, r2, r0
+0x0000194c:  6032       str      r2, [r6]
+0x0000194e:  1c6a       adds     r2, r5, #1
+0x00001950:  d107       bne      #0x1962
+
+Tracking exected BB id: 0x193c
+----------------
+INST: 
+0x00001962:  681a       ldr      r2, [r3]
+0x00001964:  1964       adds     r4, r4, r5
+0x00001966:  6054       str      r4, [r2, #4]
+0x00001968:  d307       blo      #0x197a
+
+Tracking exected BB id: 0x1962
+----------------
+INST: 
+0x0000197a:  4a0b       ldr      r2, [pc, #0x2c]
+0x0000197c:  6810       ldr      r0, [r2]
+0x0000197e:  6819       ldr      r1, [r3]
+0x00001980:  3104       adds     r1, #4
+0x00001982:  f001 f96c  bl       #0x2c5e
+
+Tracking exected BB id: 0x197a
+----------------
+INST: 
+0x00001986:  4b09       ldr      r3, [pc, #0x24]
+0x00001988:  681a       ldr      r2, [r3]
+0x0000198a:  42a2       cmp      r2, r4
+0x0000198c:  bf88       it       hi
+0x0000198e:  601c       strhi    r4, [r3]
+0x00001990:  bdf8       pop      {r3, r4, r5, r6, r7, pc}
+
+Tracking exected BB id: 0x1986
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x1986
+Tracking exected BB id: 0x14cc
+Tracking exected BB id: 0x152a
+Tracking exected BB id: 0x14cc
+Tracking exected BB id: 0x14fc
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x152a
+Tracking exected BB id: 0x14cc
+Tracking exected BB id: 0x14fc
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x152a
+Tracking exected BB id: 0x0440
+Tracking exected BB id: 0x0468
+Tracking exected BB id: 0x0474
+Tracking exected BB id: 0x047c
+Tracking exected BB id: 0x0494
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+----------------
+INST: 
+0x000019b0:  b580       push     {r7, lr}
+0x000019b2:  f8df 8064  ldr.w    r8, [pc, #0x64]
+0x000019b6:  4f14       ldr      r7, [pc, #0x50]
+0x000019b8:  4c14       ldr      r4, [pc, #0x50]
+0x000019ba:  4e15       ldr      r6, [pc, #0x54]
+0x000019bc:  6823       ldr      r3, [r4]
+0x000019be:  b963       cbnz     r3, #0x19da
+
+Tracking exected BB id: 0x19b0
+----------------
+INST: 
+0x000019c0:  4b14       ldr      r3, [pc, #0x50]
+0x000019c2:  681b       ldr      r3, [r3]
+0x000019c4:  2b01       cmp      r3, #1
+0x000019c6:  d9f8       bls      #0x19ba
+
+Tracking exected BB id: 0x19c0
+----------------
+INST: 
+0x000019ba:  4e15       ldr      r6, [pc, #0x54]
+0x000019bc:  6823       ldr      r3, [r4]
+0x000019be:  b963       cbnz     r3, #0x19da
+
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x19c0
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19c0
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19c0
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19c0
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19c0
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19c0
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19c0
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19c0
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19c0
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19c0
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19c0
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19c0
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19c0
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19c0
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19c0
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19c0
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19c0
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19c0
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19c0
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19c0
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19c0
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19c0
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19c0
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19c0
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19c0
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19c0
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19c0
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19c0
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19c0
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19c0
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19c0
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19c0
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19c0
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19c0
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19c0
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19c0
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19c0
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19c0
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19c0
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19c0
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19c0
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19c0
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19c0
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19c0
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19c0
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19c0
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19c0
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19c0
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19c0
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19c0
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19c0
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19c0
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19c0
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19c0
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19c0
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19c0
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19c0
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19c0
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19c0
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19c0
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19c0
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19c0
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19c0
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19c0
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19c0
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19c0
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19c0
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19c0
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19c0
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19c0
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19c0
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19ba
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19c0
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x19c0
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+----------------
+INST: 
+0x00001cfa:  f8df a080  ldr.w    sl, [pc, #0x80]
+0x00001cfe:  f8df 9098  ldr.w    sb, [pc, #0x98]
+0x00001d02:  f8df b098  ldr.w    fp, [pc, #0x98]
+0x00001d06:  f8da 3000  ldr.w    r3, [sl]
+0x00001d0a:  681b       ldr      r3, [r3]
+0x00001d0c:  b91b       cbnz     r3, #0x1d16
+
+Tracking exected BB id: 0x1cfa
+----------------
+INST: 
+0x00001d16:  f8da 3000  ldr.w    r3, [sl]
+0x00001d1a:  68db       ldr      r3, [r3, #0xc]
+0x00001d1c:  68dc       ldr      r4, [r3, #0xc]
+0x00001d1e:  6863       ldr      r3, [r4, #4]
+0x00001d20:  429d       cmp      r5, r3
+0x00001d22:  d3f6       blo      #0x1d12
+
+Tracking exected BB id: 0x1d16
+----------------
+INST: 
+0x00001d24:  f104 0804  add.w    r8, r4, #4
+0x00001d28:  4640       mov      r0, r8
+0x00001d2a:  f000 ffaf  bl       #0x2c8c
+
+Tracking exected BB id: 0x1d24
+----------------
+INST: 
+0x00002c8c:  e9d0 1201  ldrd     r1, r2, [r0, #4]
+0x00002c90:  6903       ldr      r3, [r0, #0x10]
+0x00002c92:  608a       str      r2, [r1, #8]
+0x00002c94:  6882       ldr      r2, [r0, #8]
+0x00002c96:  6051       str      r1, [r2, #4]
+0x00002c98:  6859       ldr      r1, [r3, #4]
+0x00002c9a:  4281       cmp      r1, r0
+0x00002c9c:  bf08       it       eq
+0x00002c9e:  605a       streq    r2, [r3, #4]
+0x00002ca0:  2200       movs     r2, #0
+0x00002ca2:  6102       str      r2, [r0, #0x10]
+0x00002ca4:  681a       ldr      r2, [r3]
+0x00002ca6:  3a01       subs     r2, #1
+0x00002ca8:  601a       str      r2, [r3]
+0x00002caa:  6818       ldr      r0, [r3]
+0x00002cac:  4770       bx       lr
+
+Tracking exected BB id: 0x2c8c
+----------------
+INST: 
+0x00001d2e:  6aa3       ldr      r3, [r4, #0x28]
+0x00001d30:  b11b       cbz      r3, #0x1d3a
+
+Tracking exected BB id: 0x1d2e
+----------------
+INST: 
+0x00001d32:  f104 0018  add.w    r0, r4, #0x18
+0x00001d36:  f000 ffa9  bl       #0x2c8c
+
+Tracking exected BB id: 0x1d32
+----------------
+INST: 
+0x00001d3a:  6ae2       ldr      r2, [r4, #0x2c]
+0x00001d3c:  f8d9 1000  ldr.w    r1, [sb]
+0x00001d40:  2301       movs     r3, #1
+0x00001d42:  4093       lsls     r3, r2
+0x00001d44:  2014       movs     r0, #0x14
+0x00001d46:  430b       orrs     r3, r1
+0x00001d48:  fb00 b002  mla      r0, r0, r2, fp
+0x00001d4c:  4641       mov      r1, r8
+0x00001d4e:  f8c9 3000  str.w    r3, [sb]
+0x00001d52:  f000 ff78  bl       #0x2c46
+
+Tracking exected BB id: 0x1d3a
+----------------
+INST: 
+0x00002c46:  6843       ldr      r3, [r0, #4]
+0x00002c48:  604b       str      r3, [r1, #4]
+0x00002c4a:  689a       ldr      r2, [r3, #8]
+0x00002c4c:  608a       str      r2, [r1, #8]
+0x00002c4e:  689a       ldr      r2, [r3, #8]
+0x00002c50:  6051       str      r1, [r2, #4]
+0x00002c52:  6099       str      r1, [r3, #8]
+0x00002c54:  6803       ldr      r3, [r0]
+0x00002c56:  6108       str      r0, [r1, #0x10]
+0x00002c58:  3301       adds     r3, #1
+0x00002c5a:  6003       str      r3, [r0]
+0x00002c5c:  4770       bx       lr
+
+Tracking exected BB id: 0x2c46
+----------------
+INST: 
+0x00001d56:  4b0e       ldr      r3, [pc, #0x38]
+0x00001d58:  6ae2       ldr      r2, [r4, #0x2c]
+0x00001d5a:  681b       ldr      r3, [r3]
+0x00001d5c:  6adb       ldr      r3, [r3, #0x2c]
+0x00001d5e:  429a       cmp      r2, r3
+0x00001d60:  bf28       it       hs
+0x00001d62:  2601       movhs    r6, #1
+0x00001d64:  e7cf       b        #0x1d06
+
+Tracking exected BB id: 0x1d56
+----------------
+INST: 
+0x00001d06:  f8da 3000  ldr.w    r3, [sl]
+0x00001d0a:  681b       ldr      r3, [r3]
+0x00001d0c:  b91b       cbnz     r3, #0x1d16
+
+Tracking exected BB id: 0x1d06
+----------------
+INST: 
+0x00001d0e:  f04f 33ff  mov.w    r3, #-1
+0x00001d12:  603b       str      r3, [r7]
+0x00001d14:  e7e9       b        #0x1cea
+
+Tracking exected BB id: 0x1d0e
+Tracking exected BB id: 0x1cea
+Tracking exected BB id: 0x1546
+----------------
+INST: 
+0x00001548:  4b03       ldr      r3, [pc, #0xc]
+0x0000154a:  f04f 5280  mov.w    r2, #0x10000000
+0x0000154e:  601a       str      r2, [r3]
+0x00001550:  2300       movs     r3, #0
+0x00001552:  f383 8811  msr      basepri, r3
+
+Tracking exected BB id: 0x1548
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x0440
+Tracking exected BB id: 0x0468
+Tracking exected BB id: 0x0474
+Tracking exected BB id: 0x047c
+Tracking exected BB id: 0x0494
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x2442
+Tracking exected BB id: 0x14cc
+Tracking exected BB id: 0x152a
+----------------
+INST: 
+0x000023c2:  f7ff fced  bl       #0x1da0
+
+Tracking exected BB id: 0x23c2
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x23c2
+Tracking exected BB id: 0x14cc
+Tracking exected BB id: 0x152a
+----------------
+INST: 
+0x000023c6:  683b       ldr      r3, [r7]
+0x000023c8:  68db       ldr      r3, [r3, #0xc]
+0x000023ca:  68dc       ldr      r4, [r3, #0xc]
+0x000023cc:  1d20       adds     r0, r4, #4
+0x000023ce:  f000 fc5d  bl       #0x2c8c
+
+Tracking exected BB id: 0x23c6
+Tracking exected BB id: 0x1530
+Tracking exected BB id: 0x153a
+Tracking exected BB id: 0x1546
+Tracking exected BB id: 0x1556
+Tracking exected BB id: 0x23c6
+----------------
+INST: 
+0x000023d2:  69e3       ldr      r3, [r4, #0x1c]
+0x000023d4:  2b01       cmp      r3, #1
+0x000023d6:  d118       bne      #0x240a
+
+Tracking exected BB id: 0x23d2
+----------------
+INST: 
+0x000023d8:  69a1       ldr      r1, [r4, #0x18]
+0x000023da:  4653       mov      r3, sl
+0x000023dc:  464a       mov      r2, sb
+0x000023de:  4451       add      r1, sl
+0x000023e0:  4620       mov      r0, r4
+0x000023e2:  f7ff fee1  bl       #0x21a8
+
+Tracking exected BB id: 0x23d8
+Tracking exected BB id: 0x21a8
+----------------
+INST: 
+0x000023e6:  b180       cbz      r0, #0x240a
+
+Tracking exected BB id: 0x23e6
+----------------
+INST: 
+0x0000240a:  6a63       ldr      r3, [r4, #0x24]
+0x0000240c:  4620       mov      r0, r4
+0x0000240e:  4798       blx      r3
+
+Tracking exected BB id: 0x240a
+----------------
+INST: 
+0x000007d0:  4801       ldr      r0, [pc, #4]
+0x000007d2:  f7ff beaf  b.w      #0x534
+
+Tracking exected BB id: 0x07d0
+----------------
+INST: 
+0x00000534:  b40f       push     {r0, r1, r2, r3}
+0x00000536:  b530       push     {r4, r5, lr}
+0x00000538:  b0a3       sub      sp, #0x8c
+0x0000053a:  ac26       add      r4, sp, #0x98
+0x0000053c:  2280       movs     r2, #0x80
+0x0000053e:  f854 5b04  ldr      r5, [r4], #4
+0x00000542:  2100       movs     r1, #0
+0x00000544:  a802       add      r0, sp, #8
+0x00000546:  f002 fd12  bl       #0x2f6e
+
+Tracking exected BB id: 0x0534
+----------------
+INST: 
+0x0000054a:  4b08       ldr      r3, [pc, #0x20]
+0x0000054c:  9401       str      r4, [sp, #4]
+0x0000054e:  aa02       add      r2, sp, #8
+0x00000550:  4621       mov      r1, r4
+0x00000552:  4628       mov      r0, r5
+0x00000554:  f000 f80c  bl       #0x570
+
+Tracking exected BB id: 0x054a
+----------------
+INST: 
+0x00000570:  e92d 4ff0  push.w   {r4, r5, r6, r7, r8, sb, sl, fp, lr}
+0x00000574:  b08d       sub      sp, #0x34
+0x00000576:  2500       movs     r5, #0
+0x00000578:  4683       mov      fp, r0
+0x0000057a:  4617       mov      r7, r2
+0x0000057c:  4698       mov      r8, r3
+0x0000057e:  468a       mov      sl, r1
+0x00000580:  9502       str      r5, [sp, #8]
+0x00000582:  462c       mov      r4, r5
+0x00000584:  46a9       mov      sb, r5
+0x00000586:  f89b 2000  ldrb.w   r2, [fp]
+0x0000058a:  b91a       cbnz     r2, #0x594
+
+Tracking exected BB id: 0x0570
+----------------
+INST: 
+0x00000594:  2a25       cmp      r2, #0x25
+0x00000596:  f000 808d  beq.w    #0x6b4
+
+Tracking exected BB id: 0x0594
+----------------
+INST: 
+0x0000059a:  2301       movs     r3, #1
+0x0000059c:  a902       add      r1, sp, #8
+0x0000059e:  4638       mov      r0, r7
+
+Tracking exected BB id: 0x059a

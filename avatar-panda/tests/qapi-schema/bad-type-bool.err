@@ -1,0 +1,1 @@
+tests/qapi-schema/bad-type-bool.json:6: 'struct' key must have a string value

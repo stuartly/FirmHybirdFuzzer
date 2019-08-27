@@ -1,0 +1,3 @@
+Reason of Failure:
+
+Hardware logic to trigger BusFault, when accessing a memory region which is not allowed to be accessed.

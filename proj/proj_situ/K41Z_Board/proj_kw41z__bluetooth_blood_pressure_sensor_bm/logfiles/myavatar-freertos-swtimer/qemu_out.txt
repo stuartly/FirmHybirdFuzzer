@@ -1,0 +1,5 @@
+Configurable: Adding peripheral[avatar-rmemory] region unknown-peripheral at address 0x40000000
+Configurable: Adding memory region ram/dev/shm/SHM.0.0x40000 (size: 0x40000) at address 0x1fff0000
+Configurable: Adding memory region rom (size: 0x200000) at address 0x0
+Configurable: Inserting 32b0 bytes of data in memory region rom
+Configurable: Copying 0x32b0 byte of data from file /home/stly/Documents/IoTFuzzing/CORTEX-M4-QEMU/proj/pro_situ_bugs/K41Z_Board/proj_kw41z__bluetooth_blood_pressure_sensor_bm/frdmk66f_freertos_swtimer.axf.raw to address 0x0

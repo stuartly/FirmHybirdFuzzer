@@ -1,0 +1,349 @@
+# -*- Mode: makefile -*-
+
+BUILD_DIR?=$(CURDIR)/..
+
+include ../config-host.mak
+include config-target.mak
+include config-devices.mak
+include $(SRC_PATH)/rules.mak
+
+$(call set-vpath, $(SRC_PATH):$(BUILD_DIR))
+ifdef CONFIG_LINUX
+QEMU_CFLAGS += -I../linux-headers
+endif
+QEMU_CFLAGS += -iquote .. -iquote $(SRC_PATH)/target/$(TARGET_BASE_ARCH) -DNEED_CPU_H
+
+QEMU_CFLAGS+=-iquote $(SRC_PATH)/include
+
+ifdef CONFIG_USER_ONLY
+# user emulator name
+QEMU_PROG=qemu-$(TARGET_NAME)
+QEMU_PROG_BUILD = $(QEMU_PROG)
+else
+# system emulator name
+QEMU_PROG=qemu-system-$(TARGET_NAME)$(EXESUF)
+ifneq (,$(findstring -mwindows,$(SDL_LIBS)))
+# Terminate program name with a 'w' because the linker builds a windows executable.
+QEMU_PROGW=qemu-system-$(TARGET_NAME)w$(EXESUF)
+$(QEMU_PROG): $(QEMU_PROGW)
+	$(call quiet-command,$(OBJCOPY) --subsystem console $(QEMU_PROGW) $(QEMU_PROG),"GEN","$(TARGET_DIR)$(QEMU_PROG)")
+QEMU_PROG_BUILD = $(QEMU_PROGW)
+else
+QEMU_PROG_BUILD = $(QEMU_PROG)
+endif
+endif
+
+PROGS=$(QEMU_PROG) $(QEMU_PROGW)
+STPFILES=
+
+# Makefile Tests
+ifdef CONFIG_USER_ONLY
+include $(SRC_PATH)/tests/tcg/Makefile.include
+endif
+
+config-target.h: config-target.h-timestamp
+config-target.h-timestamp: config-target.mak
+
+ifdef CONFIG_TRACE_SYSTEMTAP
+stap: $(QEMU_PROG).stp-installed $(QEMU_PROG).stp $(QEMU_PROG)-simpletrace.stp
+
+ifdef CONFIG_USER_ONLY
+TARGET_TYPE=user
+else
+TARGET_TYPE=system
+endif
+
+tracetool-y = $(SRC_PATH)/scripts/tracetool.py
+tracetool-y += $(shell find $(SRC_PATH)/scripts/tracetool -name "*.py")
+
+$(QEMU_PROG).stp-installed: $(BUILD_DIR)/trace-events-all $(tracetool-y)
+	$(call quiet-command,$(TRACETOOL) \
+		--group=all \
+		--format=stap \
+		--backends=$(TRACE_BACKENDS) \
+		--binary=$(bindir)/$(QEMU_PROG) \
+		--target-name=$(TARGET_NAME) \
+		--target-type=$(TARGET_TYPE) \
+		$< > $@,"GEN","$(TARGET_DIR)$(QEMU_PROG).stp-installed")
+
+$(QEMU_PROG).stp: $(BUILD_DIR)/trace-events-all $(tracetool-y)
+	$(call quiet-command,$(TRACETOOL) \
+		--group=all \
+		--format=stap \
+		--backends=$(TRACE_BACKENDS) \
+		--binary=$(realpath .)/$(QEMU_PROG) \
+		--target-name=$(TARGET_NAME) \
+		--target-type=$(TARGET_TYPE) \
+		$< > $@,"GEN","$(TARGET_DIR)$(QEMU_PROG).stp")
+
+$(QEMU_PROG)-simpletrace.stp: $(BUILD_DIR)/trace-events-all $(tracetool-y)
+	$(call quiet-command,$(TRACETOOL) \
+		--group=all \
+		--format=simpletrace-stap \
+		--backends=$(TRACE_BACKENDS) \
+		--probe-prefix=qemu.$(TARGET_TYPE).$(TARGET_NAME) \
+		$< > $@,"GEN","$(TARGET_DIR)$(QEMU_PROG)-simpletrace.stp")
+
+else
+stap:
+endif
+.PHONY: stap
+
+all: $(PROGS) stap
+
+# Dummy command so that make thinks it has done something
+	@true
+
+#########################################################
+# cpu emulator library
+obj-y += exec.o
+obj-y += accel/
+obj-$(CONFIG_TCG) += tcg/tcg.o tcg/tcg-op.o tcg/tcg-op-vec.o tcg/tcg-op-gvec.o
+obj-$(CONFIG_TCG) += tcg/tcg-common.o tcg/optimize.o
+obj-$(CONFIG_TCG_INTERPRETER) += tcg/tci.o
+obj-$(CONFIG_TCG_INTERPRETER) += disas/tci.o
+obj-$(CONFIG_TCG) += fpu/softfloat.o
+obj-y += target/$(TARGET_BASE_ARCH)/
+obj-y += disas.o
+obj-$(call notempty,$(TARGET_XML_FILES)) += gdbstub-xml.o
+
+obj-$(CONFIG_TCG_PLUGIN) += tcg/tcg-plugin.o
+
+#########################################################
+# Linux user emulator target
+
+ifdef CONFIG_LINUX_USER
+
+QEMU_CFLAGS+=-I$(SRC_PATH)/linux-user/$(TARGET_ABI_DIR) \
+             -I$(SRC_PATH)/linux-user/host/$(ARCH) \
+             -I$(SRC_PATH)/linux-user
+
+obj-y += linux-user/
+obj-y += gdbstub.o thunk.o
+
+endif #CONFIG_LINUX_USER
+
+#########################################################
+# BSD user emulator target
+
+ifdef CONFIG_BSD_USER
+
+QEMU_CFLAGS+=-I$(SRC_PATH)/bsd-user -I$(SRC_PATH)/bsd-user/$(TARGET_ABI_DIR) \
+			 -I$(SRC_PATH)/bsd-user/$(HOST_VARIANT_DIR)
+
+obj-y += bsd-user/
+obj-y += gdbstub.o
+
+endif #CONFIG_BSD_USER
+
+#########################################################
+# System emulator target
+ifdef CONFIG_SOFTMMU
+obj-y += arch_init.o cpus.o monitor.o gdbstub.o balloon.o ioport.o numa.o
+obj-y += qtest.o
+obj-y += hw/
+obj-y += memory.o
+obj-y += memory_mapping.o
+obj-y += dump.o
+obj-$(TARGET_X86_64) += win_dump.o
+obj-y += migration/ram.o
+LIBS := $(libs_softmmu) $(LIBS)
+
+# Hardware support
+ifeq ($(TARGET_NAME), sparc64)
+obj-y += hw/sparc64/
+else
+obj-y += hw/$(TARGET_BASE_ARCH)/
+endif
+
+GENERATED_FILES += hmp-commands.h hmp-commands-info.h
+
+endif # CONFIG_SOFTMMU
+
+#########################################################
+# TCG plugin targets
+
+ifdef CONFIG_TCG_PLUGIN
+
+ifdef CONFIG_USER_ONLY
+EMULATION_MODE=user
+else
+EMULATION_MODE=system
+endif
+
+TCG_PLUGINS := $(patsubst $(SRC_PATH)/tcg/plugins/%.c,tcg-plugin-%.so,$(wildcard $(SRC_PATH)/tcg/plugins/*.c))
+all: $(TCG_PLUGINS)
+
+.SECONDARY: $(TCG_PLUGINS:.so=.o)
+
+tcg/tcg-plugin.o: QEMU_CFLAGS += -DEMULATION_MODE=\"$(EMULATION_MODE)\"
+
+$(TCG_PLUGINS:.so=.o): QEMU_CFLAGS += -fno-PIE -fPIC -DEMULATION_MODE=\"$(EMULATION_MODE)\"
+$(TCG_PLUGINS:.so=.o): $(SRC_PATH)/tcg/tcg-plugin.h
+tcg-plugin-%.o: $(SRC_PATH)/tcg/plugins/%.c
+	$(call COMPILE_CC)
+
+$(TCG_PLUGINS): LDFLAGS += -shared
+tcg-plugin-%.so: tcg-plugin-%.o
+	$(call LINK,$^)
+
+d4-7/config.h: $(SRC_PATH)/tcg/plugins/d4-7/configure
+	mkdir -p d4-7
+	cd d4-7 && env CFLAGS="-O2 -DD4ADDR=uint64_t -include stdint.h -fPIC -I$${PWD}" $^
+
+D4_OBJS=d4-7/ref.o d4-7/misc.o d4-7/cmdmain.o d4-7/cmdargs.o d4-7/tracein.o d4-7/xdinfmt.o d4-7/dinfmt.o d4-7/binaryfmt.o d4-7/pixie32fmt.o d4-7/pixie64fmt.o
+$(D4_OBJS): d4-7/config.h
+$(D4_OBJS): d4-7/%.o:
+	cd d4-7 && env MAKEFLAGS= $(MAKE) $*.o
+
+tcg-plugin-dineroIV.o: CFLAGS += -Id4-7/
+tcg-plugin-dineroIV.o: d4-7/config.h
+
+tcg-plugin-dineroIV.so: tcg-plugin-dineroIV.o $(D4_OBJS)
+	$(call LINK,$^)
+
+tcg-plugin-dyncount.o: CFLAGS += $(CAP_CFLAGS)
+tcg-plugin-dyncount.so: LIBS += $(CAP_LDFLAGS)
+
+tcg-plugin-dyntrace.o: CFLAGS += $(CAP_CFLAGS)
+tcg-plugin-dyntrace.so: LIBS += $(CAP_LDFLAGS)
+
+tcg-plugin-coverage.o: CFLAGS += $(CAP_CFLAGS)
+tcg-plugin-coverage.so: LIBS += $(CAP_LDFLAGS)
+
+TCG_PLUGINS_STL := $(patsubst $(SRC_PATH)/tcg/plugins/stl/%.c,stl/stl-%.so,$(wildcard $(SRC_PATH)/tcg/plugins/stl/*.c))
+all: $(TCG_PLUGINS_STL)
+
+.SECONDARY: $(TCG_PLUGINS_STL:.so=.o)
+
+$(TCG_PLUGINS_STL:.so=.o): QEMU_CFLAGS += -fno-PIE -fPIC -DEMULATION_MODE=\"$(EMULATION_MODE)\"
+# $(TCG_PLUGINS_STL:.so=.o): $(SRC_PATH)/tcg/wycinwyc.h
+stl/stl-%.o: $(SRC_PATH)/tcg/plugins/stl/%.c
+	mkdir -p stl
+	$(call COMPILE_CC)
+
+$(TCG_PLUGINS_STL): LDFLAGS += -shared
+stl/stl-%.so: stl/stl-%.o
+	$(call LINK,$^)
+
+STL_OBJS=stl/stl-vector.o stl/stl-map.o stl/stl-cJSON.o
+
+
+# fault tracking plugins
+tcg-plugin-segment_tracking.so: tcg-plugin-segment_tracking.o tcg-plugin-wycinwyc.o $(STL_OBJS)
+	$(call LINK,$^)
+
+tcg-plugin-heapobject_tracking.so: tcg-plugin-heapobject_tracking.o tcg-plugin-wycinwyc.o $(STL_OBJS)
+	$(call LINK,$^)
+
+tcg-plugin-inst_tracking.so: tcg-plugin-inst_tracking.o tcg-plugin-wycinwyc.o $(STL_OBJS)
+	$(call LINK,$^)
+
+tcg-plugin-stackobject_tracking.so: tcg-plugin-stackobject_tracking.o tcg-plugin-wycinwyc.o $(STL_OBJS)
+	$(call LINK,$^)
+
+tcg-plugin-instruction_tracking.so: tcg-plugin-instruction_tracking.o tcg-plugin-wycinwyc.o $(STL_OBJS)
+	$(call LINK,$^)
+
+tcg-plugin-hook_network.so: tcg-plugin-hook_network.o tcg-plugin-wycinwyc.o $(STL_OBJS)
+	$(call LINK,$^)
+
+# cxx plugin
+ifdef CONFIG_TCG_PLUGIN_CPP
+
+tcg-plugin-cpp.so: LIBS += $(CAP_LDFLAGS) $(LDFLAGS) -ldwarf++ -lelf++
+
+CXX_PLUGIN_FLAGS := -Wall -std=c++14 \
+					$(QEMU_CXXFLAGS) $(CAP_CFLAGS) $(CFLAGS) -fno-PIE -fPIC
+
+CPP_PLUGIN_OBJS := $(patsubst $(SRC_PATH)/tcg/plugins/cpp/%.cpp,cpp-%.o,$(wildcard $(SRC_PATH)/tcg/plugins/cpp/*.cpp))
+CPP_DEPS := $(patsubst %.o,%.d,$(CPP_PLUGIN_OBJS))
+cpp-%.o: $(SRC_PATH)/tcg/plugins/cpp/%.cpp
+	$(CXX) -c $(CXX_PLUGIN_FLAGS) -MD $< -o $@
+-include $(CPP_DEPS)
+
+tcg-plugin-cpp.so: tcg-plugin-cpp.o $(CPP_PLUGIN_OBJS)
+endif # CONFIG_TCG_PLUGIN_CPP
+
+endif # CONFIG_TCG_PLUGIN
+
+# Workaround for http://gcc.gnu.org/PR55489, see configure.
+%/translate.o: QEMU_CFLAGS += $(TRANSLATE_OPT_CFLAGS)
+
+dummy := $(call unnest-vars,,obj-y)
+all-obj-y := $(obj-y)
+
+target-obj-y :=
+block-obj-y :=
+common-obj-y :=
+chardev-obj-y :=
+include $(SRC_PATH)/Makefile.objs
+dummy := $(call unnest-vars,,target-obj-y)
+target-obj-y-save := $(target-obj-y)
+dummy := $(call unnest-vars,.., \
+               block-obj-y \
+               block-obj-m \
+               chardev-obj-y \
+               crypto-obj-y \
+               crypto-aes-obj-y \
+               qom-obj-y \
+               io-obj-y \
+               common-obj-y \
+               common-obj-m)
+target-obj-y := $(target-obj-y-save)
+all-obj-y += $(common-obj-y)
+all-obj-y += $(target-obj-y)
+all-obj-y += $(qom-obj-y)
+all-obj-$(CONFIG_SOFTMMU) += $(block-obj-y) $(chardev-obj-y)
+all-obj-$(CONFIG_USER_ONLY) += $(crypto-aes-obj-y)
+all-obj-$(CONFIG_SOFTMMU) += $(crypto-obj-y)
+all-obj-$(CONFIG_SOFTMMU) += $(io-obj-y)
+
+$(QEMU_PROG_BUILD): config-devices.mak
+
+COMMON_LDADDS = ../libqemuutil.a
+
+# build either PROG or PROGW
+$(QEMU_PROG_BUILD): $(all-obj-y) $(COMMON_LDADDS)
+	$(call LINK, $(filter-out %.mak, $^))
+ifdef CONFIG_DARWIN
+	$(call quiet-command,Rez -append $(SRC_PATH)/pc-bios/qemu.rsrc -o $@,"REZ","$(TARGET_DIR)$@")
+	$(call quiet-command,SetFile -a C $@,"SETFILE","$(TARGET_DIR)$@")
+endif
+
+gdbstub-xml.c: $(TARGET_XML_FILES) $(SRC_PATH)/scripts/feature_to_c.sh
+	$(call quiet-command,rm -f $@ && $(SHELL) $(SRC_PATH)/scripts/feature_to_c.sh $@ $(TARGET_XML_FILES),"GEN","$(TARGET_DIR)$@")
+
+hmp-commands.h: $(SRC_PATH)/hmp-commands.hx $(SRC_PATH)/scripts/hxtool
+	$(call quiet-command,sh $(SRC_PATH)/scripts/hxtool -h < $< > $@,"GEN","$(TARGET_DIR)$@")
+
+hmp-commands-info.h: $(SRC_PATH)/hmp-commands-info.hx $(SRC_PATH)/scripts/hxtool
+	$(call quiet-command,sh $(SRC_PATH)/scripts/hxtool -h < $< > $@,"GEN","$(TARGET_DIR)$@")
+
+clean: clean-target
+	rm -f *.a *~ $(PROGS)
+	rm -f $(shell find . -name '*.[od]')
+	rm -f hmp-commands.h gdbstub-xml.c
+ifdef CONFIG_TRACE_SYSTEMTAP
+	rm -f *.stp
+endif
+ifdef CONFIG_TCG_PLUGIN
+	rm -f $(TCG_PLUGINS)
+endif
+
+install: all
+ifneq ($(PROGS),)
+	$(call install-prog,$(PROGS),$(DESTDIR)$(bindir))
+endif
+ifdef CONFIG_TRACE_SYSTEMTAP
+	$(INSTALL_DIR) "$(DESTDIR)$(qemu_datadir)/../systemtap/tapset"
+	$(INSTALL_DATA) $(QEMU_PROG).stp-installed "$(DESTDIR)$(qemu_datadir)/../systemtap/tapset/$(QEMU_PROG).stp"
+	$(INSTALL_DATA) $(QEMU_PROG)-simpletrace.stp "$(DESTDIR)$(qemu_datadir)/../systemtap/tapset/$(QEMU_PROG)-simpletrace.stp"
+endif
+ifdef CONFIG_TCG_PLUGIN
+	$(INSTALL_DIR) "$(DESTDIR)$(libexecdir)/$(TARGET_NAME)/$(EMULATION_MODE)"
+	$(INSTALL_PROG) $(TCG_PLUGINS) "$(DESTDIR)$(libexecdir)/$(TARGET_NAME)/$(EMULATION_MODE)"
+endif
+
+GENERATED_FILES += config-target.h
+Makefile: $(GENERATED_FILES)

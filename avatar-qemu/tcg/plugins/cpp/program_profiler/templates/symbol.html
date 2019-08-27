@@ -1,0 +1,90 @@
+{%include 'base.html' %}
+<a href="{{ index_file }}">Back to index</a> |
+<a href="{{ cfg_dot_file }}">control flow graph dot source</a> |
+<a href="{{ cfg_file }}">control flow graph</a>
+
+<div>
+    <div style="float:left;max-width:40%;">
+        <p>name: {{sym_name}}</p>
+        <p>pc: {{sym_pc}}</p>
+        <p>size: {{sym_size}}</p>
+        <p>file: {{sym_file}}</p>
+        <p>src: {{sym_src}}</p>
+        <p>number of times called: {{sym_stats.num_times_entered}}</p>
+        <p>instructions_executed: {{sym_stats.instructions_executed}} ({{sym_stats.instructions_executed_percentage|round(2)}}%)</p>
+        <p>instructions_executed_control: {{sym_stats.instructions_executed_control}} ({{sym_stats.instructions_executed_control_percentage|round(2)}}%)</p>
+        <p>instructions_executed_arithmetic_and_logic: {{sym_stats.instructions_executed_arithmetic_and_logic}} ({{sym_stats.instructions_executed_arithmetic_and_logic_percentage|round(2)}}%)</p>
+        <p>instructions_executed_memory: {{sym_stats.instructions_executed_memory}} ({{sym_stats.instructions_executed_memory_percentage|round(2)}}%)</p>
+        <p>bytes_read: {{sym_stats.bytes_read}} ({{sym_stats.bytes_read_percentage|round(2)}}%)</p>
+        <p>bytes_written: {{sym_stats.bytes_written}} ({{sym_stats.bytes_written_percentage|round(2)}}%)</p>
+        <p>instructions_executed_cumulated: {{sym_stats_cumulated.instructions_executed}} ({{sym_stats_cumulated.instructions_executed_percentage|round(2)}}%)</p>
+        <p>bytes_read_cumulated: {{sym_stats_cumulated.bytes_read}} ({{sym_stats_cumulated.bytes_read_percentage|round(2)}}%)</p>
+        <p>bytes_written_cumulated: {{sym_stats_cumulated.bytes_written}} ({{sym_stats_cumulated.bytes_written_percentage|round(2)}}%)</p>
+        <p>
+        was called by:
+        <ul>
+            {% for s in sym_callers %}
+            <li><a href="{{s.url}}">{{s.name}}</a></li>
+            {% endfor %}
+        </ul>
+        </p>
+        <p>
+        calls:
+        <ul>
+            {% for s in sym_calls %}
+            <li><a href="{{s.url}}">{{s.name}}</a></li>
+            {% endfor %}
+        </ul>
+        </p>
+    </div>
+    <div style="overflow: hidden;height:75vh;" class="svg_div svg_pan">{{ cfg_file }}</div>
+</div>
+
+<div style="clear:both;"/>
+
+    <div style="float:right;width:64%;">
+        <table class="dyn_table display compact">
+            <thead>
+                <tr>
+                    <th>File</th>
+                    <th>Line</th>
+                    <th>Src</th>
+                    <th>Executed</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for s in sources %}
+                <tr>
+                    <td>{{s.file}}</td>
+                    <td>{{s.line}}</td>
+                    <td class="code"><pre><code>{{s.src}}</code></pre></td>
+                        <td>{{s.executed}}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <div style="float:left;width:35%;">
+        <table class="dyn_table display compact">
+            <thead>
+                <tr>
+                    <th>Pc</th>
+                    <th>Asm</th>
+                    <th>Executed</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for a in assembly %}
+                <tr>
+                    <td>{{a.pc}}</td>
+                    <td class="code"><pre><code>{{a.asm}}</code></pre></td>
+                        <td>{{a.executed}}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <div style="clear:both;"/>
+        {%include 'footer.html' %}

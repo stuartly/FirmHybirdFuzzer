@@ -1,0 +1,2907 @@
+[+] Initializing the targets
+[+] Running in QEMU until a peripherial is accessed
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x40048038(0x48038), size: 0x04, pc: 0x5dc6
+CPU env:
+r0: 0x1038000a r1: 0x000 r2: 0x20c r3: 0x40048038 r4: 0x20c r5: 0x000 r6: 0x000 r7: 0x2002ffc8 r8: 0x000 r9: 0x000 r10: 0x000 r11: 0x000 r12: 0x000 r13: 0x2002ffc8 r14: 0x297b r15: 0x5dc6 (tb start: 0x5dae)
+[+] Switching the execution to angr
+[+] ANGR stepping
+<SimState @ 0x5dc7>
+Read (before) None  from 0x40048038
+[+] insert one sym at pc 0x5dc7 for addr 0x40048038. 1
+Read (after)0x00 from 0x40048038
+Read (before)0x00 from 0x2002ffcc
+Read (after)0x1038000a from 0x2002ffcc
+Read (before)0x1038000a from 0x2002ffd4
+Read (after)0x40048038 from 0x2002ffd4
+Read (before)0x40048038 from 0x2002ffdc
+Read (after)0x2002ffe0 from 0x2002ffdc
+<SimState @ 0x297b>
+Read (before) None  from 0x29b0
+Read (after)0x4004a000 from 0x29b0
+<SimState @ 0x5de3>
+Read (before) None  from 0x2002ffd4
+Read (after)0x4004a000 from 0x2002ffd4
+Read (before)0x4004a000 from 0x2002ffd0
+Read (after)0x10 from 0x2002ffd0
+Read (before)0x10 from 0x4004a040
+[+] insert one sym at pc 0x5df5 for addr 0x4004a040. 2
+Read (after)0x00 from 0x4004a040
+Read (before)0x00 from 0x2002ffcf
+Read (after)0x03 from 0x2002ffcf
+Read (before)0x03 from 0x2002ffd4
+Read (after)0x4004a000 from 0x2002ffd4
+Read (before)0x4004a000 from 0x2002ffd0
+Read (after)0x10 from 0x2002ffd0
+Read (before)0x10 from 0x2002ffdc
+Read (after)0x2002ffe0 from 0x2002ffdc
+<SimState @ 0x2985>
+Read (before) None  from 0x29b0
+Read (after)0x4004a000 from 0x29b0
+<SimState @ 0x5de3>
+Read (before) None  from 0x2002ffd4
+Read (after)0x4004a000 from 0x2002ffd4
+Read (before)0x4004a000 from 0x2002ffd0
+Read (after)0x11 from 0x2002ffd0
+Read (before)0x11 from 0x4004a044
+[+] insert one sym at pc 0x5df5 for addr 0x4004a044. 3
+Read (after)0x00 from 0x4004a044
+Read (before)0x00 from 0x2002ffcf
+Read (after)0x03 from 0x2002ffcf
+Read (before)0x03 from 0x2002ffd4
+Read (after)0x4004a000 from 0x2002ffd4
+Read (before)0x4004a000 from 0x2002ffd0
+Read (after)0x11 from 0x2002ffd0
+Read (before)0x11 from 0x2002ffdc
+Read (after)0x2002ffe0 from 0x2002ffdc
+<SimState @ 0x298f>
+Read (before) None  from 0x29b4
+Read (after)0x40047000 from 0x29b4
+Read (before)0x40047000 from 0x40048010
+[+] insert one sym at pc 0x2997 for addr 0x40048010. 4
+Read (after)0x00 from 0x40048010
+Read (before)0x00 from 0x29b4
+Read (after)0x40047000 from 0x29b4
+Read (before)0x40047000 from 0x2002ffe0
+Read (after)0x2002fff0 from 0x2002ffe0
+Read (before)0x2002fff0 from 0x2002ffe4
+Read (after)0x657 from 0x2002ffe4
+<SimState @ 0x657>
+<SimState @ 0x2911>
+<SimState @ 0x2891>
+Read (before) None  from 0x28ac
+Read (after)0x40047000 from 0x28ac
+Read (before)0x40047000 from 0x28b0
+Read (after)0x2260000 from 0x28b0
+Read (before)0x2260000 from 0x2002ffdc
+Read (after)0x2002ffe0 from 0x2002ffdc
+<SimState @ 0x2919>
+Read (before) None  from 0x2958
+Read (after)0x6fd0 from 0x2958
+<SimState @ 0x1371>
+Read (before) None  from 0x2002ffcc
+Read (after)0x6fd0 from 0x2002ffcc
+Read (before)0x6fd0 from 0x6fd0
+Read (after)0xb71b00 from 0x6fd0
+<SimState @ 0xc29>
+Read (before) None  from 0x2002ffb4
+Read (after)0xb71b00 from 0x2002ffb4
+<SimState @ 0xc41>
+Read (before) None  from 0x2002ffb4
+Read (after)0xb71b00 from 0x2002ffb4
+Read (before)0xb71b00 from 0xc60
+Read (after)0x7a1200 from 0xc60
+<SimState @ 0xc4f>
+Read (before) None  from 0x2002ffbf
+Read (after)0x02 from 0x2002ffbf
+Read (before)0x02 from 0x2002ffc4
+Read (after)0x2002ffc8 from 0x2002ffc4
+<SimState @ 0x1383>
+Read (before) None  from 0x2002ffcc
+Read (after)0x6fd0 from 0x2002ffcc
+Read (before)0x6fd0 from 0x6fd4
+Read (after)0x00 from 0x6fd4
+Read (before)0x00 from 0x13f4
+Read (after)0x40065000 from 0x13f4
+<SimState @ 0x5b2b>
+Read (before) None  from 0x2002ffb4
+Read (after)0x40065000 from 0x2002ffb4
+Read (before)0x40065000 from 0x40065000
+[+] insert one sym at pc 0x5b39 for addr 0x40065000. 5
+Read (after)0x00 from 0x40065000
+Read (before)0x00 from 0x2002ffbf
+Read (after)0x00 from 0x2002ffbf
+Read (before)0x00 from 0x2002ffbf
+Read (after)0x00 from 0x2002ffbf
+Read (before)0x00 from 0x2002ffb3
+Read (after)0x00 from 0x2002ffb3
+Read (before)0x00 from 0x2002ffb4
+Read (after)0x40065000 from 0x2002ffb4
+Read (before)0x40065000 from 0x2002ffbf
+Read (after)0x00 from 0x2002ffbf
+Read (before)0x00 from 0x2002ffc4
+Read (after)0x2002ffc8 from 0x2002ffc4
+<SimState @ 0x1393>
+Read (before) None  from 0x2002ffcc
+Read (after)0x6fd0 from 0x2002ffcc
+Read (before)0x6fd0 from 0x13f4
+Read (after)0x40065000 from 0x13f4
+<SimState @ 0x5aeb>
+Read (before) None  from 0x2002ffb4
+Read (after)0x40065000 from 0x2002ffb4
+Read (before)0x40065000 from 0x40065000
+[+] insert one sym at pc 0x5af7 for addr 0x40065000. 6
+Read (after)0x00 from 0x40065000
+Read (before)0x00 from 0x2002ffbf
+Read (after)0x00 from 0x2002ffbf
+Read (before)0x00 from 0x2002ffb0
+Read (after)0x6fd6 from 0x2002ffb0
+Read (before)0x6fd6 from 0x6fd6
+Read (after)0x80 from 0x6fd6
+Read (before)0x80 from 0x2002ffbf
+Read (after)0x00 from 0x2002ffbf
+Read (before)0x00 from 0x2002ffb4
+Read (after)0x40065000 from 0x2002ffb4
+Read (before)0x40065000 from 0x2002ffbf
+Read (after)0x80 from 0x2002ffbf
+Read (before)0x80 from 0x2002ffb0
+Read (after)0x6fd6 from 0x2002ffb0
+Read (before)0x6fd6 from 0x6fd7
+Read (after)0x00 from 0x6fd7
+Read (before)0x00 from 0x2002ffb4
+Read (after)0x40065000 from 0x2002ffb4
+Read (before)0x40065000 from 0x2002ffc4
+Read (after)0x2002ffc8 from 0x2002ffc4
+<SimState @ 0x139f>
+Read (before) None  from 0x13f8
+Read (after)0x40064000 from 0x13f8
+Read (before)0x40064000 from 0x40064001
+[+] insert one sym at pc 0x13a1 for addr 0x40064001. 7
+Read (after)0x00 from 0x40064001
+Read (before)0x00 from 0x2002ffd7
+Read (after)0x02 from 0x2002ffd7
+Read (before)0x02 from 0x2002ffcc
+Read (after)0x6fd0 from 0x2002ffcc
+Read (before)0x6fd0 from 0x6fd5
+Read (after)0x04 from 0x6fd5
+Read (before)0x04 from 0x13f8
+Read (after)0x40064000 from 0x13f8
+Read (before)0x40064000 from 0x2002ffcc
+Read (after)0x6fd0 from 0x2002ffcc
+Read (before)0x6fd0 from 0x6fd5
+Read (after)0x04 from 0x6fd5
+<SimState @ 0x13cf>
+Read (before) None  from 0x13f4
+Read (after)0x40065000 from 0x13f4
+Read (before)0x40065000 from 0x40065000
+[+] insert one sym at pc 0x13d1 for addr 0x40065000. 8
+Read (after)0x00 from 0x40065000
+[+] active #: 2
+[+] solving ...
+solving for state: <SimState @ 0x13eb>
+solved, addr: 0x40048038 value: 0x00
+solved, addr: 0x4004a040 value: 0x00
+solved, addr: 0x4004a044 value: 0x00
+solved, addr: 0x40048010 value: 0x00
+solved, addr: 0x40065000 value: 0x00
+solved, addr: 0x40065000 value: 0x00
+solved, addr: 0x40064001 value: 0x00
+solved, addr: 0x40065000 value: 0x00
+solving for state: <SimState @ 0x13db>
+solved, addr: 0x40048038 value: 0x00
+solved, addr: 0x4004a040 value: 0x00
+solved, addr: 0x4004a044 value: 0x00
+solved, addr: 0x40048010 value: 0x00
+solved, addr: 0x40065000 value: 0x00
+solved, addr: 0x40065000 value: 0x00
+solved, addr: 0x40064001 value: 0x00
+solved, addr: 0x40065000 value: 0x80
+double branch BB
+taking branch 0
+[+] consume one sym at addr: 0x40048038 .#7
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x4004a040(0x4a040), size: 0x04, pc: 0x5df4
+CPU env:
+r0: 0x4004a000 r1: 0x010 r2: 0x010 r3: 0x4004a000 r4: 0x20c r5: 0x000 r6: 0x000 r7: 0x2002ffc8 r8: 0x000 r9: 0x000 r10: 0x000 r11: 0x000 r12: 0x000 r13: 0x2002ffc8 r14: 0x2985 r15: 0x5df4 (tb start: 0x5de2)
+[+] reuse previous solver
+[+] current solver cnt: #7
+[+] consume one sym at addr: 0x4004a040 .#6
+data: [1074044992L, <BV32 input_1_32>, 0, 0]
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x4004a044(0x4a044), size: 0x04, pc: 0x5df4
+CPU env:
+r0: 0x4004a000 r1: 0x011 r2: 0x011 r3: 0x4004a000 r4: 0x20c r5: 0x000 r6: 0x000 r7: 0x2002ffc8 r8: 0x000 r9: 0x000 r10: 0x000 r11: 0x000 r12: 0x000 r13: 0x2002ffc8 r14: 0x298f r15: 0x5df4 (tb start: 0x5de2)
+[+] reuse previous solver
+[+] current solver cnt: #6
+[+] consume one sym at addr: 0x4004a044 .#5
+data: [1074044996L, <BV32 input_2_32>, 0, 0]
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x40048010(0x48010), size: 0x04, pc: 0x2996
+CPU env:
+r0: 0x4004a000 r1: 0x300 r2: 0x011 r3: 0x40048010 r4: 0x20c r5: 0x000 r6: 0x000 r7: 0x2002ffe0 r8: 0x000 r9: 0x000 r10: 0x000 r11: 0x000 r12: 0x000 r13: 0x2002ffe0 r14: 0x298f r15: 0x2996 (tb start: 0x298e)
+[+] reuse previous solver
+[+] current solver cnt: #5
+[+] consume one sym at addr: 0x40048010 .#4
+data: [1074036752L, <BV32 input_3_32>, 0, 0]
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x40065000(0x65000), size: 0x01, pc: 0x5b38
+CPU env:
+r0: 0x40065000 r1: 0x000 r2: 0x7a1200 r3: 0x40065000 r4: 0x20c r5: 0x000 r6: 0x000 r7: 0x2002ffb0 r8: 0x000 r9: 0x000 r10: 0x000 r11: 0x000 r12: 0x000 r13: 0x2002ffb0 r14: 0x1393 r15: 0x5b38 (tb start: 0x5b2a)
+[+] reuse previous solver
+[+] current solver cnt: #4
+[+] consume one sym at addr: 0x40065000 .#3
+data: [1074155520L, <BV32 input_4_32>, 0, 0]
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x40065000(0x65000), size: 0x01, pc: 0x5af6
+CPU env:
+r0: 0x40065000 r1: 0x6fd6 r2: 0x000 r3: 0x40065000 r4: 0x20c r5: 0x000 r6: 0x000 r7: 0x2002ffb0 r8: 0x000 r9: 0x000 r10: 0x000 r11: 0x000 r12: 0x000 r13: 0x2002ffb0 r14: 0x139f r15: 0x5af6 (tb start: 0x5aea)
+[+] reuse previous solver
+[+] current solver cnt: #3
+[+] consume one sym at addr: 0x40065000 .#2
+data: [1074155520L, <BV32 input_5_32>, 0, 0]
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x40064001(0x64001), size: 0x01, pc: 0x13a0
+CPU env:
+r0: 0x40065000 r1: 0x6fd6 r2: 0x000 r3: 0x40064000 r4: 0x20c r5: 0x000 r6: 0x000 r7: 0x2002ffc8 r8: 0x000 r9: 0x000 r10: 0x000 r11: 0x000 r12: 0x000 r13: 0x2002ffc8 r14: 0x139f r15: 0x13a0 (tb start: 0x139e)
+[+] reuse previous solver
+[+] current solver cnt: #2
+[+] consume one sym at addr: 0x40064001 .#1
+data: [1074151425L, <BV32 input_6_32>, 0, 0]
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x40065000(0x65000), size: 0x01, pc: 0x13d0
+CPU env:
+r0: 0x40065000 r1: 0x40064000 r2: 0x020 r3: 0x40065000 r4: 0x20c r5: 0x000 r6: 0x000 r7: 0x2002ffc8 r8: 0x000 r9: 0x000 r10: 0x000 r11: 0x000 r12: 0x000 r13: 0x2002ffc8 r14: 0x139f r15: 0x13d0 (tb start: 0x13ce)
+[+] reuse previous solver
+[+] current solver cnt: #1
+[+] consume one sym at addr: 0x40065000 .#0
+data: [1074155520L, <BV32 input_7_32>, 0, 128L]
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x40064006(0x64006), size: 0x01, pc: 0x11ec
+CPU env:
+r0: 0x002 r1: 0x000 r2: 0x000 r3: 0x40064000 r4: 0x20c r5: 0x000 r6: 0x000 r7: 0x2002ffc8 r8: 0x000 r9: 0x000 r10: 0x000 r11: 0x000 r12: 0x000 r13: 0x2002ffc8 r14: 0x2933 r15: 0x11ec (tb start: 0x11d8)
+[+] Switching the execution to angr
+[+] ANGR stepping
+<SimState @ 0x11ed>
+Read (before) None  from 0x40064006
+[+] insert one sym at pc 0x11ed for addr 0x40064006. 1
+Read (after)0x00 from 0x40064006
+Read (before)0x00 from 0x12d8
+Read (after)0x40064000 from 0x12d8
+Read (before)0x40064000 from 0x40064006
+[+] insert one sym at pc 0x11fb for addr 0x40064006. 2
+Read (after)0x00 from 0x40064006
+Read (before)0x00 from 0x12d8
+Read (after)0x40064000 from 0x12d8
+Read (before)0x40064000 from 0x40064008
+[+] insert one sym at pc 0x1207 for addr 0x40064008. 3
+Read (after)0x00 from 0x40064008
+Read (before)0x00 from 0x2002ffcd
+Read (after)0x00 from 0x2002ffcd
+Read (before)0x00 from 0x2002ffd2
+Read (after)0x00 from 0x2002ffd2
+[+] active #: 2
+[+] solving ...
+solving for state: <SimState @ 0x1277>
+solved, addr: 0x40064006 value: 0x00
+solved, addr: 0x40064006 value: 0x00
+solved, addr: 0x40064008 value: 0x00
+solving for state: <SimState @ 0x121d>
+solved, addr: 0x40064006 value: 0x00
+solved, addr: 0x40064006 value: 0x00
+solved, addr: 0x40064008 value: 0x0e
+double branch BB
+taking branch 0
+[+] consume one sym at addr: 0x40064006 .#2
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x40064006(0x64006), size: 0x01, pc: 0x11fa
+CPU env:
+r0: 0x002 r1: 0x000 r2: 0x000 r3: 0x40064000 r4: 0x20c r5: 0x000 r6: 0x000 r7: 0x2002ffc8 r8: 0x000 r9: 0x000 r10: 0x000 r11: 0x000 r12: 0x000 r13: 0x2002ffc8 r14: 0x2933 r15: 0x11fa (tb start: 0x11d8)
+[+] reuse previous solver
+[+] current solver cnt: #2
+[+] consume one sym at addr: 0x40064006 .#1
+data: [1074151430L, <BV32 input_9_32>, 0, 0]
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x40064008(0x64008), size: 0x01, pc: 0x1206
+CPU env:
+r0: 0x002 r1: 0x000 r2: 0x000 r3: 0x40064000 r4: 0x20c r5: 0x000 r6: 0x000 r7: 0x2002ffc8 r8: 0x000 r9: 0x000 r10: 0x000 r11: 0x000 r12: 0x000 r13: 0x2002ffc8 r14: 0x2933 r15: 0x1206 (tb start: 0x11d8)
+[+] reuse previous solver
+[+] current solver cnt: #1
+[+] consume one sym at addr: 0x40064008 .#0
+data: [1074151432L, <BV32 input_10_32>, 0, 14L]
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x40064001(0x64001), size: 0x01, pc: 0x1278
+CPU env:
+r0: 0x002 r1: 0x000 r2: 0x000 r3: 0x40064000 r4: 0x20c r5: 0x000 r6: 0x000 r7: 0x2002ffc8 r8: 0x000 r9: 0x000 r10: 0x000 r11: 0x000 r12: 0x000 r13: 0x2002ffc8 r14: 0x2933 r15: 0x1278 (tb start: 0x1276)
+[+] Switching the execution to angr
+[+] ANGR stepping
+<SimState @ 0x1279>
+Read (before) None  from 0x40064001
+[+] insert one sym at pc 0x1279 for addr 0x40064001. 1
+Read (after)0x00 from 0x40064001
+Read (before)0x00 from 0x2002ffce
+Read (after)0x00 from 0x2002ffce
+Read (before)0x00 from 0x12d8
+Read (after)0x40064000 from 0x12d8
+Read (before)0x40064000 from 0x12d8
+Read (after)0x40064000 from 0x12d8
+Read (before)0x40064000 from 0x40064000
+[+] insert one sym at pc 0x1295 for addr 0x40064000. 2
+Read (after)0x00 from 0x40064000
+Read (before)0x00 from 0x12d8
+Read (after)0x40064000 from 0x12d8
+Read (before)0x40064000 from 0x2002ffcf
+Read (after)0x02 from 0x2002ffcf
+Read (before)0x02 from 0x2002ffd4
+Read (after)0x00 from 0x2002ffd4
+<SimState @ 0x12af>
+Read (before) None  from 0x2002ffcf
+Read (after)0x02 from 0x2002ffcf
+<SimState @ 0x12b9>
+Read (before) None  from 0x12d8
+Read (after)0x40064000 from 0x12d8
+Read (before)0x40064000 from 0x40064006
+[+] insert one sym at pc 0x12bd for addr 0x40064006. 3
+Read (after)0x00 from 0x40064006
+Read (before)0x00 from 0x2002ffce
+Read (after)0x00 from 0x2002ffce
+[+] active #: 2
+[+] solving ...
+solving for state: <SimState @ 0x12bb>
+solved, addr: 0x40064001 value: 0x00
+solved, addr: 0x40064000 value: 0x00
+solved, addr: 0x40064006 value: 0x01
+solving for state: <SimState @ 0x12cb>
+solved, addr: 0x40064001 value: 0x00
+solved, addr: 0x40064000 value: 0x00
+solved, addr: 0x40064006 value: 0x00
+double branch BB
+taking branch 1
+[+] consume one sym at addr: 0x40064001 .#2
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x40064000(0x64000), size: 0x01, pc: 0x1294
+CPU env:
+r0: 0x002 r1: 0x40064000 r2: 0x000 r3: 0x40064000 r4: 0x20c r5: 0x000 r6: 0x000 r7: 0x2002ffc8 r8: 0x000 r9: 0x000 r10: 0x000 r11: 0x000 r12: 0x000 r13: 0x2002ffc8 r14: 0x2933 r15: 0x1294 (tb start: 0x1276)
+[+] reuse previous solver
+[+] current solver cnt: #2
+[+] consume one sym at addr: 0x40064000 .#1
+data: [1074151424L, <BV32 input_12_32>, 0, 0]
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x40064006(0x64006), size: 0x01, pc: 0x12bc
+CPU env:
+r0: 0x002 r1: 0x40064000 r2: 0x000 r3: 0x40064000 r4: 0x20c r5: 0x000 r6: 0x000 r7: 0x2002ffc8 r8: 0x000 r9: 0x000 r10: 0x000 r11: 0x000 r12: 0x000 r13: 0x2002ffc8 r14: 0x2933 r15: 0x12bc (tb start: 0x12b8)
+[+] reuse previous solver
+[+] current solver cnt: #1
+[+] consume one sym at addr: 0x40064006 .#0
+data: [1074151430L, <BV32 input_13_32>, 1, 0]
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x40064000(0x64000), size: 0x01, pc: 0x28e0
+CPU env:
+r0: 0x000 r1: 0x40064000 r2: 0x000 r3: 0x40064000 r4: 0x20c r5: 0x000 r6: 0x000 r7: 0x2002ffd0 r8: 0x000 r9: 0x000 r10: 0x000 r11: 0x000 r12: 0x000 r13: 0x2002ffd0 r14: 0x293b r15: 0x28e0 (tb start: 0x28d4)
+[+] Switching the execution to angr
+[+] ANGR stepping
+<SimState @ 0x28e1>
+Read (before) None  from 0x40064000
+[+] insert one sym at pc 0x28e1 for addr 0x40064000. 1
+Read (after)0x00 from 0x40064000
+Read (before)0x00 from 0x2002ffd7
+Read (after)0x00 from 0x2002ffd7
+Read (before)0x00 from 0x290c
+Read (after)0x40064000 from 0x290c
+Read (before)0x40064000 from 0x2002ffdc
+Read (after)0x2002ffe0 from 0x2002ffdc
+<SimState @ 0x293b>
+Read (before) None  from 0x2960
+Read (after)0x6fc4 from 0x2960
+<SimState @ 0x14f5>
+Read (before) None  from 0x2002ffd6
+Read (after)0x00 from 0x2002ffd6
+<SimState @ 0x150b>
+Read (before) None  from 0x2002ffd0
+Read (after)0x6fc4 from 0x2002ffd0
+<SimState @ 0x151f>
+Read (before) None  from 0x2002ffd7
+Read (after)0x00 from 0x2002ffd7
+<SimState @ 0x116d>
+Read (before) None  from 0x11d4
+Read (after)0x40064000 from 0x11d4
+Read (before)0x40064000 from 0x4006400c
+[+] insert one sym at pc 0x1179 for addr 0x4006400c. 2
+Read (after)0x00 from 0x4006400c
+Read (before)0x00 from 0x2002ffbf
+Read (after)0x00 from 0x2002ffbf
+[+] active #: 2
+[+] solving ...
+solving for state: <SimState @ 0x118d>
+solved, addr: 0x40064000 value: 0x00
+solved, addr: 0x4006400c value: 0x00
+solving for state: <SimState @ 0x1187>
+solved, addr: 0x40064000 value: 0x00
+solved, addr: 0x4006400c value: 0x03
+double branch BB
+taking branch 0
+[+] consume one sym at addr: 0x40064000 .#1
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x4006400c(0x6400c), size: 0x01, pc: 0x1178
+CPU env:
+r0: 0x000 r1: 0x000 r2: 0x6fc4 r3: 0x40064000 r4: 0x20c r5: 0x000 r6: 0x000 r7: 0x2002ffb8 r8: 0x000 r9: 0x000 r10: 0x000 r11: 0x000 r12: 0x000 r13: 0x2002ffb8 r14: 0x1527 r15: 0x1178 (tb start: 0x116c)
+[+] reuse previous solver
+[+] current solver cnt: #1
+[+] consume one sym at addr: 0x4006400c .#0
+data: [1074151436L, <BV32 input_15_32>, 0, 3]
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x4006400c(0x6400c), size: 0x01, pc: 0x1192
+CPU env:
+r0: 0x000 r1: 0x000 r2: 0x000 r3: 0x40064000 r4: 0x20c r5: 0x000 r6: 0x000 r7: 0x2002ffb8 r8: 0x000 r9: 0x000 r10: 0x000 r11: 0x000 r12: 0x000 r13: 0x2002ffb8 r14: 0x1527 r15: 0x1192 (tb start: 0x118c)
+[+] Switching the execution to angr
+[+] ANGR stepping
+<SimState @ 0x1193>
+Read (before) None  from 0x4006400c
+[+] insert one sym at pc 0x1193 for addr 0x4006400c. 1
+Read (after)0x00 from 0x4006400c
+Read (before)0x00 from 0x2002ffbf
+Read (after)0x00 from 0x2002ffbf
+Read (before)0x00 from 0x11d4
+Read (after)0x40064000 from 0x11d4
+Read (before)0x40064000 from 0x2002ffc7
+Read (after)0x00 from 0x2002ffc7
+<SimState @ 0x11c7>
+Read (before) None  from 0x2002ffcc
+Read (after)0x2002ffd0 from 0x2002ffcc
+<SimState @ 0x1527>
+Read (before) None  from 0x2002ffd6
+Read (after)0x00 from 0x2002ffd6
+Read (before)0x00 from 0x2002ffd0
+Read (after)0x6fc4 from 0x2002ffd0
+<SimState @ 0x13fd>
+Read (before) None  from 0x2002ffc7
+Read (after)0x00 from 0x2002ffc7
+<SimState @ 0x140f>
+Read (before) None  from 0x2002ffc0
+Read (after)0x6fc4 from 0x2002ffc0
+<SimState @ 0x1423>
+Read (before) None  from 0x14f0
+Read (after)0x40064000 from 0x14f0
+Read (before)0x40064000 from 0x40064001
+[+] insert one sym at pc 0x1425 for addr 0x40064001. 2
+Read (after)0x00 from 0x40064001
+Read (before)0x00 from 0x14f0
+Read (after)0x40064000 from 0x14f0
+Read (before)0x40064000 from 0x14f0
+Read (after)0x40064000 from 0x14f0
+Read (before)0x40064000 from 0x40064000
+[+] insert one sym at pc 0x1435 for addr 0x40064000. 3
+Read (after)0x00 from 0x40064000
+Read (before)0x00 from 0x14f0
+Read (after)0x40064000 from 0x14f0
+Read (before)0x40064000 from 0x14f0
+Read (after)0x40064000 from 0x14f0
+Read (before)0x40064000 from 0x40064006
+[+] insert one sym at pc 0x144d for addr 0x40064006. 4
+Read (after)0x00 from 0x40064006
+[+] active #: 2
+[+] solving ...
+solving for state: <SimState @ 0x144b>
+solved, addr: 0x4006400c value: 0x00
+solved, addr: 0x40064001 value: 0x00
+solved, addr: 0x40064000 value: 0x00
+solved, addr: 0x40064006 value: 0x00
+solving for state: <SimState @ 0x1459>
+solved, addr: 0x4006400c value: 0x00
+solved, addr: 0x40064001 value: 0x00
+solved, addr: 0x40064000 value: 0x00
+solved, addr: 0x40064006 value: 0x08
+double branch BB
+taking branch 1
+[+] consume one sym at addr: 0x4006400c .#3
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x40064001(0x64001), size: 0x01, pc: 0x1424
+CPU env:
+r0: 0x000 r1: 0x6fc4 r2: 0x000 r3: 0x40064000 r4: 0x20c r5: 0x000 r6: 0x000 r7: 0x2002ffc0 r8: 0x000 r9: 0x000 r10: 0x000 r11: 0x000 r12: 0x000 r13: 0x2002ffc0 r14: 0x1531 r15: 0x1424 (tb start: 0x1422)
+[+] reuse previous solver
+[+] current solver cnt: #3
+[+] consume one sym at addr: 0x40064001 .#2
+data: [1074151425L, <BV32 input_17_32>, 0, 0]
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x40064000(0x64000), size: 0x01, pc: 0x1434
+CPU env:
+r0: 0x000 r1: 0x6fc4 r2: 0x40064000 r3: 0x40064000 r4: 0x20c r5: 0x000 r6: 0x000 r7: 0x2002ffc0 r8: 0x000 r9: 0x000 r10: 0x000 r11: 0x000 r12: 0x000 r13: 0x2002ffc0 r14: 0x1531 r15: 0x1434 (tb start: 0x1422)
+[+] reuse previous solver
+[+] current solver cnt: #2
+[+] consume one sym at addr: 0x40064000 .#1
+data: [1074151424L, <BV32 input_18_32>, 0, 0]
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x40064006(0x64006), size: 0x01, pc: 0x144c
+CPU env:
+r0: 0x000 r1: 0x6fc4 r2: 0x40064000 r3: 0x40064000 r4: 0x20c r5: 0x000 r6: 0x000 r7: 0x2002ffc0 r8: 0x000 r9: 0x000 r10: 0x000 r11: 0x000 r12: 0x000 r13: 0x2002ffc0 r14: 0x1531 r15: 0x144c (tb start: 0x1422)
+[+] reuse previous solver
+[+] current solver cnt: #1
+[+] consume one sym at addr: 0x40064006 .#0
+data: [1074151430L, <BV32 input_19_32>, 0, 8]
+feed data: 0x08
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x40064005(0x64005), size: 0x01, pc: 0x145a
+CPU env:
+r0: 0x000 r1: 0x6fc4 r2: 0x40064000 r3: 0x40064000 r4: 0x20c r5: 0x000 r6: 0x000 r7: 0x2002ffc0 r8: 0x000 r9: 0x000 r10: 0x000 r11: 0x000 r12: 0x000 r13: 0x2002ffc0 r14: 0x1531 r15: 0x145a (tb start: 0x1458)
+[+] Switching the execution to angr
+[+] ANGR stepping
+<SimState @ 0x145b>
+Read (before) None  from 0x40064005
+[+] insert one sym at pc 0x145b for addr 0x40064005. 1
+Read (after)0x00 from 0x40064005
+Read (before)0x00 from 0x14f0
+Read (after)0x40064000 from 0x14f0
+Read (before)0x40064000 from 0x14f0
+Read (after)0x40064000 from 0x14f0
+Read (before)0x40064000 from 0x40064006
+[+] insert one sym at pc 0x146d for addr 0x40064006. 2
+Read (after)0x00 from 0x40064006
+[+] active #: 2
+[+] solving ...
+solving for state: <SimState @ 0x146b>
+solved, addr: 0x40064005 value: 0x00
+solved, addr: 0x40064006 value: 0x20
+solving for state: <SimState @ 0x1479>
+solved, addr: 0x40064005 value: 0x00
+solved, addr: 0x40064006 value: 0x00
+double branch BB
+taking branch 1
+[+] consume one sym at addr: 0x40064005 .#1
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x40064006(0x64006), size: 0x01, pc: 0x146c
+CPU env:
+r0: 0x000 r1: 0x6fc4 r2: 0x40064000 r3: 0x40064000 r4: 0x20c r5: 0x000 r6: 0x000 r7: 0x2002ffc0 r8: 0x000 r9: 0x000 r10: 0x000 r11: 0x000 r12: 0x000 r13: 0x2002ffc0 r14: 0x1531 r15: 0x146c (tb start: 0x1458)
+[+] reuse previous solver
+[+] current solver cnt: #1
+[+] consume one sym at addr: 0x40064006 .#0
+data: [1074151430L, <BV32 input_21_32>, 32, 0]
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x40064005(0x64005), size: 0x01, pc: 0x1314
+CPU env:
+r0: 0x6fc4 r1: 0x6fc4 r2: 0x40064000 r3: 0x40064000 r4: 0x20c r5: 0x000 r6: 0x000 r7: 0x2002ffa8 r8: 0x000 r9: 0x000 r10: 0x000 r11: 0x000 r12: 0x000 r13: 0x2002ffa8 r14: 0x1485 r15: 0x1314 (tb start: 0x12f8)
+[+] Switching the execution to angr
+[+] ANGR stepping
+<SimState @ 0x1315>
+Read (before) None  from 0x40064005
+[+] insert one sym at pc 0x1315 for addr 0x40064005. 1
+Read (after)0x00 from 0x40064005
+Read (before)0x00 from 0x2002ffac
+Read (after)0x6fc4 from 0x2002ffac
+Read (before)0x6fc4 from 0x6fc6
+Read (after)0x04 from 0x6fc6
+Read (before)0x04 from 0x136c
+Read (after)0x40064000 from 0x136c
+Read (before)0x40064000 from 0x136c
+Read (after)0x40064000 from 0x136c
+Read (before)0x40064000 from 0x40064004
+[+] insert one sym at pc 0x1333 for addr 0x40064004. 2
+Read (after)0x00 from 0x40064004
+Read (before)0x00 from 0x2002ffac
+Read (after)0x6fc4 from 0x2002ffac
+Read (before)0x6fc4 from 0x6fc4
+Read (after)0x00 from 0x6fc4
+Read (before)0x00 from 0x136c
+Read (after)0x40064000 from 0x136c
+Read (before)0x40064000 from 0x136c
+Read (after)0x40064000 from 0x136c
+Read (before)0x40064000 from 0x40064006
+[+] insert one sym at pc 0x134d for addr 0x40064006. 3
+Read (after)0x00 from 0x40064006
+[+] active #: 2
+[+] solving ...
+solving for state: <SimState @ 0x134b>
+solved, addr: 0x40064005 value: 0x00
+solved, addr: 0x40064004 value: 0x00
+solved, addr: 0x40064006 value: 0x00
+solving for state: <SimState @ 0x1359>
+solved, addr: 0x40064005 value: 0x00
+solved, addr: 0x40064004 value: 0x00
+solved, addr: 0x40064006 value: 0x40
+double branch BB
+taking branch 1
+[+] consume one sym at addr: 0x40064005 .#2
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x40064004(0x64004), size: 0x01, pc: 0x1332
+CPU env:
+r0: 0x6fc4 r1: 0x40064000 r2: 0x000 r3: 0x40064000 r4: 0x20c r5: 0x000 r6: 0x000 r7: 0x2002ffa8 r8: 0x000 r9: 0x000 r10: 0x000 r11: 0x000 r12: 0x000 r13: 0x2002ffa8 r14: 0x1485 r15: 0x1332 (tb start: 0x12f8)
+[+] reuse previous solver
+[+] current solver cnt: #2
+[+] consume one sym at addr: 0x40064004 .#1
+data: [1074151428L, <BV32 input_23_32>, 0, 0]
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x40064006(0x64006), size: 0x01, pc: 0x134c
+CPU env:
+r0: 0x6fc4 r1: 0x40064000 r2: 0x40064000 r3: 0x40064000 r4: 0x20c r5: 0x000 r6: 0x000 r7: 0x2002ffa8 r8: 0x000 r9: 0x000 r10: 0x000 r11: 0x000 r12: 0x000 r13: 0x2002ffa8 r14: 0x1485 r15: 0x134c (tb start: 0x12f8)
+[+] reuse previous solver
+[+] current solver cnt: #1
+[+] consume one sym at addr: 0x40064006 .#0
+data: [1074151430L, <BV32 input_24_32>, 0, 64]
+feed data: 0x40
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x40064005(0x64005), size: 0x01, pc: 0x1486
+CPU env:
+r0: 0x6fc4 r1: 0x40064000 r2: 0x40064000 r3: 0x40064000 r4: 0x20c r5: 0x000 r6: 0x000 r7: 0x2002ffc0 r8: 0x000 r9: 0x000 r10: 0x000 r11: 0x000 r12: 0x000 r13: 0x2002ffc0 r14: 0x1485 r15: 0x1486 (tb start: 0x1484)
+[+] Switching the execution to angr
+[+] ANGR stepping
+<SimState @ 0x1487>
+Read (before) None  from 0x40064005
+[+] insert one sym at pc 0x1487 for addr 0x40064005. 1
+Read (after)0x00 from 0x40064005
+Read (before)0x00 from 0x14f0
+Read (after)0x40064000 from 0x14f0
+Read (before)0x40064000 from 0x14f0
+Read (after)0x40064000 from 0x14f0
+Read (before)0x40064000 from 0x40064010
+[+] insert one sym at pc 0x1497 for addr 0x40064010. 2
+Read (after)0x00 from 0x40064010
+Read (before)0x00 from 0x2002ffc7
+Read (after)0x00 from 0x2002ffc7
+Read (before)0x00 from 0x14f0
+Read (after)0x40064000 from 0x14f0
+Read (before)0x40064000 from 0x2002ffc7
+Read (after)0x00 from 0x2002ffc7
+Read (before)0x00 from 0x14f0
+Read (after)0x40064000 from 0x14f0
+Read (before)0x40064000 from 0x40064012
+[+] insert one sym at pc 0x14bb for addr 0x40064012. 3
+Read (after)0x00 from 0x40064012
+[+] active #: 2
+[+] solving ...
+solving for state: <SimState @ 0x14b7>
+solved, addr: 0x40064005 value: 0x00
+solved, addr: 0x40064010 value: 0x00
+solved, addr: 0x40064012 value: 0x10
+solving for state: <SimState @ 0x14c9>
+solved, addr: 0x40064005 value: 0x00
+solved, addr: 0x40064010 value: 0x00
+solved, addr: 0x40064012 value: 0x00
+double branch BB
+taking branch 1
+[+] consume one sym at addr: 0x40064005 .#2
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x40064010(0x64010), size: 0x01, pc: 0x1496
+CPU env:
+r0: 0x6fc4 r1: 0x40064000 r2: 0x40064000 r3: 0x40064000 r4: 0x20c r5: 0x000 r6: 0x000 r7: 0x2002ffc0 r8: 0x000 r9: 0x000 r10: 0x000 r11: 0x000 r12: 0x000 r13: 0x2002ffc0 r14: 0x1485 r15: 0x1496 (tb start: 0x1484)
+[+] reuse previous solver
+[+] current solver cnt: #2
+[+] consume one sym at addr: 0x40064010 .#1
+data: [1074151440L, <BV32 input_26_32>, 0, 0]
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x40064012(0x64012), size: 0x01, pc: 0x14ba
+CPU env:
+r0: 0x6fc4 r1: 0x40064000 r2: 0x000 r3: 0x40064000 r4: 0x20c r5: 0x000 r6: 0x000 r7: 0x2002ffc0 r8: 0x000 r9: 0x000 r10: 0x000 r11: 0x000 r12: 0x000 r13: 0x2002ffc0 r14: 0x1485 r15: 0x14ba (tb start: 0x1484)
+[+] reuse previous solver
+[+] current solver cnt: #1
+[+] consume one sym at addr: 0x40064012 .#0
+data: [1074151442L, <BV32 input_27_32>, 16, 0]
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x40064006(0x64006), size: 0x01, pc: 0x14cc
+CPU env:
+r0: 0x6fc4 r1: 0x40064000 r2: 0x000 r3: 0x40064000 r4: 0x20c r5: 0x000 r6: 0x000 r7: 0x2002ffc0 r8: 0x000 r9: 0x000 r10: 0x000 r11: 0x000 r12: 0x000 r13: 0x2002ffc0 r14: 0x1485 r15: 0x14cc (tb start: 0x14c8)
+[+] Switching the execution to angr
+[+] ANGR stepping
+<SimState @ 0x14cd>
+Read (before) None  from 0x40064006
+[+] insert one sym at pc 0x14cd for addr 0x40064006. 1
+Read (after)0x00 from 0x40064006
+[+] active #: 2
+[+] solving ...
+solving for state: <SimState @ 0x14cb>
+solved, addr: 0x40064006 value: 0x00
+solving for state: <SimState @ 0x14d9>
+solved, addr: 0x40064006 value: 0x20
+double branch BB
+taking branch 1
+[+] consume one sym at addr: 0x40064006 .#0
+feed data: 0x20
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x40064000(0x64000), size: 0x01, pc: 0x1532
+CPU env:
+r0: 0x000 r1: 0x40064000 r2: 0x000 r3: 0x40064000 r4: 0x20c r5: 0x000 r6: 0x000 r7: 0x2002ffd0 r8: 0x000 r9: 0x000 r10: 0x000 r11: 0x000 r12: 0x000 r13: 0x2002ffd0 r14: 0x1485 r15: 0x1532 (tb start: 0x1530)
+[+] Switching the execution to angr
+[+] ANGR stepping
+<SimState @ 0x1533>
+Read (before) None  from 0x40064000
+[+] insert one sym at pc 0x1533 for addr 0x40064000. 1
+Read (after)0x00 from 0x40064000
+Read (before)0x00 from 0x1568
+Read (after)0x40064000 from 0x1568
+Read (before)0x40064000 from 0x1568
+Read (after)0x40064000 from 0x1568
+Read (before)0x40064000 from 0x40064006
+[+] insert one sym at pc 0x1545 for addr 0x40064006. 2
+Read (after)0x00 from 0x40064006
+[+] active #: 2
+[+] solving ...
+solving for state: <SimState @ 0x1543>
+solved, addr: 0x40064000 value: 0x00
+solved, addr: 0x40064006 value: 0x00
+solving for state: <SimState @ 0x1553>
+solved, addr: 0x40064000 value: 0x00
+solved, addr: 0x40064006 value: 0x0c
+double branch BB
+taking branch 1
+[+] consume one sym at addr: 0x40064000 .#1
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x40064006(0x64006), size: 0x01, pc: 0x1544
+CPU env:
+r0: 0x000 r1: 0x40064000 r2: 0x40064000 r3: 0x40064000 r4: 0x20c r5: 0x000 r6: 0x000 r7: 0x2002ffd0 r8: 0x000 r9: 0x000 r10: 0x000 r11: 0x000 r12: 0x000 r13: 0x2002ffd0 r14: 0x1485 r15: 0x1544 (tb start: 0x1530)
+[+] reuse previous solver
+[+] current solver cnt: #1
+[+] consume one sym at addr: 0x40064006 .#0
+data: [1074151430L, <BV32 input_30_32>, 0, 12]
+feed data: 0x0c
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x40048004(0x48004), size: 0x04, pc: 0xa18
+CPU env:
+r0: 0x001 r1: 0x000 r2: 0x000 r3: 0x40048004 r4: 0x20c r5: 0x000 r6: 0x000 r7: 0x2002ffb8 r8: 0x000 r9: 0x000 r10: 0x000 r11: 0x000 r12: 0x000 r13: 0x2002ffb8 r14: 0xf91 r15: 0xa18 (tb start: 0xa04)
+[+] Switching the execution to angr
+[+] ANGR stepping
+<SimState @ 0xa19>
+Read (before) None  from 0x40048004
+[+] insert one sym at pc 0xa19 for addr 0x40048004. 1
+Read (after)0x00 from 0x40048004
+Read (before)0x00 from 0x2002ffc4
+Read (after)0x01 from 0x2002ffc4
+Read (before)0x01 from 0xa58
+Read (after)0x40047000 from 0xa58
+Read (before)0x40047000 from 0x2002ffc0
+Read (after)0x00 from 0x2002ffc0
+Read (before)0x00 from 0x2002ffbc
+Read (after)0x00 from 0x2002ffbc
+Read (before)0x00 from 0xa58
+Read (after)0x40047000 from 0xa58
+Read (before)0x40047000 from 0x2002ffcc
+Read (after)0x2002ffd0 from 0x2002ffcc
+<SimState @ 0xf91>
+Read (before) None  from 0x2002ffd4
+Read (after)0x6fc8 from 0x2002ffd4
+Read (before)0x6fc8 from 0x6fcb
+Read (after)0x02 from 0x6fcb
+<SimState @ 0x9d5>
+Read (before) None  from 0xa00
+Read (after)0x40047000 from 0xa00
+Read (before)0x40047000 from 0x40047000
+[+] insert one sym at pc 0x9df for addr 0x40047000. 2
+Read (after)0x00 from 0x40047000
+Read (before)0x00 from 0x2002ffc4
+Read (after)0x02 from 0x2002ffc4
+Read (before)0x02 from 0xa00
+Read (after)0x40047000 from 0xa00
+Read (before)0x40047000 from 0x2002ffcc
+Read (after)0x2002ffd0 from 0x2002ffcc
+<SimState @ 0xf9b>
+Read (before) None  from 0x2002ffd8
+Read (after)0x2002ffe0 from 0x2002ffd8
+Read (before)0x2002ffe0 from 0x2002ffdc
+Read (after)0x294d from 0x2002ffdc
+<SimState @ 0x294d>
+Read (before) None  from 0x2968
+Read (after)0x20000030 from 0x2968
+Read (before)0x20000030 from 0x296c
+Read (after)0x7270e00 from 0x296c
+Read (before)0x7270e00 from 0x2002ffe0
+Read (after)0x2002fff0 from 0x2002ffe0
+Read (before)0x2002fff0 from 0x2002ffe4
+Read (after)0x65b from 0x2002ffe4
+<SimState @ 0x65b>
+<SimState @ 0x5f9>
+Read (before) None  from 0x2002ffdf
+Read (after)0x1f from 0x2002ffdf
+<SimState @ 0x60d>
+Read (before) None  from 0x2002ffd8
+Read (after)0x05 from 0x2002ffd8
+Read (before)0x05 from 0x644
+Read (after)0xe000e100 from 0x644
+Read (before)0xe000e100 from 0x2002ffdf
+Read (after)0x1f from 0x2002ffdf
+<SimState @ 0x639>
+Read (before) None  from 0x2002ffe4
+Read (after)0x2002fff0 from 0x2002ffe4
+<SimState @ 0x663>
+Read (before) None  from 0x68c
+Read (after)0x6a38 from 0x68c
+Read (before)0x6a38 from 0x690
+Read (after)0x699 from 0x690
+<SimState @ 0x6725>
+Read (before) None  from 0x2002ffc6
+Read (after)0x64 from 0x2002ffc6
+<SimState @ 0x2a01>
+<SimState @ 0x3cd1>
+Read (before) None  from 0x3ce8
+Read (after)0x20002a44 from 0x3ce8
+Read (before)0x20002a44 from 0x20002a44
+Read (after)0x00 from 0x20002a44
+Read (before)0x00 from 0x3ce8
+Read (after)0x20002a44 from 0x3ce8
+Read (before)0x20002a44 from 0x2002ff7c
+Read (after)0x2002ff80 from 0x2002ff7c
+<SimState @ 0x2a11>
+Read (before) None  from 0x2b70
+Read (after)0x200028f0 from 0x2b70
+Read (before)0x200028f0 from 0x200028f0
+Read (after)0x00 from 0x200028f0
+<SimState @ 0x2a19>
+<SimState @ 0x2c35>
+Read (before) None  from 0x2ce0
+Read (after)0x200000e8 from 0x2ce0
+Read (before)0x200000e8 from 0x2002ff74
+Read (after)0x200000e8 from 0x2002ff74
+<SimState @ 0x2c69>
+Read (before) None  from 0x2002ff74
+Read (after)0x200000e8 from 0x2002ff74
+Read (before)0x200000e8 from 0x2ce4
+Read (after)0x200028e8 from 0x2ce4
+Read (before)0x200028e8 from 0x2002ff6c
+Read (after)0x200000e8 from 0x2002ff6c
+Read (before)0x200000e8 from 0x2ce4
+Read (after)0x200028e8 from 0x2ce4
+Read (before)0x200028e8 from 0x2002ff6c
+Read (after)0x200000e8 from 0x2002ff6c
+Read (before)0x200000e8 from 0x2002ff70
+Read (after)0x2800 from 0x2002ff70
+Read (before)0x2800 from 0x2002ff74
+Read (after)0x200028e8 from 0x2002ff74
+Read (before)0x200028e8 from 0x2002ff74
+Read (after)0x200028e0 from 0x2002ff74
+Read (before)0x200028e0 from 0x2002ff74
+Read (after)0x200028e0 from 0x2002ff74
+Read (before)0x200028e0 from 0x2ce8
+Read (after)0x200028f0 from 0x2ce8
+Read (before)0x200028f0 from 0x2ce8
+Read (after)0x200028f0 from 0x2ce8
+Read (before)0x200028f0 from 0x200028f0
+Read (after)0x200028e0 from 0x200028f0
+Read (before)0x200028e0 from 0x2ce8
+Read (after)0x200028f0 from 0x2ce8
+Read (before)0x200028f0 from 0x200028f0
+Read (after)0x200028e0 from 0x200028f0
+Read (before)0x200028e0 from 0x2002ff6c
+Read (after)0x200000e8 from 0x2002ff6c
+Read (before)0x200000e8 from 0x2002ff68
+Read (after)0x200000e8 from 0x2002ff68
+Read (before)0x200000e8 from 0x2002ff74
+Read (after)0x200028e0 from 0x2002ff74
+Read (before)0x200028e0 from 0x2002ff68
+Read (after)0x200000e8 from 0x2002ff68
+Read (before)0x200000e8 from 0x2ce8
+Read (after)0x200028f0 from 0x2ce8
+Read (before)0x200028f0 from 0x200028f0
+Read (after)0x200028e0 from 0x200028f0
+Read (before)0x200028e0 from 0x2002ff68
+Read (after)0x200000e8 from 0x2002ff68
+Read (before)0x200000e8 from 0x2002ff68
+Read (after)0x200000e8 from 0x2002ff68
+Read (before)0x200000e8 from 0x200000ec
+Read (after)0x27f8 from 0x200000ec
+Read (before)0x27f8 from 0x2cec
+Read (after)0x200028f8 from 0x2cec
+Read (before)0x200028f8 from 0x2002ff68
+Read (after)0x200000e8 from 0x2002ff68
+Read (before)0x200000e8 from 0x200000ec
+Read (after)0x27f8 from 0x200000ec
+Read (before)0x27f8 from 0x2cf0
+Read (after)0x200028f4 from 0x2cf0
+Read (before)0x200028f4 from 0x2cf4
+Read (after)0x200028fc from 0x2cf4
+Read (before)0x200028fc from 0x2002ff7c
+Read (after)0x2002ff80 from 0x2002ff7c
+<SimState @ 0x2a1d>
+Read (before) None  from 0x2b74
+Read (after)0x200028fc from 0x2b74
+Read (before)0x200028fc from 0x200028fc
+Read (after)0x80000000 from 0x200028fc
+Read (before)0x80000000 from 0x2002ff84
+Read (after)0x190 from 0x2002ff84
+<SimState @ 0x2a2b>
+Read (before) None  from 0x2002ff84
+Read (after)0x190 from 0x2002ff84
+<SimState @ 0x2a31>
+Read (before) None  from 0x2002ff84
+Read (after)0x190 from 0x2002ff84
+Read (before)0x190 from 0x2002ff84
+Read (after)0x198 from 0x2002ff84
+<SimState @ 0x2a6b>
+Read (before) None  from 0x2002ff84
+Read (after)0x198 from 0x2002ff84
+<SimState @ 0x2a71>
+Read (before) None  from 0x2b78
+Read (after)0x200028f4 from 0x2b78
+Read (before)0x200028f4 from 0x200028f4
+Read (after)0x27f8 from 0x200028f4
+Read (before)0x27f8 from 0x2002ff84
+Read (after)0x198 from 0x2002ff84
+<SimState @ 0x2a7b>
+Read (before) None  from 0x2b7c
+Read (after)0x200028e8 from 0x2b7c
+Read (before)0x200028e8 from 0x2b7c
+Read (after)0x200028e8 from 0x2b7c
+Read (before)0x200028e8 from 0x200028e8
+Read (after)0x200000e8 from 0x200028e8
+<SimState @ 0x2a91>
+Read (before) None  from 0x2002ffa4
+Read (after)0x200000e8 from 0x2002ffa4
+Read (before)0x200000e8 from 0x200000ec
+Read (after)0x27f8 from 0x200000ec
+Read (before)0x27f8 from 0x2002ff84
+Read (after)0x198 from 0x2002ff84
+<SimState @ 0x2aa3>
+Read (before) None  from 0x2b70
+Read (after)0x200028f0 from 0x2b70
+Read (before)0x200028f0 from 0x200028f0
+Read (after)0x200028e0 from 0x200028f0
+Read (before)0x200028e0 from 0x2002ffa4
+Read (after)0x200000e8 from 0x2002ffa4
+<SimState @ 0x2aad>
+Read (before) None  from 0x2002ffa0
+Read (after)0x200028e8 from 0x2002ffa0
+Read (before)0x200028e8 from 0x200028e8
+Read (after)0x200000e8 from 0x200028e8
+Read (before)0x200000e8 from 0x2002ffa4
+Read (after)0x200000e8 from 0x2002ffa4
+Read (before)0x200000e8 from 0x200000e8
+Read (after)0x200028e0 from 0x200000e8
+Read (before)0x200028e0 from 0x2002ffa0
+Read (after)0x200028e8 from 0x2002ffa0
+Read (before)0x200028e8 from 0x2002ffa4
+Read (after)0x200000e8 from 0x2002ffa4
+Read (before)0x200000e8 from 0x200000ec
+Read (after)0x27f8 from 0x200000ec
+Read (before)0x27f8 from 0x2002ff84
+Read (after)0x198 from 0x2002ff84
+<SimState @ 0x2acf>
+Read (before) None  from 0x2002ffa4
+Read (after)0x200000e8 from 0x2002ffa4
+Read (before)0x200000e8 from 0x2002ff84
+Read (after)0x198 from 0x2002ff84
+Read (before)0x198 from 0x2002ff98
+Read (after)0x20000280 from 0x2002ff98
+<SimState @ 0x2af5>
+Read (before) None  from 0x2002ffa4
+Read (after)0x200000e8 from 0x2002ffa4
+Read (before)0x200000e8 from 0x200000ec
+Read (after)0x27f8 from 0x200000ec
+Read (before)0x27f8 from 0x2002ff84
+Read (after)0x198 from 0x2002ff84
+Read (before)0x198 from 0x2002ff98
+Read (after)0x20000280 from 0x2002ff98
+Read (before)0x20000280 from 0x2002ffa4
+Read (after)0x200000e8 from 0x2002ffa4
+Read (before)0x200000e8 from 0x2002ff84
+Read (after)0x198 from 0x2002ff84
+Read (before)0x198 from 0x2002ff98
+Read (after)0x20000280 from 0x2002ff98
+<SimState @ 0x2cf9>
+Read (before) None  from 0x2da4
+Read (after)0x200028e8 from 0x2da4
+<SimState @ 0x2d0d>
+Read (before) None  from 0x2002ff74
+Read (after)0x200028e8 from 0x2002ff74
+Read (before)0x200028e8 from 0x200028e8
+Read (after)0x200028e0 from 0x200028e8
+Read (before)0x200028e0 from 0x2002ff6c
+Read (after)0x20000280 from 0x2002ff6c
+<SimState @ 0x2d17>
+Read (before) None  from 0x2002ff74
+Read (after)0x200028e8 from 0x2002ff74
+Read (before)0x200028e8 from 0x2002ff74
+Read (after)0x200028e8 from 0x2002ff74
+Read (before)0x200028e8 from 0x200028ec
+Read (after)0x00 from 0x200028ec
+Read (before)0x00 from 0x2002ff70
+Read (after)0x200028e8 from 0x2002ff70
+Read (before)0x200028e8 from 0x2002ff6c
+Read (after)0x20000280 from 0x2002ff6c
+<SimState @ 0x2d3b>
+Read (before) None  from 0x2002ff6c
+Read (after)0x20000280 from 0x2002ff6c
+Read (before)0x20000280 from 0x2002ff6c
+Read (after)0x20000280 from 0x2002ff6c
+Read (before)0x20000280 from 0x20000284
+Read (after)0x2660 from 0x20000284
+Read (before)0x2660 from 0x2002ff70
+Read (after)0x20000280 from 0x2002ff70
+Read (before)0x20000280 from 0x2002ff74
+Read (after)0x200028e8 from 0x2002ff74
+Read (before)0x200028e8 from 0x200028e8
+Read (after)0x200028e0 from 0x200028e8
+<SimState @ 0x2d4f>
+Read (before) None  from 0x2002ff74
+Read (after)0x200028e8 from 0x2002ff74
+Read (before)0x200028e8 from 0x200028e8
+Read (after)0x200028e0 from 0x200028e8
+Read (before)0x200028e0 from 0x2da8
+Read (after)0x200028f0 from 0x2da8
+Read (before)0x200028f0 from 0x200028f0
+Read (after)0x200028e0 from 0x200028f0
+<SimState @ 0x2d77>
+Read (before) None  from 0x2da8
+Read (after)0x200028f0 from 0x2da8
+Read (before)0x200028f0 from 0x200028f0
+Read (after)0x200028e0 from 0x200028f0
+Read (before)0x200028e0 from 0x2002ff6c
+Read (after)0x20000280 from 0x2002ff6c
+<SimState @ 0x2d89>
+Read (before) None  from 0x2002ff74
+Read (after)0x200028e8 from 0x2002ff74
+Read (before)0x200028e8 from 0x2002ff6c
+Read (after)0x20000280 from 0x2002ff6c
+<SimState @ 0x2d91>
+Read (before) None  from 0x2002ff74
+Read (after)0x200028e8 from 0x2002ff74
+Read (before)0x200028e8 from 0x2002ff6c
+Read (after)0x20000280 from 0x2002ff6c
+Read (before)0x20000280 from 0x2002ff7c
+Read (after)0x2002ff80 from 0x2002ff7c
+<SimState @ 0x2b0d>
+Read (before) None  from 0x2b78
+Read (after)0x200028f4 from 0x2b78
+Read (before)0x200028f4 from 0x200028f4
+Read (after)0x27f8 from 0x200028f4
+Read (before)0x27f8 from 0x2002ffa4
+Read (after)0x200000e8 from 0x2002ffa4
+Read (before)0x200000e8 from 0x200000ec
+Read (after)0x198 from 0x200000ec
+Read (before)0x198 from 0x2b78
+Read (after)0x200028f4 from 0x2b78
+Read (before)0x200028f4 from 0x2b78
+Read (after)0x200028f4 from 0x2b78
+Read (before)0x200028f4 from 0x200028f4
+Read (after)0x2660 from 0x200028f4
+Read (before)0x2660 from 0x2b80
+Read (after)0x200028f8 from 0x2b80
+Read (before)0x200028f8 from 0x200028f8
+Read (after)0x27f8 from 0x200028f8
+<SimState @ 0x2b27>
+Read (before) None  from 0x2b78
+Read (after)0x200028f4 from 0x2b78
+Read (before)0x200028f4 from 0x200028f4
+Read (after)0x2660 from 0x200028f4
+Read (before)0x2660 from 0x2b80
+Read (after)0x200028f8 from 0x2b80
+Read (before)0x200028f8 from 0x2002ffa4
+Read (after)0x200000e8 from 0x2002ffa4
+Read (before)0x200000e8 from 0x200000ec
+Read (after)0x198 from 0x200000ec
+Read (before)0x198 from 0x2b74
+Read (after)0x200028fc from 0x2b74
+Read (before)0x200028fc from 0x200028fc
+Read (after)0x80000000 from 0x200028fc
+Read (before)0x80000000 from 0x2002ffa4
+Read (after)0x200000e8 from 0x2002ffa4
+Read (before)0x200000e8 from 0x2002ffa4
+Read (after)0x200000e8 from 0x2002ffa4
+<SimState @ 0x3ced>
+Read (before) None  from 0x3e00
+Read (after)0x20002a44 from 0x3e00
+Read (before)0x20002a44 from 0x20002a44
+Read (after)0x01 from 0x20002a44
+<SimState @ 0x3d17>
+<SimState @ 0x2fcd>
+<SimState @ 0x2fd7>
+<SimState @ 0x2fe3>
+Read (before) None  from 0x3020
+Read (after)0x2000002c from 0x3020
+Read (before)0x2000002c from 0x2000002c
+Read (after)0xaaaaaaaa from 0x2000002c
+Read (before)0xaaaaaaaa from 0x3020
+Read (after)0x2000002c from 0x3020
+Read (before)0x2000002c from 0x3020
+Read (after)0x2000002c from 0x3020
+Read (before)0x2000002c from 0x2000002c
+Read (after)0xaaaaaaab from 0x2000002c
+<SimState @ 0x3015>
+Read (before) None  from 0x2002ff64
+Read (after)0x2002ff68 from 0x2002ff64
+<SimState @ 0x3d1b>
+Read (before) None  from 0x3e00
+Read (after)0x20002a44 from 0x3e00
+Read (before)0x20002a44 from 0x20002a44
+Read (after)0x01 from 0x20002a44
+Read (before)0x01 from 0x3e00
+Read (after)0x20002a44 from 0x3e00
+Read (before)0x20002a44 from 0x3e00
+Read (after)0x20002a44 from 0x3e00
+Read (before)0x20002a44 from 0x20002a44
+Read (after)0x00 from 0x20002a44
+<SimState @ 0x3d2d>
+Read (before) None  from 0x3e04
+Read (after)0x20002a1c from 0x3e04
+Read (before)0x20002a1c from 0x20002a1c
+Read (after)0x00 from 0x20002a1c
+<SimState @ 0x3df1>
+<SimState @ 0x3029>
+Read (before) None  from 0x3074
+Read (after)0x2000002c from 0x3074
+Read (before)0x2000002c from 0x2000002c
+Read (after)0xaaaaaaab from 0x2000002c
+<SimState @ 0x304b>
+Read (before) None  from 0x3074
+Read (after)0x2000002c from 0x3074
+Read (before)0x2000002c from 0x2000002c
+Read (after)0xaaaaaaab from 0x2000002c
+Read (before)0xaaaaaaab from 0x3074
+Read (after)0x2000002c from 0x3074
+Read (before)0x2000002c from 0x3074
+Read (after)0x2000002c from 0x3074
+Read (before)0x2000002c from 0x2000002c
+Read (after)0xaaaaaaaa from 0x2000002c
+<SimState @ 0x3067>
+Read (before) None  from 0x2002ff64
+Read (after)0x2002ff68 from 0x2002ff64
+<SimState @ 0x3df5>
+Read (before) None  from 0x2002ff70
+Read (after)0x00 from 0x2002ff70
+Read (before)0x00 from 0x2002ff78
+Read (after)0x2002ff80 from 0x2002ff78
+Read (before)0x2002ff80 from 0x2002ff7c
+Read (after)0x2b47 from 0x2002ff7c
+<SimState @ 0x2b47>
+Read (before) None  from 0x2002ff9c
+Read (after)0x200000f0 from 0x2002ff9c
+<SimState @ 0x2b65>
+Read (before) None  from 0x2002ff9c
+Read (after)0x200000f0 from 0x2002ff9c
+Read (before)0x200000f0 from 0x2002ffa8
+Read (after)0x2002ffc0 from 0x2002ffa8
+Read (before)0x2002ffc0 from 0x2002ffac
+Read (after)0x673f from 0x2002ffac
+<SimState @ 0x673f>
+Read (before) None  from 0x2002ffd4
+Read (after)0x200000f0 from 0x2002ffd4
+<SimState @ 0x6747>
+<SimState @ 0x2a01>
+<SimState @ 0x3cd1>
+Read (before) None  from 0x3ce8
+Read (after)0x20002a44 from 0x3ce8
+Read (before)0x20002a44 from 0x20002a44
+Read (after)0x00 from 0x20002a44
+Read (before)0x00 from 0x3ce8
+Read (after)0x20002a44 from 0x3ce8
+Read (before)0x20002a44 from 0x2002ff7c
+Read (after)0x2002ff80 from 0x2002ff7c
+<SimState @ 0x2a11>
+Read (before) None  from 0x2b70
+Read (after)0x200028f0 from 0x2b70
+Read (before)0x200028f0 from 0x200028f0
+Read (after)0x200028e0 from 0x200028f0
+<SimState @ 0x2a1d>
+Read (before) None  from 0x2b74
+Read (after)0x200028fc from 0x2b74
+Read (before)0x200028fc from 0x200028fc
+Read (after)0x80000000 from 0x200028fc
+Read (before)0x80000000 from 0x2002ff84
+Read (after)0x78 from 0x2002ff84
+<SimState @ 0x2a2b>
+Read (before) None  from 0x2002ff84
+Read (after)0x78 from 0x2002ff84
+<SimState @ 0x2a31>
+Read (before) None  from 0x2002ff84
+Read (after)0x78 from 0x2002ff84
+Read (before)0x78 from 0x2002ff84
+Read (after)0x80 from 0x2002ff84
+<SimState @ 0x2a6b>
+Read (before) None  from 0x2002ff84
+Read (after)0x80 from 0x2002ff84
+<SimState @ 0x2a71>
+Read (before) None  from 0x2b78
+Read (after)0x200028f4 from 0x2b78
+Read (before)0x200028f4 from 0x200028f4
+Read (after)0x2660 from 0x200028f4
+Read (before)0x2660 from 0x2002ff84
+Read (after)0x80 from 0x2002ff84
+<SimState @ 0x2a7b>
+Read (before) None  from 0x2b7c
+Read (after)0x200028e8 from 0x2b7c
+Read (before)0x200028e8 from 0x2b7c
+Read (after)0x200028e8 from 0x2b7c
+Read (before)0x200028e8 from 0x200028e8
+Read (after)0x20000280 from 0x200028e8
+<SimState @ 0x2a91>
+Read (before) None  from 0x2002ffa4
+Read (after)0x20000280 from 0x2002ffa4
+Read (before)0x20000280 from 0x20000284
+Read (after)0x2660 from 0x20000284
+Read (before)0x2660 from 0x2002ff84
+Read (after)0x80 from 0x2002ff84
+<SimState @ 0x2aa3>
+Read (before) None  from 0x2b70
+Read (after)0x200028f0 from 0x2b70
+Read (before)0x200028f0 from 0x200028f0
+Read (after)0x200028e0 from 0x200028f0
+Read (before)0x200028e0 from 0x2002ffa4
+Read (after)0x20000280 from 0x2002ffa4
+<SimState @ 0x2aad>
+Read (before) None  from 0x2002ffa0
+Read (after)0x200028e8 from 0x2002ffa0
+Read (before)0x200028e8 from 0x200028e8
+Read (after)0x20000280 from 0x200028e8
+Read (before)0x20000280 from 0x2002ffa4
+Read (after)0x20000280 from 0x2002ffa4
+Read (before)0x20000280 from 0x20000280
+Read (after)0x200028e0 from 0x20000280
+Read (before)0x200028e0 from 0x2002ffa0
+Read (after)0x200028e8 from 0x2002ffa0
+Read (before)0x200028e8 from 0x2002ffa4
+Read (after)0x20000280 from 0x2002ffa4
+Read (before)0x20000280 from 0x20000284
+Read (after)0x2660 from 0x20000284
+Read (before)0x2660 from 0x2002ff84
+Read (after)0x80 from 0x2002ff84
+<SimState @ 0x2acf>
+Read (before) None  from 0x2002ffa4
+Read (after)0x20000280 from 0x2002ffa4
+Read (before)0x20000280 from 0x2002ff84
+Read (after)0x80 from 0x2002ff84
+Read (before)0x80 from 0x2002ff98
+Read (after)0x20000300 from 0x2002ff98
+<SimState @ 0x2af5>
+Read (before) None  from 0x2002ffa4
+Read (after)0x20000280 from 0x2002ffa4
+Read (before)0x20000280 from 0x20000284
+Read (after)0x2660 from 0x20000284
+Read (before)0x2660 from 0x2002ff84
+Read (after)0x80 from 0x2002ff84
+Read (before)0x80 from 0x2002ff98
+Read (after)0x20000300 from 0x2002ff98
+Read (before)0x20000300 from 0x2002ffa4
+Read (after)0x20000280 from 0x2002ffa4
+Read (before)0x20000280 from 0x2002ff84
+Read (after)0x80 from 0x2002ff84
+Read (before)0x80 from 0x2002ff98
+Read (after)0x20000300 from 0x2002ff98
+<SimState @ 0x2cf9>
+Read (before) None  from 0x2da4
+Read (after)0x200028e8 from 0x2da4
+<SimState @ 0x2d0d>
+Read (before) None  from 0x2002ff74
+Read (after)0x200028e8 from 0x2002ff74
+Read (before)0x200028e8 from 0x200028e8
+Read (after)0x200028e0 from 0x200028e8
+Read (before)0x200028e0 from 0x2002ff6c
+Read (after)0x20000300 from 0x2002ff6c
+<SimState @ 0x2d17>
+Read (before) None  from 0x2002ff74
+Read (after)0x200028e8 from 0x2002ff74
+Read (before)0x200028e8 from 0x2002ff74
+Read (after)0x200028e8 from 0x2002ff74
+Read (before)0x200028e8 from 0x200028ec
+Read (after)0x00 from 0x200028ec
+Read (before)0x00 from 0x2002ff70
+Read (after)0x200028e8 from 0x2002ff70
+Read (before)0x200028e8 from 0x2002ff6c
+Read (after)0x20000300 from 0x2002ff6c
+<SimState @ 0x2d3b>
+Read (before) None  from 0x2002ff6c
+Read (after)0x20000300 from 0x2002ff6c
+Read (before)0x20000300 from 0x2002ff6c
+Read (after)0x20000300 from 0x2002ff6c
+Read (before)0x20000300 from 0x20000304
+Read (after)0x25e0 from 0x20000304
+Read (before)0x25e0 from 0x2002ff70
+Read (after)0x20000300 from 0x2002ff70
+Read (before)0x20000300 from 0x2002ff74
+Read (after)0x200028e8 from 0x2002ff74
+Read (before)0x200028e8 from 0x200028e8
+Read (after)0x200028e0 from 0x200028e8
+<SimState @ 0x2d4f>
+Read (before) None  from 0x2002ff74
+Read (after)0x200028e8 from 0x2002ff74
+Read (before)0x200028e8 from 0x200028e8
+Read (after)0x200028e0 from 0x200028e8
+Read (before)0x200028e0 from 0x2da8
+Read (after)0x200028f0 from 0x2da8
+Read (before)0x200028f0 from 0x200028f0
+Read (after)0x200028e0 from 0x200028f0
+<SimState @ 0x2d77>
+Read (before) None  from 0x2da8
+Read (after)0x200028f0 from 0x2da8
+Read (before)0x200028f0 from 0x200028f0
+Read (after)0x200028e0 from 0x200028f0
+Read (before)0x200028e0 from 0x2002ff6c
+Read (after)0x20000300 from 0x2002ff6c
+<SimState @ 0x2d89>
+Read (before) None  from 0x2002ff74
+Read (after)0x200028e8 from 0x2002ff74
+Read (before)0x200028e8 from 0x2002ff6c
+Read (after)0x20000300 from 0x2002ff6c
+<SimState @ 0x2d91>
+Read (before) None  from 0x2002ff74
+Read (after)0x200028e8 from 0x2002ff74
+Read (before)0x200028e8 from 0x2002ff6c
+Read (after)0x20000300 from 0x2002ff6c
+Read (before)0x20000300 from 0x2002ff7c
+Read (after)0x2002ff80 from 0x2002ff7c
+<SimState @ 0x2b0d>
+Read (before) None  from 0x2b78
+Read (after)0x200028f4 from 0x2b78
+Read (before)0x200028f4 from 0x200028f4
+Read (after)0x2660 from 0x200028f4
+Read (before)0x2660 from 0x2002ffa4
+Read (after)0x20000280 from 0x2002ffa4
+Read (before)0x20000280 from 0x20000284
+Read (after)0x80 from 0x20000284
+Read (before)0x80 from 0x2b78
+Read (after)0x200028f4 from 0x2b78
+Read (before)0x200028f4 from 0x2b78
+Read (after)0x200028f4 from 0x2b78
+Read (before)0x200028f4 from 0x200028f4
+Read (after)0x25e0 from 0x200028f4
+Read (before)0x25e0 from 0x2b80
+Read (after)0x200028f8 from 0x2b80
+Read (before)0x200028f8 from 0x200028f8
+Read (after)0x2660 from 0x200028f8
+<SimState @ 0x2b27>
+Read (before) None  from 0x2b78
+Read (after)0x200028f4 from 0x2b78
+Read (before)0x200028f4 from 0x200028f4
+Read (after)0x25e0 from 0x200028f4
+Read (before)0x25e0 from 0x2b80
+Read (after)0x200028f8 from 0x2b80
+Read (before)0x200028f8 from 0x2002ffa4
+Read (after)0x20000280 from 0x2002ffa4
+Read (before)0x20000280 from 0x20000284
+Read (after)0x80 from 0x20000284
+Read (before)0x80 from 0x2b74
+Read (after)0x200028fc from 0x2b74
+Read (before)0x200028fc from 0x200028fc
+Read (after)0x80000000 from 0x200028fc
+Read (before)0x80000000 from 0x2002ffa4
+Read (after)0x20000280 from 0x2002ffa4
+Read (before)0x20000280 from 0x2002ffa4
+Read (after)0x20000280 from 0x2002ffa4
+<SimState @ 0x3ced>
+Read (before) None  from 0x3e00
+Read (after)0x20002a44 from 0x3e00
+Read (before)0x20002a44 from 0x20002a44
+Read (after)0x01 from 0x20002a44
+<SimState @ 0x3d17>
+<SimState @ 0x2fcd>
+<SimState @ 0x2fd7>
+<SimState @ 0x2fe3>
+Read (before) None  from 0x3020
+Read (after)0x2000002c from 0x3020
+Read (before)0x2000002c from 0x2000002c
+Read (after)0xaaaaaaaa from 0x2000002c
+Read (before)0xaaaaaaaa from 0x3020
+Read (after)0x2000002c from 0x3020
+Read (before)0x2000002c from 0x3020
+Read (after)0x2000002c from 0x3020
+Read (before)0x2000002c from 0x2000002c
+Read (after)0xaaaaaaab from 0x2000002c
+<SimState @ 0x3015>
+Read (before) None  from 0x2002ff64
+Read (after)0x2002ff68 from 0x2002ff64
+<SimState @ 0x3d1b>
+Read (before) None  from 0x3e00
+Read (after)0x20002a44 from 0x3e00
+Read (before)0x20002a44 from 0x20002a44
+Read (after)0x01 from 0x20002a44
+Read (before)0x01 from 0x3e00
+Read (after)0x20002a44 from 0x3e00
+Read (before)0x20002a44 from 0x3e00
+Read (after)0x20002a44 from 0x3e00
+Read (before)0x20002a44 from 0x20002a44
+Read (after)0x00 from 0x20002a44
+<SimState @ 0x3d2d>
+Read (before) None  from 0x3e04
+Read (after)0x20002a1c from 0x3e04
+Read (before)0x20002a1c from 0x20002a1c
+Read (after)0x00 from 0x20002a1c
+<SimState @ 0x3df1>
+<SimState @ 0x3029>
+Read (before) None  from 0x3074
+Read (after)0x2000002c from 0x3074
+Read (before)0x2000002c from 0x2000002c
+Read (after)0xaaaaaaab from 0x2000002c
+<SimState @ 0x304b>
+Read (before) None  from 0x3074
+Read (after)0x2000002c from 0x3074
+Read (before)0x2000002c from 0x2000002c
+Read (after)0xaaaaaaab from 0x2000002c
+Read (before)0xaaaaaaab from 0x3074
+Read (after)0x2000002c from 0x3074
+Read (before)0x2000002c from 0x3074
+Read (after)0x2000002c from 0x3074
+Read (before)0x2000002c from 0x2000002c
+Read (after)0xaaaaaaaa from 0x2000002c
+<SimState @ 0x3067>
+Read (before) None  from 0x2002ff64
+Read (after)0x2002ff68 from 0x2002ff64
+<SimState @ 0x3df5>
+Read (before) None  from 0x2002ff70
+Read (after)0x00 from 0x2002ff70
+Read (before)0x00 from 0x2002ff78
+Read (after)0x2002ff80 from 0x2002ff78
+Read (before)0x2002ff80 from 0x2002ff7c
+Read (after)0x2b47 from 0x2002ff7c
+<SimState @ 0x2b47>
+Read (before) None  from 0x2002ff9c
+Read (after)0x20000288 from 0x2002ff9c
+<SimState @ 0x2b65>
+Read (before) None  from 0x2002ff9c
+Read (after)0x20000288 from 0x2002ff9c
+Read (before)0x20000288 from 0x2002ffa8
+Read (after)0x2002ffc0 from 0x2002ffa8
+Read (before)0x2002ffc0 from 0x2002ffac
+Read (after)0x674d from 0x2002ffac
+<SimState @ 0x674d>
+Read (before) None  from 0x2002ffdc
+Read (after)0x20000288 from 0x2002ffdc
+<SimState @ 0x6755>
+Read (before) None  from 0x2002ffdc
+Read (after)0x20000288 from 0x2002ffdc
+Read (before)0x20000288 from 0x2002ffd4
+Read (after)0x200000f0 from 0x2002ffd4
+<SimState @ 0x6769>
+Read (before) None  from 0x2002ffdc
+Read (after)0x20000288 from 0x2002ffdc
+<SimState @ 0x676f>
+Read (before) None  from 0x2002ffc6
+Read (after)0x64 from 0x2002ffc6
+Read (before)0x64 from 0x2002ffdc
+Read (after)0x20000288 from 0x2002ffdc
+Read (before)0x20000288 from 0x2002ffec
+Read (after)0x00 from 0x2002ffec
+Read (before)0x00 from 0x2002ffe8
+Read (after)0x04 from 0x2002ffe8
+Read (before)0x04 from 0x2002ffc0
+Read (after)0x00 from 0x2002ffc0
+Read (before)0x00 from 0x2002ffc8
+Read (after)0x6a38 from 0x2002ffc8
+Read (before)0x6a38 from 0x2002ffcc
+Read (after)0x699 from 0x2002ffcc
+<SimState @ 0x67a7>
+Read (before) None  from 0x2002ffb8
+Read (after)0x20000288 from 0x2002ffb8
+Read (before)0x20000288 from 0x200002b8
+Read (after)0x200000f0 from 0x200002b8
+Read (before)0x200000f0 from 0x2002ff8c
+Read (after)0x64 from 0x2002ff8c
+<SimState @ 0x6941>
+[+] transfering to qemu due to long loop
+[+] active #: 1
+[+] solving ...
+solving for state: <SimState @ 0x6941>
+solved, addr: 0x40048004 value: 0x00
+solved, addr: 0x40047000 value: 0x00
+single branch BB
+[+] consume one sym at addr: 0x40048004 .#1
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x40047000(0x47000), size: 0x04, pc: 0x9de
+CPU env:
+r0: 0x002 r1: 0x40047000 r2: 0x000 r3: 0x40047000 r4: 0x20c r5: 0x000 r6: 0x000 r7: 0x2002ffc0 r8: 0x000 r9: 0x000 r10: 0x000 r11: 0x000 r12: 0x000 r13: 0x2002ffc0 r14: 0xf9b r15: 0x9de (tb start: 0x9d4)
+[+] reuse previous solver
+[+] current solver cnt: #1
+[+] consume one sym at addr: 0x40047000 .#0
+data: [1074032640L, <BV32 input_32_32>, 0]
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x40064006(0x64006), size: 0x01, pc: 0xfb0
+CPU env:
+r0: 0x000 r1: 0xa5a5a5a5 r2: 0xe2c r3: 0x40064000 r4: 0xa5a5a5a5 r5: 0xa5a5a5a5 r6: 0xa5a5a5a5 r7: 0x20000228 r8: 0xa5a5a5a5 r9: 0xa5a5a5a5 r10: 0xa5a5a5a5 r11: 0xa5a5a5a5 r12: 0xa5a5a5a5 r13: 0x20000228 r14: 0xe81 r15: 0xfb0 (tb start: 0xfa8)
+[+] Switching the execution to angr
+[+] ANGR stepping
+<SimState @ 0xfb1>
+Read (before) None  from 0x40064006
+[+] insert one sym at pc 0xfb1 for addr 0x40064006. 1
+Read (after)0x00 from 0x40064006
+Read (before)0x00 from 0x1034
+Read (after)0x40064000 from 0x1034
+Read (before)0x40064000 from 0x40064012
+[+] insert one sym at pc 0xfbf for addr 0x40064012. 2
+Read (after)0x00 from 0x40064012
+Read (before)0x00 from 0x20000230
+Read (after)0x00 from 0x20000230
+<SimState @ 0xfd1>
+Read (before) None  from 0xfd8
+Read (after)0x1013 from 0xfdc
+[+] active #: 4
+[+] solving ...
+solving for state: <SimState @ 0x1013>
+solved, addr: 0x40064006 value: 0x04
+solved, addr: 0x40064012 value: 0x00
+solving for state: <SimState @ 0x100b>
+solved, addr: 0x40064006 value: 0x00
+solved, addr: 0x40064012 value: 0x00
+solving for state: <SimState @ 0xfe9>
+solved, addr: 0x40064006 value: 0x0c
+solved, addr: 0x40064012 value: 0x00
+solving for state: <SimState @ 0x101b>
+solved, addr: 0x40064006 value: 0x08
+solved, addr: 0x40064012 value: 0x00
+double branch BB
+more than 2 branches ... ignoring others
+taking branch 0
+[+] consume one sym at addr: 0x40064006 .#1
+feed data: 0x04
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x40064012(0x64012), size: 0x01, pc: 0xfbe
+CPU env:
+r0: 0x000 r1: 0xa5a5a5a5 r2: 0xe2c r3: 0x40064000 r4: 0xa5a5a5a5 r5: 0xa5a5a5a5 r6: 0xa5a5a5a5 r7: 0x20000228 r8: 0xa5a5a5a5 r9: 0xa5a5a5a5 r10: 0xa5a5a5a5 r11: 0xa5a5a5a5 r12: 0xa5a5a5a5 r13: 0x20000228 r14: 0xe81 r15: 0xfbe (tb start: 0xfa8)
+[+] reuse previous solver
+[+] current solver cnt: #1
+[+] consume one sym at addr: 0x40064012 .#0
+data: [1074151442L, <BV32 input_34_32>, 0, 0, 0, 0]
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x40064006(0x64006), size: 0x01, pc: 0xbbe
+CPU env:
+r0: 0x000 r1: 0xa5a5a5a5 r2: 0xfd8 r3: 0x40064000 r4: 0xa5a5a5a5 r5: 0xa5a5a5a5 r6: 0xa5a5a5a5 r7: 0x20000224 r8: 0xa5a5a5a5 r9: 0xa5a5a5a5 r10: 0xa5a5a5a5 r11: 0xa5a5a5a5 r12: 0xa5a5a5a5 r13: 0x20000224 r14: 0x1017 r15: 0xbbe (tb start: 0xbb8)
+[+] Switching the execution to angr
+[+] ANGR stepping
+<SimState @ 0xbbf>
+Read (before) None  from 0x40064006
+[+] insert one sym at pc 0xbbf for addr 0x40064006. 1
+Read (after)0x00 from 0x40064006
+[+] active #: 2
+[+] solving ...
+solving for state: <SimState @ 0xbd1>
+solved, addr: 0x40064006 value: 0x01
+solving for state: <SimState @ 0xbcb>
+solved, addr: 0x40064006 value: 0x00
+double branch BB
+taking branch 0
+[+] consume one sym at addr: 0x40064006 .#0
+feed data: 0x01
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x40064008(0x64008), size: 0x01, pc: 0xbd6
+CPU env:
+r0: 0x000 r1: 0xa5a5a5a5 r2: 0x3d0900 r3: 0x40064000 r4: 0xa5a5a5a5 r5: 0xa5a5a5a5 r6: 0xa5a5a5a5 r7: 0x20000224 r8: 0xa5a5a5a5 r9: 0xa5a5a5a5 r10: 0xa5a5a5a5 r11: 0xa5a5a5a5 r12: 0xa5a5a5a5 r13: 0x20000224 r14: 0x1017 r15: 0xbd6 (tb start: 0xbd6)
+[+] Switching the execution to angr
+[+] ANGR stepping
+<SimState @ 0xbd7>
+Read (before) None  from 0x40064008
+[+] insert one sym at pc 0xbd7 for addr 0x40064008. 1
+Read (after)0x00 from 0x40064008
+Read (before)0x00 from 0x20000224
+Read (after)0x20000228 from 0x20000224
+<SimState @ 0x1017>
+<SimState @ 0x1029>
+Read (before) None  from 0x20000234
+Read (after)0x3d0900 from 0x20000234
+Read (before)0x3d0900 from 0x20000238
+Read (after)0x20000240 from 0x20000238
+Read (before)0x20000240 from 0x2000023c
+Read (after)0xe81 from 0x2000023c
+<SimState @ 0xe81>
+Read (before) None  from 0xf5c
+Read (after)0x40047000 from 0xf5c
+Read (before)0x40047000 from 0x40048044
+[+] insert one sym at pc 0xe8b for addr 0x40048044. 2
+Read (after)0x00 from 0x40048044
+<SimState @ 0xf51>
+Read (before) None  from 0x2000024c
+Read (after)0x3d0900 from 0x2000024c
+Read (before)0x3d0900 from 0x20000250
+Read (after)0x20000258 from 0x20000250
+Read (before)0x20000258 from 0x20000254
+Read (after)0x6a7 from 0x20000254
+<SimState @ 0x6a7>
+Read (before) None  from 0x788
+Read (after)0x2000000c from 0x788
+Read (before)0x2000000c from 0x788
+Read (after)0x2000000c from 0x788
+Read (before)0x2000000c from 0x78c
+Read (after)0x4006a000 from 0x78c
+Read (before)0x4006a000 from 0x788
+Read (after)0x2000000c from 0x788
+Read (before)0x2000000c from 0x790
+Read (after)0x2000008c from 0x790
+Read (before)0x2000008c from 0x794
+Read (after)0x20000064 from 0x794
+<SimState @ 0x869>
+Read (before) None  from 0x2000023c
+Read (after)0x20000064 from 0x2000023c
+<SimState @ 0x87f>
+Read (before) None  from 0x20000238
+Read (after)0x2000008c from 0x20000238
+<SimState @ 0x889>
+Read (before) None  from 0x20000234
+Read (after)0x2000000c from 0x20000234
+<SimState @ 0x893>
+Read (before) None  from 0x20000234
+Read (after)0x2000000c from 0x20000234
+Read (before)0x2000000c from 0x2000000c
+Read (after)0x4006a000 from 0x2000000c
+<SimState @ 0x89f>
+Read (before) None  from 0x20000234
+Read (after)0x2000000c from 0x20000234
+Read (before)0x2000000c from 0x20000010
+Read (after)0x3d0900 from 0x20000010
+<SimState @ 0x8ab>
+Read (before) None  from 0x20000234
+Read (after)0x2000000c from 0x20000234
+Read (before)0x2000000c from 0x20000014
+Read (after)0x1c200 from 0x20000014
+<SimState @ 0x8b7>
+Read (before) None  from 0x20000234
+Read (after)0x2000000c from 0x20000234
+Read (before)0x2000000c from 0x2000000c
+Read (after)0x4006a000 from 0x2000000c
+Read (before)0x4006a000 from 0x2000023c
+Read (after)0x20000064 from 0x2000023c
+Read (before)0x20000064 from 0x2000023c
+Read (after)0x20000064 from 0x2000023c
+Read (before)0x20000064 from 0x20000238
+Read (after)0x2000008c from 0x20000238
+<SimState @ 0x62db>
+Read (before) None  from 0x20000217
+Read (after)0x01 from 0x20000217
+Read (before)0x01 from 0x20000220
+Read (after)0x00 from 0x20000220
+Read (before)0x00 from 0x20000224
+Read (after)0x01 from 0x20000224
+<SimState @ 0x61ef>
+Read (before) None  from 0x200001f4
+Read (after)0x01 from 0x200001f4
+<SimState @ 0x6217>
+Read (before) None  from 0x200001f0
+Read (after)0x00 from 0x200001f0
+<SimState @ 0x621d>
+<SimState @ 0x622d>
+Read (before) None  from 0x20000204
+Read (after)0x00 from 0x20000204
+<SimState @ 0x2a01>
+<SimState @ 0x3cd1>
+Read (before) None  from 0x3ce8
+Read (after)0x20002a44 from 0x3ce8
+Read (before)0x20002a44 from 0x20002a44
+Read (after)0x00 from 0x20002a44
+Read (before)0x00 from 0x3ce8
+Read (after)0x20002a44 from 0x3ce8
+Read (before)0x20002a44 from 0x200001ac
+Read (after)0x200001b0 from 0x200001ac
+<SimState @ 0x2a11>
+Read (before) None  from 0x2b70
+Read (after)0x200028f0 from 0x2b70
+Read (before)0x200028f0 from 0x200028f0
+Read (after)0x200028e0 from 0x200028f0
+<SimState @ 0x2a1d>
+Read (before) None  from 0x2b74
+Read (after)0x200028fc from 0x2b74
+Read (before)0x200028fc from 0x200028fc
+Read (after)0x80000000 from 0x200028fc
+Read (before)0x80000000 from 0x200001b4
+Read (after)0x50 from 0x200001b4
+<SimState @ 0x2a2b>
+Read (before) None  from 0x200001b4
+Read (after)0x50 from 0x200001b4
+<SimState @ 0x2a31>
+Read (before) None  from 0x200001b4
+Read (after)0x50 from 0x200001b4
+Read (before)0x50 from 0x200001b4
+Read (after)0x58 from 0x200001b4
+<SimState @ 0x2a6b>
+Read (before) None  from 0x200001b4
+Read (after)0x58 from 0x200001b4
+<SimState @ 0x2a71>
+Read (before) None  from 0x2b78
+Read (after)0x200028f4 from 0x2b78
+Read (before)0x200028f4 from 0x200028f4
+Read (after)0x1fa0 from 0x200028f4
+Read (before)0x1fa0 from 0x200001b4
+Read (after)0x58 from 0x200001b4
+<SimState @ 0x2a7b>
+Read (before) None  from 0x2b7c
+Read (after)0x200028e8 from 0x2b7c
+Read (before)0x200028e8 from 0x2b7c
+Read (after)0x200028e8 from 0x2b7c
+Read (before)0x200028e8 from 0x200028e8
+Read (after)0x20000940 from 0x200028e8
+<SimState @ 0x2a91>
+Read (before) None  from 0x200001d4
+Read (after)0x20000940 from 0x200001d4
+Read (before)0x20000940 from 0x20000944
+Read (after)0x1fa0 from 0x20000944
+Read (before)0x1fa0 from 0x200001b4
+Read (after)0x58 from 0x200001b4
+<SimState @ 0x2aa3>
+Read (before) None  from 0x2b70
+Read (after)0x200028f0 from 0x2b70
+Read (before)0x200028f0 from 0x200028f0
+Read (after)0x200028e0 from 0x200028f0
+Read (before)0x200028e0 from 0x200001d4
+Read (after)0x20000940 from 0x200001d4
+<SimState @ 0x2aad>
+Read (before) None  from 0x200001d0
+Read (after)0x200028e8 from 0x200001d0
+Read (before)0x200028e8 from 0x200028e8
+Read (after)0x20000940 from 0x200028e8
+Read (before)0x20000940 from 0x200001d4
+Read (after)0x20000940 from 0x200001d4
+Read (before)0x20000940 from 0x20000940
+Read (after)0x200028e0 from 0x20000940
+Read (before)0x200028e0 from 0x200001d0
+Read (after)0x200028e8 from 0x200001d0
+Read (before)0x200028e8 from 0x200001d4
+Read (after)0x20000940 from 0x200001d4
+Read (before)0x20000940 from 0x20000944
+Read (after)0x1fa0 from 0x20000944
+Read (before)0x1fa0 from 0x200001b4
+Read (after)0x58 from 0x200001b4
+<SimState @ 0x2acf>
+Read (before) None  from 0x200001d4
+Read (after)0x20000940 from 0x200001d4
+Read (before)0x20000940 from 0x200001b4
+Read (after)0x58 from 0x200001b4
+Read (before)0x58 from 0x200001c8
+Read (after)0x20000998 from 0x200001c8
+<SimState @ 0x2af5>
+Read (before) None  from 0x200001d4
+Read (after)0x20000940 from 0x200001d4
+Read (before)0x20000940 from 0x20000944
+Read (after)0x1fa0 from 0x20000944
+Read (before)0x1fa0 from 0x200001b4
+Read (after)0x58 from 0x200001b4
+Read (before)0x58 from 0x200001c8
+Read (after)0x20000998 from 0x200001c8
+Read (before)0x20000998 from 0x200001d4
+Read (after)0x20000940 from 0x200001d4
+Read (before)0x20000940 from 0x200001b4
+Read (after)0x58 from 0x200001b4
+Read (before)0x58 from 0x200001c8
+Read (after)0x20000998 from 0x200001c8
+<SimState @ 0x2cf9>
+Read (before) None  from 0x2da4
+Read (after)0x200028e8 from 0x2da4
+<SimState @ 0x2d0d>
+Read (before) None  from 0x200001a4
+Read (after)0x200028e8 from 0x200001a4
+Read (before)0x200028e8 from 0x200028e8
+Read (after)0x200028e0 from 0x200028e8
+Read (before)0x200028e0 from 0x2000019c
+Read (after)0x20000998 from 0x2000019c
+<SimState @ 0x2d17>
+Read (before) None  from 0x200001a4
+Read (after)0x200028e8 from 0x200001a4
+Read (before)0x200028e8 from 0x200001a4
+Read (after)0x200028e8 from 0x200001a4
+Read (before)0x200028e8 from 0x200028ec
+Read (after)0x00 from 0x200028ec
+Read (before)0x00 from 0x200001a0
+Read (after)0x200028e8 from 0x200001a0
+Read (before)0x200028e8 from 0x2000019c
+Read (after)0x20000998 from 0x2000019c
+<SimState @ 0x2d3b>
+Read (before) None  from 0x2000019c
+Read (after)0x20000998 from 0x2000019c
+Read (before)0x20000998 from 0x2000019c
+Read (after)0x20000998 from 0x2000019c
+Read (before)0x20000998 from 0x2000099c
+Read (after)0x1f48 from 0x2000099c
+Read (before)0x1f48 from 0x200001a0
+Read (after)0x20000998 from 0x200001a0
+Read (before)0x20000998 from 0x200001a4
+Read (after)0x200028e8 from 0x200001a4
+Read (before)0x200028e8 from 0x200028e8
+Read (after)0x200028e0 from 0x200028e8
+<SimState @ 0x2d4f>
+Read (before) None  from 0x200001a4
+Read (after)0x200028e8 from 0x200001a4
+Read (before)0x200028e8 from 0x200028e8
+Read (after)0x200028e0 from 0x200028e8
+Read (before)0x200028e0 from 0x2da8
+Read (after)0x200028f0 from 0x2da8
+Read (before)0x200028f0 from 0x200028f0
+Read (after)0x200028e0 from 0x200028f0
+<SimState @ 0x2d77>
+Read (before) None  from 0x2da8
+Read (after)0x200028f0 from 0x2da8
+Read (before)0x200028f0 from 0x200028f0
+Read (after)0x200028e0 from 0x200028f0
+Read (before)0x200028e0 from 0x2000019c
+Read (after)0x20000998 from 0x2000019c
+<SimState @ 0x2d89>
+Read (before) None  from 0x200001a4
+Read (after)0x200028e8 from 0x200001a4
+Read (before)0x200028e8 from 0x2000019c
+Read (after)0x20000998 from 0x2000019c
+<SimState @ 0x2d91>
+Read (before) None  from 0x200001a4
+Read (after)0x200028e8 from 0x200001a4
+Read (before)0x200028e8 from 0x2000019c
+Read (after)0x20000998 from 0x2000019c
+Read (before)0x20000998 from 0x200001ac
+Read (after)0x200001b0 from 0x200001ac
+<SimState @ 0x2b0d>
+Read (before) None  from 0x2b78
+Read (after)0x200028f4 from 0x2b78
+Read (before)0x200028f4 from 0x200028f4
+Read (after)0x1fa0 from 0x200028f4
+Read (before)0x1fa0 from 0x200001d4
+Read (after)0x20000940 from 0x200001d4
+Read (before)0x20000940 from 0x20000944
+Read (after)0x58 from 0x20000944
+Read (before)0x58 from 0x2b78
+Read (after)0x200028f4 from 0x2b78
+Read (before)0x200028f4 from 0x2b78
+Read (after)0x200028f4 from 0x2b78
+Read (before)0x200028f4 from 0x200028f4
+Read (after)0x1f48 from 0x200028f4
+Read (before)0x1f48 from 0x2b80
+Read (after)0x200028f8 from 0x2b80
+Read (before)0x200028f8 from 0x200028f8
+Read (after)0x1fa0 from 0x200028f8
+<SimState @ 0x2b27>
+Read (before) None  from 0x2b78
+Read (after)0x200028f4 from 0x2b78
+Read (before)0x200028f4 from 0x200028f4
+Read (after)0x1f48 from 0x200028f4
+Read (before)0x1f48 from 0x2b80
+Read (after)0x200028f8 from 0x2b80
+Read (before)0x200028f8 from 0x200001d4
+Read (after)0x20000940 from 0x200001d4
+Read (before)0x20000940 from 0x20000944
+Read (after)0x58 from 0x20000944
+Read (before)0x58 from 0x2b74
+Read (after)0x200028fc from 0x2b74
+Read (before)0x200028fc from 0x200028fc
+Read (after)0x80000000 from 0x200028fc
+Read (before)0x80000000 from 0x200001d4
+Read (after)0x20000940 from 0x200001d4
+Read (before)0x20000940 from 0x200001d4
+Read (after)0x20000940 from 0x200001d4
+<SimState @ 0x3ced>
+Read (before) None  from 0x3e00
+Read (after)0x20002a44 from 0x3e00
+Read (before)0x20002a44 from 0x20002a44
+Read (after)0x01 from 0x20002a44
+<SimState @ 0x3d17>
+<SimState @ 0x2fcd>
+<SimState @ 0x2fd7>
+<SimState @ 0x2fe3>
+Read (before) None  from 0x3020
+Read (after)0x2000002c from 0x3020
+Read (before)0x2000002c from 0x2000002c
+Read (after)0x00 from 0x2000002c
+Read (before)0x00 from 0x3020
+Read (after)0x2000002c from 0x3020
+Read (before)0x2000002c from 0x3020
+Read (after)0x2000002c from 0x3020
+Read (before)0x2000002c from 0x2000002c
+Read (after)0x01 from 0x2000002c
+<SimState @ 0x2ff7>
+Read (before) None  from 0x3024
+Read (after)0xe000ed04 from 0x3024
+Read (before)0xe000ed04 from 0xe000ed04
+unknown system control register in Anger
+Read (after)0x00 from 0xe000ed04
+[+] active #: 2
+[+] solving ...
+solving for state: <SimState @ 0x3015>
+solved, addr: 0x40064008 value: 0x00
+solved, addr: 0x40048044 value: 0x00
+solving for state: <SimState @ 0x3001>
+solved, addr: 0x40064008 value: 0x00
+solved, addr: 0x40048044 value: 0x00
+[+] transfering to qemu due to private_peripheral
+double branch BB
+taking branch 0
+[+] consume one sym at addr: 0x40064008 .#1
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x40048044(0x48044), size: 0x04, pc: 0xe8a
+CPU env:
+r0: 0x3d0900 r1: 0xa5a5a5a5 r2: 0x3d0900 r3: 0x40048044 r4: 0xa5a5a5a5 r5: 0xa5a5a5a5 r6: 0xa5a5a5a5 r7: 0x20000240 r8: 0xa5a5a5a5 r9: 0xa5a5a5a5 r10: 0xa5a5a5a5 r11: 0xa5a5a5a5 r12: 0xa5a5a5a5 r13: 0x20000240 r14: 0x1017 r15: 0xe8a (tb start: 0xe80)
+[+] reuse previous solver
+[+] current solver cnt: #1
+[+] consume one sym at addr: 0x40048044 .#0
+data: [1074036804L, <BV32 input_37_32>, 0, 0]
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x40048034(0x48034), size: 0x04, pc: 0x5bce
+CPU env:
+r0: 0x1034000a r1: 0x040 r2: 0x000 r3: 0x40048034 r4: 0xa5a5a5a5 r5: 0xa5a5a5a5 r6: 0xa5a5a5a5 r7: 0x200001f0 r8: 0xa5a5a5a5 r9: 0xa5a5a5a5 r10: 0xa5a5a5a5 r11: 0xa5a5a5a5 r12: 0xa5a5a5a5 r13: 0x200001f0 r14: 0x1a3d r15: 0x5bce (tb start: 0x5bb6)
+[+] Switching the execution to angr
+[+] ANGR stepping
+<SimState @ 0x5bcf>
+Read (before) None  from 0x40048034
+[+] insert one sym at pc 0x5bcf for addr 0x40048034. 1
+Read (after)0x00 from 0x40048034
+Read (before)0x00 from 0x200001f4
+Read (after)0x1034000a from 0x200001f4
+Read (before)0x1034000a from 0x200001fc
+Read (after)0x40048034 from 0x200001fc
+Read (before)0x40048034 from 0x20000204
+Read (after)0x20000208 from 0x20000204
+<SimState @ 0x1a3d>
+Read (before) None  from 0x20000214
+Read (after)0x4006a000 from 0x20000214
+Read (before)0x4006a000 from 0x4006a003
+[+] insert one sym at pc 0x1a3f for addr 0x4006a003. 2
+Read (after)0x00 from 0x4006a003
+Read (before)0x00 from 0x20000214
+Read (after)0x4006a000 from 0x20000214
+Read (before)0x4006a000 from 0x20000214
+Read (after)0x4006a000 from 0x20000214
+Read (before)0x4006a000 from 0x4006a000
+[+] insert one sym at pc 0x1a4f for addr 0x4006a000. 3
+Read (after)0x00 from 0x4006a000
+Read (before)0x00 from 0x20000226
+Read (after)0x02 from 0x20000226
+Read (before)0x02 from 0x20000214
+Read (after)0x4006a000 from 0x20000214
+Read (before)0x4006a000 from 0x20000226
+Read (after)0x02 from 0x20000226
+Read (before)0x02 from 0x20000214
+Read (after)0x4006a000 from 0x20000214
+Read (before)0x4006a000 from 0x20000214
+Read (after)0x4006a000 from 0x20000214
+Read (before)0x4006a000 from 0x4006a00a
+[+] insert one sym at pc 0x1a73 for addr 0x4006a00a. 4
+Read (after)0x00 from 0x4006a00a
+Read (before)0x00 from 0x2000021a
+Read (after)0x05 from 0x2000021a
+Read (before)0x05 from 0x20000214
+Read (after)0x4006a000 from 0x20000214
+Read (before)0x4006a000 from 0x20000214
+Read (after)0x4006a000 from 0x20000214
+Read (before)0x4006a000 from 0x4006a002
+[+] insert one sym at pc 0x1a91 for addr 0x4006a002. 5
+Read (after)0x00 from 0x4006a002
+Read (before)0x00 from 0x20000210
+Read (after)0x20000240 from 0x20000210
+Read (before)0x20000240 from 0x2000024a
+Read (after)0x00 from 0x2000024a
+Read (before)0x00 from 0x20000225
+Read (after)0x00 from 0x20000225
+Read (before)0x00 from 0x20000210
+Read (after)0x20000240 from 0x20000210
+Read (before)0x20000240 from 0x20000244
+Read (after)0x00 from 0x20000244
+<SimState @ 0x1ac7>
+Read (before) None  from 0x20000214
+Read (after)0x4006a000 from 0x20000214
+Read (before)0x4006a000 from 0x20000225
+Read (after)0x00 from 0x20000225
+Read (before)0x00 from 0x20000214
+Read (after)0x4006a000 from 0x20000214
+Read (before)0x4006a000 from 0x4006a000
+[+] insert one sym at pc 0x1acf for addr 0x4006a000. 6
+Read (after)0x00 from 0x4006a000
+Read (before)0x00 from 0x20000210
+Read (after)0x20000240 from 0x20000210
+Read (before)0x20000240 from 0x20000245
+Read (after)0x00 from 0x20000245
+Read (before)0x00 from 0x20000214
+Read (after)0x4006a000 from 0x20000214
+Read (before)0x4006a000 from 0x20000210
+Read (after)0x20000240 from 0x20000210
+Read (before)0x20000240 from 0x20000246
+Read (after)0x00 from 0x20000246
+Read (before)0x00 from 0x20000214
+Read (after)0x4006a000 from 0x20000214
+Read (before)0x4006a000 from 0x20000210
+Read (after)0x20000240 from 0x20000210
+Read (before)0x20000240 from 0x20000247
+Read (after)0x01 from 0x20000247
+Read (before)0x01 from 0x20000214
+Read (after)0x4006a000 from 0x20000214
+Read (before)0x4006a000 from 0x20000214
+Read (after)0x4006a000 from 0x20000214
+Read (before)0x4006a000 from 0x4006a010
+[+] insert one sym at pc 0x1b01 for addr 0x4006a010. 7
+Read (after)0x00 from 0x4006a010
+Read (before)0x00 from 0x20000214
+Read (after)0x4006a000 from 0x20000214
+Read (before)0x4006a000 from 0x20000214
+Read (after)0x4006a000 from 0x20000214
+Read (before)0x4006a000 from 0x4006a011
+[+] insert one sym at pc 0x1b11 for addr 0x4006a011. 8
+Read (after)0x00 from 0x4006a011
+Read (before)0x00 from 0x20000214
+Read (after)0x4006a000 from 0x20000214
+Read (before)0x4006a000 from 0x20000210
+Read (after)0x20000240 from 0x20000210
+Read (before)0x20000240 from 0x20000248
+Read (after)0x00 from 0x20000248
+<SimState @ 0x1b37>
+Read (before) None  from 0x20000210
+Read (after)0x20000240 from 0x20000210
+Read (before)0x20000240 from 0x20000249
+Read (after)0x00 from 0x20000249
+<SimState @ 0x1b4f>
+Read (before) None  from 0x20000214
+Read (after)0x4006a000 from 0x20000214
+Read (before)0x4006a000 from 0x4006a003
+[+] insert one sym at pc 0x1b51 for addr 0x4006a003. 9
+Read (after)0x00 from 0x4006a003
+Read (before)0x00 from 0x20000210
+Read (after)0x20000240 from 0x20000210
+Read (before)0x20000240 from 0x2000024b
+Read (after)0x00 from 0x2000024b
+<SimState @ 0x1b65>
+Read (before) None  from 0x20000210
+Read (after)0x20000240 from 0x20000210
+Read (before)0x20000240 from 0x2000024c
+Read (after)0x00 from 0x2000024c
+<SimState @ 0x1b75>
+Read (before) None  from 0x20000214
+Read (after)0x4006a000 from 0x20000214
+Read (before)0x4006a000 from 0x20000225
+Read (after)0x00 from 0x20000225
+Read (before)0x00 from 0x20000228
+Read (after)0x20000230 from 0x20000228
+Read (before)0x20000230 from 0x2000022c
+Read (after)0x98b from 0x2000022c
+<SimState @ 0x98b>
+Read (before) None  from 0x2000023c
+Read (after)0x20000064 from 0x2000023c
+Read (before)0x20000064 from 0x20000064
+Read (after)0x4006a000 from 0x20000064
+Read (before)0x4006a000 from 0x2000023c
+Read (after)0x20000064 from 0x2000023c
+Read (before)0x20000064 from 0x20000088
+Read (after)0x2000008c from 0x20000088
+Read (before)0x2000008c from 0x2000023c
+Read (after)0x20000064 from 0x2000023c
+Read (before)0x20000064 from 0x9d0
+Read (after)0x7a9 from 0x9d0
+<SimState @ 0x1e81>
+Read (before) None  from 0x20000218
+Read (after)0x2000008c from 0x20000218
+<SimState @ 0x1ea3>
+Read (before) None  from 0x20000218
+Read (after)0x2000008c from 0x20000218
+<SimState @ 0x6941>
+[+] transfering to qemu due to long loop
+[+] active #: 1
+[+] solving ...
+solving for state: <SimState @ 0x6941>
+solved, addr: 0x40048034 value: 0x00
+solved, addr: 0x4006a003 value: 0x00
+solved, addr: 0x4006a000 value: 0x00
+solved, addr: 0x4006a00a value: 0x00
+solved, addr: 0x4006a002 value: 0x00
+solved, addr: 0x4006a000 value: 0x00
+solved, addr: 0x4006a010 value: 0x00
+solved, addr: 0x4006a011 value: 0x00
+solved, addr: 0x4006a003 value: 0x00
+single branch BB
+[+] consume one sym at addr: 0x40048034 .#8
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x4006a003(0x6a003), size: 0x01, pc: 0x1a3e
+CPU env:
+r0: 0x1034000a r1: 0x000 r2: 0x400 r3: 0x4006a000 r4: 0xa5a5a5a5 r5: 0xa5a5a5a5 r6: 0xa5a5a5a5 r7: 0x20000208 r8: 0xa5a5a5a5 r9: 0xa5a5a5a5 r10: 0xa5a5a5a5 r11: 0xa5a5a5a5 r12: 0xa5a5a5a5 r13: 0x20000208 r14: 0x1a3d r15: 0x1a3e (tb start: 0x1a3c)
+[+] reuse previous solver
+[+] current solver cnt: #8
+[+] consume one sym at addr: 0x4006a003 .#7
+data: [1074176003L, <BV32 input_40_32>, 0]
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x4006a000(0x6a000), size: 0x01, pc: 0x1a4e
+CPU env:
+r0: 0x1034000a r1: 0x000 r2: 0x000 r3: 0x4006a000 r4: 0xa5a5a5a5 r5: 0xa5a5a5a5 r6: 0xa5a5a5a5 r7: 0x20000208 r8: 0xa5a5a5a5 r9: 0xa5a5a5a5 r10: 0xa5a5a5a5 r11: 0xa5a5a5a5 r12: 0xa5a5a5a5 r13: 0x20000208 r14: 0x1a3d r15: 0x1a4e (tb start: 0x1a3c)
+[+] reuse previous solver
+[+] current solver cnt: #7
+[+] consume one sym at addr: 0x4006a000 .#6
+data: [1074176000L, <BV32 input_41_32>, 0]
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x4006a00a(0x6a00a), size: 0x01, pc: 0x1a72
+CPU env:
+r0: 0x1034000a r1: 0x000 r2: 0x002 r3: 0x4006a000 r4: 0xa5a5a5a5 r5: 0xa5a5a5a5 r6: 0xa5a5a5a5 r7: 0x20000208 r8: 0xa5a5a5a5 r9: 0xa5a5a5a5 r10: 0xa5a5a5a5 r11: 0xa5a5a5a5 r12: 0xa5a5a5a5 r13: 0x20000208 r14: 0x1a3d r15: 0x1a72 (tb start: 0x1a3c)
+[+] reuse previous solver
+[+] current solver cnt: #6
+[+] consume one sym at addr: 0x4006a00a .#5
+data: [1074176010L, <BV32 input_42_32>, 0]
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x4006a002(0x6a002), size: 0x01, pc: 0x1a90
+CPU env:
+r0: 0x1034000a r1: 0x000 r2: 0x005 r3: 0x4006a000 r4: 0xa5a5a5a5 r5: 0xa5a5a5a5 r6: 0xa5a5a5a5 r7: 0x20000208 r8: 0xa5a5a5a5 r9: 0xa5a5a5a5 r10: 0xa5a5a5a5 r11: 0xa5a5a5a5 r12: 0xa5a5a5a5 r13: 0x20000208 r14: 0x1a3d r15: 0x1a90 (tb start: 0x1a3c)
+[+] reuse previous solver
+[+] current solver cnt: #5
+[+] consume one sym at addr: 0x4006a002 .#4
+data: [1074176002L, <BV32 input_43_32>, 0]
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x4006a000(0x6a000), size: 0x01, pc: 0x1ace
+CPU env:
+r0: 0x1034000a r1: 0x000 r2: 0x000 r3: 0x4006a000 r4: 0xa5a5a5a5 r5: 0xa5a5a5a5 r6: 0xa5a5a5a5 r7: 0x20000208 r8: 0xa5a5a5a5 r9: 0xa5a5a5a5 r10: 0xa5a5a5a5 r11: 0xa5a5a5a5 r12: 0xa5a5a5a5 r13: 0x20000208 r14: 0x1a3d r15: 0x1ace (tb start: 0x1ac6)
+[+] reuse previous solver
+[+] current solver cnt: #4
+[+] consume one sym at addr: 0x4006a000 .#3
+data: [1074176000L, <BV32 input_44_32>, 0]
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x4006a010(0x6a010), size: 0x01, pc: 0x1b00
+CPU env:
+r0: 0x1034000a r1: 0x000 r2: 0x001 r3: 0x4006a000 r4: 0xa5a5a5a5 r5: 0xa5a5a5a5 r6: 0xa5a5a5a5 r7: 0x20000208 r8: 0xa5a5a5a5 r9: 0xa5a5a5a5 r10: 0xa5a5a5a5 r11: 0xa5a5a5a5 r12: 0xa5a5a5a5 r13: 0x20000208 r14: 0x1a3d r15: 0x1b00 (tb start: 0x1ac6)
+[+] reuse previous solver
+[+] current solver cnt: #3
+[+] consume one sym at addr: 0x4006a010 .#2
+data: [1074176016L, <BV32 input_45_32>, 0]
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x4006a011(0x6a011), size: 0x01, pc: 0x1b10
+CPU env:
+r0: 0x1034000a r1: 0x000 r2: 0x088 r3: 0x4006a000 r4: 0xa5a5a5a5 r5: 0xa5a5a5a5 r6: 0xa5a5a5a5 r7: 0x20000208 r8: 0xa5a5a5a5 r9: 0xa5a5a5a5 r10: 0xa5a5a5a5 r11: 0xa5a5a5a5 r12: 0xa5a5a5a5 r13: 0x20000208 r14: 0x1a3d r15: 0x1b10 (tb start: 0x1ac6)
+[+] reuse previous solver
+[+] current solver cnt: #2
+[+] consume one sym at addr: 0x4006a011 .#1
+data: [1074176017L, <BV32 input_46_32>, 0]
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x4006a003(0x6a003), size: 0x01, pc: 0x1b50
+CPU env:
+r0: 0x1034000a r1: 0x000 r2: 0x0c0 r3: 0x4006a000 r4: 0xa5a5a5a5 r5: 0xa5a5a5a5 r6: 0xa5a5a5a5 r7: 0x20000208 r8: 0xa5a5a5a5 r9: 0xa5a5a5a5 r10: 0xa5a5a5a5 r11: 0xa5a5a5a5 r12: 0xa5a5a5a5 r13: 0x20000208 r14: 0x1a3d r15: 0x1b50 (tb start: 0x1b4e)
+[+] reuse previous solver
+[+] current solver cnt: #1
+[+] consume one sym at addr: 0x4006a003 .#0
+data: [1074176003L, <BV32 input_47_32>, 0]
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x4006a000(0x6a000), size: 0x01, pc: 0x1c58
+CPU env:
+r0: 0x4006a000 r1: 0xa2000 r2: 0xa2000 r3: 0x4006a000 r4: 0xa5a5a5a5 r5: 0xa5a5a5a5 r6: 0xa5a5a5a5 r7: 0x20000208 r8: 0xa5a5a5a5 r9: 0xa5a5a5a5 r10: 0xa5a5a5a5 r11: 0xa5a5a5a5 r12: 0xa5a5a5a5 r13: 0x20000208 r14: 0x1f6d r15: 0x1c58 (tb start: 0x1c44)
+[+] Switching the execution to angr
+[+] ANGR stepping
+<SimState @ 0x1c59>
+Read (before) None  from 0x4006a000
+[+] insert one sym at pc 0x1c59 for addr 0x4006a000. 1
+Read (after)0x00 from 0x4006a000
+Read (before)0x00 from 0x20000208
+Read (after)0xa2000 from 0x20000208
+Read (before)0xa2000 from 0x2000020c
+Read (after)0x4006a000 from 0x2000020c
+Read (before)0x4006a000 from 0x2000020c
+Read (after)0x4006a000 from 0x2000020c
+Read (before)0x4006a000 from 0x4006a003
+[+] insert one sym at pc 0x1c6b for addr 0x4006a003. 2
+Read (after)0x00 from 0x4006a003
+Read (before)0x00 from 0x20000208
+Read (after)0xa2000 from 0x20000208
+Read (before)0xa2000 from 0x2000020c
+Read (after)0x4006a000 from 0x2000020c
+Read (before)0x4006a000 from 0x2000020c
+Read (after)0x4006a000 from 0x2000020c
+Read (before)0x4006a000 from 0x4006a006
+[+] insert one sym at pc 0x1c7f for addr 0x4006a006. 3
+Read (after)0x00 from 0x4006a006
+Read (before)0x00 from 0x20000208
+Read (after)0xa2000 from 0x20000208
+Read (before)0xa2000 from 0x2000020c
+Read (after)0x4006a000 from 0x2000020c
+Read (before)0x4006a000 from 0x2000020c
+Read (after)0x4006a000 from 0x2000020c
+Read (before)0x4006a000 from 0x4006a011
+[+] insert one sym at pc 0x1c93 for addr 0x4006a011. 4
+Read (after)0x00 from 0x4006a011
+Read (before)0x00 from 0x20000208
+Read (after)0xa2000 from 0x20000208
+Read (before)0xa2000 from 0x2000020c
+Read (after)0x4006a000 from 0x2000020c
+Read (before)0x4006a000 from 0x20000214
+Read (after)0x20000218 from 0x20000214
+<SimState @ 0x1f6d>
+Read (before) None  from 0x20000224
+Read (after)0x4006a000 from 0x20000224
+Read (before)0x4006a000 from 0x4006a002
+[+] insert one sym at pc 0x1f6f for addr 0x4006a002. 5
+Read (after)0x00 from 0x4006a002
+[+] active #: 2
+[+] solving ...
+solving for state: <SimState @ 0x1f87>
+solved, addr: 0x4006a000 value: 0x00
+solved, addr: 0x4006a003 value: 0x00
+solved, addr: 0x4006a006 value: 0x00
+solved, addr: 0x4006a011 value: 0x00
+solved, addr: 0x4006a002 value: 0x00
+solving for state: <SimState @ 0x1f7d>
+solved, addr: 0x4006a000 value: 0x00
+solved, addr: 0x4006a003 value: 0x00
+solved, addr: 0x4006a006 value: 0x00
+solved, addr: 0x4006a011 value: 0x00
+solved, addr: 0x4006a002 value: 0x02
+double branch BB
+taking branch 0
+[+] consume one sym at addr: 0x4006a000 .#4
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x4006a003(0x6a003), size: 0x01, pc: 0x1c6a
+CPU env:
+r0: 0x4006a000 r1: 0xa2000 r2: 0x000 r3: 0x4006a000 r4: 0xa5a5a5a5 r5: 0xa5a5a5a5 r6: 0xa5a5a5a5 r7: 0x20000208 r8: 0xa5a5a5a5 r9: 0xa5a5a5a5 r10: 0xa5a5a5a5 r11: 0xa5a5a5a5 r12: 0xa5a5a5a5 r13: 0x20000208 r14: 0x1f6d r15: 0x1c6a (tb start: 0x1c44)
+[+] reuse previous solver
+[+] current solver cnt: #4
+[+] consume one sym at addr: 0x4006a003 .#3
+data: [1074176003L, <BV32 input_49_32>, 0, 0]
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x4006a006(0x6a006), size: 0x01, pc: 0x1c7e
+CPU env:
+r0: 0x4006a000 r1: 0xa2000 r2: 0x020 r3: 0x4006a000 r4: 0xa5a5a5a5 r5: 0xa5a5a5a5 r6: 0xa5a5a5a5 r7: 0x20000208 r8: 0xa5a5a5a5 r9: 0xa5a5a5a5 r10: 0xa5a5a5a5 r11: 0xa5a5a5a5 r12: 0xa5a5a5a5 r13: 0x20000208 r14: 0x1f6d r15: 0x1c7e (tb start: 0x1c44)
+[+] reuse previous solver
+[+] current solver cnt: #3
+[+] consume one sym at addr: 0x4006a006 .#2
+data: [1074176006L, <BV32 input_50_32>, 0, 0]
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x4006a011(0x6a011), size: 0x01, pc: 0x1c92
+CPU env:
+r0: 0x4006a000 r1: 0xa2000 r2: 0x00a r3: 0x4006a000 r4: 0xa5a5a5a5 r5: 0xa5a5a5a5 r6: 0xa5a5a5a5 r7: 0x20000208 r8: 0xa5a5a5a5 r9: 0xa5a5a5a5 r10: 0xa5a5a5a5 r11: 0xa5a5a5a5 r12: 0xa5a5a5a5 r13: 0x20000208 r14: 0x1f6d r15: 0x1c92 (tb start: 0x1c44)
+[+] reuse previous solver
+[+] current solver cnt: #2
+[+] consume one sym at addr: 0x4006a011 .#1
+data: [1074176017L, <BV32 input_51_32>, 0, 0]
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x4006a002(0x6a002), size: 0x01, pc: 0x1f6e
+CPU env:
+r0: 0x4006a000 r1: 0xa2000 r2: 0x000 r3: 0x4006a000 r4: 0xa5a5a5a5 r5: 0xa5a5a5a5 r6: 0xa5a5a5a5 r7: 0x20000218 r8: 0xa5a5a5a5 r9: 0xa5a5a5a5 r10: 0xa5a5a5a5 r11: 0xa5a5a5a5 r12: 0xa5a5a5a5 r13: 0x20000218 r14: 0x1f6d r15: 0x1f6e (tb start: 0x1f6c)
+[+] reuse previous solver
+[+] current solver cnt: #1
+[+] consume one sym at addr: 0x4006a002 .#0
+data: [1074176002L, <BV32 input_52_32>, 0, 2]
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x4006a003(0x6a003), size: 0x01, pc: 0x582e
+CPU env:
+r0: 0x4006a000 r1: 0x001 r2: 0x000 r3: 0x4006a000 r4: 0xa5a5a5a5 r5: 0xa5a5a5a5 r6: 0xa5a5a5a5 r7: 0x20000220 r8: 0xa5a5a5a5 r9: 0xa5a5a5a5 r10: 0xa5a5a5a5 r11: 0xa5a5a5a5 r12: 0xa5a5a5a5 r13: 0x20000220 r14: 0x9bb r15: 0x582e (tb start: 0x582c)
+[+] Switching the execution to angr
+[+] ANGR stepping
+<SimState @ 0x582f>
+Read (before) None  from 0x4006a003
+[+] insert one sym at pc 0x582f for addr 0x4006a003. 1
+Read (after)0x00 from 0x4006a003
+Read (before)0x00 from 0x20000224
+Read (after)0x4006a000 from 0x20000224
+<SimState @ 0x584f>
+Read (before) None  from 0x2000022c
+Read (after)0x20000230 from 0x2000022c
+<SimState @ 0x9bb>
+Read (before) None  from 0x2000023c
+Read (after)0x20000064 from 0x2000023c
+Read (before)0x20000064 from 0x20000064
+Read (after)0x4006a000 from 0x20000064
+<SimState @ 0x585b>
+Read (before) None  from 0x20000223
+Read (after)0x01 from 0x20000223
+<SimState @ 0x586d>
+Read (before) None  from 0x20000224
+Read (after)0x4006a000 from 0x20000224
+Read (before)0x4006a000 from 0x4006a003
+[+] insert one sym at pc 0x586f for addr 0x4006a003. 2
+Read (after)0x00 from 0x4006a003
+Read (before)0x00 from 0x20000224
+Read (after)0x4006a000 from 0x20000224
+<SimState @ 0x588f>
+Read (before) None  from 0x2000022c
+Read (after)0x20000230 from 0x2000022c
+<SimState @ 0x9c7>
+Read (before) None  from 0x20000250
+Read (after)0x20000258 from 0x20000250
+Read (before)0x20000258 from 0x20000254
+Read (after)0x6bd from 0x20000254
+<SimState @ 0x6bd>
+<SimState @ 0x6c9>
+Read (before) None  from 0x798
+Read (after)0x20000000 from 0x798
+Read (before)0x20000000 from 0x20000000
+Read (after)0x69dc from 0x20000000
+Read (before)0x69dc from 0x798
+Read (after)0x20000000 from 0x798
+Read (before)0x20000000 from 0x20000000
+Read (after)0x69dc from 0x20000000
+<SimState @ 0x6951>
+Read (before) None  from 0x69dc
+Read (after)0x46 from 0x69dc
+<SimState @ 0x6953>
+Read (before) None  from 0x69dd
+Read (after)0x72 from 0x69dd
+<SimState @ 0x6953>
+Read (before) None  from 0x69de
+Read (after)0x65 from 0x69de
+<SimState @ 0x6953>
+Read (before) None  from 0x69df
+Read (after)0x65 from 0x69df
+<SimState @ 0x6953>
+Read (before) None  from 0x69e0
+Read (after)0x52 from 0x69e0
+<SimState @ 0x6953>
+Read (before) None  from 0x69e1
+Read (after)0x54 from 0x69e1
+<SimState @ 0x6953>
+Read (before) None  from 0x69e2
+Read (after)0x4f from 0x69e2
+<SimState @ 0x6953>
+Read (before) None  from 0x69e3
+Read (after)0x53 from 0x69e3
+<SimState @ 0x6953>
+Read (before) None  from 0x69e4
+Read (after)0x20 from 0x69e4
+<SimState @ 0x6953>
+Read (before) None  from 0x69e5
+Read (after)0x55 from 0x69e5
+<SimState @ 0x6953>
+Read (before) None  from 0x69e6
+Read (after)0x41 from 0x69e6
+<SimState @ 0x6953>
+Read (before) None  from 0x69e7
+Read (after)0x52 from 0x69e7
+<SimState @ 0x6953>
+Read (before) None  from 0x69e8
+Read (after)0x54 from 0x69e8
+<SimState @ 0x6953>
+Read (before) None  from 0x69e9
+Read (after)0x20 from 0x69e9
+<SimState @ 0x6953>
+Read (before) None  from 0x69ea
+Read (after)0x64 from 0x69ea
+<SimState @ 0x6953>
+Read (before) None  from 0x69eb
+Read (after)0x72 from 0x69eb
+<SimState @ 0x6953>
+Read (before) None  from 0x69ec
+Read (after)0x69 from 0x69ec
+<SimState @ 0x6953>
+Read (before) None  from 0x69ed
+Read (after)0x76 from 0x69ed
+<SimState @ 0x6953>
+Read (before) None  from 0x69ee
+Read (after)0x65 from 0x69ee
+<SimState @ 0x6953>
+Read (before) None  from 0x69ef
+Read (after)0x72 from 0x69ef
+<SimState @ 0x6953>
+Read (before) None  from 0x69f0
+Read (after)0x20 from 0x69f0
+<SimState @ 0x6953>
+Read (before) None  from 0x69f1
+Read (after)0x65 from 0x69f1
+<SimState @ 0x6953>
+Read (before) None  from 0x69f2
+Read (after)0x78 from 0x69f2
+<SimState @ 0x6953>
+Read (before) None  from 0x69f3
+Read (after)0x61 from 0x69f3
+<SimState @ 0x6953>
+Read (before) None  from 0x69f4
+Read (after)0x6d from 0x69f4
+<SimState @ 0x6953>
+Read (before) None  from 0x69f5
+Read (after)0x70 from 0x69f5
+<SimState @ 0x6953>
+Read (before) None  from 0x69f6
+Read (after)0x6c from 0x69f6
+<SimState @ 0x6953>
+Read (before) None  from 0x69f7
+Read (after)0x65 from 0x69f7
+<SimState @ 0x6953>
+Read (before) None  from 0x69f8
+Read (after)0x21 from 0x69f8
+<SimState @ 0x6953>
+Read (before) None  from 0x69f9
+Read (after)0x0d from 0x69f9
+<SimState @ 0x6953>
+Read (before) None  from 0x69fa
+Read (after)0x0a from 0x69fa
+<SimState @ 0x6953>
+Read (before) None  from 0x69fb
+Read (after)0x00 from 0x69fb
+<SimState @ 0x695b>
+<SimState @ 0x6d7>
+Read (before) None  from 0x794
+Read (after)0x20000064 from 0x794
+<SimState @ 0x5907>
+Read (before) None  from 0x20000244
+Read (after)0x20000064 from 0x20000244
+Read (before)0x20000064 from 0x20000064
+Read (after)0x4006a000 from 0x20000064
+<SimState @ 0x5923>
+Read (before) None  from 0x2000023c
+Read (after)0x1f from 0x2000023c
+<SimState @ 0x592d>
+Read (before) None  from 0x20000240
+Read (after)0x69dc from 0x20000240
+<SimState @ 0x5937>
+Read (before) None  from 0x20000244
+Read (after)0x20000064 from 0x20000244
+Read (before)0x20000064 from 0x2000007c
+Read (after)0x20000948 from 0x2000007c
+<SimState @ 0x3781>
+Read (before) None  from 0x200001f4
+Read (after)0x20000948 from 0x200001f4
+Read (before)0x20000948 from 0x2000021c
+Read (after)0x20000948 from 0x2000021c
+<SimState @ 0x37b5>
+Read (before) None  from 0x2000021c
+Read (after)0x20000948 from 0x2000021c
+Read (before)0x20000948 from 0x20000988
+Read (after)0x00 from 0x20000988
+<SimState @ 0x37d1>
+<SimState @ 0x453d>
+Read (before) None  from 0x4570
+Read (after)0x20002a28 from 0x4570
+Read (before)0x20002a28 from 0x20002a28
+Read (after)0x01 from 0x20002a28
+<SimState @ 0x4551>
+Read (before) None  from 0x4574
+Read (after)0x20002a44 from 0x4574
+Read (before)0x20002a44 from 0x20002a44
+Read (after)0x00 from 0x20002a44
+<SimState @ 0x4559>
+<SimState @ 0x4563>
+Read (before) None  from 0x200001e4
+Read (after)0x02 from 0x200001e4
+Read (before)0x02 from 0x200001ec
+Read (after)0x200001f0 from 0x200001ec
+<SimState @ 0x37d5>
+<SimState @ 0x37e1>
+<SimState @ 0x37e7>
+<SimState @ 0x37ff>
+<SimState @ 0x2fcd>
+<SimState @ 0x2fd7>
+<SimState @ 0x2fe3>
+Read (before) None  from 0x3020
+Read (after)0x2000002c from 0x3020
+Read (before)0x2000002c from 0x2000002c
+Read (after)0x00 from 0x2000002c
+Read (before)0x00 from 0x3020
+Read (after)0x2000002c from 0x3020
+Read (before)0x2000002c from 0x3020
+Read (after)0x2000002c from 0x3020
+Read (before)0x2000002c from 0x2000002c
+Read (after)0x01 from 0x2000002c
+<SimState @ 0x2ff7>
+Read (before) None  from 0x3024
+Read (after)0xe000ed04 from 0x3024
+Read (before)0xe000ed04 from 0xe000ed04
+unknown system control register in Anger
+Read (after)0x00 from 0xe000ed04
+[+] active #: 2
+[+] solving ...
+solving for state: <SimState @ 0x3015>
+solved, addr: 0x4006a003 value: 0x00
+solved, addr: 0x4006a003 value: 0x00
+solving for state: <SimState @ 0x3001>
+solved, addr: 0x4006a003 value: 0x00
+solved, addr: 0x4006a003 value: 0x00
+[+] transfering to qemu due to private_peripheral
+double branch BB
+taking branch 0
+[+] consume one sym at addr: 0x4006a003 .#1
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x4006a003(0x6a003), size: 0x01, pc: 0x586e
+CPU env:
+r0: 0x4006a000 r1: 0x001 r2: 0x008 r3: 0x4006a000 r4: 0xa5a5a5a5 r5: 0xa5a5a5a5 r6: 0xa5a5a5a5 r7: 0x20000220 r8: 0xa5a5a5a5 r9: 0xa5a5a5a5 r10: 0xa5a5a5a5 r11: 0xa5a5a5a5 r12: 0xa5a5a5a5 r13: 0x20000220 r14: 0x9c7 r15: 0x586e (tb start: 0x586c)
+[+] reuse previous solver
+[+] current solver cnt: #1
+[+] consume one sym at addr: 0x4006a003 .#0
+data: [1074176003L, <BV32 input_54_32>, 0, 0]
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x4006a000(0x6a000), size: 0x01, pc: 0x1c58
+CPU env:
+r0: 0x4006a000 r1: 0x8000 r2: 0x8000 r3: 0x4006a000 r4: 0x69dc r5: 0xa5a5a5a5 r6: 0xa5a5a5a5 r7: 0x20000200 r8: 0xa5a5a5a5 r9: 0xa5a5a5a5 r10: 0xa5a5a5a5 r11: 0xa5a5a5a5 r12: 0xa5a5a5a5 r13: 0x20000200 r14: 0x203f r15: 0x1c58 (tb start: 0x1c44)
+[+] Switching the execution to angr
+[+] ANGR stepping
+<SimState @ 0x1c59>
+Read (before) None  from 0x4006a000
+[+] insert one sym at pc 0x1c59 for addr 0x4006a000. 1
+Read (after)0x00 from 0x4006a000
+Read (before)0x00 from 0x20000200
+Read (after)0x8000 from 0x20000200
+Read (before)0x8000 from 0x20000204
+Read (after)0x4006a000 from 0x20000204
+Read (before)0x4006a000 from 0x20000204
+Read (after)0x4006a000 from 0x20000204
+Read (before)0x4006a000 from 0x4006a003
+[+] insert one sym at pc 0x1c6b for addr 0x4006a003. 2
+Read (after)0x00 from 0x4006a003
+Read (before)0x00 from 0x20000200
+Read (after)0x8000 from 0x20000200
+Read (before)0x8000 from 0x20000204
+Read (after)0x4006a000 from 0x20000204
+Read (before)0x4006a000 from 0x20000204
+Read (after)0x4006a000 from 0x20000204
+Read (before)0x4006a000 from 0x4006a006
+[+] insert one sym at pc 0x1c7f for addr 0x4006a006. 3
+Read (after)0x00 from 0x4006a006
+Read (before)0x00 from 0x20000200
+Read (after)0x8000 from 0x20000200
+Read (before)0x8000 from 0x20000204
+Read (after)0x4006a000 from 0x20000204
+Read (before)0x4006a000 from 0x20000204
+Read (after)0x4006a000 from 0x20000204
+Read (before)0x4006a000 from 0x4006a011
+[+] insert one sym at pc 0x1c93 for addr 0x4006a011. 4
+Read (after)0x00 from 0x4006a011
+Read (before)0x00 from 0x20000200
+Read (after)0x8000 from 0x20000200
+Read (before)0x8000 from 0x20000204
+Read (after)0x4006a000 from 0x20000204
+Read (before)0x4006a000 from 0x2000020c
+Read (after)0x20000210 from 0x2000020c
+<SimState @ 0x203f>
+Read (before) None  from 0x20000224
+Read (after)0x00 from 0x20000224
+Read (before)0x00 from 0x20000228
+Read (after)0x20000238 from 0x20000228
+Read (before)0x20000238 from 0x2000022c
+Read (after)0x596b from 0x2000022c
+<SimState @ 0x596b>
+Read (before) None  from 0x20000244
+Read (after)0x20000064 from 0x20000244
+Read (before)0x20000064 from 0x20000084
+Read (after)0x200009f8 from 0x20000084
+<SimState @ 0x3149>
+Read (before) None  from 0x200001f4
+Read (after)0x200009f8 from 0x200001f4
+Read (before)0x200009f8 from 0x200001f4
+Read (after)0x200009f8 from 0x200001f4
+<SimState @ 0x317d>
+Read (before) None  from 0x200001f0
+Read (after)0x01 from 0x200001f0
+<SimState @ 0x319b>
+Read (before) None  from 0x200001f0
+Read (after)0x01 from 0x200001f0
+<SimState @ 0x31b5>
+<SimState @ 0x453d>
+Read (before) None  from 0x4570
+Read (after)0x20002a28 from 0x4570
+Read (before)0x20002a28 from 0x20002a28
+Read (after)0x01 from 0x20002a28
+<SimState @ 0x4551>
+Read (before) None  from 0x4574
+Read (after)0x20002a44 from 0x4574
+Read (before)0x20002a44 from 0x20002a44
+Read (after)0x00 from 0x20002a44
+<SimState @ 0x4559>
+<SimState @ 0x4563>
+Read (before) None  from 0x200001dc
+Read (after)0x02 from 0x200001dc
+Read (before)0x02 from 0x200001e4
+Read (after)0x200001e8 from 0x200001e4
+<SimState @ 0x31b9>
+<SimState @ 0x31c5>
+<SimState @ 0x31cb>
+<SimState @ 0x31e3>
+<SimState @ 0x3cd1>
+Read (before) None  from 0x3ce8
+Read (after)0x20002a44 from 0x3ce8
+Read (before)0x20002a44 from 0x20002a44
+Read (after)0x00 from 0x20002a44
+Read (before)0x00 from 0x3ce8
+Read (after)0x20002a44 from 0x3ce8
+Read (before)0x20002a44 from 0x200001e4
+Read (after)0x200001e8 from 0x200001e4
+<SimState @ 0x31e7>
+Read (before) None  from 0x2000021c
+Read (after)0x200009f8 from 0x2000021c
+Read (before)0x200009f8 from 0x200009f8
+Read (after)0x00 from 0x200009f8
+Read (before)0x00 from 0x200001e8
+Read (after)0x00 from 0x200001e8
+Read (before)0x00 from 0x200001f0
+Read (after)0x01 from 0x200001f0
+Read (before)0x01 from 0x20000214
+Read (after)0x00 from 0x20000214
+<SimState @ 0x6043>
+Read (before) None  from 0x200001cc
+Read (after)0x00 from 0x200001cc
+<SimState @ 0x6059>
+Read (before) None  from 0x200001d4
+Read (after)0x00 from 0x200001d4
+Read (before)0x00 from 0x200001d0
+Read (after)0x01 from 0x200001d0
+<SimState @ 0x6079>
+Read (before) None  from 0x200001dc
+Read (after)0x00 from 0x200001dc
+Read (before)0x00 from 0x200001e4
+Read (after)0x200001e8 from 0x200001e4
+<SimState @ 0x31f7>
+Read (before) None  from 0x20000210
+Read (after)0x00 from 0x20000210
+<SimState @ 0x321d>
+Read (before) None  from 0x20000230
+Read (after)0xffffffff from 0x20000230
+<SimState @ 0x322d>
+Read (before) None  from 0x200001ec
+Read (after)0x01 from 0x200001ec
+<SimState @ 0x3233>
+Read (before) None  from 0x20000220
+Read (after)0x00 from 0x20000220
+Read (before)0x00 from 0x200001e8
+Read (after)0x00 from 0x200001e8
+<SimState @ 0x3249>
+Read (before) None  from 0x2000021c
+Read (after)0x200009f8 from 0x2000021c
+Read (before)0x200009f8 from 0x200001f0
+Read (after)0x01 from 0x200001f0
+Read (before)0x01 from 0x20000220
+Read (after)0x1000000 from 0x20000220
+Read (before)0x1000000 from 0x20000230
+Read (after)0xffffffff from 0x20000230
+<SimState @ 0x4099>
+Read (before) None  from 0x200001d4
+Read (after)0x200009fc from 0x200001d4
+<SimState @ 0x40bf>
+Read (before) None  from 0x4104
+Read (after)0x20002a44 from 0x4104
+Read (before)0x20002a44 from 0x20002a44
+Read (after)0x01 from 0x20002a44
+<SimState @ 0x40db>
+Read (before) None  from 0x4108
+Read (after)0x20002944 from 0x4108
+Read (before)0x20002944 from 0x20002944
+Read (after)0x20000288 from 0x20002944
+Read (before)0x20000288 from 0x200001d0
+Read (after)0x1000001 from 0x200001d0
+Read (before)0x1000001 from 0x4108
+Read (after)0x20002944 from 0x4108
+Read (before)0x20002944 from 0x20002944
+Read (after)0x20000288 from 0x20002944
+Read (before)0x20000288 from 0x200001d4
+Read (after)0x200009fc from 0x200001d4
+<SimState @ 0x60e1>
+Read (before) None  from 0x200001b4
+Read (after)0x200009fc from 0x200001b4
+Read (before)0x200009fc from 0x20000a00
+Read (after)0x20000a04 from 0x20000a00
+Read (before)0x20000a04 from 0x200001b0
+Read (after)0x200002a0 from 0x200001b0
+Read (before)0x200002a0 from 0x200001bc
+Read (after)0x20000a04 from 0x200001bc
+Read (before)0x20000a04 from 0x200001bc
+Read (after)0x20000a04 from 0x200001bc
+Read (before)0x20000a04 from 0x20000a0c
+Read (after)0x20000a04 from 0x20000a0c
+Read (before)0x20000a04 from 0x200001b0
+Read (after)0x200002a0 from 0x200001b0
+Read (before)0x200002a0 from 0x200001bc
+Read (after)0x20000a04 from 0x200001bc
+Read (before)0x20000a04 from 0x20000a0c
+Read (after)0x20000a04 from 0x20000a0c
+Read (before)0x20000a04 from 0x200001b0
+Read (after)0x200002a0 from 0x200001b0
+Read (before)0x200002a0 from 0x200001bc
+Read (after)0x20000a04 from 0x200001bc
+Read (before)0x20000a04 from 0x200001b0
+Read (after)0x200002a0 from 0x200001b0
+Read (before)0x200002a0 from 0x200001b0
+Read (after)0x200002a0 from 0x200001b0
+Read (before)0x200002a0 from 0x200001b4
+Read (after)0x200009fc from 0x200001b4
+Read (before)0x200009fc from 0x200001b4
+Read (after)0x200009fc from 0x200001b4
+Read (before)0x200009fc from 0x200009fc
+Read (after)0x00 from 0x200009fc
+Read (before)0x00 from 0x200001b4
+Read (after)0x200009fc from 0x200001b4
+Read (before)0x200009fc from 0x200001c4
+Read (after)0x200001c8 from 0x200001c4
+<SimState @ 0x40f5>
+Read (before) None  from 0x200001cc
+Read (after)0xffffffff from 0x200001cc
+<SimState @ 0x4921>
+Read (before) None  from 0x49d0
+Read (after)0x20002a20 from 0x49d0
+Read (before)0x20002a20 from 0x20002a20
+Read (after)0x0e from 0x20002a20
+Read (before)0x0e from 0x49d4
+Read (after)0x20002944 from 0x49d4
+Read (before)0x20002944 from 0x20002944
+Read (after)0x20000288 from 0x20002944
+<SimState @ 0x619b>
+Read (before) None  from 0x2000019c
+Read (after)0x2000028c from 0x2000019c
+Read (before)0x2000028c from 0x2000029c
+Read (after)0x20002998 from 0x2000029c
+Read (before)0x20002998 from 0x2000019c
+Read (after)0x2000028c from 0x2000019c
+Read (before)0x2000028c from 0x20000290
+Read (after)0x200029a0 from 0x20000290
+Read (before)0x200029a0 from 0x2000019c
+Read (after)0x2000028c from 0x2000019c
+Read (before)0x2000028c from 0x20000294
+Read (after)0x200029a0 from 0x20000294
+Read (before)0x200029a0 from 0x2000019c
+Read (after)0x2000028c from 0x2000019c
+Read (before)0x2000028c from 0x20000294
+Read (after)0x200029a0 from 0x20000294
+Read (before)0x200029a0 from 0x2000019c
+Read (after)0x2000028c from 0x2000019c
+Read (before)0x2000028c from 0x20000290
+Read (after)0x200029a0 from 0x20000290
+Read (before)0x200029a0 from 0x200001a4
+Read (after)0x20002998 from 0x200001a4
+Read (before)0x20002998 from 0x2000299c
+Read (after)0x2000028c from 0x2000299c
+Read (before)0x2000028c from 0x2000019c
+Read (after)0x2000028c from 0x2000019c
+<SimState @ 0x61c7>
+Read (before) None  from 0x2000019c
+Read (after)0x2000028c from 0x2000019c
+Read (before)0x2000028c from 0x20000294
+Read (after)0x200029a0 from 0x20000294
+Read (before)0x200029a0 from 0x200001a4
+Read (after)0x20002998 from 0x200001a4
+Read (before)0x20002998 from 0x2000019c
+Read (after)0x2000028c from 0x2000019c
+Read (before)0x2000028c from 0x200001a4
+Read (after)0x20002998 from 0x200001a4
+Read (before)0x20002998 from 0x20002998
+Read (after)0x01 from 0x20002998
+Read (before)0x01 from 0x200001a4
+Read (after)0x20002998 from 0x200001a4
+Read (before)0x20002998 from 0x200001a4
+Read (after)0x20002998 from 0x200001a4
+Read (before)0x20002998 from 0x20002998
+Read (after)0x00 from 0x20002998
+Read (before)0x00 from 0x200001ac
+Read (after)0x200001b0 from 0x200001ac
+<SimState @ 0x493d>
+<SimState @ 0x4943>
+Read (before) None  from 0x49d4
+Read (after)0x20002944 from 0x49d4
+Read (before)0x20002944 from 0x20002944
+Read (after)0x20000288 from 0x20002944
+Read (before)0x20000288 from 0x200002b4
+Read (after)0x04 from 0x200002b4
+Read (before)0x04 from 0x49d8
+Read (after)0x20002a24 from 0x49d8
+Read (before)0x20002a24 from 0x20002a24
+Read (after)0x11 from 0x20002a24
+Read (before)0x11 from 0x49d8
+Read (after)0x20002a24 from 0x49d8
+Read (before)0x20002a24 from 0x200001b4
+Read (after)0xffffffff from 0x200001b4
+<SimState @ 0x4963>
+Read (before) None  from 0x200001b0
+Read (after)0x01 from 0x200001b0
+<SimState @ 0x4969>
+Read (before) None  from 0x49d4
+Read (after)0x20002944 from 0x49d4
+Read (before)0x20002944 from 0x20002944
+Read (after)0x20000288 from 0x20002944
+Read (before)0x20000288 from 0x49dc
+Read (after)0x20002a08 from 0x49dc
+<SimState @ 0x60e1>
+Read (before) None  from 0x2000019c
+Read (after)0x20002a08 from 0x2000019c
+Read (before)0x20002a08 from 0x20002a0c
+Read (after)0x20002a10 from 0x20002a0c
+Read (before)0x20002a10 from 0x20000198
+Read (after)0x2000028c from 0x20000198
+Read (before)0x2000028c from 0x200001a4
+Read (after)0x20002a10 from 0x200001a4
+Read (before)0x20002a10 from 0x200001a4
+Read (after)0x20002a10 from 0x200001a4
+Read (before)0x20002a10 from 0x20002a18
+Read (after)0x200008cc from 0x20002a18
+Read (before)0x200008cc from 0x20000198
+Read (after)0x2000028c from 0x20000198
+Read (before)0x2000028c from 0x200001a4
+Read (after)0x20002a10 from 0x200001a4
+Read (before)0x20002a10 from 0x20002a18
+Read (after)0x200008cc from 0x20002a18
+Read (before)0x200008cc from 0x20000198
+Read (after)0x2000028c from 0x20000198
+Read (before)0x2000028c from 0x200001a4
+Read (after)0x20002a10 from 0x200001a4
+Read (before)0x20002a10 from 0x20000198
+Read (after)0x2000028c from 0x20000198
+Read (before)0x2000028c from 0x20000198
+Read (after)0x2000028c from 0x20000198
+Read (before)0x2000028c from 0x2000019c
+Read (after)0x20002a08 from 0x2000019c
+Read (before)0x20002a08 from 0x2000019c
+Read (after)0x20002a08 from 0x2000019c
+Read (before)0x20002a08 from 0x20002a08
+Read (after)0x01 from 0x20002a08
+Read (before)0x01 from 0x2000019c
+Read (after)0x20002a08 from 0x2000019c
+Read (before)0x20002a08 from 0x200001ac
+Read (after)0x200001b0 from 0x200001ac
+<SimState @ 0x4977>
+<SimState @ 0x49c7>
+Read (before) None  from 0x200001c0
+Read (after)0x200001c8 from 0x200001c0
+Read (before)0x200001c8 from 0x200001c4
+Read (after)0x40fd from 0x200001c4
+<SimState @ 0x40fd>
+Read (before) None  from 0x200001e0
+Read (after)0x200001e8 from 0x200001e0
+Read (before)0x200001e8 from 0x200001e4
+Read (after)0x325b from 0x200001e4
+<SimState @ 0x325b>
+<SimState @ 0x3ced>
+Read (before) None  from 0x3e00
+Read (after)0x20002a44 from 0x3e00
+Read (before)0x20002a44 from 0x20002a44
+Read (after)0x01 from 0x20002a44
+<SimState @ 0x3d17>
+<SimState @ 0x2fcd>
+<SimState @ 0x2fd7>
+<SimState @ 0x2fe3>
+Read (before) None  from 0x3020
+Read (after)0x2000002c from 0x3020
+Read (before)0x2000002c from 0x2000002c
+Read (after)0x00 from 0x2000002c
+Read (before)0x00 from 0x3020
+Read (after)0x2000002c from 0x3020
+Read (before)0x2000002c from 0x3020
+Read (after)0x2000002c from 0x3020
+Read (before)0x2000002c from 0x2000002c
+Read (after)0x01 from 0x2000002c
+<SimState @ 0x2ff7>
+Read (before) None  from 0x3024
+Read (after)0xe000ed04 from 0x3024
+Read (before)0xe000ed04 from 0xe000ed04
+unknown system control register in Anger
+Read (after)0x00 from 0xe000ed04
+[+] active #: 2
+[+] solving ...
+solving for state: <SimState @ 0x3015>
+solved, addr: 0x4006a000 value: 0x00
+solved, addr: 0x4006a003 value: 0x00
+solved, addr: 0x4006a006 value: 0x00
+solved, addr: 0x4006a011 value: 0x00
+solving for state: <SimState @ 0x3001>
+solved, addr: 0x4006a000 value: 0x00
+solved, addr: 0x4006a003 value: 0x00
+solved, addr: 0x4006a006 value: 0x00
+solved, addr: 0x4006a011 value: 0x00
+[+] transfering to qemu due to private_peripheral
+double branch BB
+taking branch 0
+[+] consume one sym at addr: 0x4006a000 .#3
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x4006a003(0x6a003), size: 0x01, pc: 0x1c6a
+CPU env:
+r0: 0x4006a000 r1: 0x8000 r2: 0x000 r3: 0x4006a000 r4: 0x69dc r5: 0xa5a5a5a5 r6: 0xa5a5a5a5 r7: 0x20000200 r8: 0xa5a5a5a5 r9: 0xa5a5a5a5 r10: 0xa5a5a5a5 r11: 0xa5a5a5a5 r12: 0xa5a5a5a5 r13: 0x20000200 r14: 0x203f r15: 0x1c6a (tb start: 0x1c44)
+[+] reuse previous solver
+[+] current solver cnt: #3
+[+] consume one sym at addr: 0x4006a003 .#2
+data: [1074176003L, <BV32 input_57_32>, 0, 0]
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x4006a006(0x6a006), size: 0x01, pc: 0x1c7e
+CPU env:
+r0: 0x4006a000 r1: 0x8000 r2: 0x080 r3: 0x4006a000 r4: 0x69dc r5: 0xa5a5a5a5 r6: 0xa5a5a5a5 r7: 0x20000200 r8: 0xa5a5a5a5 r9: 0xa5a5a5a5 r10: 0xa5a5a5a5 r11: 0xa5a5a5a5 r12: 0xa5a5a5a5 r13: 0x20000200 r14: 0x203f r15: 0x1c7e (tb start: 0x1c44)
+[+] reuse previous solver
+[+] current solver cnt: #2
+[+] consume one sym at addr: 0x4006a006 .#1
+data: [1074176006L, <BV32 input_58_32>, 0, 0]
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x4006a011(0x6a011), size: 0x01, pc: 0x1c92
+CPU env:
+r0: 0x4006a000 r1: 0x8000 r2: 0x000 r3: 0x4006a000 r4: 0x69dc r5: 0xa5a5a5a5 r6: 0xa5a5a5a5 r7: 0x20000200 r8: 0xa5a5a5a5 r9: 0xa5a5a5a5 r10: 0xa5a5a5a5 r11: 0xa5a5a5a5 r12: 0xa5a5a5a5 r13: 0x20000200 r14: 0x203f r15: 0x1c92 (tb start: 0x1c44)
+[+] reuse previous solver
+[+] current solver cnt: #1
+[+] consume one sym at addr: 0x4006a011 .#0
+data: [1074176017L, <BV32 input_59_32>, 0, 0]
+feed data: 0x00

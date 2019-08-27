@@ -1,0 +1,56 @@
+Fast:
+1. If the state has a _return_ instruction in the following 100 instructions, select this state.
+2. If no state has a return instruciton, compare two states' addresses. The _higher_ would be selected.
+3. If continuous states are equal (_loop_), reverse the selection.
+
+
+Explore_Mgr:
+1. Walk at most five steps for one state.
+2. Filter the states which have _more diverges_.
+3. Select the states which have _higher addresses_.
+
+
+Explore_Single:
+1. Step until a) _diverge_, b) detect a _loop_, c) _interrupt_, d) dead state
+2. Record all states when stepping
+3. Favor _unexecuted_ code.
+4. Favor state which have a _quicker_ diverge.
+5. Favor state which has a _higher_ address.
+6. If there is an interrupt, favor a lower address.
+
+
+Explore_Single_Ignore_Speed:
+1. Step until a) diverge, b) detect a loop, c) interrupt, d) dead state, e) reach forward_depth.
+2. Record all states when stepping
+3. Favor unexecuted code.
+4. Favor state which has a higher address.
+5. If there is an interrupt, favor a lower address.
+
+
+Explore_Single_Explore_All:
+1. Step until a) dead state, b) reach forward_depth.
+2. Get all states and their history states in two stashes: intret and max
+3. Favor _unexecuted_ code
+4. Favor state which has a _higher_ address
+5. If there is an interrupt, favor a lower address.
+
+
+
+Heuristics:
+1. State's address? higher. Interrupt --> lower.
+2. Executed or not? unexecuted.
+3. Loop or not? noLoop.
+4. Diverge soon? soon. (Fast)
+5. More diverges? more. (Mgr)
+6. Return soon? soon. (Fast)
+
+
+Conditional states:
+1. second states
+2. following states
+3. history states
+4. second states -- address
+
+
+
+

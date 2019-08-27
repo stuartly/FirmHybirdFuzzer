@@ -1,0 +1,1 @@
+tests/qapi-schema/args-union.json:10: 'data' for command 'oops' cannot use union type 'Uni'

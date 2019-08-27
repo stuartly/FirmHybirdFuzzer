@@ -1,0 +1,4 @@
+
+FlexCan deliver the message from transfer buffer to receive buffer. 
+There is no this hardware, so no action is done.
+

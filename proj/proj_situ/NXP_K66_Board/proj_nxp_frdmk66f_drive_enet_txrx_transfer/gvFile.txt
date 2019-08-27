@@ -1,0 +1,1755 @@
+exec_seed: 2
+acess_peripheral: 6920
+exec_time: 0.107
+exec_cnt: 1
+trigger_new_BB_To_BB: 1
+trigger_new_Peripheral_To_Peripheral: 1
+size of PP_To_PP bitmap: 1
+size of BB_To_BB bitmap: 233
+Total_Path: 1
+Total_Events: 2
+Total_Single_Exec_Time: 12.406
+Total_Exec_Time: 12.406
+---------------------------------
+exec_seed: 2
+acess_peripheral: 6928
+exec_time: 0.069
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 1
+size of PP_To_PP bitmap: 2
+size of BB_To_BB bitmap: 233
+Total_Path: 1
+Total_Events: 3
+Total_Single_Exec_Time: 12.482
+Total_Exec_Time: 12.482
+---------------------------------
+exec_seed: 2
+acess_peripheral: 6936
+exec_time: 0.172
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 1
+size of PP_To_PP bitmap: 3
+size of BB_To_BB bitmap: 233
+Total_Path: 1
+Total_Events: 4
+Total_Single_Exec_Time: 12.690
+Total_Exec_Time: 12.690
+---------------------------------
+exec_seed: 2
+acess_peripheral: 6944
+exec_time: 0.080
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 1
+size of PP_To_PP bitmap: 4
+size of BB_To_BB bitmap: 233
+Total_Path: 1
+Total_Events: 5
+Total_Single_Exec_Time: 12.813
+Total_Exec_Time: 12.813
+---------------------------------
+exec_seed: 2
+acess_peripheral: 6960
+exec_time: 0.175
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 1
+size of PP_To_PP bitmap: 5
+size of BB_To_BB bitmap: 233
+Total_Path: 1
+Total_Events: 6
+Total_Single_Exec_Time: 13.001
+Total_Exec_Time: 13.001
+---------------------------------
+exec_seed: 2
+acess_peripheral: 6980
+exec_time: 0.118
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 1
+size of PP_To_PP bitmap: 6
+size of BB_To_BB bitmap: 233
+Total_Path: 1
+Total_Events: 7
+Total_Single_Exec_Time: 13.137
+Total_Exec_Time: 13.137
+---------------------------------
+exec_seed: 2
+acess_peripheral: 6992
+exec_time: 0.159
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 1
+size of PP_To_PP bitmap: 7
+size of BB_To_BB bitmap: 233
+Total_Path: 1
+Total_Events: 8
+Total_Single_Exec_Time: 13.332
+Total_Exec_Time: 13.332
+---------------------------------
+exec_seed: 2
+acess_peripheral: 7004
+exec_time: 0.169
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 1
+size of PP_To_PP bitmap: 8
+size of BB_To_BB bitmap: 233
+Total_Path: 1
+Total_Events: 9
+Total_Single_Exec_Time: 13.520
+Total_Exec_Time: 13.520
+---------------------------------
+exec_seed: 2
+acess_peripheral: 7016
+exec_time: 0.101
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 1
+size of PP_To_PP bitmap: 9
+size of BB_To_BB bitmap: 233
+Total_Path: 1
+Total_Events: 10
+Total_Single_Exec_Time: 13.669
+Total_Exec_Time: 13.669
+---------------------------------
+exec_seed: 2
+acess_peripheral: 7028
+exec_time: 0.134
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 1
+size of PP_To_PP bitmap: 10
+size of BB_To_BB bitmap: 233
+Total_Path: 1
+Total_Events: 11
+Total_Single_Exec_Time: 13.816
+Total_Exec_Time: 13.816
+---------------------------------
+exec_seed: 2
+acess_peripheral: 7054
+exec_time: 0.154
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 1
+size of PP_To_PP bitmap: 11
+size of BB_To_BB bitmap: 233
+Total_Path: 1
+Total_Events: 12
+Total_Single_Exec_Time: 14.000
+Total_Exec_Time: 14.000
+---------------------------------
+exec_seed: 2
+acess_peripheral: 7066
+exec_time: 0.178
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 1
+size of PP_To_PP bitmap: 12
+size of BB_To_BB bitmap: 233
+Total_Path: 1
+Total_Events: 13
+Total_Single_Exec_Time: 14.191
+Total_Exec_Time: 14.191
+---------------------------------
+exec_seed: 2
+acess_peripheral: 7078
+exec_time: 0.164
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 1
+size of PP_To_PP bitmap: 13
+size of BB_To_BB bitmap: 233
+Total_Path: 1
+Total_Events: 14
+Total_Single_Exec_Time: 14.355
+Total_Exec_Time: 14.355
+---------------------------------
+exec_seed: 2
+acess_peripheral: 7092
+exec_time: 0.132
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 1
+size of PP_To_PP bitmap: 14
+size of BB_To_BB bitmap: 233
+Total_Path: 1
+Total_Events: 15
+Total_Single_Exec_Time: 14.494
+Total_Exec_Time: 14.494
+---------------------------------
+exec_seed: 2
+acess_peripheral: 7108
+exec_time: 0.184
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 1
+size of PP_To_PP bitmap: 15
+size of BB_To_BB bitmap: 233
+Total_Path: 1
+Total_Events: 16
+Total_Single_Exec_Time: 14.713
+Total_Exec_Time: 14.713
+---------------------------------
+exec_seed: 2
+acess_peripheral: 4398
+exec_time: 0.112
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 1
+size of PP_To_PP bitmap: 16
+size of BB_To_BB bitmap: 233
+Total_Path: 1
+Total_Events: 17
+Total_Single_Exec_Time: 14.849
+Total_Exec_Time: 14.849
+---------------------------------
+exec_seed: 2
+acess_peripheral: 4408
+exec_time: 0.147
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 1
+size of PP_To_PP bitmap: 17
+size of BB_To_BB bitmap: 233
+Total_Path: 1
+Total_Events: 18
+Total_Single_Exec_Time: 15.020
+Total_Exec_Time: 15.020
+---------------------------------
+exec_seed: 2
+acess_peripheral: 4430
+exec_time: 0.138
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 1
+size of PP_To_PP bitmap: 18
+size of BB_To_BB bitmap: 233
+Total_Path: 1
+Total_Events: 19
+Total_Single_Exec_Time: 15.165
+Total_Exec_Time: 15.165
+---------------------------------
+exec_seed: 1
+acess_peripheral: 4448
+exec_time: 0.099
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 1
+size of PP_To_PP bitmap: 19
+size of BB_To_BB bitmap: 233
+Total_Path: 1
+Total_Events: 20
+Total_Single_Exec_Time: 15.277
+Total_Exec_Time: 15.277
+---------------------------------
+exec_seed: 2
+acess_peripheral: 4200
+exec_time: 0.133
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 1
+size of PP_To_PP bitmap: 20
+size of BB_To_BB bitmap: 233
+Total_Path: 1
+Total_Events: 21
+Total_Single_Exec_Time: 27.542
+Total_Exec_Time: 27.542
+---------------------------------
+exec_seed: 2
+acess_peripheral: 4202
+exec_time: 0.132
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 1
+size of PP_To_PP bitmap: 21
+size of BB_To_BB bitmap: 233
+Total_Path: 1
+Total_Events: 22
+Total_Single_Exec_Time: 27.676
+Total_Exec_Time: 27.676
+---------------------------------
+exec_seed: 1
+acess_peripheral: 4204
+exec_time: 0.141
+exec_cnt: 1
+trigger_new_BB_To_BB: 1
+trigger_new_Peripheral_To_Peripheral: 1
+size of PP_To_PP bitmap: 22
+size of BB_To_BB bitmap: 234
+Total_Path: 2
+Total_Events: 23
+Total_Single_Exec_Time: 27.829
+Total_Exec_Time: 27.829
+---------------------------------
+exec_seed: 2
+acess_peripheral: 4270
+exec_time: 0.167
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 1
+size of PP_To_PP bitmap: 23
+size of BB_To_BB bitmap: 234
+Total_Path: 2
+Total_Events: 24
+Total_Single_Exec_Time: 32.089
+Total_Exec_Time: 32.089
+---------------------------------
+exec_seed: 2
+acess_peripheral: 4284
+exec_time: 0.163
+exec_cnt: 1
+trigger_new_BB_To_BB: 1
+trigger_new_Peripheral_To_Peripheral: 1
+size of PP_To_PP bitmap: 24
+size of BB_To_BB bitmap: 237
+Total_Path: 3
+Total_Events: 25
+Total_Single_Exec_Time: 32.271
+Total_Exec_Time: 32.271
+---------------------------------
+exec_seed: 2
+acess_peripheral: 4302
+exec_time: 0.162
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 1
+size of PP_To_PP bitmap: 25
+size of BB_To_BB bitmap: 237
+Total_Path: 3
+Total_Events: 26
+Total_Single_Exec_Time: 32.452
+Total_Exec_Time: 32.452
+---------------------------------
+exec_seed: 2
+acess_peripheral: 6632
+exec_time: 0.143
+exec_cnt: 1
+trigger_new_BB_To_BB: 1
+trigger_new_Peripheral_To_Peripheral: 1
+size of PP_To_PP bitmap: 26
+size of BB_To_BB bitmap: 238
+Total_Path: 4
+Total_Events: 27
+Total_Single_Exec_Time: 38.301
+Total_Exec_Time: 38.301
+---------------------------------
+exec_seed: 1
+acess_peripheral: 4148
+exec_time: 0.090
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 1
+size of PP_To_PP bitmap: 27
+size of BB_To_BB bitmap: 238
+Total_Path: 4
+Total_Events: 28
+Total_Single_Exec_Time: 38.403
+Total_Exec_Time: 38.403
+---------------------------------
+exec_seed: 2
+acess_peripheral: 4150
+exec_time: 0.131
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 1
+size of PP_To_PP bitmap: 28
+size of BB_To_BB bitmap: 238
+Total_Path: 4
+Total_Events: 29
+Total_Single_Exec_Time: 38.552
+Total_Exec_Time: 38.552
+---------------------------------
+exec_seed: 2
+acess_peripheral: 4484
+exec_time: 0.149
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 1
+size of PP_To_PP bitmap: 29
+size of BB_To_BB bitmap: 238
+Total_Path: 4
+Total_Events: 30
+Total_Single_Exec_Time: 43.985
+Total_Exec_Time: 43.985
+---------------------------------
+exec_seed: 2
+acess_peripheral: 4492
+exec_time: 0.169
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 1
+size of PP_To_PP bitmap: 30
+size of BB_To_BB bitmap: 238
+Total_Path: 4
+Total_Events: 31
+Total_Single_Exec_Time: 44.185
+Total_Exec_Time: 44.185
+---------------------------------
+exec_seed: 8
+acess_peripheral: 4506
+exec_time: 0.152
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 1
+size of PP_To_PP bitmap: 31
+size of BB_To_BB bitmap: 238
+Total_Path: 4
+Total_Events: 32
+Total_Single_Exec_Time: 44.355
+Total_Exec_Time: 44.355
+---------------------------------
+exec_seed: 2
+acess_peripheral: 4516
+exec_time: 0.172
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 1
+size of PP_To_PP bitmap: 32
+size of BB_To_BB bitmap: 238
+Total_Path: 4
+Total_Events: 33
+Total_Single_Exec_Time: 47.856
+Total_Exec_Time: 47.856
+---------------------------------
+exec_seed: 1
+acess_peripheral: 4528
+exec_time: 0.155
+exec_cnt: 1
+trigger_new_BB_To_BB: 1
+trigger_new_Peripheral_To_Peripheral: 1
+size of PP_To_PP bitmap: 33
+size of BB_To_BB bitmap: 239
+Total_Path: 5
+Total_Events: 34
+Total_Single_Exec_Time: 48.023
+Total_Exec_Time: 48.023
+---------------------------------
+exec_seed: 2
+acess_peripheral: 4330
+exec_time: 0.201
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 1
+size of PP_To_PP bitmap: 34
+size of BB_To_BB bitmap: 239
+Total_Path: 5
+Total_Events: 35
+Total_Single_Exec_Time: 53.524
+Total_Exec_Time: 53.524
+---------------------------------
+exec_seed: 2
+acess_peripheral: 4346
+exec_time: 0.190
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 1
+size of PP_To_PP bitmap: 35
+size of BB_To_BB bitmap: 239
+Total_Path: 5
+Total_Events: 36
+Total_Single_Exec_Time: 53.733
+Total_Exec_Time: 53.733
+---------------------------------
+exec_seed: 64
+acess_peripheral: 4358
+exec_time: 0.120
+exec_cnt: 1
+trigger_new_BB_To_BB: 1
+trigger_new_Peripheral_To_Peripheral: 1
+size of PP_To_PP bitmap: 36
+size of BB_To_BB bitmap: 240
+Total_Path: 6
+Total_Events: 37
+Total_Single_Exec_Time: 53.854
+Total_Exec_Time: 53.854
+---------------------------------
+exec_seed: 2
+acess_peripheral: 4542
+exec_time: 0.194
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 1
+size of PP_To_PP bitmap: 37
+size of BB_To_BB bitmap: 240
+Total_Path: 6
+Total_Events: 38
+Total_Single_Exec_Time: 58.953
+Total_Exec_Time: 58.953
+---------------------------------
+exec_seed: 2
+acess_peripheral: 4550
+exec_time: 0.193
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 1
+size of PP_To_PP bitmap: 38
+size of BB_To_BB bitmap: 240
+Total_Path: 6
+Total_Events: 39
+Total_Single_Exec_Time: 59.152
+Total_Exec_Time: 59.152
+---------------------------------
+exec_seed: 1
+acess_peripheral: 4570
+exec_time: 0.214
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 1
+size of PP_To_PP bitmap: 39
+size of BB_To_BB bitmap: 240
+Total_Path: 6
+Total_Events: 40
+Total_Single_Exec_Time: 59.367
+Total_Exec_Time: 59.367
+---------------------------------
+exec_seed: 32
+acess_peripheral: 4580
+exec_time: 0.174
+exec_cnt: 1
+trigger_new_BB_To_BB: 1
+trigger_new_Peripheral_To_Peripheral: 1
+size of PP_To_PP bitmap: 40
+size of BB_To_BB bitmap: 241
+Total_Path: 7
+Total_Events: 41
+Total_Single_Exec_Time: 62.389
+Total_Exec_Time: 62.389
+---------------------------------
+exec_seed: 2
+acess_peripheral: 4616
+exec_time: 0.124
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 1
+size of PP_To_PP bitmap: 41
+size of BB_To_BB bitmap: 241
+Total_Path: 7
+Total_Events: 42
+Total_Single_Exec_Time: 65.279
+Total_Exec_Time: 65.279
+---------------------------------
+exec_seed: 12
+acess_peripheral: 4624
+exec_time: 0.219
+exec_cnt: 1
+trigger_new_BB_To_BB: 1
+trigger_new_Peripheral_To_Peripheral: 1
+size of PP_To_PP bitmap: 42
+size of BB_To_BB bitmap: 242
+Total_Path: 8
+Total_Events: 43
+Total_Single_Exec_Time: 65.505
+Total_Exec_Time: 65.505
+---------------------------------
+exec_seed: 2
+acess_peripheral: 3514
+exec_time: 0.205
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 1
+size of PP_To_PP bitmap: 43
+size of BB_To_BB bitmap: 242
+Total_Path: 8
+Total_Events: 44
+Total_Single_Exec_Time: 82.785
+Total_Exec_Time: 82.785
+---------------------------------
+exec_seed: 2
+acess_peripheral: 3554
+exec_time: 0.174
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 1
+size of PP_To_PP bitmap: 44
+size of BB_To_BB bitmap: 242
+Total_Path: 8
+Total_Events: 45
+Total_Single_Exec_Time: 82.966
+Total_Exec_Time: 82.966
+---------------------------------
+exec_seed: 8
+acess_peripheral: 3814
+exec_time: 0.138
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 1
+size of PP_To_PP bitmap: 45
+size of BB_To_BB bitmap: 242
+Total_Path: 8
+Total_Events: 46
+Total_Single_Exec_Time: 83.124
+Total_Exec_Time: 83.124
+---------------------------------
+exec_seed: 2
+acess_peripheral: 3816
+exec_time: 0.113
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 1
+size of PP_To_PP bitmap: 46
+size of BB_To_BB bitmap: 242
+Total_Path: 8
+Total_Events: 47
+Total_Single_Exec_Time: 83.263
+Total_Exec_Time: 83.263
+---------------------------------
+exec_seed: 1
+acess_peripheral: 3218
+exec_time: 0.150
+exec_cnt: 1
+trigger_new_BB_To_BB: 1
+trigger_new_Peripheral_To_Peripheral: 1
+size of PP_To_PP bitmap: 47
+size of BB_To_BB bitmap: 243
+Total_Path: 9
+Total_Events: 48
+Total_Single_Exec_Time: 86.887
+Total_Exec_Time: 86.887
+---------------------------------
+exec_seed: 2
+acess_peripheral: 3884
+exec_time: 0.141
+exec_cnt: 1
+trigger_new_BB_To_BB: 1
+trigger_new_Peripheral_To_Peripheral: 1
+size of PP_To_PP bitmap: 48
+size of BB_To_BB bitmap: 244
+Total_Path: 10
+Total_Events: 49
+Total_Single_Exec_Time: 89.369
+Total_Exec_Time: 89.369
+---------------------------------
+exec_seed: 2
+acess_peripheral: 2718
+exec_time: 0.162
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 1
+size of PP_To_PP bitmap: 49
+size of BB_To_BB bitmap: 244
+Total_Path: 10
+Total_Events: 50
+Total_Single_Exec_Time: 91.504
+Total_Exec_Time: 91.504
+---------------------------------
+exec_seed: 2
+acess_peripheral: 2738
+exec_time: 0.761
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 1
+size of PP_To_PP bitmap: 50
+size of BB_To_BB bitmap: 244
+Total_Path: 10
+Total_Events: 51
+Total_Single_Exec_Time: 92.284
+Total_Exec_Time: 92.284
+---------------------------------
+exec_seed: 4
+acess_peripheral: 3814
+exec_time: 0.235
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 0
+size of PP_To_PP bitmap: 50
+size of BB_To_BB bitmap: 244
+Total_Path: 10
+Total_Events: 52
+Total_Single_Exec_Time: 107.707
+Total_Exec_Time: 107.707
+---------------------------------
+exec_seed: 2
+acess_peripheral: 3816
+exec_time: 0.243
+exec_cnt: 1
+trigger_new_BB_To_BB: 1
+trigger_new_Peripheral_To_Peripheral: 1
+size of PP_To_PP bitmap: 51
+size of BB_To_BB bitmap: 247
+Total_Path: 11
+Total_Events: 53
+Total_Single_Exec_Time: 107.952
+Total_Exec_Time: 107.952
+---------------------------------
+exec_seed: 4
+acess_peripheral: 3338
+exec_time: 0.224
+exec_cnt: 1
+trigger_new_BB_To_BB: 1
+trigger_new_Peripheral_To_Peripheral: 1
+size of PP_To_PP bitmap: 52
+size of BB_To_BB bitmap: 249
+Total_Path: 12
+Total_Events: 54
+Total_Single_Exec_Time: 124.305
+Total_Exec_Time: 124.305
+---------------------------------
+exec_seed: 805306368
+acess_peripheral: 3998
+exec_time: 0.234
+exec_cnt: 1
+trigger_new_BB_To_BB: 1
+trigger_new_Peripheral_To_Peripheral: 1
+size of PP_To_PP bitmap: 53
+size of BB_To_BB bitmap: 253
+Total_Path: 13
+Total_Events: 55
+Total_Single_Exec_Time: 124.551
+Total_Exec_Time: 124.551
+---------------------------------
+exec_seed: 2
+acess_peripheral: 6748
+exec_time: 0.268
+exec_cnt: 1
+trigger_new_BB_To_BB: 1
+trigger_new_Peripheral_To_Peripheral: 1
+size of PP_To_PP bitmap: 54
+size of BB_To_BB bitmap: 261
+Total_Path: 14
+Total_Events: 56
+Total_Single_Exec_Time: 124.844
+Total_Exec_Time: 124.844
+---------------------------------
+exec_seed: 8388608
+acess_peripheral: 9794
+exec_time: 0.203
+exec_cnt: 1
+trigger_new_BB_To_BB: 1
+trigger_new_Peripheral_To_Peripheral: 1
+size of PP_To_PP bitmap: 55
+size of BB_To_BB bitmap: 262
+Total_Path: 15
+Total_Events: 57
+Total_Single_Exec_Time: 125.072
+Total_Exec_Time: 125.072
+---------------------------------
+exec_seed: 34
+acess_peripheral: 9810
+exec_time: 0.320
+exec_cnt: 1
+trigger_new_BB_To_BB: 1
+trigger_new_Peripheral_To_Peripheral: 1
+size of PP_To_PP bitmap: 56
+size of BB_To_BB bitmap: 271
+Total_Path: 16
+Total_Events: 58
+Total_Single_Exec_Time: 127.713
+Total_Exec_Time: 127.713
+---------------------------------
+exec_seed: 8388608
+acess_peripheral: 9744
+exec_time: 0.283
+exec_cnt: 1
+trigger_new_BB_To_BB: 1
+trigger_new_Peripheral_To_Peripheral: 1
+size of PP_To_PP bitmap: 57
+size of BB_To_BB bitmap: 277
+Total_Path: 17
+Total_Events: 59
+Total_Single_Exec_Time: 130.343
+Total_Exec_Time: 130.343
+---------------------------------
+exec_seed: 8388608
+acess_peripheral: 9744
+exec_time: 0.302
+exec_cnt: 1
+trigger_new_BB_To_BB: 1
+trigger_new_Peripheral_To_Peripheral: 0
+size of PP_To_PP bitmap: 57
+size of BB_To_BB bitmap: 280
+Total_Path: 18
+Total_Events: 60
+Total_Single_Exec_Time: 132.974
+Total_Exec_Time: 132.974
+---------------------------------
+exec_seed: 8388608
+acess_peripheral: 9744
+exec_time: 0.327
+exec_cnt: 1
+trigger_new_BB_To_BB: 1
+trigger_new_Peripheral_To_Peripheral: 1
+size of PP_To_PP bitmap: 58
+size of BB_To_BB bitmap: 282
+Total_Path: 19
+Total_Events: 61
+Total_Single_Exec_Time: 136.325
+Total_Exec_Time: 136.325
+---------------------------------
+exec_seed: 1
+acess_peripheral: 9794
+exec_time: 0.235
+exec_cnt: 1
+trigger_new_BB_To_BB: 1
+trigger_new_Peripheral_To_Peripheral: 1
+size of PP_To_PP bitmap: 59
+size of BB_To_BB bitmap: 285
+Total_Path: 20
+Total_Events: 62
+Total_Single_Exec_Time: 138.890
+Total_Exec_Time: 138.890
+---------------------------------
+exec_seed: 8388608
+acess_peripheral: 9794
+exec_time: 0.305
+exec_cnt: 1
+trigger_new_BB_To_BB: 1
+trigger_new_Peripheral_To_Peripheral: 0
+size of PP_To_PP bitmap: 59
+size of BB_To_BB bitmap: 287
+Total_Path: 21
+Total_Events: 63
+Total_Single_Exec_Time: 141.832
+Total_Exec_Time: 141.832
+---------------------------------
+exec_seed: 2
+acess_peripheral: 9810
+exec_time: 0.355
+exec_cnt: 1
+trigger_new_BB_To_BB: 1
+trigger_new_Peripheral_To_Peripheral: 1
+size of PP_To_PP bitmap: 60
+size of BB_To_BB bitmap: 290
+Total_Path: 22
+Total_Events: 64
+Total_Single_Exec_Time: 145.747
+Total_Exec_Time: 145.747
+---------------------------------
+exec_seed: 8388608
+acess_peripheral: 9794
+exec_time: 0.351
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 0
+size of PP_To_PP bitmap: 60
+size of BB_To_BB bitmap: 290
+Total_Path: 22
+Total_Events: 65
+Total_Single_Exec_Time: 146.104
+Total_Exec_Time: 146.104
+---------------------------------
+exec_seed: 2
+acess_peripheral: 9810
+exec_time: 0.461
+exec_cnt: 1
+trigger_new_BB_To_BB: 1
+trigger_new_Peripheral_To_Peripheral: 0
+size of PP_To_PP bitmap: 60
+size of BB_To_BB bitmap: 295
+Total_Path: 23
+Total_Events: 66
+Total_Single_Exec_Time: 150.214
+Total_Exec_Time: 150.214
+---------------------------------
+exec_seed: 8388608
+acess_peripheral: 9794
+exec_time: 0.403
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 0
+size of PP_To_PP bitmap: 60
+size of BB_To_BB bitmap: 295
+Total_Path: 23
+Total_Events: 67
+Total_Single_Exec_Time: 150.629
+Total_Exec_Time: 150.629
+---------------------------------
+exec_seed: 2
+acess_peripheral: 9810
+exec_time: 0.500
+exec_cnt: 1
+trigger_new_BB_To_BB: 1
+trigger_new_Peripheral_To_Peripheral: 0
+size of PP_To_PP bitmap: 60
+size of BB_To_BB bitmap: 301
+Total_Path: 24
+Total_Events: 68
+Total_Single_Exec_Time: 155.100
+Total_Exec_Time: 155.100
+---------------------------------
+exec_seed: 1
+acess_peripheral: 9794
+exec_time: 0.467
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 0
+size of PP_To_PP bitmap: 60
+size of BB_To_BB bitmap: 301
+Total_Path: 24
+Total_Events: 69
+Total_Single_Exec_Time: 155.574
+Total_Exec_Time: 155.574
+---------------------------------
+exec_seed: 1
+acess_peripheral: 9794
+exec_time: 0.473
+exec_cnt: 1
+trigger_new_BB_To_BB: 1
+trigger_new_Peripheral_To_Peripheral: 0
+size of PP_To_PP bitmap: 60
+size of BB_To_BB bitmap: 302
+Total_Path: 25
+Total_Events: 70
+Total_Single_Exec_Time: 158.390
+Total_Exec_Time: 158.390
+---------------------------------
+exec_seed: 8388608
+acess_peripheral: 9794
+exec_time: 0.482
+exec_cnt: 2
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 0
+size of PP_To_PP bitmap: 60
+size of BB_To_BB bitmap: 302
+Total_Path: 25
+Total_Events: 71
+Total_Single_Exec_Time: 158.897
+Total_Exec_Time: 158.897
+---------------------------------
+exec_seed: 7
+acess_peripheral: 9810
+exec_time: 0.529
+exec_cnt: 1
+trigger_new_BB_To_BB: 1
+trigger_new_Peripheral_To_Peripheral: 1
+size of PP_To_PP bitmap: 61
+size of BB_To_BB bitmap: 309
+Total_Path: 26
+Total_Events: 72
+Total_Single_Exec_Time: 164.259
+Total_Exec_Time: 164.259
+---------------------------------
+exec_seed: 2
+acess_peripheral: 4734
+exec_time: 0.544
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 1
+size of PP_To_PP bitmap: 62
+size of BB_To_BB bitmap: 309
+Total_Path: 26
+Total_Events: 73
+Total_Single_Exec_Time: 174.884
+Total_Exec_Time: 174.884
+---------------------------------
+exec_seed: 2
+acess_peripheral: 4742
+exec_time: 0.514
+exec_cnt: 1
+trigger_new_BB_To_BB: 1
+trigger_new_Peripheral_To_Peripheral: 1
+size of PP_To_PP bitmap: 63
+size of BB_To_BB bitmap: 328
+Total_Path: 27
+Total_Events: 74
+Total_Single_Exec_Time: 175.405
+Total_Exec_Time: 175.405
+---------------------------------
+exec_seed: 2
+acess_peripheral: 4800
+exec_time: 0.549
+exec_cnt: 1
+trigger_new_BB_To_BB: 1
+trigger_new_Peripheral_To_Peripheral: 1
+size of PP_To_PP bitmap: 64
+size of BB_To_BB bitmap: 332
+Total_Path: 28
+Total_Events: 75
+Total_Single_Exec_Time: 175.978
+Total_Exec_Time: 175.978
+---------------------------------
+exec_seed: 2
+acess_peripheral: 4932
+exec_time: 0.642
+exec_cnt: 1
+trigger_new_BB_To_BB: 1
+trigger_new_Peripheral_To_Peripheral: 1
+size of PP_To_PP bitmap: 65
+size of BB_To_BB bitmap: 337
+Total_Path: 29
+Total_Events: 76
+Total_Single_Exec_Time: 176.632
+Total_Exec_Time: 176.632
+---------------------------------
+exec_seed: 2
+acess_peripheral: 5092
+exec_time: 0.540
+exec_cnt: 1
+trigger_new_BB_To_BB: 1
+trigger_new_Peripheral_To_Peripheral: 1
+size of PP_To_PP bitmap: 66
+size of BB_To_BB bitmap: 338
+Total_Path: 30
+Total_Events: 77
+Total_Single_Exec_Time: 177.180
+Total_Exec_Time: 177.180
+---------------------------------
+exec_seed: 2
+acess_peripheral: 5114
+exec_time: 3.727
+exec_cnt: 1
+trigger_new_BB_To_BB: 1
+trigger_new_Peripheral_To_Peripheral: 1
+size of PP_To_PP bitmap: 67
+size of BB_To_BB bitmap: 478
+Total_Path: 31
+Total_Events: 78
+Total_Single_Exec_Time: 182.506
+Total_Exec_Time: 182.506
+---------------------------------
+exec_seed: 8388612
+acess_peripheral: 9794
+exec_time: 0.594
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 0
+size of PP_To_PP bitmap: 67
+size of BB_To_BB bitmap: 478
+Total_Path: 31
+Total_Events: 79
+Total_Single_Exec_Time: 183.107
+Total_Exec_Time: 183.107
+---------------------------------
+exec_seed: 2
+acess_peripheral: 9810
+exec_time: 4.892
+exec_cnt: 1
+trigger_new_BB_To_BB: 1
+trigger_new_Peripheral_To_Peripheral: 0
+size of PP_To_PP bitmap: 67
+size of BB_To_BB bitmap: 501
+Total_Path: 32
+Total_Events: 80
+Total_Single_Exec_Time: 190.761
+Total_Exec_Time: 190.761
+---------------------------------
+exec_seed: 1
+acess_peripheral: 9794
+exec_time: 0.657
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 0
+size of PP_To_PP bitmap: 67
+size of BB_To_BB bitmap: 501
+Total_Path: 32
+Total_Events: 81
+Total_Single_Exec_Time: 193.999
+Total_Exec_Time: 193.999
+---------------------------------
+exec_seed: 8388613
+acess_peripheral: 9794
+exec_time: 0.763
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 0
+size of PP_To_PP bitmap: 67
+size of BB_To_BB bitmap: 501
+Total_Path: 32
+Total_Events: 82
+Total_Single_Exec_Time: 194.768
+Total_Exec_Time: 194.768
+---------------------------------
+exec_seed: 2
+acess_peripheral: 9810
+exec_time: 5.131
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 0
+size of PP_To_PP bitmap: 67
+size of BB_To_BB bitmap: 501
+Total_Path: 32
+Total_Events: 83
+Total_Single_Exec_Time: 203.047
+Total_Exec_Time: 203.047
+---------------------------------
+exec_seed: 8388611
+acess_peripheral: 9794
+exec_time: 0.784
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 0
+size of PP_To_PP bitmap: 67
+size of BB_To_BB bitmap: 501
+Total_Path: 32
+Total_Events: 84
+Total_Single_Exec_Time: 203.838
+Total_Exec_Time: 203.838
+---------------------------------
+exec_seed: 2
+acess_peripheral: 9810
+exec_time: 4.819
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 0
+size of PP_To_PP bitmap: 67
+size of BB_To_BB bitmap: 501
+Total_Path: 32
+Total_Events: 85
+Total_Single_Exec_Time: 211.063
+Total_Exec_Time: 211.063
+---------------------------------
+exec_seed: 1
+acess_peripheral: 9794
+exec_time: 0.821
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 0
+size of PP_To_PP bitmap: 67
+size of BB_To_BB bitmap: 501
+Total_Path: 32
+Total_Events: 86
+Total_Single_Exec_Time: 214.460
+Total_Exec_Time: 214.460
+---------------------------------
+exec_seed: 1
+acess_peripheral: 9794
+exec_time: 0.814
+exec_cnt: 2
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 0
+size of PP_To_PP bitmap: 67
+size of BB_To_BB bitmap: 501
+Total_Path: 32
+Total_Events: 87
+Total_Single_Exec_Time: 215.287
+Total_Exec_Time: 215.287
+---------------------------------
+exec_seed: 1
+acess_peripheral: 9794
+exec_time: 0.874
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 0
+size of PP_To_PP bitmap: 67
+size of BB_To_BB bitmap: 501
+Total_Path: 32
+Total_Events: 88
+Total_Single_Exec_Time: 218.447
+Total_Exec_Time: 218.447
+---------------------------------
+exec_seed: 8388608
+acess_peripheral: 9794
+exec_time: 0.900
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 0
+size of PP_To_PP bitmap: 67
+size of BB_To_BB bitmap: 501
+Total_Path: 32
+Total_Events: 89
+Total_Single_Exec_Time: 221.720
+Total_Exec_Time: 221.720
+---------------------------------
+exec_seed: 34
+acess_peripheral: 9810
+exec_time: 5.823
+exec_cnt: 2
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 0
+size of PP_To_PP bitmap: 67
+size of BB_To_BB bitmap: 501
+Total_Path: 32
+Total_Events: 90
+Total_Single_Exec_Time: 227.554
+Total_Exec_Time: 227.554
+---------------------------------
+exec_seed: 8388608
+acess_peripheral: 9794
+exec_time: 0.969
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 0
+size of PP_To_PP bitmap: 67
+size of BB_To_BB bitmap: 501
+Total_Path: 32
+Total_Events: 91
+Total_Single_Exec_Time: 231.229
+Total_Exec_Time: 231.229
+---------------------------------
+exec_seed: 27
+acess_peripheral: 9810
+exec_time: 5.323
+exec_cnt: 1
+trigger_new_BB_To_BB: 1
+trigger_new_Peripheral_To_Peripheral: 0
+size of PP_To_PP bitmap: 67
+size of BB_To_BB bitmap: 507
+Total_Path: 33
+Total_Events: 92
+Total_Single_Exec_Time: 236.559
+Total_Exec_Time: 236.559
+---------------------------------
+exec_seed: 8388608
+acess_peripheral: 9794
+exec_time: 1.065
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 0
+size of PP_To_PP bitmap: 67
+size of BB_To_BB bitmap: 507
+Total_Path: 33
+Total_Events: 93
+Total_Single_Exec_Time: 239.943
+Total_Exec_Time: 239.943
+---------------------------------
+exec_seed: 2
+acess_peripheral: 9810
+exec_time: 5.868
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 0
+size of PP_To_PP bitmap: 67
+size of BB_To_BB bitmap: 507
+Total_Path: 33
+Total_Events: 94
+Total_Single_Exec_Time: 248.834
+Total_Exec_Time: 248.834
+---------------------------------
+exec_seed: 1
+acess_peripheral: 9794
+exec_time: 1.108
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 0
+size of PP_To_PP bitmap: 67
+size of BB_To_BB bitmap: 507
+Total_Path: 33
+Total_Events: 95
+Total_Single_Exec_Time: 252.260
+Total_Exec_Time: 252.260
+---------------------------------
+exec_seed: 121
+acess_peripheral: 9794
+exec_time: 1.098
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 0
+size of PP_To_PP bitmap: 67
+size of BB_To_BB bitmap: 507
+Total_Path: 33
+Total_Events: 96
+Total_Single_Exec_Time: 253.364
+Total_Exec_Time: 253.364
+---------------------------------
+exec_seed: 1
+acess_peripheral: 9794
+exec_time: 1.126
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 0
+size of PP_To_PP bitmap: 67
+size of BB_To_BB bitmap: 507
+Total_Path: 33
+Total_Events: 97
+Total_Single_Exec_Time: 256.570
+Total_Exec_Time: 256.570
+---------------------------------
+exec_seed: 1
+acess_peripheral: 9794
+exec_time: 1.123
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 0
+size of PP_To_PP bitmap: 67
+size of BB_To_BB bitmap: 507
+Total_Path: 33
+Total_Events: 98
+Total_Single_Exec_Time: 260.087
+Total_Exec_Time: 260.087
+---------------------------------
+exec_seed: 8388608
+acess_peripheral: 9794
+exec_time: 1.185
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 0
+size of PP_To_PP bitmap: 67
+size of BB_To_BB bitmap: 507
+Total_Path: 33
+Total_Events: 99
+Total_Single_Exec_Time: 263.279
+Total_Exec_Time: 263.279
+---------------------------------
+exec_seed: 2
+acess_peripheral: 9810
+exec_time: 5.388
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 0
+size of PP_To_PP bitmap: 67
+size of BB_To_BB bitmap: 507
+Total_Path: 33
+Total_Events: 100
+Total_Single_Exec_Time: 272.126
+Total_Exec_Time: 272.126
+---------------------------------
+exec_seed: 8388608
+acess_peripheral: 9794
+exec_time: 1.295
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 0
+size of PP_To_PP bitmap: 67
+size of BB_To_BB bitmap: 507
+Total_Path: 33
+Total_Events: 101
+Total_Single_Exec_Time: 276.013
+Total_Exec_Time: 276.013
+---------------------------------
+exec_seed: 2
+acess_peripheral: 9810
+exec_time: 5.991
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 0
+size of PP_To_PP bitmap: 67
+size of BB_To_BB bitmap: 507
+Total_Path: 33
+Total_Events: 102
+Total_Single_Exec_Time: 284.916
+Total_Exec_Time: 284.916
+---------------------------------
+exec_seed: 1
+acess_peripheral: 9794
+exec_time: 1.305
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 0
+size of PP_To_PP bitmap: 67
+size of BB_To_BB bitmap: 507
+Total_Path: 33
+Total_Events: 103
+Total_Single_Exec_Time: 288.487
+Total_Exec_Time: 288.487
+---------------------------------
+exec_seed: 1
+acess_peripheral: 9794
+exec_time: 1.328
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 0
+size of PP_To_PP bitmap: 67
+size of BB_To_BB bitmap: 507
+Total_Path: 33
+Total_Events: 104
+Total_Single_Exec_Time: 291.812
+Total_Exec_Time: 291.812
+---------------------------------
+exec_seed: 8388608
+acess_peripheral: 9794
+exec_time: 1.362
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 0
+size of PP_To_PP bitmap: 67
+size of BB_To_BB bitmap: 507
+Total_Path: 33
+Total_Events: 105
+Total_Single_Exec_Time: 295.461
+Total_Exec_Time: 295.461
+---------------------------------
+exec_seed: 2
+acess_peripheral: 9810
+exec_time: 5.625
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 0
+size of PP_To_PP bitmap: 67
+size of BB_To_BB bitmap: 507
+Total_Path: 33
+Total_Events: 106
+Total_Single_Exec_Time: 303.998
+Total_Exec_Time: 303.998
+---------------------------------
+exec_seed: 8388608
+acess_peripheral: 9794
+exec_time: 1.532
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 0
+size of PP_To_PP bitmap: 67
+size of BB_To_BB bitmap: 507
+Total_Path: 33
+Total_Events: 107
+Total_Single_Exec_Time: 307.901
+Total_Exec_Time: 307.901
+---------------------------------
+exec_seed: 2
+acess_peripheral: 9810
+exec_time: 5.061
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 0
+size of PP_To_PP bitmap: 67
+size of BB_To_BB bitmap: 507
+Total_Path: 33
+Total_Events: 108
+Total_Single_Exec_Time: 315.515
+Total_Exec_Time: 315.515
+---------------------------------
+exec_seed: 1
+acess_peripheral: 9794
+exec_time: 1.590
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 0
+size of PP_To_PP bitmap: 67
+size of BB_To_BB bitmap: 507
+Total_Path: 33
+Total_Events: 109
+Total_Single_Exec_Time: 319.795
+Total_Exec_Time: 319.795
+---------------------------------
+exec_seed: 112
+acess_peripheral: 9794
+exec_time: 1.549
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 0
+size of PP_To_PP bitmap: 67
+size of BB_To_BB bitmap: 507
+Total_Path: 33
+Total_Events: 110
+Total_Single_Exec_Time: 321.368
+Total_Exec_Time: 321.368
+---------------------------------
+exec_seed: 1
+acess_peripheral: 9794
+exec_time: 1.563
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 0
+size of PP_To_PP bitmap: 67
+size of BB_To_BB bitmap: 507
+Total_Path: 33
+Total_Events: 111
+Total_Single_Exec_Time: 325.274
+Total_Exec_Time: 325.274
+---------------------------------
+exec_seed: 8388608
+acess_peripheral: 9794
+exec_time: 1.665
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 0
+size of PP_To_PP bitmap: 67
+size of BB_To_BB bitmap: 507
+Total_Path: 33
+Total_Events: 112
+Total_Single_Exec_Time: 328.892
+Total_Exec_Time: 328.892
+---------------------------------
+exec_seed: 2
+acess_peripheral: 9810
+exec_time: 5.592
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 0
+size of PP_To_PP bitmap: 67
+size of BB_To_BB bitmap: 507
+Total_Path: 33
+Total_Events: 113
+Total_Single_Exec_Time: 337.205
+Total_Exec_Time: 337.205
+---------------------------------
+exec_seed: 8388608
+acess_peripheral: 9794
+exec_time: 1.668
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 0
+size of PP_To_PP bitmap: 67
+size of BB_To_BB bitmap: 507
+Total_Path: 33
+Total_Events: 114
+Total_Single_Exec_Time: 340.879
+Total_Exec_Time: 340.879
+---------------------------------
+exec_seed: 2
+acess_peripheral: 9810
+exec_time: 5.883
+exec_cnt: 2
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 0
+size of PP_To_PP bitmap: 67
+size of BB_To_BB bitmap: 507
+Total_Path: 33
+Total_Events: 115
+Total_Single_Exec_Time: 346.768
+Total_Exec_Time: 346.768
+---------------------------------
+exec_seed: 1
+acess_peripheral: 9794
+exec_time: 1.696
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 0
+size of PP_To_PP bitmap: 67
+size of BB_To_BB bitmap: 507
+Total_Path: 33
+Total_Events: 116
+Total_Single_Exec_Time: 350.897
+Total_Exec_Time: 350.897
+---------------------------------
+exec_seed: 1
+acess_peripheral: 9794
+exec_time: 1.751
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 0
+size of PP_To_PP bitmap: 67
+size of BB_To_BB bitmap: 507
+Total_Path: 33
+Total_Events: 117
+Total_Single_Exec_Time: 354.832
+Total_Exec_Time: 354.832
+---------------------------------
+exec_seed: 1
+acess_peripheral: 9794
+exec_time: 1.831
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 0
+size of PP_To_PP bitmap: 67
+size of BB_To_BB bitmap: 507
+Total_Path: 33
+Total_Events: 118
+Total_Single_Exec_Time: 358.943
+Total_Exec_Time: 358.943
+---------------------------------
+exec_seed: 8388608
+acess_peripheral: 9794
+exec_time: 1.815
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 0
+size of PP_To_PP bitmap: 67
+size of BB_To_BB bitmap: 507
+Total_Path: 33
+Total_Events: 119
+Total_Single_Exec_Time: 362.977
+Total_Exec_Time: 362.977
+---------------------------------
+exec_seed: 0
+acess_peripheral: 9810
+exec_time: 5.784
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 0
+size of PP_To_PP bitmap: 67
+size of BB_To_BB bitmap: 507
+Total_Path: 33
+Total_Events: 120
+Total_Single_Exec_Time: 368.761
+Total_Exec_Time: 368.761
+---------------------------------
+exec_seed: 8388608
+acess_peripheral: 9794
+exec_time: 1.878
+exec_cnt: 2
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 0
+size of PP_To_PP bitmap: 67
+size of BB_To_BB bitmap: 507
+Total_Path: 33
+Total_Events: 121
+Total_Single_Exec_Time: 370.640
+Total_Exec_Time: 370.640
+---------------------------------
+exec_seed: 2
+acess_peripheral: 9810
+exec_time: 5.955
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 0
+size of PP_To_PP bitmap: 67
+size of BB_To_BB bitmap: 507
+Total_Path: 33
+Total_Events: 122
+Total_Single_Exec_Time: 379.325
+Total_Exec_Time: 379.325
+---------------------------------
+exec_seed: 8388608
+acess_peripheral: 9794
+exec_time: 1.986
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 0
+size of PP_To_PP bitmap: 67
+size of BB_To_BB bitmap: 507
+Total_Path: 33
+Total_Events: 123
+Total_Single_Exec_Time: 383.720
+Total_Exec_Time: 383.720
+---------------------------------
+exec_seed: 2
+acess_peripheral: 9810
+exec_time: 6.179
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 0
+size of PP_To_PP bitmap: 67
+size of BB_To_BB bitmap: 507
+Total_Path: 33
+Total_Events: 124
+Total_Single_Exec_Time: 392.517
+Total_Exec_Time: 392.517
+---------------------------------
+exec_seed: 8396768
+acess_peripheral: 9794
+exec_time: 2.013
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 0
+size of PP_To_PP bitmap: 67
+size of BB_To_BB bitmap: 507
+Total_Path: 33
+Total_Events: 125
+Total_Single_Exec_Time: 394.531
+Total_Exec_Time: 394.531
+---------------------------------
+exec_seed: 2
+acess_peripheral: 9810
+exec_time: 5.743
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 0
+size of PP_To_PP bitmap: 67
+size of BB_To_BB bitmap: 507
+Total_Path: 33
+Total_Events: 126
+Total_Single_Exec_Time: 402.736
+Total_Exec_Time: 402.736
+---------------------------------
+exec_seed: 1
+acess_peripheral: 9794
+exec_time: 2.053
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 0
+size of PP_To_PP bitmap: 67
+size of BB_To_BB bitmap: 507
+Total_Path: 33
+Total_Events: 127
+Total_Single_Exec_Time: 406.992
+Total_Exec_Time: 406.992
+---------------------------------
+exec_seed: 1
+acess_peripheral: 9794
+exec_time: 2.032
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 0
+size of PP_To_PP bitmap: 67
+size of BB_To_BB bitmap: 507
+Total_Path: 33
+Total_Events: 128
+Total_Single_Exec_Time: 412.057
+Total_Exec_Time: 412.057
+---------------------------------
+exec_seed: 8396769
+acess_peripheral: 9794
+exec_time: 2.086
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 0
+size of PP_To_PP bitmap: 67
+size of BB_To_BB bitmap: 507
+Total_Path: 33
+Total_Events: 129
+Total_Single_Exec_Time: 414.173
+Total_Exec_Time: 414.173
+---------------------------------
+exec_seed: 2
+acess_peripheral: 9810
+exec_time: 6.756
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 0
+size of PP_To_PP bitmap: 67
+size of BB_To_BB bitmap: 507
+Total_Path: 33
+Total_Events: 130
+Total_Single_Exec_Time: 423.561
+Total_Exec_Time: 423.561
+---------------------------------
+exec_seed: 8388608
+acess_peripheral: 9794
+exec_time: 2.239
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 0
+size of PP_To_PP bitmap: 67
+size of BB_To_BB bitmap: 507
+Total_Path: 33
+Total_Events: 131
+Total_Single_Exec_Time: 428.007
+Total_Exec_Time: 428.007
+---------------------------------
+exec_seed: 255
+acess_peripheral: 9810
+exec_time: 6.941
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 0
+size of PP_To_PP bitmap: 67
+size of BB_To_BB bitmap: 507
+Total_Path: 33
+Total_Events: 132
+Total_Single_Exec_Time: 434.954
+Total_Exec_Time: 434.954
+---------------------------------
+exec_seed: 8388608
+acess_peripheral: 9794
+exec_time: 2.298
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 0
+size of PP_To_PP bitmap: 67
+size of BB_To_BB bitmap: 507
+Total_Path: 33
+Total_Events: 133
+Total_Single_Exec_Time: 439.515
+Total_Exec_Time: 439.515
+---------------------------------
+exec_seed: 2
+acess_peripheral: 9810
+exec_time: 6.358
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 0
+size of PP_To_PP bitmap: 67
+size of BB_To_BB bitmap: 507
+Total_Path: 33
+Total_Events: 134
+Total_Single_Exec_Time: 448.276
+Total_Exec_Time: 448.276
+---------------------------------
+exec_seed: 1
+acess_peripheral: 9794
+exec_time: 2.307
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 0
+size of PP_To_PP bitmap: 67
+size of BB_To_BB bitmap: 507
+Total_Path: 33
+Total_Events: 135
+Total_Single_Exec_Time: 452.671
+Total_Exec_Time: 452.671
+---------------------------------
+exec_seed: 8396705
+acess_peripheral: 9794
+exec_time: 2.388
+exec_cnt: 1
+trigger_new_BB_To_BB: 0
+trigger_new_Peripheral_To_Peripheral: 0
+size of PP_To_PP bitmap: 67
+size of BB_To_BB bitmap: 507
+Total_Path: 33
+Total_Events: 136
+Total_Single_Exec_Time: 455.070
+Total_Exec_Time: 455.070
+---------------------------------

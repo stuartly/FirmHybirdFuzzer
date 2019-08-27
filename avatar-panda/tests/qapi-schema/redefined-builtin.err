@@ -1,0 +1,1 @@
+tests/qapi-schema/redefined-builtin.json:6: built-in 'size' is already defined

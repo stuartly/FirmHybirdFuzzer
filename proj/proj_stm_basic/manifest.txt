@@ -1,0 +1,14 @@
+sample = './STM32F407.bin'
+
+ROM_START=0x0
+ROM_SIZE=0x100000
+# binary starts at LOAD_OFFSET
+LOAD_OFFSET=0x0
+RAW_BIBARY=True
+
+
+IgnorePeripheralList = {
+        "all-device": (0x40000000, 0xA0001000),
+        }
+        
+RAM = {'start': 0x20000000,  'size': 0x20000}

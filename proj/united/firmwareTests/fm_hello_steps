@@ -1,0 +1,326 @@
+
+frdmk66f_hello_world:
+
+Reset_Handler:
+1. Disable interrupts
+2. Set co-processor access control
+3. Disable watchdog (Write)
+4. Copy data sections from flash to SRAM
+5. Enable interrupts
+6. Enter into __main --> main()
+
+
+
+
+
+
+
+
+
+fsl_clock.h: 753: Write
+fsl_port.h: 373: Read -> Write
+fsl_port.h: 373: Read -> Write
+pin_mux.c: 84: Read -> Write
+fsl.clock.h: 1071: Write
+fsl_clock.h: 1416: Read
+fsl_clock.h: 1421: Write
+fsl_clock.h: 1388: Read
+fsl_clock.h: 1393: Write
+fsl_clock.h: 1395: Write
+fsl_clock.c: 1206: Read -> Write
+fsl_clock.c: 1208: Read (if)
+fsl_clock.c: 1211: Read (while)
+fsl_clock.c: 883: Read
+fsl_clock.c: 884: Read
+fsl_clock.c: 885: Read
+fsl_clock.c: 903: Read (if)
+fsl_clock.c: 905: Read -> Write
+fsl_clock.c: 906: Read (while)
+fsl_clock.c: 911: Read -> Write
+fsl_clock.c: 915: Read -> Write
+fsl_clock.c: 916: Read -> Write
+fsl_clock.c: 921: Read (while)
+clock_config.c: 104: Read -> Write
+fsl_clock.c: 867: Read -> Write
+fsl_clock.c: 1726: Read -> Write
+fsl_clock.c: 1729: Read -> Write
+fsl_clock.c: 1732: Read (while)
+fsl_clock.c: 1738: Read
+fsl_clock.c: 1739: Read (while)
+fsl_clock.c: 1035: Write
+fsl_clock.c: 1037: Read -> Write
+fsl_clock.c: 1040: Write
+fsl_clock.c: 1043: Read (while)
+fsl_clock.c: 1750: Read -> Write
+fsl_clock.c: 1752: Read -> Write
+fsl_clock.c: 1753: Read (while)
+fsl_clock.c: 1758: Read (while)
+fsl_clock.c: 1907: Read -> Write
+fsl_clock.c: 1908: Read (while)
+fsl_clock.c: 542: Write
+fsl_clock.h: 845: Read -> Write
+fsl_clock.h: 846: Write
+fsl_clock.h: 774: Read -> Write
+(end of BOARD_BootClockRUN)
+fsl_clock.c: 480: Read
+fsl_clock.c: 722: Read (switch)
+fsl_clock.c: 723: Read (switch)
+fsl_clock.c: 814: Read (if)
+fsl_clock.c: 244: Read (switch)
+fsl_clock.c: 827: Read
+fsl_clock.c: 828: Read
+fsl_clock.h: 753: Read -> Write
+fsl_uart.c: 261: Read -> Write
+fsl_uart.c: 264: Read -> Write
+fsl_uart.c: 265: Write
+fsl_uart.c: 265: Read -> Write
+fsl_uart.c: 273: Read
+fsl_uart.c: 282: Write
+fsl_uart.c: 286: Read -> Write
+fsl_uart.c: 299: Write
+fsl_uart.c: 300: Write
+fsl_uart.c: 303: Read -> Write
+fsl_uart.c: 306: Read -> Write
+fsl_uart.c: 322: Read
+fsl_uart.c: 334: Write
+fsl_uart.h: 527: Read -> Write
+fsl_uart.h: 547: Read -> Write
+(begin of PRINTF)
+fsl_uart.c: 568: Read (while) <------------------------------
+fsl_uart.c: 571: Write
+(end of PRINTF)
+
+
+
+69 peripheral access
+14 control-flow dependent
+54 read
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+frdmk66f_crc:
+
+
+
+
+fsl_clock.h: 753: Write
+fsl_port.h: 373: Read -> Write
+fsl_port.h: 373: Read -> Write
+pin_mux.c: 84: Read -> Write
+fsl.clock.h: 1071: Write
+fsl_clock.h: 1416: Read
+fsl_clock.h: 1421: Write
+fsl_clock.h: 1388: Read
+fsl_clock.h: 1393: Write
+fsl_clock.h: 1395: Write
+fsl_clock.c: 1206: Read -> Write
+fsl_clock.c: 1208: Read (if)
+fsl_clock.c: 1211: Read (while)
+fsl_clock.c: 883: Read
+fsl_clock.c: 884: Read
+fsl_clock.c: 885: Read
+fsl_clock.c: 903: Read (if)
+fsl_clock.c: 905: Read -> Write
+fsl_clock.c: 906: Read (while)
+fsl_clock.c: 911: Read -> Write
+fsl_clock.c: 915: Read -> Write
+fsl_clock.c: 916: Read -> Write
+fsl_clock.c: 921: Read (while)
+clock_config.c: 104: Read -> Write
+fsl_clock.c: 867: Read -> Write
+fsl_clock.c: 1726: Read -> Write
+fsl_clock.c: 1729: Read -> Write
+fsl_clock.c: 1732: Read (while)
+fsl_clock.c: 1738: Read
+fsl_clock.c: 1739: Read (while)
+fsl_clock.c: 1035: Write
+fsl_clock.c: 1037: Read -> Write
+fsl_clock.c: 1040: Write
+fsl_clock.c: 1043: Read (while)
+fsl_clock.c: 1750: Read -> Write
+fsl_clock.c: 1752: Read -> Write
+fsl_clock.c: 1753: Read (while)
+fsl_clock.c: 1758: Read (while)
+fsl_clock.c: 1907: Read -> Write
+fsl_clock.c: 1908: Read (while)
+fsl_clock.c: 542: Write
+fsl_clock.h: 845: Read -> Write
+fsl_clock.h: 846: Write
+fsl_clock.h: 774: Read -> Write
+(end of BOARD_BootClockRUN)
+fsl_clock.c: 480: Read
+fsl_clock.c: 722: Read (switch)
+fsl_clock.c: 723: Read (switch)
+fsl_clock.c: 814: Read (if)
+fsl_clock.c: 244: Read (switch)
+fsl_clock.c: 827: Read
+fsl_clock.c: 828: Read
+fsl_clock.h: 753: Read -> Write
+fsl_uart.c: 261: Read -> Write
+fsl_uart.c: 264: Read -> Write
+fsl_uart.c: 265: Write
+fsl_uart.c: 265: Read -> Write
+fsl_uart.c: 273: Read
+fsl_uart.c: 282: Write
+fsl_uart.c: 286: Read -> Write
+fsl_uart.c: 299: Write
+fsl_uart.c: 300: Write
+fsl_uart.c: 303: Read -> Write
+fsl_uart.c: 306: Read -> Write
+fsl_uart.c: 322: Read
+fsl_uart.c: 334: Write
+fsl_uart.h: 527: Read -> Write
+fsl_uart.h: 547: Read -> Write
+(begin of PRINTF)
+fsl_uart.c: 568: Read (while) <------------------------------
+fsl_uart.c: 571: Write
+(end of PRINTF)
+fsl_clock.h: 753: Read -> Write
+fsl_crc.c: 140: Write
+fsl_crc.c: 143: Write
+fsl_crc.c: 146: Write
+fsl_crc.c: 149: Write
+fsl_crc.c: 152: Write
+(begin of CRC_WriteData)
+fsl_crc.c: 250: Write
+fsl_crc.c: 250: Write
+fsl_crc.c: 260: Write
+(begin of CRC_Get16bitResult)
+fsl_crc.c: 276: Read (if) (failure)
+fsl_crc.c: 277: Read (if)
+(begin of PRINTF)
+fsl_uart.c: 568: Read (while) <------------------------------
+fsl_uart.c: 571: Write
+(end of PRINTF)
+(begin of PRINTF)
+fsl_uart.c: 568: Read (while) <------------------------------
+fsl_uart.c: 571: Write
+(end of PRINTF)
+
+fsl_clock.h: 753: Read -> Write
+fsl_crc.c: 140: Write
+fsl_crc.c: 143: Write
+fsl_crc.c: 146: Write
+fsl_crc.c: 149: Write
+fsl_crc.c: 152: Write
+fsl_crc.c: 250: Write
+fsl_crc.c: 250: Write
+fsl_crc.c: 260: Write
+(begin of CRC_Get16bitResult)
+fsl_crc.c: 276: Read (if) (failure)
+fsl_crc.c: 277: Read (if)
+(begin of PRINTF)
+fsl_uart.c: 568: Read (while) <------------------------------
+fsl_uart.c: 571: Write
+(end of PRINTF)
+
+fsl_clock.h: 753: Read -> Write
+fsl_crc.c: 140: Write
+fsl_crc.c: 143: Write
+fsl_crc.c: 146: Write
+fsl_crc.c: 149: Write
+fsl_crc.c: 152: Write
+fsl_crc.c: 250: Write
+fsl_crc.c: 250: Write
+fsl_crc.c: 260: Write
+(begin of CRC_Get16bitResult)
+fsl_crc.c: 276: Read (if) (failure)
+fsl_crc.c: 277: Read (if)
+(begin of PRINTF)
+fsl_uart.c: 568: Read (while) <------------------------------
+fsl_uart.c: 571: Write
+(end of PRINTF)
+
+fsl_clock.h: 753: Read -> Write
+fsl_crc.c: 140: Write
+fsl_crc.c: 143: Write
+fsl_crc.c: 146: Write
+fsl_crc.c: 149: Write
+fsl_crc.c: 152: Write
+fsl_crc.c: 250: Write
+fsl_crc.c: 250: Write
+fsl_crc.c: 260: Write
+(begin of CRC_Get32bitResult)
+fsl_crc.c: 268: Read (if) (failure)
+(begin of PRINTF)
+fsl_uart.c: 568: Read (while) <------------------------------
+fsl_uart.c: 571: Write
+(end of PRINTF)
+
+fsl_clock.h: 753: Read -> Write
+fsl_crc.c: 140: Write
+fsl_crc.c: 143: Write
+fsl_crc.c: 146: Write
+fsl_crc.c: 149: Write
+fsl_crc.c: 152: Write
+fsl_crc.c: 250: Write
+fsl_crc.c: 250: Write
+fsl_crc.c: 260: Write
+(begin of CRC_Get32bitResult)
+fsl_crc.c: 268: Read (if) (failure)
+(begin of PRINTF)
+fsl_uart.c: 568: Read (while) <------------------------------
+fsl_uart.c: 571: Write
+(end of PRINTF)
+
+
+134 Peripheral access
+30 read affect control flow
+5 read -- fail to handle
+
+
+
+
+
+
+
+0x40048038u (Write)
+0x4004A000u (Read -> Write)
+0x40048010u (Read -> Write)
+0x40048044u (Write)
+0x40065000u (Read -> Write)
+0x40064000u (Read -> Write)
+
+fsl_clock.c: 1208. (Read 0x40065000u) if, control register
+fsl_clock.c: 1211. (Read 0x40064000u) while, status register
+fsl_clock.c: 883. (Read)
+fsl_clock.c: CLOCK_SetInternalRefClkConfig(): if, while, (Multi-purpose Clock Generator)
+fsl_clock.c: CLOCK_SetExternalRefClkConfig(): if, while, (Multi-purpose Clock Generator)
+fsl_clock.c: CLOCK_SetPbeMode(): while, (status reading)
+fsl_clock.c: CLOCK_EnablePll0(): while, (status reading)
+fsl_clock.c: CLOCK_BootToPeeMode(): while, (status, reading)
+fsl_clock.c: CLOCK_SetSimConfig(): (Write)
+fsl_clock.h: CLOCK_SetPllFllSelClock(): (Write)
+fsl_clock.h: CLOCK_SetEr32kClock(): (Write)
+
+fsl_clock.c: CLOCK_GetPll0Freq(): (status read) if.
+fsl_uart.c: UART_Init(): 261. (Write)
+fsl_uart.c: UART_EnableTx(): 527. (write)
+fsl_uart.c: UART_EnableRx(): 547. (write)
+fsl_uart.c: UART_WriteBlocking(): 568. (status read) while, (write to data register).
+
+
+
+
+
+
+
+
+
+

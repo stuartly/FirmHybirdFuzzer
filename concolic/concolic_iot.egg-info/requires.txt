@@ -1,0 +1,2 @@
+capstone>=3.0.4
+keystone-engine

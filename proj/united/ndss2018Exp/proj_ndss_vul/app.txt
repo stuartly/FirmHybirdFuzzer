@@ -1,0 +1,7 @@
+2019-04-09 12:40:47,988 | app | INFO - [+] Creating the PANDATarget
+2019-04-09 12:40:47,989 | app | INFO - [+] Creating the AngrTarget
+2019-04-09 12:40:47,991 | app | INFO - [+] Initializing the targets
+2019-04-09 12:40:50,497 | app | INFO - [+] Running in PANDA until a peripherial is accessed
+2019-04-09 12:40:50,497 | app | INFO - [+] Load panda plugins
+2019-04-09 12:40:50,734 | app | INFO - [+] wycinwyc_args: mapfile=./myavatar/conf.json,callframe=true,segment=true,hooknetwork=true,net_fun=134264456,net_buf_file=/home/stly/Documents/IoTFuzzing/CORTEX-M4-QEMU/proj/united/ndss2018Exp/proj_ndss_vul/fuzzing/sample_trigger,crash_path=/home/stly/Documents/IoTFuzzing/CORTEX-M4-QEMU/proj/united/ndss2018Exp/proj_ndss_vul/fuzzing,buf_reg_index=0,len_reg_index=1,stackobjects=true,debugfile=/home/stly/Documents/IoTFuzzing/CORTEX-M4-QEMU/proj/united/ndss2018Exp/proj_ndss_vul/funcs2.json,heapobjects=true,malloc=134275444,free=134275460,realloc=134282248,malloc_r=134277096,realloc_r=134296708,free_r=134276944
+2019-04-09 12:40:50,802 | app | INFO - [+] After panda.cont()

@@ -1,0 +1,51 @@
+{%include 'base.html' %}
+<p>
+<a href="{{ index_file }}">Back to index</a> |
+<a href="{{ cpu_flamegraph_file }}">cpu flamegraph</a>
+</p>
+
+<object data="{{cpu_flamegraph_file}}" type="image/svg+xml"></object>
+<object data="{{mem_read_flamegraph_file}}" type="image/svg+xml"></object>
+<object data="{{mem_write_flamegraph_file}}" type="image/svg+xml"></object>
+
+<table class="dyn_table display compact">
+    <thead>
+        <tr>
+            <th>pc</th>
+            <th>symbols</th>
+            <th>source file</th>
+            <th>times entered</th>
+            <th>number of iterations</th>
+            <th>inst exec (%)</th>
+            <th>control inst exec (%)</th>
+            <th>arith logic inst exec (%)</th>
+            <th>memory inst exec (%)</th>
+            <th>bytes read (%)</th>
+            <th>bytes written (%)</th>
+            <th>cumulated inst exec (%)</th>
+            <th>cumulated bytes read (%)</th>
+            <th>cumulated bytes written (%)</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for l in loops %}
+        <tr>
+            <td>{{l.pc}}</a></td>
+            <td>{% for s in l.symbols %}<a href="{{ s.url }}">{{ s.name }}</a>{% endfor %}</td>
+            <td>{{l.src}}</td>
+            <td>{{l.stats.num_times_entered}}</td>
+            <td>{{l.stats.num_times_repeated}}</td>
+            <td>{{l.stats.instructions_executed_percentage|round(2)}}%</td>
+            <td>{{l.stats.instructions_executed_control_percentage|round(2)}}%</td>
+            <td>{{l.stats.instructions_executed_arithmetic_and_logic_percentage|round(2)}}%</td>
+            <td>{{l.stats.instructions_executed_memory_percentage|round(2)}}%</td>
+            <td>{{l.stats.bytes_read_percentage|round(2)}}%</td>
+            <td>{{l.stats.bytes_written_percentage|round(2)}}%</td>
+            <td>{{l.stats_cumulated.instructions_executed_percentage|round(2)}}%</td>
+            <td>{{l.stats_cumulated.bytes_read_percentage|round(2)}}%</td>
+            <td>{{l.stats_cumulated.bytes_written_percentage|round(2)}}%</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{%include 'footer.html' %}

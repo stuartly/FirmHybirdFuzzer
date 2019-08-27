@@ -1,0 +1,733 @@
+================
+QEMU TCG Plugins
+================
+
+:Version: 1.2
+:Date: 2012-01-10
+:Copyright: STMicroelectronics
+
+.. sectnum::
+
+.. contents::
+
+
+Introduction
+============
+
+The TCG plugin support introduced in QEMU currently allows an external
+shared library to be notified each time a basic block is translated
+into the TCG internal representation, in the aim of instrumenting the
+emulated code to produce program analysis, à la Valgrind or DynamoRIO
+for instance.
+
+There are already five plugins available by default:
+
+icount
+    Count the number of executed *guest* instructions per CPU and
+    produce a summary report each time CPUs are stopped::
+
+        Number of executed instructions on CPU #0 = 678234533
+        Number of executed instructions on CPU #1 = 36475675
+
+icount-inlined
+    Same as above but this plugin is *not* based on a helper, instead
+    it inserts TCG opcodes inlined right at the beginning of each
+    basic block, see `How to Write TCG Plugins?`_ for details.  This
+    method is quite faster [#]_ but the current implementation is
+    *not* thread-safe.
+
+.. [#] Christophe GUILLON: Program Instrumentation with QEMU.  In 1st
+       International QEMU Users' Forum 2010.
+
+trace
+    Print the address/size/name of the current emulated basic block.
+    This is quite useful to find where two runs diverge or where a
+    segmentation fault occurred::
+
+        [...]
+        CPU #0 - 0x00008270 [32]: 8 instruction(s) in '/tmp/a.out:main'
+        CPU #0 - 0x00008230 [48]: 12 instruction(s) in '/tmp/a.out:test'
+        CPU #0 - 0x00010ac0 [12]: 3 instruction(s) in '/lib/ld-2.10.1.so:memcpy'
+        CPU #0 - 0x00010b54 [32]: 8 instruction(s) in '/lib/ld-2.10.1.so:memcpy'
+        Segmentation fault
+
+        $ addr2line -e a.out 0x00008230
+        /usr/local/cedric/test.c:13
+
+    Note that this plugin doesn't produce a call trace; for instance
+    the function ``memcpy()`` isn't called twice in the previous
+    example, there were just two basic blocks executed consecutively.
+
+profile
+    Count the number of executed *guest* bytes/instructions per symbol
+    and produce a profile report each time CPUs are stopped::
+
+        SYMBOL       | FILENAME            | #BYTES | #INSTR
+        ----------------------------------------------------
+        test         | /tmp/a.out          |     48 |     12
+        memcpy       | /lib/ld-2.10.1.so   |    168 |     42
+        main         | /tmp/a.out          |     32 |      8
+        [...]
+
+dineroIV
+    Print the address/size/cpu of each loaded/stored data in a format
+    supported by DineroIV, a highly configurable cache simulator::
+
+        w 0x000000000046ca20 0x00000004 (0x0000000000000000) CPU #0 0x0000000000401e3c
+        w 0x000000000046ca24 0x00000004 (0x0000000000000000) CPU #0 0x0000000000401e3e
+        r 0x000000000046ca1c 0x00000004 (0x0000000000000001) CPU #0 0x0000000000401e46
+        w 0x000000000046ca1c 0x00000004 (0x0000000000000000) CPU #0 0x0000000000401e4a
+        r 0x000000000046bae0 0x00000004 (0x000000000046ba14) CPU #0 0x0000000000401e5c
+        w 0x000000000046bb14 0x00000004 (0x00000000ffffffff) CPU #0 0x0000000000401e62
+
+    This is a really good alternative to Cachegrind.
+
+    Refer to README.dineroIV for usage.
+
+
+How to Use TCG Plugins?
+=======================
+
+QEMU doesn't enable the TCG plugin support by default, you have to
+specify the option ``--enable-tcg-plugin`` to the ``configure``
+script.  Then, both the system-mode and user-mode use the same
+command-line interface::
+
+    $ qemu-arm -tcg-plugin ./tcg-plugin-trace.so ...
+
+You can also use the short-form name for plugins that are installed in
+the plugin directory (default is ``/usr/local/libexec/qemu``)::
+
+    $ qemu-arm -tcg-plugin trace ...
+
+Some sanity checks are performed when the shared library is loaded to
+ensure it is compatible with the current version of the TCG plugin
+interface used by QEMU.  For instance you may encounter such errors::
+
+    plugin: error: <errors from the dynamic linker>
+    plugin: error: initialization has failed
+    plugin: error: incompatible plugin interface
+    plugin: error: incompatible CPUState structure size
+    plugin: error: incompatible TranslationBlock structure size
+
+However some checks only warn the user that a component *may* not be
+compatible, which technically could lead to unexpected behavior (see
+`Generic Plugin`_ for explanation)::
+
+    plugin: warning: incompatible guest CPU
+    plugin: warning: incompatible emulation mode
+
+All plugins share a common set of options passed through environment
+variables:
+
+TPI_OUTPUT=file
+    Specify where the plugin writes information: ``file``.``$PID``,
+    this IO stream is line-buffered unless the default output is used
+    (``stderr``).
+
+TPI_VERBOSE
+    Print information about the loaded plugin (in TPI_OUTPUT).
+
+TPI_LOW_PC
+    Specify the lowest PC address (*inclusive*) for which the plugin
+    is notified.
+
+TPI_HIGH_PC
+    Specify the highest PC address (*exclusive*) for which the plugin
+    is notified.
+
+TPI_SYMBOL_PC=name
+    Define TPI_LOW_PC/TPI_HIGH_PC according to the value/size of the
+    symbol ``name``. This option isn't supported yet.
+
+TPI_MUTEX_PROTECTED
+    Protect the call to ``pre_tb_helper_code`` with a mutex.
+
+Note that currently notification works in a per basic block basis,
+that is, the plugin is notified for any basic block that contains
+TPI_LOW_PC or TPI_HIGH_PC.
+
+CPP Plugins
+===========
+
+In addition to classic plugins, c++ support was added. To enable this,
+add ``--enable-tcg-plugin-cpp`` option to the ``configure`` command.
+
+This builds a special plugin whose name is tcg-plugin-cpp.so, that
+contains itself several plugins. This interface hides QEMU internals
+and leaves the user with a read-only view of the code executed.
+
+Please see plugins in tcg/plugins/cpp for examples. The API is
+described in tcg/plugins/cpp/plugin_api.h.
+
+Plugins configuration is made through env var PLUGIN_CPP.
+
+``./x86_64-linux-user/qemu-x86_64 -tcg-plugin cpp /bin/true`` will list cpp
+plugins available.
+
+``PLUGIN_CPP=count_instructions,print_instructions
+./x86_64-linux-user/qemu-x86_64 -tcg-plugin cpp /bin/true`` will enable plugins
+count_instructions and print_instructions.
+
+Building support for CPP plugins requires:
+- c++14 compiler (g++-6 used)
+- capstone library
+- elfin library (libelfin-dev)
+  that contains: libdwarf++ and libelf++
+
+How to Write TCG Plugins?
+=========================
+
+Build System
+------------
+
+By default, any ``.c`` file lying in the directory ``tcg/plugins`` is
+considered to be a single plugin source.  If you have to specify
+specific CLFAGS/LDFLAGS for your plugin, just add them in the file
+``Makefile.target`` like it was done for the ``profile`` plugin::
+
+    tcg-plugin-profile.o: CFLAGS += $(shell pkg-config --cflags glib-2.0)
+    tcg-plugin-profile.so: LDFLAGS += $(shell pkg-config --libs glib-2.0)
+
+
+Initialization
+--------------
+
+Once the shared library is loaded into QEMU's address space, its
+``tpi_init()`` function is called to initialize the TCG plugin::
+
+    #include "tcg-plugin.h"
+    void tpi_init(TCGPluginInterface *)
+
+First, this function has to fill in the fields of
+``TCGPluginInterface`` related to *compatibility* information so that
+QEMU can perform the sanity checks described in section `How to Use
+TCG Plugins?`_::
+
+    struct TCGPluginInterface
+    {
+        /* Compatibility information.  */
+        int version;
+        const char *guest;
+        const char *mode;
+        size_t sizeof_CPUState;
+        size_t sizeof_TranslationBlock;
+        
+        /* Common parameters.  */
+        int nb_cpus;
+        FILE *output;
+        uint64_t low_pc;
+        uint64_t high_pc;
+        bool verbose;
+        
+        /* Parameters for non-generic plugins.  */
+        bool is_generic;
+        const CPUState *env;
+        const TranslationBlock *tb;
+        
+        /* Plugin's callbacks.  */
+        tpi_cpus_stopped_t cpus_stopped;
+        tpi_before_gen_tb_t before_gen_tb;
+        tpi_after_gen_tb_t  after_gen_tb;
+        tpi_pre_tb_helper_code_t pre_tb_helper_code;
+        tpi_pre_tb_helper_data_t pre_tb_helper_data;
+        tpi_after_gen_opc_t after_gen_opc;
+    };
+
+For convenience, there are two C macros that automatically set these
+fields.  The first macro uses proper values (``"arm"``, ``"user"``,
+...) whereas the second one uses generic values (``"any"`` or ``0``)
+that tell QEMU to skip some checks for `generic plugin`_.  Both macros
+set ``version`` to the value TPI_VERSION defined in ``tcg-plugin.h``,
+but this field can be set to ``0`` if the TCG plugin wants to report
+an initialization failure to QEMU::
+
+    TPI_INIT_VERSION(TCGPluginInterface)
+
+    TPI_INIT_VERSION_GENERIC(TCGPluginInterface)
+
+Then, this function is used to declare each callback implemented by
+the plugin, see next section for details.  Here is an example::
+
+    tpi->pre_tb_helper_code = pre_tb_helper_code;
+    tpi->cpus_stopped = cpus_stopped;
+
+
+Translation-Time Callbacks
+--------------------------
+
+There are currently four regular callbacks available, all are called
+at `translation-time`_, see `Two Kinds of Flow`_ for details.  In the
+following descriptions, the short terms *tb* and *opc* stand for
+*Translated Block* and *Operation Code* respectively.  Note that a
+given plugin doesn't have to provide all of these callbacks, they are
+*all* optional.
+
+
+cpus_stopped
+````````````
+
+This function is called when all emulated CPUs are stopped (on exit,
+reboot, ...) and is mainly used to print analysis reports.  Its
+declaration is::
+
+    void cpus_stopped(const TCGPluginInterface *tpi)
+
+
+before_gen_tb
+`````````````
+
+This function is called before a basic block is translated from
+*guest* instructions to TCG opcodes, and it is mainly used to insert
+TCG opcodes or calls to helpers.  Its declaration is::
+
+    void before_gen_tb(const TCGPluginInterface *tpi)
+
+
+after_gen_tb
+````````````
+
+This function is called after a basic block is translated from *guest*
+instructions to TCG opcodes, and it is mainly used to patch the value
+of variables that were undefined when ``before_gen_tb()`` was called,
+this is typically the case for ``tb->size`` and ``tb->icount``.  Its
+declaration is::
+
+    void after_gen_tb(const TCGPluginInterface *tpi)
+
+
+after_gen_opc
+``````````````
+
+This function is called after a TCG opcode is emitted, and it is
+mainly used to insert TCG opcodes or calls to helpers.  Its
+declaration is::
+
+    void after_gen_opc(uint16_t *opcode, TCGArg *opargs, uint8_t nb_args);
+
+
+
+Callbacks for Predefined Helpers
+--------------------------------
+
+There are two predefined helpers, the first one is called *before* the
+execution of a translated block (`execution-time`_) and the second one
+is called *after* the translation of a opcode (`translation-time`_).
+Note that a given plugin doesn't have to provide all of these
+callbacks, they are *all* optional.
+
+
+pre_tb_helper_code
+``````````````````
+
+This function is called each time a translated basic block is executed
+and is mainly used to collect analysis data.  Its declaration is::
+
+    void pre_tb_helper_code(const TCGPluginInterface *tpi,
+                        TPIHelperInfo info, uint64_t address,
+                        uint64_t data1, uint64_t data2)
+
+When QEMU calls this function, a mutex is used to avoid that more than
+one thread executes it at the same time.  That means the resources
+only used by this function are protected from concurrent access.
+
+The parameter ``info`` is a 64-bit structure defined as below.  Its
+fields ``size`` and ``icount`` are respectively the size of, and the
+number of *guest* instructions in the translated basic block.  These
+two fields are set to ``0`` when QEMU is re-translating an interrupted
+block::
+
+    typedef struct
+    {
+        uint16_t cpu_index;
+        uint16_t size;
+        uint32_t icount;
+    } __attribute__((__packed__)) TPIHelperInfo;
+
+The optional parameters ``data1`` and ``data2`` are defined at
+translation-time by the function ``pre_tb_helper_data()``, that means they
+keep their initial values (for a given basic block) during the
+execution.
+
+.. TODO: explain why called before the execution of the translated
+         block (safest + most useful)
+
+
+pre_tb_helper_data
+``````````````````
+
+This function is called each time a basic block *was* translated
+(**not executed**) and is mainly used to define the parameters passed
+to ``pre_tb_helper_code()``.  Its declaration is::
+
+    void pre_tb_helper_data(const TCGPluginInterface *tpi,
+                            TPIHelperInfo info, uint64_t address,
+                            uint64_t *data1, uint64_t *data2)
+
+The parameter ``info`` is the same as above and the pointers ``data1``
+and ``data2`` reference the eponymous parameters of
+``pre_tb_helper_code()`` for the given translated block.  Note that they
+are defined at translation-time, that is, they can't be changed later
+on.  See `Two Kinds of Flow`_ for explanation.  Technically ``data1``
+and ``data2`` can hold anything and are particularly useful to
+optimize the execution of the ``pre_tb_helper_code()`` as described in
+section `Optimization`_.
+
+
+Two Kinds of Flow
+-----------------
+
+Every plugin writer should keep in mind that there are two kinds of
+flow: translation-time and execution-time.
+
+
+Translation-Time
+````````````````
+
+When the emulated program jumps to a portion of code not translated
+yet, QEMU invokes the Tiny Code Generator -- TCG for short -- to
+convert *guest* CPU instructions into *host* CPU instructions.  This
+conversion happens only once per basic block [#X]_, that is, the next
+time the emulated program jumps to this portion of code, the *host*
+version of the basic block is executed directly [#X]_.  The
+translation flow looks like this diagram::
+
+    +---------------------------------+
+    | the program has branched to a   |
+    | basic block not translated yet  |
+    +---------------------------------+
+                     |
+            +------------------+
+            |  before_gen_tb() |
+            +------------------+
+                     |
+    +---------------------------------+
+    |     gen_intermediate_code()     |       +-------------------+
+    |  translates guest instructions  | - - - |     gen_opc()     |
+    |        into TCG opcodes         |       | opc_helper_data() |
+    +---------------------------------+       +-------------------+
+                     |
+          +----------------------+
+          |    after_gen_tb()    |
+          | pre_tb_helper_data() |
+          +----------------------+
+                     |
+    +---------------------------------+
+    |   TCG opcodes are translated    |
+    |      into host instructions     |
+    +---------------------------------+
+
+.. [#X] this isn't accurate, but it's OK for this explanation.
+
+
+Execution-Time
+``````````````
+
+As said in the previous section, once *guest* instructions of a basic
+block are translated to *host* instructions, they are executed
+directly when the emulated program jumps to this portion of code
+[#X]_.  That means any TCG opcodes and/or calls to helpers inserted at
+translation-time will be triggered each time this portion of code is
+executed.
+
+Let's take the example below::
+
+    block1:
+        i++
+        if i < 10
+            goto block1
+    block2:
+        i = 0
+        goto block1
+
+The function ``pre_tb_helper_code()`` is called each time the translated
+version of ``block1`` and ``block2`` are executed.  The execution flow
+looks like this diagram::
+
+                    +<-------------------+<--+
+                    |                    |   |
+    +--------------------------------+   |   |
+    | pre_tb_helper_code() then the  |   |   |
+    | translated block1 are executed |   |   |
+    +--------------------------------+   |   |
+                    |                    |   |
+                    +------------------->+   |
+                    |                        |
+    +--------------------------------+       |
+    | pre_tb_helper_code() then the  |       |
+    | translated block2 are executed |       |
+    +--------------------------------+       |
+                    |                        |
+                    +----------------------->+
+
+
+Advices
+-------
+
+Deterministic code generation
+`````````````````````````````
+
+When an asynchronous event interrupts the execution of a translated
+block (typically an exception), QEMU has to re-translate the
+interrupted block to create a mapping between host PC addresses and
+guest PC addresses, so as to retrieve which was the *virtual* guest PC
+when the interruption occurred.  That means the translation process has
+to be deterministic to ensure the mapping created during the
+re-translation is the same as in the initial translation.
+
+For instance on x86_64 host, the TCG opcode ``movi_i64 tmp6,$value``
+can be translated to two different host instructions (with two
+different sizes) according to the value of its operands::
+
+    mov    $value,%ecx
+
+or::
+
+    movabs $value,%rcx
+
+In this case the re-translation may create a wrong guest-host PC
+mapping that might crash QEMU.
+
+
+Pointer
+```````
+
+As a plugin writer, you shall not dereference at execution-time a
+pointer that you aren't absolutely sure its contents will not be freed
+or moved.  For instance, you can't access safely at execution-time [a
+field of] a ``TranslationBlock`` the way below since there's a chance
+that sooner or later the pointer ``tb`` will be freed::
+
+    ... before_gen_tb(...)
+    {
+        ptr = tcg_const_ptr(tpi->tb);
+        // generate TCG opcodes that use
+	// "((TranslationBlock *)ptr)->flags"
+    }
+
+Instead, you have to **copy** the needed field(s)::
+
+    ... before_gen_tb(...)
+    {
+        TCGv_i64 pc = tcg_const_i64(tpi->tb->flags);
+    }
+
+
+Optimization
+````````````
+
+It's worth saying the more analysis is done at translation-time, the
+less analysis is done at execution-time.  For instance, you can call
+``lookup_symbol(pc)`` in ``pre_tb_helper_code()`` to get the name of the
+function currently executed, but it will be called each time the given
+block is executed::
+
+    ... pre_tb_helper_code(...)
+    {
+        const char *symbol = lookup_symbol(address);
+    }
+
+Since the matching ``pc/symbol`` never changes, it's cheaper to call
+``lookup_symbol(pc)`` in ``pre_tb_helper_data()`` -- thus once per basic
+block translation -- to store the result in ``data1`` and then use
+this pointer directly in ``pre_tb_helper_code()``::
+
+    ... pre_tb_helper_code(...)
+    {
+        const char *symbol = (const char *)data1;
+    }
+
+    ... pre_tb_helper_data(...)
+    {
+        const char *symbol = lookup_symbol(address);
+        *data1 = (uint64_t)symbol;
+    }
+
+You can go even further by analyzing the trace with a post-treatment
+tool, as the plugin ``dineroIV`` does.
+
+
+Multi-threading
+```````````````
+
+The Tiny Code Generator is mono-threaded, however it can generate code
+that is not, as it's typically the case when emulating a
+multi-threaded program in user-mode.  As a consequence the plugin
+writer has to take special care of the code she/he emits for
+execution-time, either in the form of TCG opcodes or calls to helpers.
+For instance the plugin ``icount-inlined`` produces code that is not
+thread-safe since there's a chance that several threads increment the
+counter simultaneously in a non-atomic way.
+
+
+Limitations of a TCG-based approach
+```````````````````````````````````
+
+There are two main limitations of an approach based on TCG: the first
+one is that not all guest instructions are converted to TCG opcodes,
+some are converted to a call to helper (typically floating point
+instructions).  The second limitation is that there's no easy way to
+handle a guest instruction while manipulating its TCG translation
+(note that one guest instruction is likely composed of several TCG
+opcodes).
+
+
+Generic Plugin
+``````````````
+
+A plugin is considered to be *generic* -- and thus can use the macro
+TPI_INIT_VERSION_GENERIC() -- if it doesn't perform access to
+``tpi->env`` of ``tpi->tb`` since these structures are different from
+one CPU and/or mode to another, unlike ``TPIHelperInfo``.  Actually
+when a plugin declares itself as generic, these two fields are always
+``NULL`` to avoid any mistake.  For instance the plugins ``icount``
+and ``icount-inlined`` basically do the same thing but this latter
+isn't generic because it can't be used with a version of QEMU built
+for another CPU and/or mode.
+
+
+Custom Helper
+`````````````
+
+You can define your own helper but it isn't really straightforward.
+To explain how to do this, we will take a simple example::
+
+    void helper_example(uint64_t data)
+    {
+         printf("0x%016" PRIx64 "\n", data);
+    }
+
+First create a C header file -- let's say ``example-helper.h`` -- with
+the following content::
+
+    #include "exec/def-helper.h"
+    DEF_HELPER_1(example, void, i64)
+    #include "exec/def-helper.h"
+
+Then, add the following code at the beginning of your plugin's
+source::
+
+    #include "tcg-op.h"
+    #include "example-helper.h"
+    #define GEN_HELPER 1
+    #include "example-helper.h"
+
+Now you can *insert* a call to this helper in the prologue of any
+translated block::
+
+    ... before_gen_tb(...)
+    {
+        TCGv_i64 pc = tcg_const_i64((uint64_t)address);
+        gen_helper_example(pc);
+        tcg_temp_free_i64(pc);
+    }
+
+Finally, you have to *declare* the helper to QEMU::
+
+    ... tpi_init(...)
+    {
+        #define GEN_HELPER 2
+        #include "example-helper.h"
+    }
+
+For information, the following table gives the matching between TCG
+types and C types:
+
+==================  ==================
+TCG types           C types
+==================  ==================
+i32                 uint32_t
+s32                 int32_t
+int                 int
+i64                 uint64_t
+s64                 int64_t
+f32                 float32
+f64                 float64
+tl                  target_ulong
+ptr                 void *
+void                void
+env                 CPUState *
+==================  ==================
+
+
+Example
+=======
+
+The *full* code of a simplified version of the ``trace`` plugin is
+given as an example below.  As you can see, it uses the optimization
+explained in a previous section::
+
+    #include <stdio.h>
+    #include <stdint.h>
+    #include <inttypes.h>
+
+    #include "tcg-plugin.h"
+    #include "disas/disas.h"
+
+    static void pre_tb_helper_code(const TCGPluginInterface *tpi,
+                               TPIHelperInfo info, uint64_t address,
+                               uint64_t data1, uint64_t data2)
+    {
+        const char *symbol = (const char *)(uintptr_t)data1;
+
+        fprintf(tpi->output, "%d instruction(s) in '%s' @ %#lx\n",
+                info.icount, symbol, address);
+    }
+
+    static void pre_tb_helper_data(const TCGPluginInterface *tpi,
+                               TPIHelperInfo info, uint64_t address,
+                               uint64_t *data1, uint64_t *data2)
+    {
+        const char *symbol = lookup_symbol(address);
+        *data1 = (uintptr_t)symbol;
+    }
+
+    void tpi_init(TCGPluginInterface *tpi)
+    {
+        TPI_INIT_VERSION_GENERIC(*tpi);
+        tpi->pre_tb_helper_code = pre_tb_helper_code;
+        tpi->pre_tb_helper_data = pre_tb_helper_data;
+    }
+
+
+Performance Impact
+==================
+
+How to reproduce
+----------------
+
+=============  ================================
+host distro    Slackware64 13.37
+guest distro   ARMedSlack 13.37
+guest program  Links 2.3pre1 [#]_
+input data     off-line version of a blog post_
+plugins        both per-block and per-opcode
+=============  ================================
+
+.. [#] mono-threaded console-based web-browser
+.. _post: http://perl6advent.wordpress.com/2011/12/14/meta-programming-what-why-and-how/
+
+
+Results
+-------
+
+======================================  ====================
+Instrumentation                         Slowdown
+======================================  ====================
+none (reference)                                          0%
+inlined                                                  ~3%
+helper does nothing                                    ~ 25%
+helper does nothing, mutex protected             100% ~ 200%
+helper calls getsymbol() @ translation             25% ~ 30%
+helper calls getsymbol() @ execution                  ~ 900%
+helper prints a in file @ execution            3000% ~ 5000%
+======================================  ====================
+
+
+Conclusion
+----------
+
+Don't take these results to conclude about the TCG plugin support
+since, as you can see, the slowdown heavily depends on the kind of
+operations made in the plugin itself: file IOs, execution-time
+vs. translation-time, inlining, mutex protection, ...

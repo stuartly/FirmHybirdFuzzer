@@ -1,0 +1,1 @@
+/home/stly/Desktop/avatar-panda-ndss/tests/tcg/cris/.gdbinit

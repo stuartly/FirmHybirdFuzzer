@@ -1,0 +1,6 @@
+# we don't support full Unicode strings, yet
+
+##
+# @e:
+##
+{ 'command': 'é' }

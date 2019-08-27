@@ -1,0 +1,22 @@
+# a union base type must be a struct
+
+##
+# @TestTypeA:
+##
+{ 'struct': 'TestTypeA',
+  'data': { 'string': 'str' } }
+
+##
+# @TestTypeB:
+##
+{ 'struct': 'TestTypeB',
+  'data': { 'integer': 'int' } }
+
+##
+# @TestUnion:
+##
+{ 'union': 'TestUnion',
+  'base': 'int',
+  'discriminator': 'int',
+  'data': { 'value1': 'TestTypeA',
+            'value2': 'TestTypeB' } }

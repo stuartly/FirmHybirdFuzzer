@@ -1,0 +1,1256 @@
+[+] Initializing the targets
+[+] Running in QEMU until a peripherial is accessed
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x40048038(0x48038), size: 0x04, pc: 0x1749a
+CPU env:
+r0: 0x10380009 r1: 0x13120200 r2: 0x111510 r3: 0x40048038 r4: 0x20c r5: 0x000 r6: 0x000 r7: 0x2002ff60 r8: 0x000 r9: 0x000 r10: 0x000 r11: 0x000 r12: 0x000 r13: 0x2002ff60 r14: 0x17549 r15: 0x1749a (tb start: 0x17482)
+[+] Switching the execution to angr
+[+] ANGR stepping
+<SimState @ 0x1749b>
+Read (before) None  from 0x40048038
+[+] insert one sym at pc 0x1749b for addr 0x40048038. 1
+Read (after)0x00 from 0x40048038
+Read (before)0x00 from 0x2002ff64
+Read (after)0x10380009 from 0x2002ff64
+Read (before)0x10380009 from 0x2002ff6c
+Read (after)0x40048038 from 0x2002ff6c
+Read (before)0x40048038 from 0x2002ff74
+Read (after)0x2002ff78 from 0x2002ff74
+<SimState @ 0x17549>
+Read (before) None  from 0x17608
+Read (after)0x1038000a from 0x17608
+<SimState @ 0x17483>
+Read (before) None  from 0x2002ff64
+Read (after)0x1038000a from 0x2002ff64
+Read (before)0x1038000a from 0x2002ff6c
+Read (after)0x40048038 from 0x2002ff6c
+Read (before)0x40048038 from 0x40048038
+[+] insert one sym at pc 0x1749b for addr 0x40048038. 2
+Read (after)0x00 from 0x40048038
+Read (before)0x00 from 0x2002ff64
+Read (after)0x1038000a from 0x2002ff64
+Read (before)0x1038000a from 0x2002ff6c
+Read (after)0x40048038 from 0x2002ff6c
+Read (before)0x40048038 from 0x2002ff74
+Read (after)0x2002ff78 from 0x2002ff74
+<SimState @ 0x1754f>
+Read (before) None  from 0x1760c
+Read (after)0x1038000d from 0x1760c
+<SimState @ 0x17483>
+Read (before) None  from 0x2002ff64
+Read (after)0x1038000d from 0x2002ff64
+Read (before)0x1038000d from 0x2002ff6c
+Read (after)0x40048038 from 0x2002ff6c
+Read (before)0x40048038 from 0x40048038
+[+] insert one sym at pc 0x1749b for addr 0x40048038. 3
+Read (after)0x00 from 0x40048038
+Read (before)0x00 from 0x2002ff64
+Read (after)0x1038000d from 0x2002ff64
+Read (before)0x1038000d from 0x2002ff6c
+Read (after)0x40048038 from 0x2002ff6c
+Read (before)0x40048038 from 0x2002ff74
+Read (after)0x2002ff78 from 0x2002ff74
+<SimState @ 0x17555>
+Read (before) None  from 0x17610
+Read (after)0x40049000 from 0x17610
+<SimState @ 0x17501>
+Read (before) None  from 0x2002ff6c
+Read (after)0x40049000 from 0x2002ff6c
+Read (before)0x40049000 from 0x2002ff68
+Read (after)0x0c from 0x2002ff68
+Read (before)0x0c from 0x40049030
+[+] insert one sym at pc 0x17513 for addr 0x40049030. 4
+Read (after)0x00 from 0x40049030
+Read (before)0x00 from 0x2002ff67
+Read (after)0x04 from 0x2002ff67
+Read (before)0x04 from 0x2002ff6c
+Read (after)0x40049000 from 0x2002ff6c
+Read (before)0x40049000 from 0x2002ff68
+Read (after)0x0c from 0x2002ff68
+Read (before)0x0c from 0x2002ff74
+Read (after)0x2002ff78 from 0x2002ff74
+<SimState @ 0x1755f>
+Read (before) None  from 0x17610
+Read (after)0x40049000 from 0x17610
+<SimState @ 0x17501>
+Read (before) None  from 0x2002ff6c
+Read (after)0x40049000 from 0x2002ff6c
+Read (before)0x40049000 from 0x2002ff68
+Read (after)0x0d from 0x2002ff68
+Read (before)0x0d from 0x40049034
+[+] insert one sym at pc 0x17513 for addr 0x40049034. 5
+Read (after)0x00 from 0x40049034
+Read (before)0x00 from 0x2002ff67
+Read (after)0x04 from 0x2002ff67
+Read (before)0x04 from 0x2002ff6c
+Read (after)0x40049000 from 0x2002ff6c
+Read (before)0x40049000 from 0x2002ff68
+Read (after)0x0d from 0x2002ff68
+Read (before)0x0d from 0x2002ff74
+Read (after)0x2002ff78 from 0x2002ff74
+<SimState @ 0x17569>
+Read (before) None  from 0x17610
+Read (after)0x40049000 from 0x17610
+<SimState @ 0x17501>
+Read (before) None  from 0x2002ff6c
+Read (after)0x40049000 from 0x2002ff6c
+Read (before)0x40049000 from 0x2002ff68
+Read (after)0x0e from 0x2002ff68
+Read (before)0x0e from 0x40049038
+[+] insert one sym at pc 0x17513 for addr 0x40049038. 6
+Read (after)0x00 from 0x40049038
+Read (before)0x00 from 0x2002ff67
+Read (after)0x04 from 0x2002ff67
+Read (before)0x04 from 0x2002ff6c
+Read (after)0x40049000 from 0x2002ff6c
+Read (before)0x40049000 from 0x2002ff68
+Read (after)0x0e from 0x2002ff68
+Read (before)0x0e from 0x2002ff74
+Read (after)0x2002ff78 from 0x2002ff74
+<SimState @ 0x17573>
+Read (before) None  from 0x17610
+Read (after)0x40049000 from 0x17610
+<SimState @ 0x17501>
+Read (before) None  from 0x2002ff6c
+Read (after)0x40049000 from 0x2002ff6c
+Read (before)0x40049000 from 0x2002ff68
+Read (after)0x0f from 0x2002ff68
+Read (before)0x0f from 0x4004903c
+[+] insert one sym at pc 0x17513 for addr 0x4004903c. 7
+Read (after)0x00 from 0x4004903c
+Read (before)0x00 from 0x2002ff67
+Read (after)0x04 from 0x2002ff67
+Read (before)0x04 from 0x2002ff6c
+Read (after)0x40049000 from 0x2002ff6c
+Read (before)0x40049000 from 0x2002ff68
+Read (after)0x0f from 0x2002ff68
+Read (before)0x0f from 0x2002ff74
+Read (after)0x2002ff78 from 0x2002ff74
+<SimState @ 0x1757d>
+Read (before) None  from 0x17610
+Read (after)0x40049000 from 0x17610
+<SimState @ 0x17501>
+Read (before) None  from 0x2002ff6c
+Read (after)0x40049000 from 0x2002ff6c
+Read (before)0x40049000 from 0x2002ff68
+Read (after)0x10 from 0x2002ff68
+Read (before)0x10 from 0x40049040
+[+] insert one sym at pc 0x17513 for addr 0x40049040. 8
+Read (after)0x00 from 0x40049040
+Read (before)0x00 from 0x2002ff67
+Read (after)0x04 from 0x2002ff67
+Read (before)0x04 from 0x2002ff6c
+Read (after)0x40049000 from 0x2002ff6c
+Read (before)0x40049000 from 0x2002ff68
+Read (after)0x10 from 0x2002ff68
+Read (before)0x10 from 0x2002ff74
+Read (after)0x2002ff78 from 0x2002ff74
+<SimState @ 0x17587>
+Read (before) None  from 0x17610
+Read (after)0x40049000 from 0x17610
+<SimState @ 0x17501>
+Read (before) None  from 0x2002ff6c
+Read (after)0x40049000 from 0x2002ff6c
+Read (before)0x40049000 from 0x2002ff68
+Read (after)0x11 from 0x2002ff68
+Read (before)0x11 from 0x40049044
+[+] insert one sym at pc 0x17513 for addr 0x40049044. 9
+Read (after)0x00 from 0x40049044
+Read (before)0x00 from 0x2002ff67
+Read (after)0x04 from 0x2002ff67
+Read (before)0x04 from 0x2002ff6c
+Read (after)0x40049000 from 0x2002ff6c
+Read (before)0x40049000 from 0x2002ff68
+Read (after)0x11 from 0x2002ff68
+Read (before)0x11 from 0x2002ff74
+Read (after)0x2002ff78 from 0x2002ff74
+<SimState @ 0x17591>
+Read (before) None  from 0x17610
+Read (after)0x40049000 from 0x17610
+<SimState @ 0x17501>
+Read (before) None  from 0x2002ff6c
+Read (after)0x40049000 from 0x2002ff6c
+Read (before)0x40049000 from 0x2002ff68
+Read (after)0x05 from 0x2002ff68
+Read (before)0x05 from 0x40049014
+[+] insert one sym at pc 0x17513 for addr 0x40049014. 10
+Read (after)0x00 from 0x40049014
+Read (before)0x00 from 0x2002ff67
+Read (after)0x04 from 0x2002ff67
+Read (before)0x04 from 0x2002ff6c
+Read (after)0x40049000 from 0x2002ff6c
+Read (before)0x40049000 from 0x2002ff68
+Read (after)0x05 from 0x2002ff68
+Read (before)0x05 from 0x2002ff74
+Read (after)0x2002ff78 from 0x2002ff74
+<SimState @ 0x1759b>
+Read (before) None  from 0x2002ff7c
+Read (after)0x00 from 0x2002ff7c
+Read (before)0x00 from 0x2002ff7d
+Read (after)0x00 from 0x2002ff7d
+Read (before)0x00 from 0x17614
+Read (after)0x4004a000 from 0x17614
+<SimState @ 0x174b9>
+Read (before) None  from 0x2002ff5c
+Read (after)0x2002ff7c from 0x2002ff5c
+<SimState @ 0x174d9>
+Read (before) None  from 0x2002ff60
+Read (after)0x00 from 0x2002ff60
+Read (before)0x00 from 0x2002ff64
+Read (after)0x4004a000 from 0x2002ff64
+Read (before)0x4004a000 from 0x2002ff6c
+Read (after)0x4004a000 from 0x2002ff6c
+Read (before)0x4004a000 from 0x2002ff5c
+Read (after)0x2002ff7c from 0x2002ff5c
+Read (before)0x2002ff7c from 0x2002ff7c
+Read (after)0x420 from 0x2002ff7c
+Read (before)0x420 from 0x2002ff70
+Read (after)0x2002ff78 from 0x2002ff70
+Read (before)0x2002ff78 from 0x2002ff74
+Read (after)0x175bd from 0x2002ff74
+<SimState @ 0x175bd>
+Read (before) None  from 0x17614
+Read (after)0x4004a000 from 0x17614
+<SimState @ 0x17501>
+Read (before) None  from 0x2002ff6c
+Read (after)0x4004a000 from 0x2002ff6c
+Read (before)0x4004a000 from 0x2002ff68
+Read (after)0x01 from 0x2002ff68
+Read (before)0x01 from 0x4004a004
+[+] insert one sym at pc 0x17513 for addr 0x4004a004. 11
+Read (after)0x00 from 0x4004a004
+Read (before)0x00 from 0x2002ff67
+Read (after)0x04 from 0x2002ff67
+Read (before)0x04 from 0x2002ff6c
+Read (after)0x4004a000 from 0x2002ff6c
+Read (before)0x4004a000 from 0x2002ff68
+Read (after)0x01 from 0x2002ff68
+Read (before)0x01 from 0x2002ff74
+Read (after)0x2002ff78 from 0x2002ff74
+<SimState @ 0x175c7>
+Read (before) None  from 0x17614
+Read (after)0x4004a000 from 0x17614
+<SimState @ 0x17501>
+Read (before) None  from 0x2002ff6c
+Read (after)0x4004a000 from 0x2002ff6c
+Read (before)0x4004a000 from 0x2002ff68
+Read (after)0x10 from 0x2002ff68
+Read (before)0x10 from 0x4004a040
+[+] insert one sym at pc 0x17513 for addr 0x4004a040. 12
+Read (after)0x00 from 0x4004a040
+Read (before)0x00 from 0x2002ff67
+Read (after)0x03 from 0x2002ff67
+Read (before)0x03 from 0x2002ff6c
+Read (after)0x4004a000 from 0x2002ff6c
+Read (before)0x4004a000 from 0x2002ff68
+Read (after)0x10 from 0x2002ff68
+Read (before)0x10 from 0x2002ff74
+Read (after)0x2002ff78 from 0x2002ff74
+<SimState @ 0x175d1>
+Read (before) None  from 0x17614
+Read (after)0x4004a000 from 0x17614
+<SimState @ 0x17501>
+Read (before) None  from 0x2002ff6c
+Read (after)0x4004a000 from 0x2002ff6c
+Read (before)0x4004a000 from 0x2002ff68
+Read (after)0x11 from 0x2002ff68
+Read (before)0x11 from 0x4004a044
+[+] insert one sym at pc 0x17513 for addr 0x4004a044. 13
+Read (after)0x00 from 0x4004a044
+Read (before)0x00 from 0x2002ff67
+Read (after)0x03 from 0x2002ff67
+Read (before)0x03 from 0x2002ff6c
+Read (after)0x4004a000 from 0x2002ff6c
+Read (before)0x4004a000 from 0x2002ff68
+Read (after)0x11 from 0x2002ff68
+Read (before)0x11 from 0x2002ff74
+Read (after)0x2002ff78 from 0x2002ff74
+<SimState @ 0x175db>
+Read (before) None  from 0x17618
+Read (after)0x4004d000 from 0x17618
+<SimState @ 0x17501>
+Read (before) None  from 0x2002ff6c
+Read (after)0x4004d000 from 0x2002ff6c
+Read (before)0x4004d000 from 0x2002ff68
+Read (after)0x1a from 0x2002ff68
+Read (before)0x1a from 0x4004d068
+[+] insert one sym at pc 0x17513 for addr 0x4004d068. 14
+Read (after)0x00 from 0x4004d068
+Read (before)0x00 from 0x2002ff67
+Read (after)0x02 from 0x2002ff67
+Read (before)0x02 from 0x2002ff6c
+Read (after)0x4004d000 from 0x2002ff6c
+Read (before)0x4004d000 from 0x2002ff68
+Read (after)0x1a from 0x2002ff68
+Read (before)0x1a from 0x2002ff74
+Read (after)0x2002ff78 from 0x2002ff74
+<SimState @ 0x175e5>
+Read (before) None  from 0x1761c
+Read (after)0x40047000 from 0x1761c
+Read (before)0x40047000 from 0x40048010
+[+] insert one sym at pc 0x175ed for addr 0x40048010. 15
+Read (after)0x00 from 0x40048010
+Read (before)0x00 from 0x1761c
+Read (after)0x40047000 from 0x1761c
+Read (before)0x40047000 from 0x2002ff80
+Read (after)0x2002ff98 from 0x2002ff80
+Read (before)0x2002ff98 from 0x2002ff84
+Read (after)0x1865 from 0x2002ff84
+<SimState @ 0x1865>
+<SimState @ 0x16f79>
+<SimState @ 0x16dd1>
+Read (before) None  from 0x16dec
+Read (after)0x40047000 from 0x16dec
+Read (before)0x40047000 from 0x16df0
+Read (after)0x2260000 from 0x16df0
+Read (before)0x2260000 from 0x2002ff7c
+Read (after)0x2002ff80 from 0x2002ff7c
+<SimState @ 0x16f81>
+Read (before) None  from 0x16fc0
+Read (after)0x1adf0 from 0x16fc0
+<SimState @ 0xfc05>
+Read (before) None  from 0x2002ff6c
+Read (after)0x1adf0 from 0x2002ff6c
+Read (before)0x1adf0 from 0x1adf0
+Read (after)0xb71b00 from 0x1adf0
+<SimState @ 0xeaa5>
+Read (before) None  from 0x2002ff54
+Read (after)0xb71b00 from 0x2002ff54
+<SimState @ 0xeabd>
+Read (before) None  from 0x2002ff54
+Read (after)0xb71b00 from 0x2002ff54
+Read (before)0xb71b00 from 0xeadc
+Read (after)0x7a1200 from 0xeadc
+<SimState @ 0xeacb>
+Read (before) None  from 0x2002ff5f
+Read (after)0x02 from 0x2002ff5f
+Read (before)0x02 from 0x2002ff64
+Read (after)0x2002ff68 from 0x2002ff64
+<SimState @ 0xfc17>
+Read (before) None  from 0x2002ff6c
+Read (after)0x1adf0 from 0x2002ff6c
+Read (before)0x1adf0 from 0x1adf4
+Read (after)0x00 from 0x1adf4
+Read (before)0x00 from 0xfc88
+Read (after)0x40065000 from 0xfc88
+<SimState @ 0xe86d>
+Read (before) None  from 0x2002ff54
+Read (after)0x40065000 from 0x2002ff54
+Read (before)0x40065000 from 0x40065000
+[+] insert one sym at pc 0xe87b for addr 0x40065000. 16
+Read (after)0x00 from 0x40065000
+Read (before)0x00 from 0x2002ff5f
+Read (after)0x00 from 0x2002ff5f
+Read (before)0x00 from 0x2002ff5f
+Read (after)0x00 from 0x2002ff5f
+Read (before)0x00 from 0x2002ff53
+Read (after)0x00 from 0x2002ff53
+Read (before)0x00 from 0x2002ff54
+Read (after)0x40065000 from 0x2002ff54
+Read (before)0x40065000 from 0x2002ff5f
+Read (after)0x00 from 0x2002ff5f
+Read (before)0x00 from 0x2002ff64
+Read (after)0x2002ff68 from 0x2002ff64
+<SimState @ 0xfc27>
+Read (before) None  from 0x2002ff6c
+Read (after)0x1adf0 from 0x2002ff6c
+Read (before)0x1adf0 from 0xfc88
+Read (after)0x40065000 from 0xfc88
+<SimState @ 0xe82d>
+Read (before) None  from 0x2002ff54
+Read (after)0x40065000 from 0x2002ff54
+Read (before)0x40065000 from 0x40065000
+[+] insert one sym at pc 0xe839 for addr 0x40065000. 17
+Read (after)0x00 from 0x40065000
+Read (before)0x00 from 0x2002ff5f
+Read (after)0x00 from 0x2002ff5f
+Read (before)0x00 from 0x2002ff50
+Read (after)0x1adf6 from 0x2002ff50
+Read (before)0x1adf6 from 0x1adf6
+Read (after)0x80 from 0x1adf6
+Read (before)0x80 from 0x2002ff5f
+Read (after)0x00 from 0x2002ff5f
+Read (before)0x00 from 0x2002ff54
+Read (after)0x40065000 from 0x2002ff54
+Read (before)0x40065000 from 0x2002ff5f
+Read (after)0x80 from 0x2002ff5f
+Read (before)0x80 from 0x2002ff50
+Read (after)0x1adf6 from 0x2002ff50
+Read (before)0x1adf6 from 0x1adf7
+Read (after)0x00 from 0x1adf7
+Read (before)0x00 from 0x2002ff54
+Read (after)0x40065000 from 0x2002ff54
+Read (before)0x40065000 from 0x2002ff64
+Read (after)0x2002ff68 from 0x2002ff64
+<SimState @ 0xfc33>
+Read (before) None  from 0xfc8c
+Read (after)0x40064000 from 0xfc8c
+Read (before)0x40064000 from 0x40064001
+[+] insert one sym at pc 0xfc35 for addr 0x40064001. 18
+Read (after)0x00 from 0x40064001
+Read (before)0x00 from 0x2002ff77
+Read (after)0x02 from 0x2002ff77
+Read (before)0x02 from 0x2002ff6c
+Read (after)0x1adf0 from 0x2002ff6c
+Read (before)0x1adf0 from 0x1adf5
+Read (after)0x04 from 0x1adf5
+Read (before)0x04 from 0xfc8c
+Read (after)0x40064000 from 0xfc8c
+Read (before)0x40064000 from 0x2002ff6c
+Read (after)0x1adf0 from 0x2002ff6c
+Read (before)0x1adf0 from 0x1adf5
+Read (after)0x04 from 0x1adf5
+<SimState @ 0xfc63>
+Read (before) None  from 0xfc88
+Read (after)0x40065000 from 0xfc88
+Read (before)0x40065000 from 0x40065000
+[+] insert one sym at pc 0xfc65 for addr 0x40065000. 19
+Read (after)0x00 from 0x40065000
+[+] active #: 2
+[+] solving ...
+solving for state: <SimState @ 0xfc7f>
+solved, addr: 0x40048038 value: 0x00 pc: 0x1749b
+solved, addr: 0x40048038 value: 0x00 pc: 0x1749b
+solved, addr: 0x40048038 value: 0x00 pc: 0x1749b
+solved, addr: 0x40049030 value: 0x00 pc: 0x17513
+solved, addr: 0x40049034 value: 0x00 pc: 0x17513
+solved, addr: 0x40049038 value: 0x00 pc: 0x17513
+solved, addr: 0x4004903c value: 0x00 pc: 0x17513
+solved, addr: 0x40049040 value: 0x00 pc: 0x17513
+solved, addr: 0x40049044 value: 0x00 pc: 0x17513
+solved, addr: 0x40049014 value: 0x00 pc: 0x17513
+solved, addr: 0x4004a004 value: 0x00 pc: 0x17513
+solved, addr: 0x4004a040 value: 0x00 pc: 0x17513
+solved, addr: 0x4004a044 value: 0x00 pc: 0x17513
+solved, addr: 0x4004d068 value: 0x00 pc: 0x17513
+solved, addr: 0x40048010 value: 0x00 pc: 0x175ed
+solved, addr: 0x40065000 value: 0x00 pc: 0xe87b
+solved, addr: 0x40065000 value: 0x00 pc: 0xe839
+solved, addr: 0x40064001 value: 0x00 pc: 0xfc35
+solved, addr: 0x40065000 value: 0x00 pc: 0xfc65
+solving for state: <SimState @ 0xfc6f>
+solved, addr: 0x40048038 value: 0x00 pc: 0x1749b
+solved, addr: 0x40048038 value: 0x00 pc: 0x1749b
+solved, addr: 0x40048038 value: 0x00 pc: 0x1749b
+solved, addr: 0x40049030 value: 0x00 pc: 0x17513
+solved, addr: 0x40049034 value: 0x00 pc: 0x17513
+solved, addr: 0x40049038 value: 0x00 pc: 0x17513
+solved, addr: 0x4004903c value: 0x00 pc: 0x17513
+solved, addr: 0x40049040 value: 0x00 pc: 0x17513
+solved, addr: 0x40049044 value: 0x00 pc: 0x17513
+solved, addr: 0x40049014 value: 0x00 pc: 0x17513
+solved, addr: 0x4004a004 value: 0x00 pc: 0x17513
+solved, addr: 0x4004a040 value: 0x00 pc: 0x17513
+solved, addr: 0x4004a044 value: 0x00 pc: 0x17513
+solved, addr: 0x4004d068 value: 0x00 pc: 0x17513
+solved, addr: 0x40048010 value: 0x00 pc: 0x175ed
+solved, addr: 0x40065000 value: 0x00 pc: 0xe87b
+solved, addr: 0x40065000 value: 0x00 pc: 0xe839
+solved, addr: 0x40064001 value: 0x00 pc: 0xfc35
+solved, addr: 0x40065000 value: 0x80 pc: 0xfc65
+double branch BB
+taking branch 0
+[+] consume one sym at addr: 0x40048038 .#18
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x40048038(0x48038), size: 0x04, pc: 0x1749a
+CPU env:
+r0: 0x1038000a r1: 0x000 r2: 0x200 r3: 0x40048038 r4: 0x20c r5: 0x000 r6: 0x000 r7: 0x2002ff60 r8: 0x000 r9: 0x000 r10: 0x000 r11: 0x000 r12: 0x000 r13: 0x2002ff60 r14: 0x1754f r15: 0x1749a (tb start: 0x17482)
+[+] reuse previous solver
+[+] current solver cnt: #18
+[+] consume one sym at addr: 0x40048038 .#17
+data: [1074036792L, 95387L, <BV32 input_1_32>, 0, 0]
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x40048038(0x48038), size: 0x04, pc: 0x1749a
+CPU env:
+r0: 0x1038000d r1: 0x000 r2: 0x400 r3: 0x40048038 r4: 0x20c r5: 0x000 r6: 0x000 r7: 0x2002ff60 r8: 0x000 r9: 0x000 r10: 0x000 r11: 0x000 r12: 0x000 r13: 0x2002ff60 r14: 0x17555 r15: 0x1749a (tb start: 0x17482)
+[+] reuse previous solver
+[+] current solver cnt: #17
+[+] consume one sym at addr: 0x40048038 .#16
+data: [1074036792L, 95387L, <BV32 input_2_32>, 0, 0]
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x40049030(0x49030), size: 0x04, pc: 0x17512
+CPU env:
+r0: 0x40049000 r1: 0x00c r2: 0x00c r3: 0x40049000 r4: 0x20c r5: 0x000 r6: 0x000 r7: 0x2002ff60 r8: 0x000 r9: 0x000 r10: 0x000 r11: 0x000 r12: 0x000 r13: 0x2002ff60 r14: 0x1755f r15: 0x17512 (tb start: 0x17500)
+[+] reuse previous solver
+[+] current solver cnt: #16
+[+] consume one sym at addr: 0x40049030 .#15
+data: [1074040880L, 95507L, <BV32 input_3_32>, 0, 0]
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x40049034(0x49034), size: 0x04, pc: 0x17512
+CPU env:
+r0: 0x40049000 r1: 0x00d r2: 0x00d r3: 0x40049000 r4: 0x20c r5: 0x000 r6: 0x000 r7: 0x2002ff60 r8: 0x000 r9: 0x000 r10: 0x000 r11: 0x000 r12: 0x000 r13: 0x2002ff60 r14: 0x17569 r15: 0x17512 (tb start: 0x17500)
+[+] reuse previous solver
+[+] current solver cnt: #15
+[+] consume one sym at addr: 0x40049034 .#14
+data: [1074040884L, 95507L, <BV32 input_4_32>, 0, 0]
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x40049038(0x49038), size: 0x04, pc: 0x17512
+CPU env:
+r0: 0x40049000 r1: 0x00e r2: 0x00e r3: 0x40049000 r4: 0x20c r5: 0x000 r6: 0x000 r7: 0x2002ff60 r8: 0x000 r9: 0x000 r10: 0x000 r11: 0x000 r12: 0x000 r13: 0x2002ff60 r14: 0x17573 r15: 0x17512 (tb start: 0x17500)
+[+] reuse previous solver
+[+] current solver cnt: #14
+[+] consume one sym at addr: 0x40049038 .#13
+data: [1074040888L, 95507L, <BV32 input_5_32>, 0, 0]
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x4004903c(0x4903c), size: 0x04, pc: 0x17512
+CPU env:
+r0: 0x40049000 r1: 0x00f r2: 0x00f r3: 0x40049000 r4: 0x20c r5: 0x000 r6: 0x000 r7: 0x2002ff60 r8: 0x000 r9: 0x000 r10: 0x000 r11: 0x000 r12: 0x000 r13: 0x2002ff60 r14: 0x1757d r15: 0x17512 (tb start: 0x17500)
+[+] reuse previous solver
+[+] current solver cnt: #13
+[+] consume one sym at addr: 0x4004903c .#12
+data: [1074040892L, 95507L, <BV32 input_6_32>, 0, 0]
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x40049040(0x49040), size: 0x04, pc: 0x17512
+CPU env:
+r0: 0x40049000 r1: 0x010 r2: 0x010 r3: 0x40049000 r4: 0x20c r5: 0x000 r6: 0x000 r7: 0x2002ff60 r8: 0x000 r9: 0x000 r10: 0x000 r11: 0x000 r12: 0x000 r13: 0x2002ff60 r14: 0x17587 r15: 0x17512 (tb start: 0x17500)
+[+] reuse previous solver
+[+] current solver cnt: #12
+[+] consume one sym at addr: 0x40049040 .#11
+data: [1074040896L, 95507L, <BV32 input_7_32>, 0, 0]
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x40049044(0x49044), size: 0x04, pc: 0x17512
+CPU env:
+r0: 0x40049000 r1: 0x011 r2: 0x011 r3: 0x40049000 r4: 0x20c r5: 0x000 r6: 0x000 r7: 0x2002ff60 r8: 0x000 r9: 0x000 r10: 0x000 r11: 0x000 r12: 0x000 r13: 0x2002ff60 r14: 0x17591 r15: 0x17512 (tb start: 0x17500)
+[+] reuse previous solver
+[+] current solver cnt: #11
+[+] consume one sym at addr: 0x40049044 .#10
+data: [1074040900L, 95507L, <BV32 input_8_32>, 0, 0]
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x40049014(0x49014), size: 0x04, pc: 0x17512
+CPU env:
+r0: 0x40049000 r1: 0x005 r2: 0x005 r3: 0x40049000 r4: 0x20c r5: 0x000 r6: 0x000 r7: 0x2002ff60 r8: 0x000 r9: 0x000 r10: 0x000 r11: 0x000 r12: 0x000 r13: 0x2002ff60 r14: 0x1759b r15: 0x17512 (tb start: 0x17500)
+[+] reuse previous solver
+[+] current solver cnt: #10
+[+] consume one sym at addr: 0x40049014 .#9
+data: [1074040852L, 95507L, <BV32 input_9_32>, 0, 0]
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x4004a004(0x4a004), size: 0x04, pc: 0x17512
+CPU env:
+r0: 0x4004a000 r1: 0x001 r2: 0x001 r3: 0x4004a000 r4: 0x20c r5: 0x000 r6: 0x000 r7: 0x2002ff60 r8: 0x000 r9: 0x000 r10: 0x000 r11: 0x000 r12: 0x000 r13: 0x2002ff60 r14: 0x175c7 r15: 0x17512 (tb start: 0x17500)
+[+] reuse previous solver
+[+] current solver cnt: #9
+[+] consume one sym at addr: 0x4004a004 .#8
+data: [1074044932L, 95507L, <BV32 input_11_32>, 0, 0]
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x4004a040(0x4a040), size: 0x04, pc: 0x17512
+CPU env:
+r0: 0x4004a000 r1: 0x010 r2: 0x010 r3: 0x4004a000 r4: 0x20c r5: 0x000 r6: 0x000 r7: 0x2002ff60 r8: 0x000 r9: 0x000 r10: 0x000 r11: 0x000 r12: 0x000 r13: 0x2002ff60 r14: 0x175d1 r15: 0x17512 (tb start: 0x17500)
+[+] reuse previous solver
+[+] current solver cnt: #8
+[+] consume one sym at addr: 0x4004a040 .#7
+data: [1074044992L, 95507L, <BV32 input_12_32>, 0, 0]
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x4004a044(0x4a044), size: 0x04, pc: 0x17512
+CPU env:
+r0: 0x4004a000 r1: 0x011 r2: 0x011 r3: 0x4004a000 r4: 0x20c r5: 0x000 r6: 0x000 r7: 0x2002ff60 r8: 0x000 r9: 0x000 r10: 0x000 r11: 0x000 r12: 0x000 r13: 0x2002ff60 r14: 0x175db r15: 0x17512 (tb start: 0x17500)
+[+] reuse previous solver
+[+] current solver cnt: #7
+[+] consume one sym at addr: 0x4004a044 .#6
+data: [1074044996L, 95507L, <BV32 input_13_32>, 0, 0]
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x4004d068(0x4d068), size: 0x04, pc: 0x17512
+CPU env:
+r0: 0x4004d000 r1: 0x01a r2: 0x01a r3: 0x4004d000 r4: 0x20c r5: 0x000 r6: 0x000 r7: 0x2002ff60 r8: 0x000 r9: 0x000 r10: 0x000 r11: 0x000 r12: 0x000 r13: 0x2002ff60 r14: 0x175e5 r15: 0x17512 (tb start: 0x17500)
+[+] reuse previous solver
+[+] current solver cnt: #6
+[+] consume one sym at addr: 0x4004d068 .#5
+data: [1074057320L, 95507L, <BV32 input_14_32>, 0, 0]
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x40048010(0x48010), size: 0x04, pc: 0x175ec
+CPU env:
+r0: 0x4004d000 r1: 0x200 r2: 0x01a r3: 0x40048010 r4: 0x20c r5: 0x000 r6: 0x000 r7: 0x2002ff78 r8: 0x000 r9: 0x000 r10: 0x000 r11: 0x000 r12: 0x000 r13: 0x2002ff78 r14: 0x175e5 r15: 0x175ec (tb start: 0x175e4)
+[+] reuse previous solver
+[+] current solver cnt: #5
+[+] consume one sym at addr: 0x40048010 .#4
+data: [1074036752L, 95725L, <BV32 input_15_32>, 0, 0]
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x40065000(0x65000), size: 0x01, pc: 0xe87a
+CPU env:
+r0: 0x40065000 r1: 0x000 r2: 0x7a1200 r3: 0x40065000 r4: 0x20c r5: 0x000 r6: 0x000 r7: 0x2002ff50 r8: 0x000 r9: 0x000 r10: 0x000 r11: 0x000 r12: 0x000 r13: 0x2002ff50 r14: 0xfc27 r15: 0xe87a (tb start: 0xe86c)
+[+] reuse previous solver
+[+] current solver cnt: #4
+[+] consume one sym at addr: 0x40065000 .#3
+data: [1074155520L, 59515L, <BV32 input_17_32>, 0, 0]
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x40065000(0x65000), size: 0x01, pc: 0xe838
+CPU env:
+r0: 0x40065000 r1: 0x1adf6 r2: 0x000 r3: 0x40065000 r4: 0x20c r5: 0x000 r6: 0x000 r7: 0x2002ff50 r8: 0x000 r9: 0x000 r10: 0x000 r11: 0x000 r12: 0x000 r13: 0x2002ff50 r14: 0xfc33 r15: 0xe838 (tb start: 0xe82c)
+[+] reuse previous solver
+[+] current solver cnt: #3
+[+] consume one sym at addr: 0x40065000 .#2
+data: [1074155520L, 59449L, <BV32 input_18_32>, 0, 0]
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x40064001(0x64001), size: 0x01, pc: 0xfc34
+CPU env:
+r0: 0x40065000 r1: 0x1adf6 r2: 0x000 r3: 0x40064000 r4: 0x20c r5: 0x000 r6: 0x000 r7: 0x2002ff68 r8: 0x000 r9: 0x000 r10: 0x000 r11: 0x000 r12: 0x000 r13: 0x2002ff68 r14: 0xfc33 r15: 0xfc34 (tb start: 0xfc32)
+[+] reuse previous solver
+[+] current solver cnt: #2
+[+] consume one sym at addr: 0x40064001 .#1
+data: [1074151425L, 64565L, <BV32 input_19_32>, 0, 0]
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x40065000(0x65000), size: 0x01, pc: 0xfc64
+CPU env:
+r0: 0x40065000 r1: 0x40064000 r2: 0x020 r3: 0x40065000 r4: 0x20c r5: 0x000 r6: 0x000 r7: 0x2002ff68 r8: 0x000 r9: 0x000 r10: 0x000 r11: 0x000 r12: 0x000 r13: 0x2002ff68 r14: 0xfc33 r15: 0xfc64 (tb start: 0xfc62)
+[+] reuse previous solver
+[+] current solver cnt: #1
+[+] consume one sym at addr: 0x40065000 .#0
+data: [1074155520L, 64613L, <BV32 input_20_32>, 0, 128]
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x40064006(0x64006), size: 0x01, pc: 0xf62c
+CPU env:
+r0: 0x002 r1: 0x000 r2: 0x000 r3: 0x40064000 r4: 0x20c r5: 0x000 r6: 0x000 r7: 0x2002ff68 r8: 0x000 r9: 0x000 r10: 0x000 r11: 0x000 r12: 0x000 r13: 0x2002ff68 r14: 0x16f9b r15: 0xf62c (tb start: 0xf618)
+[+] Switching the execution to angr
+[+] ANGR stepping
+<SimState @ 0xf62d>
+Read (before) None  from 0x40064006
+[+] insert one sym at pc 0xf62d for addr 0x40064006. 1
+Read (after)0x00 from 0x40064006
+Read (before)0x00 from 0xf718
+Read (after)0x40064000 from 0xf718
+Read (before)0x40064000 from 0x40064006
+[+] insert one sym at pc 0xf63b for addr 0x40064006. 2
+Read (after)0x00 from 0x40064006
+Read (before)0x00 from 0xf718
+Read (after)0x40064000 from 0xf718
+Read (before)0x40064000 from 0x40064008
+[+] insert one sym at pc 0xf647 for addr 0x40064008. 3
+Read (after)0x00 from 0x40064008
+Read (before)0x00 from 0x2002ff6d
+Read (after)0x00 from 0x2002ff6d
+Read (before)0x00 from 0x2002ff72
+Read (after)0x00 from 0x2002ff72
+[+] active #: 2
+[+] solving ...
+solving for state: <SimState @ 0xf6b7>
+solved, addr: 0x40064006 value: 0x00 pc: 0xf62d
+solved, addr: 0x40064006 value: 0x00 pc: 0xf63b
+solved, addr: 0x40064008 value: 0x00 pc: 0xf647
+solving for state: <SimState @ 0xf65d>
+solved, addr: 0x40064006 value: 0x00 pc: 0xf62d
+solved, addr: 0x40064006 value: 0x00 pc: 0xf63b
+solved, addr: 0x40064008 value: 0x0e pc: 0xf647
+double branch BB
+taking branch 0
+[+] consume one sym at addr: 0x40064006 .#2
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x40064006(0x64006), size: 0x01, pc: 0xf63a
+CPU env:
+r0: 0x002 r1: 0x000 r2: 0x000 r3: 0x40064000 r4: 0x20c r5: 0x000 r6: 0x000 r7: 0x2002ff68 r8: 0x000 r9: 0x000 r10: 0x000 r11: 0x000 r12: 0x000 r13: 0x2002ff68 r14: 0x16f9b r15: 0xf63a (tb start: 0xf618)
+[+] reuse previous solver
+[+] current solver cnt: #2
+[+] consume one sym at addr: 0x40064006 .#1
+data: [1074151430L, 63035L, <BV32 input_22_32>, 0, 0]
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x40064008(0x64008), size: 0x01, pc: 0xf646
+CPU env:
+r0: 0x002 r1: 0x000 r2: 0x000 r3: 0x40064000 r4: 0x20c r5: 0x000 r6: 0x000 r7: 0x2002ff68 r8: 0x000 r9: 0x000 r10: 0x000 r11: 0x000 r12: 0x000 r13: 0x2002ff68 r14: 0x16f9b r15: 0xf646 (tb start: 0xf618)
+[+] reuse previous solver
+[+] current solver cnt: #1
+[+] consume one sym at addr: 0x40064008 .#0
+data: [1074151432L, 63047L, <BV32 input_23_32>, 0, 14]
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x40064001(0x64001), size: 0x01, pc: 0xf6b8
+CPU env:
+r0: 0x002 r1: 0x000 r2: 0x000 r3: 0x40064000 r4: 0x20c r5: 0x000 r6: 0x000 r7: 0x2002ff68 r8: 0x000 r9: 0x000 r10: 0x000 r11: 0x000 r12: 0x000 r13: 0x2002ff68 r14: 0x16f9b r15: 0xf6b8 (tb start: 0xf6b6)
+[+] Switching the execution to angr
+[+] ANGR stepping
+<SimState @ 0xf6b9>
+Read (before) None  from 0x40064001
+[+] insert one sym at pc 0xf6b9 for addr 0x40064001. 1
+Read (after)0x00 from 0x40064001
+Read (before)0x00 from 0x2002ff6e
+Read (after)0x00 from 0x2002ff6e
+Read (before)0x00 from 0xf718
+Read (after)0x40064000 from 0xf718
+Read (before)0x40064000 from 0xf718
+Read (after)0x40064000 from 0xf718
+Read (before)0x40064000 from 0x40064000
+[+] insert one sym at pc 0xf6d5 for addr 0x40064000. 2
+Read (after)0x00 from 0x40064000
+Read (before)0x00 from 0xf718
+Read (after)0x40064000 from 0xf718
+Read (before)0x40064000 from 0x2002ff6f
+Read (after)0x02 from 0x2002ff6f
+Read (before)0x02 from 0x2002ff74
+Read (after)0x00 from 0x2002ff74
+<SimState @ 0xf6ef>
+Read (before) None  from 0x2002ff6f
+Read (after)0x02 from 0x2002ff6f
+<SimState @ 0xf6f9>
+Read (before) None  from 0xf718
+Read (after)0x40064000 from 0xf718
+Read (before)0x40064000 from 0x40064006
+[+] insert one sym at pc 0xf6fd for addr 0x40064006. 3
+Read (after)0x00 from 0x40064006
+Read (before)0x00 from 0x2002ff6e
+Read (after)0x00 from 0x2002ff6e
+[+] active #: 2
+[+] solving ...
+solving for state: <SimState @ 0xf6fb>
+solved, addr: 0x40064001 value: 0x00 pc: 0xf6b9
+solved, addr: 0x40064000 value: 0x00 pc: 0xf6d5
+solved, addr: 0x40064006 value: 0x01 pc: 0xf6fd
+solving for state: <SimState @ 0xf70b>
+solved, addr: 0x40064001 value: 0x00 pc: 0xf6b9
+solved, addr: 0x40064000 value: 0x00 pc: 0xf6d5
+solved, addr: 0x40064006 value: 0x00 pc: 0xf6fd
+double branch BB
+taking branch 1
+[+] consume one sym at addr: 0x40064001 .#2
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x40064000(0x64000), size: 0x01, pc: 0xf6d4
+CPU env:
+r0: 0x002 r1: 0x40064000 r2: 0x000 r3: 0x40064000 r4: 0x20c r5: 0x000 r6: 0x000 r7: 0x2002ff68 r8: 0x000 r9: 0x000 r10: 0x000 r11: 0x000 r12: 0x000 r13: 0x2002ff68 r14: 0x16f9b r15: 0xf6d4 (tb start: 0xf6b6)
+[+] reuse previous solver
+[+] current solver cnt: #2
+[+] consume one sym at addr: 0x40064000 .#1
+data: [1074151424L, 63189L, <BV32 input_25_32>, 0, 0]
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x40064006(0x64006), size: 0x01, pc: 0xf6fc
+CPU env:
+r0: 0x002 r1: 0x40064000 r2: 0x000 r3: 0x40064000 r4: 0x20c r5: 0x000 r6: 0x000 r7: 0x2002ff68 r8: 0x000 r9: 0x000 r10: 0x000 r11: 0x000 r12: 0x000 r13: 0x2002ff68 r14: 0x16f9b r15: 0xf6fc (tb start: 0xf6f8)
+[+] reuse previous solver
+[+] current solver cnt: #1
+[+] consume one sym at addr: 0x40064006 .#0
+data: [1074151430L, 63229L, <BV32 input_26_32>, 1, 0]
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x40064000(0x64000), size: 0x01, pc: 0x16e58
+CPU env:
+r0: 0x000 r1: 0x40064000 r2: 0x000 r3: 0x40064000 r4: 0x20c r5: 0x000 r6: 0x000 r7: 0x2002ff70 r8: 0x000 r9: 0x000 r10: 0x000 r11: 0x000 r12: 0x000 r13: 0x2002ff70 r14: 0x16fa3 r15: 0x16e58 (tb start: 0x16e4c)
+[+] Switching the execution to angr
+[+] ANGR stepping
+<SimState @ 0x16e59>
+Read (before) None  from 0x40064000
+[+] insert one sym at pc 0x16e59 for addr 0x40064000. 1
+Read (after)0x00 from 0x40064000
+Read (before)0x00 from 0x2002ff77
+Read (after)0x00 from 0x2002ff77
+Read (before)0x00 from 0x16e84
+Read (after)0x40064000 from 0x16e84
+Read (before)0x40064000 from 0x2002ff7c
+Read (after)0x2002ff80 from 0x2002ff7c
+<SimState @ 0x16fa3>
+Read (before) None  from 0x16fc8
+Read (after)0x1ade4 from 0x16fc8
+<SimState @ 0x105f5>
+Read (before) None  from 0x2002ff76
+Read (after)0x00 from 0x2002ff76
+<SimState @ 0x1060b>
+Read (before) None  from 0x2002ff70
+Read (after)0x1ade4 from 0x2002ff70
+<SimState @ 0x1061f>
+Read (before) None  from 0x2002ff77
+Read (after)0x00 from 0x2002ff77
+<SimState @ 0xf5ad>
+Read (before) None  from 0xf614
+Read (after)0x40064000 from 0xf614
+Read (before)0x40064000 from 0x4006400c
+[+] insert one sym at pc 0xf5b9 for addr 0x4006400c. 2
+Read (after)0x00 from 0x4006400c
+Read (before)0x00 from 0x2002ff5f
+Read (after)0x00 from 0x2002ff5f
+[+] active #: 2
+[+] solving ...
+solving for state: <SimState @ 0xf5cd>
+solved, addr: 0x40064000 value: 0x00 pc: 0x16e59
+solved, addr: 0x4006400c value: 0x00 pc: 0xf5b9
+solving for state: <SimState @ 0xf5c7>
+solved, addr: 0x40064000 value: 0x00 pc: 0x16e59
+solved, addr: 0x4006400c value: 0x03 pc: 0xf5b9
+double branch BB
+taking branch 0
+[+] consume one sym at addr: 0x40064000 .#1
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x4006400c(0x6400c), size: 0x01, pc: 0xf5b8
+CPU env:
+r0: 0x000 r1: 0x000 r2: 0x1ade4 r3: 0x40064000 r4: 0x20c r5: 0x000 r6: 0x000 r7: 0x2002ff58 r8: 0x000 r9: 0x000 r10: 0x000 r11: 0x000 r12: 0x000 r13: 0x2002ff58 r14: 0x10627 r15: 0xf5b8 (tb start: 0xf5ac)
+[+] reuse previous solver
+[+] current solver cnt: #1
+[+] consume one sym at addr: 0x4006400c .#0
+data: [1074151436L, 62905L, <BV32 input_28_32>, 0, 3]
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x4006400c(0x6400c), size: 0x01, pc: 0xf5d2
+CPU env:
+r0: 0x000 r1: 0x000 r2: 0x000 r3: 0x40064000 r4: 0x20c r5: 0x000 r6: 0x000 r7: 0x2002ff58 r8: 0x000 r9: 0x000 r10: 0x000 r11: 0x000 r12: 0x000 r13: 0x2002ff58 r14: 0x10627 r15: 0xf5d2 (tb start: 0xf5cc)
+[+] Switching the execution to angr
+[+] ANGR stepping
+<SimState @ 0xf5d3>
+Read (before) None  from 0x4006400c
+[+] insert one sym at pc 0xf5d3 for addr 0x4006400c. 1
+Read (after)0x00 from 0x4006400c
+Read (before)0x00 from 0x2002ff5f
+Read (after)0x00 from 0x2002ff5f
+Read (before)0x00 from 0xf614
+Read (after)0x40064000 from 0xf614
+Read (before)0x40064000 from 0x2002ff67
+Read (after)0x00 from 0x2002ff67
+<SimState @ 0xf607>
+Read (before) None  from 0x2002ff6c
+Read (after)0x2002ff70 from 0x2002ff6c
+<SimState @ 0x10627>
+Read (before) None  from 0x2002ff76
+Read (after)0x00 from 0x2002ff76
+Read (before)0x00 from 0x2002ff70
+Read (after)0x1ade4 from 0x2002ff70
+<SimState @ 0x102c1>
+Read (before) None  from 0x2002ff67
+Read (after)0x00 from 0x2002ff67
+<SimState @ 0x102d3>
+Read (before) None  from 0x2002ff60
+Read (after)0x1ade4 from 0x2002ff60
+<SimState @ 0x102e7>
+Read (before) None  from 0x103b4
+Read (after)0x40064000 from 0x103b4
+Read (before)0x40064000 from 0x40064001
+[+] insert one sym at pc 0x102e9 for addr 0x40064001. 2
+Read (after)0x00 from 0x40064001
+Read (before)0x00 from 0x103b4
+Read (after)0x40064000 from 0x103b4
+Read (before)0x40064000 from 0x103b4
+Read (after)0x40064000 from 0x103b4
+Read (before)0x40064000 from 0x40064000
+[+] insert one sym at pc 0x102f9 for addr 0x40064000. 3
+Read (after)0x00 from 0x40064000
+Read (before)0x00 from 0x103b4
+Read (after)0x40064000 from 0x103b4
+Read (before)0x40064000 from 0x103b4
+Read (after)0x40064000 from 0x103b4
+Read (before)0x40064000 from 0x40064006
+[+] insert one sym at pc 0x10311 for addr 0x40064006. 4
+Read (after)0x00 from 0x40064006
+[+] active #: 2
+[+] solving ...
+solving for state: <SimState @ 0x1030f>
+solved, addr: 0x4006400c value: 0x00 pc: 0xf5d3
+solved, addr: 0x40064001 value: 0x00 pc: 0x102e9
+solved, addr: 0x40064000 value: 0x00 pc: 0x102f9
+solved, addr: 0x40064006 value: 0x00 pc: 0x10311
+solving for state: <SimState @ 0x1031d>
+solved, addr: 0x4006400c value: 0x00 pc: 0xf5d3
+solved, addr: 0x40064001 value: 0x00 pc: 0x102e9
+solved, addr: 0x40064000 value: 0x00 pc: 0x102f9
+solved, addr: 0x40064006 value: 0x08 pc: 0x10311
+double branch BB
+taking branch 1
+[+] consume one sym at addr: 0x4006400c .#3
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x40064001(0x64001), size: 0x01, pc: 0x102e8
+CPU env:
+r0: 0x000 r1: 0x1ade4 r2: 0x000 r3: 0x40064000 r4: 0x20c r5: 0x000 r6: 0x000 r7: 0x2002ff60 r8: 0x000 r9: 0x000 r10: 0x000 r11: 0x000 r12: 0x000 r13: 0x2002ff60 r14: 0x10631 r15: 0x102e8 (tb start: 0x102e6)
+[+] reuse previous solver
+[+] current solver cnt: #3
+[+] consume one sym at addr: 0x40064001 .#2
+data: [1074151425L, 66281L, <BV32 input_30_32>, 0, 0]
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x40064000(0x64000), size: 0x01, pc: 0x102f8
+CPU env:
+r0: 0x000 r1: 0x1ade4 r2: 0x40064000 r3: 0x40064000 r4: 0x20c r5: 0x000 r6: 0x000 r7: 0x2002ff60 r8: 0x000 r9: 0x000 r10: 0x000 r11: 0x000 r12: 0x000 r13: 0x2002ff60 r14: 0x10631 r15: 0x102f8 (tb start: 0x102e6)
+[+] reuse previous solver
+[+] current solver cnt: #2
+[+] consume one sym at addr: 0x40064000 .#1
+data: [1074151424L, 66297L, <BV32 input_31_32>, 0, 0]
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x40064006(0x64006), size: 0x01, pc: 0x10310
+CPU env:
+r0: 0x000 r1: 0x1ade4 r2: 0x40064000 r3: 0x40064000 r4: 0x20c r5: 0x000 r6: 0x000 r7: 0x2002ff60 r8: 0x000 r9: 0x000 r10: 0x000 r11: 0x000 r12: 0x000 r13: 0x2002ff60 r14: 0x10631 r15: 0x10310 (tb start: 0x102e6)
+[+] reuse previous solver
+[+] current solver cnt: #1
+[+] consume one sym at addr: 0x40064006 .#0
+data: [1074151430L, 66321L, <BV32 input_32_32>, 0, 8]
+feed data: 0x08
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x40064005(0x64005), size: 0x01, pc: 0x1031e
+CPU env:
+r0: 0x000 r1: 0x1ade4 r2: 0x40064000 r3: 0x40064000 r4: 0x20c r5: 0x000 r6: 0x000 r7: 0x2002ff60 r8: 0x000 r9: 0x000 r10: 0x000 r11: 0x000 r12: 0x000 r13: 0x2002ff60 r14: 0x10631 r15: 0x1031e (tb start: 0x1031c)
+[+] Switching the execution to angr
+[+] ANGR stepping
+<SimState @ 0x1031f>
+Read (before) None  from 0x40064005
+[+] insert one sym at pc 0x1031f for addr 0x40064005. 1
+Read (after)0x00 from 0x40064005
+Read (before)0x00 from 0x103b4
+Read (after)0x40064000 from 0x103b4
+Read (before)0x40064000 from 0x103b4
+Read (after)0x40064000 from 0x103b4
+Read (before)0x40064000 from 0x40064006
+[+] insert one sym at pc 0x10331 for addr 0x40064006. 2
+Read (after)0x00 from 0x40064006
+[+] active #: 2
+[+] solving ...
+solving for state: <SimState @ 0x1032f>
+solved, addr: 0x40064005 value: 0x00 pc: 0x1031f
+solved, addr: 0x40064006 value: 0x20 pc: 0x10331
+solving for state: <SimState @ 0x1033d>
+solved, addr: 0x40064005 value: 0x00 pc: 0x1031f
+solved, addr: 0x40064006 value: 0x00 pc: 0x10331
+double branch BB
+taking branch 1
+[+] consume one sym at addr: 0x40064005 .#1
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x40064006(0x64006), size: 0x01, pc: 0x10330
+CPU env:
+r0: 0x000 r1: 0x1ade4 r2: 0x40064000 r3: 0x40064000 r4: 0x20c r5: 0x000 r6: 0x000 r7: 0x2002ff60 r8: 0x000 r9: 0x000 r10: 0x000 r11: 0x000 r12: 0x000 r13: 0x2002ff60 r14: 0x10631 r15: 0x10330 (tb start: 0x1031c)
+[+] reuse previous solver
+[+] current solver cnt: #1
+[+] consume one sym at addr: 0x40064006 .#0
+data: [1074151430L, 66353L, <BV32 input_34_32>, 32, 0]
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x40064005(0x64005), size: 0x01, pc: 0xf8c8
+CPU env:
+r0: 0x1ade4 r1: 0x1ade4 r2: 0x40064000 r3: 0x40064000 r4: 0x20c r5: 0x000 r6: 0x000 r7: 0x2002ff48 r8: 0x000 r9: 0x000 r10: 0x000 r11: 0x000 r12: 0x000 r13: 0x2002ff48 r14: 0x10349 r15: 0xf8c8 (tb start: 0xf8ac)
+[+] Switching the execution to angr
+[+] ANGR stepping
+<SimState @ 0xf8c9>
+Read (before) None  from 0x40064005
+[+] insert one sym at pc 0xf8c9 for addr 0x40064005. 1
+Read (after)0x00 from 0x40064005
+Read (before)0x00 from 0x2002ff4c
+Read (after)0x1ade4 from 0x2002ff4c
+Read (before)0x1ade4 from 0x1ade6
+Read (after)0x04 from 0x1ade6
+Read (before)0x04 from 0xf920
+Read (after)0x40064000 from 0xf920
+Read (before)0x40064000 from 0xf920
+Read (after)0x40064000 from 0xf920
+Read (before)0x40064000 from 0x40064004
+[+] insert one sym at pc 0xf8e7 for addr 0x40064004. 2
+Read (after)0x00 from 0x40064004
+Read (before)0x00 from 0x2002ff4c
+Read (after)0x1ade4 from 0x2002ff4c
+Read (before)0x1ade4 from 0x1ade4
+Read (after)0x00 from 0x1ade4
+Read (before)0x00 from 0xf920
+Read (after)0x40064000 from 0xf920
+Read (before)0x40064000 from 0xf920
+Read (after)0x40064000 from 0xf920
+Read (before)0x40064000 from 0x40064006
+[+] insert one sym at pc 0xf901 for addr 0x40064006. 3
+Read (after)0x00 from 0x40064006
+[+] active #: 2
+[+] solving ...
+solving for state: <SimState @ 0xf8ff>
+solved, addr: 0x40064005 value: 0x00 pc: 0xf8c9
+solved, addr: 0x40064004 value: 0x00 pc: 0xf8e7
+solved, addr: 0x40064006 value: 0x00 pc: 0xf901
+solving for state: <SimState @ 0xf90d>
+solved, addr: 0x40064005 value: 0x00 pc: 0xf8c9
+solved, addr: 0x40064004 value: 0x00 pc: 0xf8e7
+solved, addr: 0x40064006 value: 0x40 pc: 0xf901
+double branch BB
+taking branch 1
+[+] consume one sym at addr: 0x40064005 .#2
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x40064004(0x64004), size: 0x01, pc: 0xf8e6
+CPU env:
+r0: 0x1ade4 r1: 0x40064000 r2: 0x000 r3: 0x40064000 r4: 0x20c r5: 0x000 r6: 0x000 r7: 0x2002ff48 r8: 0x000 r9: 0x000 r10: 0x000 r11: 0x000 r12: 0x000 r13: 0x2002ff48 r14: 0x10349 r15: 0xf8e6 (tb start: 0xf8ac)
+[+] reuse previous solver
+[+] current solver cnt: #2
+[+] consume one sym at addr: 0x40064004 .#1
+data: [1074151428L, 63719L, <BV32 input_36_32>, 0, 0]
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x40064006(0x64006), size: 0x01, pc: 0xf900
+CPU env:
+r0: 0x1ade4 r1: 0x40064000 r2: 0x40064000 r3: 0x40064000 r4: 0x20c r5: 0x000 r6: 0x000 r7: 0x2002ff48 r8: 0x000 r9: 0x000 r10: 0x000 r11: 0x000 r12: 0x000 r13: 0x2002ff48 r14: 0x10349 r15: 0xf900 (tb start: 0xf8ac)
+[+] reuse previous solver
+[+] current solver cnt: #1
+[+] consume one sym at addr: 0x40064006 .#0
+data: [1074151430L, 63745L, <BV32 input_37_32>, 0, 64]
+feed data: 0x40
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x40064005(0x64005), size: 0x01, pc: 0x1034a
+CPU env:
+r0: 0x1ade4 r1: 0x40064000 r2: 0x40064000 r3: 0x40064000 r4: 0x20c r5: 0x000 r6: 0x000 r7: 0x2002ff60 r8: 0x000 r9: 0x000 r10: 0x000 r11: 0x000 r12: 0x000 r13: 0x2002ff60 r14: 0x10349 r15: 0x1034a (tb start: 0x10348)
+[+] Switching the execution to angr
+[+] ANGR stepping
+<SimState @ 0x1034b>
+Read (before) None  from 0x40064005
+[+] insert one sym at pc 0x1034b for addr 0x40064005. 1
+Read (after)0x00 from 0x40064005
+Read (before)0x00 from 0x103b4
+Read (after)0x40064000 from 0x103b4
+Read (before)0x40064000 from 0x103b4
+Read (after)0x40064000 from 0x103b4
+Read (before)0x40064000 from 0x40064010
+[+] insert one sym at pc 0x1035b for addr 0x40064010. 2
+Read (after)0x00 from 0x40064010
+Read (before)0x00 from 0x2002ff67
+Read (after)0x00 from 0x2002ff67
+Read (before)0x00 from 0x103b4
+Read (after)0x40064000 from 0x103b4
+Read (before)0x40064000 from 0x2002ff67
+Read (after)0x00 from 0x2002ff67
+Read (before)0x00 from 0x103b4
+Read (after)0x40064000 from 0x103b4
+Read (before)0x40064000 from 0x40064012
+[+] insert one sym at pc 0x1037f for addr 0x40064012. 3
+Read (after)0x00 from 0x40064012
+[+] active #: 2
+[+] solving ...
+solving for state: <SimState @ 0x1037b>
+solved, addr: 0x40064005 value: 0x00 pc: 0x1034b
+solved, addr: 0x40064010 value: 0x00 pc: 0x1035b
+solved, addr: 0x40064012 value: 0x10 pc: 0x1037f
+solving for state: <SimState @ 0x1038d>
+solved, addr: 0x40064005 value: 0x00 pc: 0x1034b
+solved, addr: 0x40064010 value: 0x00 pc: 0x1035b
+solved, addr: 0x40064012 value: 0x00 pc: 0x1037f
+double branch BB
+taking branch 1
+[+] consume one sym at addr: 0x40064005 .#2
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x40064010(0x64010), size: 0x01, pc: 0x1035a
+CPU env:
+r0: 0x1ade4 r1: 0x40064000 r2: 0x40064000 r3: 0x40064000 r4: 0x20c r5: 0x000 r6: 0x000 r7: 0x2002ff60 r8: 0x000 r9: 0x000 r10: 0x000 r11: 0x000 r12: 0x000 r13: 0x2002ff60 r14: 0x10349 r15: 0x1035a (tb start: 0x10348)
+[+] reuse previous solver
+[+] current solver cnt: #2
+[+] consume one sym at addr: 0x40064010 .#1
+data: [1074151440L, 66395L, <BV32 input_39_32>, 0, 0]
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x40064012(0x64012), size: 0x01, pc: 0x1037e
+CPU env:
+r0: 0x1ade4 r1: 0x40064000 r2: 0x000 r3: 0x40064000 r4: 0x20c r5: 0x000 r6: 0x000 r7: 0x2002ff60 r8: 0x000 r9: 0x000 r10: 0x000 r11: 0x000 r12: 0x000 r13: 0x2002ff60 r14: 0x10349 r15: 0x1037e (tb start: 0x10348)
+[+] reuse previous solver
+[+] current solver cnt: #1
+[+] consume one sym at addr: 0x40064012 .#0
+data: [1074151442L, 66431L, <BV32 input_40_32>, 16, 0]
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x40064006(0x64006), size: 0x01, pc: 0x10390
+CPU env:
+r0: 0x1ade4 r1: 0x40064000 r2: 0x000 r3: 0x40064000 r4: 0x20c r5: 0x000 r6: 0x000 r7: 0x2002ff60 r8: 0x000 r9: 0x000 r10: 0x000 r11: 0x000 r12: 0x000 r13: 0x2002ff60 r14: 0x10349 r15: 0x10390 (tb start: 0x1038c)
+[+] Switching the execution to angr
+[+] ANGR stepping
+<SimState @ 0x10391>
+Read (before) None  from 0x40064006
+[+] insert one sym at pc 0x10391 for addr 0x40064006. 1
+Read (after)0x00 from 0x40064006
+[+] active #: 2
+[+] solving ...
+solving for state: <SimState @ 0x1038f>
+solved, addr: 0x40064006 value: 0x00 pc: 0x10391
+solving for state: <SimState @ 0x1039d>
+solved, addr: 0x40064006 value: 0x20 pc: 0x10391
+double branch BB
+taking branch 1
+[+] consume one sym at addr: 0x40064006 .#0
+feed data: 0x20
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x40064000(0x64000), size: 0x01, pc: 0x10632
+CPU env:
+r0: 0x000 r1: 0x40064000 r2: 0x000 r3: 0x40064000 r4: 0x20c r5: 0x000 r6: 0x000 r7: 0x2002ff70 r8: 0x000 r9: 0x000 r10: 0x000 r11: 0x000 r12: 0x000 r13: 0x2002ff70 r14: 0x10349 r15: 0x10632 (tb start: 0x10630)
+[+] Switching the execution to angr
+[+] ANGR stepping
+<SimState @ 0x10633>
+Read (before) None  from 0x40064000
+[+] insert one sym at pc 0x10633 for addr 0x40064000. 1
+Read (after)0x00 from 0x40064000
+Read (before)0x00 from 0x10668
+Read (after)0x40064000 from 0x10668
+Read (before)0x40064000 from 0x10668
+Read (after)0x40064000 from 0x10668
+Read (before)0x40064000 from 0x40064006
+[+] insert one sym at pc 0x10645 for addr 0x40064006. 2
+Read (after)0x00 from 0x40064006
+[+] active #: 2
+[+] solving ...
+solving for state: <SimState @ 0x10643>
+solved, addr: 0x40064000 value: 0x00 pc: 0x10633
+solved, addr: 0x40064006 value: 0x00 pc: 0x10645
+solving for state: <SimState @ 0x10653>
+solved, addr: 0x40064000 value: 0x00 pc: 0x10633
+solved, addr: 0x40064006 value: 0x0c pc: 0x10645
+double branch BB
+taking branch 1
+[+] consume one sym at addr: 0x40064000 .#1
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x40064006(0x64006), size: 0x01, pc: 0x10644
+CPU env:
+r0: 0x000 r1: 0x40064000 r2: 0x40064000 r3: 0x40064000 r4: 0x20c r5: 0x000 r6: 0x000 r7: 0x2002ff70 r8: 0x000 r9: 0x000 r10: 0x000 r11: 0x000 r12: 0x000 r13: 0x2002ff70 r14: 0x10349 r15: 0x10644 (tb start: 0x10630)
+[+] reuse previous solver
+[+] current solver cnt: #1
+[+] consume one sym at addr: 0x40064006 .#0
+data: [1074151430L, 67141L, <BV32 input_43_32>, 0, 12]
+feed data: 0x0c
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x40048004(0x48004), size: 0x04, pc: 0xe7e8
+CPU env:
+r0: 0x001 r1: 0x000 r2: 0x000 r3: 0x40048004 r4: 0x20c r5: 0x000 r6: 0x000 r7: 0x2002ff58 r8: 0x000 r9: 0x000 r10: 0x000 r11: 0x000 r12: 0x000 r13: 0x2002ff58 r14: 0xeee5 r15: 0xe7e8 (tb start: 0xe7d4)
+[+] Switching the execution to angr
+[+] ANGR stepping
+<SimState @ 0xe7e9>
+Read (before) None  from 0x40048004
+[+] insert one sym at pc 0xe7e9 for addr 0x40048004. 1
+Read (after)0x00 from 0x40048004
+Read (before)0x00 from 0x2002ff64
+Read (after)0x01 from 0x2002ff64
+Read (before)0x01 from 0xe828
+Read (after)0x40047000 from 0xe828
+Read (before)0x40047000 from 0x2002ff60
+Read (after)0x00 from 0x2002ff60
+Read (before)0x00 from 0x2002ff5c
+Read (after)0x00 from 0x2002ff5c
+Read (before)0x00 from 0xe828
+Read (after)0x40047000 from 0xe828
+Read (before)0x40047000 from 0x2002ff6c
+Read (after)0x2002ff70 from 0x2002ff6c
+<SimState @ 0xeee5>
+Read (before) None  from 0x2002ff74
+Read (after)0x1ade8 from 0x2002ff74
+Read (before)0x1ade8 from 0x1adeb
+Read (after)0x02 from 0x1adeb
+<SimState @ 0xe7a5>
+Read (before) None  from 0xe7d0
+Read (after)0x40047000 from 0xe7d0
+Read (before)0x40047000 from 0x40047000
+[+] insert one sym at pc 0xe7af for addr 0x40047000. 2
+Read (after)0x00 from 0x40047000
+Read (before)0x00 from 0x2002ff64
+Read (after)0x02 from 0x2002ff64
+Read (before)0x02 from 0xe7d0
+Read (after)0x40047000 from 0xe7d0
+Read (before)0x40047000 from 0x2002ff6c
+Read (after)0x2002ff70 from 0x2002ff6c
+<SimState @ 0xeeef>
+Read (before) None  from 0x2002ff78
+Read (after)0x2002ff80 from 0x2002ff78
+Read (before)0x2002ff80 from 0x2002ff7c
+Read (after)0x16fb5 from 0x2002ff7c
+<SimState @ 0x16fb5>
+Read (before) None  from 0x16fd0
+Read (after)0x20000060 from 0x16fd0
+Read (before)0x20000060 from 0x16fd4
+Read (after)0x7270e00 from 0x16fd4
+Read (before)0x7270e00 from 0x2002ff80
+Read (after)0x2002ff98 from 0x2002ff80
+Read (before)0x2002ff98 from 0x2002ff84
+Read (after)0x1869 from 0x2002ff84
+<SimState @ 0x1869>
+<SimState @ 0x16da9>
+<SimState @ 0xed41>
+<SimState @ 0xf399>
+Read (before) None  from 0xf424
+Read (after)0x40064000 from 0xf424
+Read (before)0x40064000 from 0x40064006
+[+] insert one sym at pc 0xf3a1 for addr 0x40064006. 3
+Read (after)0x00 from 0x40064006
+Read (before)0x00 from 0xf424
+Read (after)0x40064000 from 0xf424
+Read (before)0x40064000 from 0x40064012
+[+] insert one sym at pc 0xf3af for addr 0x40064012. 4
+Read (after)0x00 from 0x40064012
+Read (before)0x00 from 0x2002ff60
+Read (after)0x00 from 0x2002ff60
+<SimState @ 0xf3c1>
+Read (before) None  from 0xf3c8
+Read (after)0xf3d9 from 0xf3d4
+[+] active #: 4
+[+] solving ...
+solving for state: <SimState @ 0xf3d9>
+solved, addr: 0x40048004 value: 0x00 pc: 0xe7e9
+solved, addr: 0x40047000 value: 0x00 pc: 0xe7af
+solved, addr: 0x40064006 value: 0x0c pc: 0xf3a1
+solved, addr: 0x40064012 value: 0x00 pc: 0xf3af
+solving for state: <SimState @ 0xf40b>
+solved, addr: 0x40048004 value: 0x00 pc: 0xe7e9
+solved, addr: 0x40047000 value: 0x00 pc: 0xe7af
+solved, addr: 0x40064006 value: 0x08 pc: 0xf3a1
+solved, addr: 0x40064012 value: 0x00 pc: 0xf3af
+solving for state: <SimState @ 0xf403>
+solved, addr: 0x40048004 value: 0x00 pc: 0xe7e9
+solved, addr: 0x40047000 value: 0x00 pc: 0xe7af
+solved, addr: 0x40064006 value: 0x04 pc: 0xf3a1
+solved, addr: 0x40064012 value: 0x00 pc: 0xf3af
+solving for state: <SimState @ 0xf3fb>
+solved, addr: 0x40048004 value: 0x00 pc: 0xe7e9
+solved, addr: 0x40047000 value: 0x00 pc: 0xe7af
+solved, addr: 0x40064006 value: 0x00 pc: 0xf3a1
+solved, addr: 0x40064012 value: 0x00 pc: 0xf3af
+double branch BB
+more than 2 branches ... ignoring others
+taking branch 1
+[+] consume one sym at addr: 0x40048004 .#3
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x40047000(0x47000), size: 0x04, pc: 0xe7ae
+CPU env:
+r0: 0x002 r1: 0x40047000 r2: 0x000 r3: 0x40047000 r4: 0x20c r5: 0x000 r6: 0x000 r7: 0x2002ff60 r8: 0x000 r9: 0x000 r10: 0x000 r11: 0x000 r12: 0x000 r13: 0x2002ff60 r14: 0xeeef r15: 0xe7ae (tb start: 0xe7a4)
+[+] reuse previous solver
+[+] current solver cnt: #3
+[+] consume one sym at addr: 0x40047000 .#2
+data: [1074032640L, 59311L, <BV32 input_46_32>, 0, 0, 0, 0]
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x40064006(0x64006), size: 0x01, pc: 0xf3a0
+CPU env:
+r0: 0x002 r1: 0x40047000 r2: 0x7270e00 r3: 0x40064000 r4: 0x20c r5: 0x000 r6: 0x000 r7: 0x2002ff58 r8: 0x000 r9: 0x000 r10: 0x000 r11: 0x000 r12: 0x000 r13: 0x2002ff58 r14: 0xed49 r15: 0xf3a0 (tb start: 0xf398)
+[+] reuse previous solver
+[+] current solver cnt: #2
+[+] consume one sym at addr: 0x40064006 .#1
+data: [1074151430L, 62369L, <BV32 input_47_32>, 12, 8, 4, 0]
+feed data: 0x08
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x40064012(0x64012), size: 0x01, pc: 0xf3ae
+CPU env:
+r0: 0x002 r1: 0x40047000 r2: 0x7270e00 r3: 0x40064000 r4: 0x20c r5: 0x000 r6: 0x000 r7: 0x2002ff58 r8: 0x000 r9: 0x000 r10: 0x000 r11: 0x000 r12: 0x000 r13: 0x2002ff58 r14: 0xed49 r15: 0xf3ae (tb start: 0xf398)
+[+] reuse previous solver
+[+] current solver cnt: #1
+[+] consume one sym at addr: 0x40064012 .#0
+data: [1074151442L, 62383L, <BV32 input_48_32>, 0, 0, 0, 0]
+feed data: 0x00
+[+] QEMU reached peripheral
+IGN: all-device read at: 0x4006400c(0x6400c), size: 0x01, pc: 0xe8d0
+CPU env:
+r0: 0x002 r1: 0x40047000 r2: 0xf3c8 r3: 0x40064000 r4: 0x20c r5: 0x000 r6: 0x000 r7: 0x2002ff48 r8: 0x000 r9: 0x000 r10: 0x000 r11: 0x000 r12: 0x000 r13: 0x2002ff48 r14: 0xf40f r15: 0xe8d0 (tb start: 0xe8c8)
+[+] Switching the execution to angr
+[+] ANGR stepping
+<SimState @ 0xe8d1>
+Read (before) None  from 0x4006400c
+[+] insert one sym at pc 0xe8d1 for addr 0x4006400c. 1
+Read (after)0x00 from 0x4006400c
+[+] active #: 2
+[+] solving ...
+solving for state: <SimState @ 0xe903>
+solved, addr: 0x4006400c value: 0x01 pc: 0xe8d1
+solving for state: <SimState @ 0xe8dd>
+solved, addr: 0x4006400c value: 0x00 pc: 0xe8d1
+double branch BB
+taking branch 0
+[+] consume one sym at addr: 0x4006400c .#0
+feed data: 0x01

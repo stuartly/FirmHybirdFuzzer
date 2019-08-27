@@ -1,0 +1,122 @@
+===================
+DineroIV TCG Plugin
+===================
+
+Install
+=======
+
+In order to use the DineroIV plugin in user mode for instance, compile qemu
+user mode with plugins enabled::
+
+    $ ./configure --disable-system --disable-werror --enable-tcg-plugin --target-list=x86_64-linux-user --prefix=$HOME/local
+    $ make -j4 all
+    $ make install
+
+Note that a number of packages are required for the build, for instance on some
+Ubuntu systems::
+
+   $ sudo apt-get install python perl build-essential pkg-config zlib1g-dev libglib2.0-dev libpixman-1-dev git-core
+
+Usage
+=====
+
+Refer to the common README file in this directory for common TCG plugins usage.
+
+Use the installed qemu program emulator with the `-tcg-plugin` option as for
+instance in::
+
+    $ $HOME/local/bin/qemu-x86_64 -tcg-plugin dineroIV ./hello-world
+    # WARNING: using default latencies for cache hierarchy: 0,2,40
+    # INFO: use the DINEROIV_LATENCIES environment variable to specify the
+    cache hierarchy latencies
+    # WARNING: using default DineroIV cache hierarchy command-line: -l1-isize
+    16k -l1-dsize 8192 -l1-ibsize 32 -l1-dbsize 16
+    # INFO: use the DINEROIV_CMDLINE environment variable to specify the cache
+    hierarchy command-line
+    Hello world
+    
+    ./hello-world (27438): cache summary:
+          inst fetch in l1-icache:                     99,448        misses:          1,246        miss ratio:   1.252916 %
+          inst fetch in    memory:                      1,246        misses:              0        miss ratio:   0.000000 %
+          data fetch in l1-dcache:                     23,719        misses:          3,850        miss ratio:  16.231712 %
+          data fetch in    memory:                      5,463        misses:              0        miss ratio:   0.000000 %
+          data write in l1-dcache:                     12,248        misses:          1,613        miss ratio:  13.169497 %
+          data write in    memory:                      1,806        misses:              0        miss ratio:   0.000000 %
+
+    ./hello-world (27438): instructions summary:
+          instrs:                     92,116
+           loads:                     23,708
+          stores:                     12,246
+    ./hello-world (27438): number of estimated cycles = 407914
+
+As the warning messages show, the configuration for the caches
+latencies and the caches topology has to be set through some
+environment variables::
+
+    DINEROIV_LATENCIES: comma separated list of fetch latency of each cache in
+    sequence (starting from instruction caches, then data cache and unified
+    caches).
+    DINEROIV_CMDLINE: arguments to dinero cache simulator as could be passed
+    on the dinero command line itself. Refer to dineroIV documentation for
+    arguments:
+    http://www.ece.mtu.edu/faculty/rmkieckh/cla/4173/DINERO/d4-man.pdf
+
+For instance a typical Intel Xeon 5500 series processor can be
+configured with::
+
+    $ export DINEROIV_LATENCIES=0,1,6,40,160
+    $ export DINEROIV_CMDLINE="-l1-isize 32k -l1-ibsize 64 -l1-iassoc 4 -l1-dsize 32k -l1-dbsize 64 -l1-dassoc 8 -l2-usize 256k -l2-ubsize 64 -l2-uassoc 8 -l3-usize 4096k -l3-ubsize 64 -l3-uassoc 16"
+
+Then execute the program again, for instance::
+
+    $ $HOME/local/bin/qemu-x86_64 -tcg-plugin dineroIV ./hello-world
+    Hello world
+
+    ./hello-world (28980): cache summary:
+          inst fetch in l1-icache:                     95,181        misses:                               658        miss ratio:   0.691314 %
+          inst fetch in l2-ucache:                        658        misses:                               656        miss ratio:  99.696048 %
+          inst fetch in l3-ucache:                        656        misses:                               656        miss ratio: 100.000000 %
+          inst fetch in    memory:                        656        misses:                                 0        miss ratio:   0.000000 %
+          data fetch in l1-dcache:                     23,716        misses:                             1,191        miss ratio:   5.021926 %
+          data fetch in l2-ucache:                      1,645        misses:                             1,482        miss ratio:  90.091185 %
+          data fetch in l3-ucache:                      1,482        misses:                             1,482        miss ratio: 100.000000 %
+          data fetch in    memory:                      1,482        misses:                                 0        miss ratio:   0.000000 %
+          data write in l1-dcache:                     12,246        misses:                               454        miss ratio:   3.707333 %
+          data write in l2-ucache:                        516        misses:                                 0        miss ratio:   0.000000 %
+          data write in l3-ucache:                        468        misses:                                 0        miss ratio:   0.000000 %
+          data write in    memory:                        468        misses:                                 0        miss ratio:   0.000000 %
+
+    ./hello-world (28980): instructions summary:
+        instrs:                     92,122
+         loads:                     23,714
+        stores:                     12,246
+    ./hello-world (28980): number of estimated cycles = 535876
+
+The default output for the plugin is, as shown above, a summary of the caches
+statistics for each fetch kinds (instruction, data read/write) as well as the
+number of instructions executed, load/store instructions and an estimate of
+the total number of cycles for the program execution.
+
+The output can be changed through the `DINEROIV_OUTPUTS` environment variable, a
+comma separated list of keywords for specifying the output, some of::
+
+    copyright: outputs the DineroIV copyright information
+    cycles: outputs the estimated number of cycles
+    stats: outputs the cache statistics
+    trace: outputs a dineroIV compatible access trace
+    dinero: outputs the cache statistics as per the DineroIV format
+    default: the default output, equivalent to `stats,cycles`
+    legacy-1: legacy output of the plugin, equivalent to `copyright,trace`
+
+For instance, to output the access trace, execute as below::
+
+    $ env DINEROIV_OUTPUTS=trace $HOME/local/bin/qemu-x86_64 -tcg-plugin dineroIV ./hello-world 2>&1 | head -10
+    i 0x0000004000802190 0x00000004 (0x0000000000000000) CPU #0 0x0000004000802190
+    i 0x0000004000802193 0x00000004 (0x0000000000000000) CPU #0 0x0000004000802193
+    w 0x00000040007ffac8 0x00000008 (0x0000004000802198) CPU #0 0x0000004000802193
+    i 0x0000004000805750 0x00000004 (0x0000000000000000) CPU #0 0x0000004000805750
+    w 0x00000040007ffac0 0x00000008 (0x0000000000000000) CPU #0 0x0000004000805750
+    i 0x0000004000805751 0x00000004 (0x0000000000000000) CPU #0 0x0000004000805751
+    i 0x0000004000805754 0x00000004 (0x0000000000000000) CPU #0 0x0000004000805754
+    w 0x00000040007ffab8 0x00000008 (0x0000000000000000) CPU #0 0x0000004000805754
+    i 0x0000004000805756 0x00000004 (0x0000000000000000) CPU #0 0x0000004000805756
