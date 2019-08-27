@@ -2,4 +2,4 @@
 -------
 + Install
 
-```sudo python setup.py install` or `pip install -e ./```
+sudo python setup.py install` or `pip install -e ./
