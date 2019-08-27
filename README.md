@@ -30,6 +30,7 @@ Because of the dependency on Angr, make sure you work on Python 3.
     ```
 4. build avatar-qemu and put qemu-system-arm in PATH (refer to README in AVATAR-QEMU DIR)
 5. install Avatar2: `cd avatar2 && pip install -e ./` (refer to README in AVATAR2 DIR)
+6. install hybridfuzz: 'cd hybridfuzz && pip install -e ./' (refer to README in hybridfuzz DIR)
 
 ## Running
 We offer a demo you can fuzz it directly by running FirmwareFuzzer-Qemu.py, or you can fuzz other firmware according to the follower steps:
