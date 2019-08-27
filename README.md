@@ -1,6 +1,3 @@
-# Peripheral based IoT firmware fuzzing
-
-
 ## Installation
 We suggest installing all the components in a single [python virtual environment](https://virtualenvwrapper.readthedocs.io/en/latest/). 
 Due to various errors installing keystone, we also suggest installing Angr first, which properly installs keystone.
