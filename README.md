@@ -70,3 +70,17 @@ Third is the plugin settings to do some extra things when fuzzing firmware.
 Above is only some setting we may change frequently. For more settings' information, please refer to comments in script/firmConf.py or search reference in source code.
 
 **Note：** please refer to [Firmware-Benchmark](https://github.com/stuartly/Firmware-Benchmark) if you want you fuzz more IoT fimware samples.
+
+
+## Reference
+```
+@ARTICLE{10214030,
+  author={Situ, Lingyun and Zhang, Chi and Guan, Le and Zuo, Zhiqiang and Wang, Linzhang and Li, Xuandong and Liu, Peng and Shi, Jin},
+  journal={IEEE Internet of Things Journal}, 
+  title={Physical Devices-Agnostic Hybrid Fuzzing of IoT Firmware}, 
+  year={2023},
+  volume={10},
+  number={23},
+  pages={20718-20734},
+  doi={10.1109/JIOT.2023.3303780}}
+```
